@@ -1,0 +1,1164 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2019/11/roh#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2019/11/roh"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/Person"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core"
+     xmlns:vivo="http://vivoweb.org/ontology/core">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh">
+        <dct:license>Creative Commons Attribution-ShareAlike 4.0 International</dct:license>
+        <rdfs:comment>ROH - Hércules</rdfs:comment>
+        <owl:versionInfo>borrador</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#carriedOutBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#carriedOutBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#carriesOut"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#carriesOut -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#carriesOut">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#emmits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#emmits">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#isEmmitedBy"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderFunds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderFunds">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingFunder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingFunder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingFunder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingPartOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramHas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramHas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramHas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#generatesExpense -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#generatesExpense">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasAuthored -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasAuthored">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#isAuthoredBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Participation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasExpenses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasExpenses">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#spentBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasImpactMetrics -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasImpactMetrics">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#isImpactMetricOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ImpactMetric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasKnowledgeArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasKnowledgeArea">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#isKnowledgeAreaOf"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#KnowledgeArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResults -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResults">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#isResultOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasRoles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasRoles">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#partOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasTag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasTag">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#isTagFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#isAuthoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#isAuthoredBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Participation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#isEmmitedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#isEmmitedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#isFundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#isFundedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#providesFunding"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#isImpactMetricOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#isImpactMetricOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ImpactMetric"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#isKnowledgeAreaOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#isKnowledgeAreaOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#KnowledgeArea"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#isResultOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#isTagFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#isTagFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Tag"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#partOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#participatesIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#participationFor"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Participation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#participationFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#participationFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#providedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#providedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#providesTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingAmount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#providesFunding -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#providesFunding">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#providesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#providesTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingAmount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#relatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#relatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#relates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#relates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#relates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#spentBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#spentBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#takenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#takenBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#takes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Role"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#takes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#takes">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseConcept -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseConcept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#expenseType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>CONTRACTOR</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>EQUIPMENT</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>OTHER</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>PERSONNEL_COST</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>RESEARCH_INFRASTRUCTURE</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>TRAVEL</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderEmail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>PRIVATE_SECTOR</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>PUBLIC_SECTOR</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#funderURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#funderURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingAmount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingAmountId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingAmountId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingAmount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingAmountYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingAmountYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingAmount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProgramURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProjectCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingProjectCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#fundingType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>GRANT</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>LOAN</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>OUTSOURCING</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#impactMetricType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#impactMetricType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ImpactMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#impactMetricValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#impactMetricValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ImpactMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#participationOrder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#participationOrder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Participation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#participationPercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#participationPercentage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Participation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#projectAbstract -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#projectAbstract">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#projectContract -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#projectContract">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#projectDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#projectDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#projectId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#projectId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#projectStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#projectStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>CLOSED</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>OPEN</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#projectTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#projectTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#projectType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#projectType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>AGREEMENT</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>BIDDING</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>EUROPEAN</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>NATIONAL</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>PRIVATE</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#publicationId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#publicationId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#publicationPublisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#publicationPublisher">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#publicationType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#publicationType">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>BOOK</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CONFERENCE_PAPER</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>INBOOK</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>JOURNAL_ARTICLE</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>MAGAZINE_ARTICLE</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>PAPER</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectLicense -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectLicense">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectPublishDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectPublishDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researchObjectVersion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherNIF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherNIF">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherORCHID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherORCHID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherUNESCOCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#researcherUNESCOCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#roleDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#roleDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Collection -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Collection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Category">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funder">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Funding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingAmount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingAmount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#FundingProgram"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#ImpactMetric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#ImpactMetric"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#KnowledgeArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#KnowledgeArea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Participation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Participation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#ProjectExpense"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchLine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchLine">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Researcher">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Role">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Sexenio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Sexenio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Tag">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
