@@ -280,6 +280,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResearchLine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResearchLine">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResults -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResults">
