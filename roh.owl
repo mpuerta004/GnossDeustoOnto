@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2019/11/roh#"
      xml:base="http://www.semanticweb.org/user/ontologies/2019/11/roh"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -12,8 +13,13 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core"
      xmlns:vivo="http://vivoweb.org/ontology/core">
     <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh">
-        <dct:license>Creative Commons Attribution-ShareAlike 4.0 International</dct:license>
+        <ns:license>https://creativecommons.org/licenses/by-sa/4.0/</ns:license>
+        <dct:license>https://creativecommons.org/licenses/by-sa/4.0/</dct:license>
         <rdfs:comment>ROH - Hércules</rdfs:comment>
+        <rdfs:label>ROH - Red de Ontologías Hercules / Hercules Ontology Network</rdfs:label>
+        <owl:backwardCompatibleWith>
+            <rdf:Description/>
+        </owl:backwardCompatibleWith>
         <owl:versionInfo>borrador</owl:versionInfo>
     </owl:Ontology>
     
@@ -27,6 +33,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -47,11 +59,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#dateIssued -->
+    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_8d1a2fdd_f651_4674_9d13_131319399c75 -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#dateIssued">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_8d1a2fdd_f651_4674_9d13_131319399c75">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResearchLine"/>
+        <rdfs:label xml:lang="es">isResearchLineOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -125,6 +137,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#carriesOut">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#dateIssued -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#dateIssued">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -329,6 +350,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#hasResearchLine">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchLine"/>
     </owl:ObjectProperty>
     
 
@@ -1480,17 +1502,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#Research -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#Research">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchAccreditation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchAccreditation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/11/roh#ResearchAccreditation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/11/roh#Accreditation"/>
+    </owl:Class>
     
 
 
