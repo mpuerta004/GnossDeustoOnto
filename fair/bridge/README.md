@@ -35,6 +35,13 @@ Para probar el servidor ejecuta el siguiente comando:
 
 Para generar el front-end swagger hacer lo siguiente:
 - Ejecutar comando: openapi-generator generate -i openapi.yaml -g python-flask -o codegen_server/
+- Copiar los contenidos del fichero codegen_server/openapi_server/controllers/default_controller_asio.py al fichero automáticamente generado por openapi-generator codegen_server/openapi_server/controllers/default_controller.py
+- Ejecutar en directorio codegen_server/ el comando: python -m openapi_server
+- Acceder en el navegador a la dirección http://localhost:8080/v1/ui/
+- Probar la API a través de la interfaz Swagger generada
+
+El fichero bridge/openapi.yaml contiene la especificación de la API del bridge ASIO-FAIRmetrics acorde con OpenAPI 3.0
+
 
 ## Por hacer/mejoras en el futuro
 
