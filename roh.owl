@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2019/11/roh#"
      xml:base="http://www.semanticweb.org/user/ontologies/2019/11/roh"
+     xmlns:gn="http://www.geonames.org/ontology#"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -231,7 +232,7 @@
         <owl:inverseOf rdf:resource="http://purl.org/roh#isKeywordFor"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Keyword"/>
@@ -262,7 +263,7 @@
     <!-- http://purl.org/roh#hasResearchLine -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#hasResearchLine">
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#OWLObjectProperty_8d1a2fdd_f651_4674_9d13_131319399c75"/>
+        <owl:inverseOf rdf:resource="http://purl.org/roh#isResearchLineOf"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://purl.org/roh#ResearchLine"/>
@@ -477,31 +478,29 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_0562f6f5_a44a_49f4_bf0e_c00a8587611d -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_0562f6f5_a44a_49f4_bf0e_c00a8587611d">
+    <!-- http://purl.org/roh#thesisDirector -->
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#thesisDirector">
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label xml:lang="es">thesisDirector</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_0e65aa10_315d_4b81_92ee_17612fbc1dc1 -->
+    <!-- http://purl.org/roh#hasContract -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_0e65aa10_315d_4b81_92ee_17612fbc1dc1">
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#OWLObjectProperty_ffed5729_439d_41a8_9872_ee2942bf7825"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasContract">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#isContractOf"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#workContract"/>
         <rdfs:label xml:lang="en">hasContract</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_208f3bac_49bd_429b_b583_adae9ff74a0a -->
+    <!-- http://purl.org/roh#hasPosition -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_208f3bac_49bd_429b_b583_adae9ff74a0a">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasPosition">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Position"/>
         <rdfs:label xml:lang="en">hasPosition</rdfs:label>
@@ -509,48 +508,48 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_54acf4b7_875d_4286_aac9_c44842b775e4 -->
+    <!-- http://purl.org/roh#hasMetric -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_54acf4b7_875d_4286_aac9_c44842b775e4">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasMetric">
         <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Metric"/>
         <rdfs:label xml:lang="en">hasMetric</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_651774f6_2950_40c5_8ee4_0778a23dbe11 -->
+    <!-- http://purl.org/roh#workContract -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_651774f6_2950_40c5_8ee4_0778a23dbe11">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#workContract">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#workContract"/>
         <rdfs:label xml:lang="en">workContract</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_65c676bc_8402_44e3_bc2a_1bc89ceb78b5 -->
+    <!-- http://purl.org/roh#belongsTo -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_65c676bc_8402_44e3_bc2a_1bc89ceb78b5">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#belongsTo">
+        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:label xml:lang="en">belongsTo</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_8d1a2fdd_f651_4674_9d13_131319399c75 -->
+    <!-- http://purl.org/roh#isResearchLineOf -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_8d1a2fdd_f651_4674_9d13_131319399c75">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#isResearchLineOf">
         <rdfs:label xml:lang="en">isResearchLineOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_8ec38777_1c9e_4430_9a29_0f3685ddcb75 -->
+    <!-- http://purl.org/roh#organizationScope -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_8ec38777_1c9e_4430_9a29_0f3685ddcb75">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#organizationScope">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://purl.org/roh#GeographicalScope"/>
         <rdfs:label xml:lang="en">organizationGeoScope</rdfs:label>
@@ -558,19 +557,19 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_a0d7649b_235b_4547_b43e_f2a6f3044063 -->
+    <!-- http://purl.org/roh#hasCV -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_a0d7649b_235b_4547_b43e_f2a6f3044063">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasCV">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#OWLClass_13d0442b_7ad4_4d0c_b180_8bc46ccd3b74"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#CurriculumVitae"/>
         <rdfs:label xml:lang="en">hasCV</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_b56cfd3f_3ec9_4c86_a144_029247ed3040 -->
+    <!-- http://purl.org/roh#isFundedBy -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_b56cfd3f_3ec9_4c86_a144_029247ed3040">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#isFundedBy">
         <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
         <rdfs:label xml:lang="en">isFundedBy</rdfs:label>
@@ -578,9 +577,9 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_d5fbb8dc_2c21_4518_bc17_ffac46f5627f -->
+    <!-- http://purl.org/roh#takesPositionIn -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_d5fbb8dc_2c21_4518_bc17_ffac46f5627f">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#takesPositionIn">
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label>takesPositionIn</rdfs:label>
@@ -588,10 +587,10 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_d92a1cd3_cdff_4f54_a187_fe2f91012ff9 -->
+    <!-- http://purl.org/roh#partOf -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_d92a1cd3_cdff_4f54_a187_fe2f91012ff9">
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#OWLObjectProperty_e1d43524_d2e2_4402_a549_c7a884995e72"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#partOf">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#hasPart"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label xml:lang="en">partOf</rdfs:label>
@@ -599,19 +598,19 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_dc3d27f2_7f62_4a77_9e53_80ef79920496 -->
+    <!-- http://purl.org/roh#hasPublicationMetric -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_dc3d27f2_7f62_4a77_9e53_80ef79920496">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasPublicationMetric">
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#OWLClass_c2203450_48f8_4219_bdef_4961a5c52f15"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#PublicationMetric"/>
         <rdfs:label xml:lang="en">hasPublicationMetric</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_e1d43524_d2e2_4402_a549_c7a884995e72 -->
+    <!-- http://purl.org/roh#hasPart -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_e1d43524_d2e2_4402_a549_c7a884995e72">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasPart">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label xml:lang="en">hasPart</rdfs:label>
@@ -619,9 +618,9 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_eceb86d3_dd3d_4320_9554_64ea2d3dcb4c -->
+    <!-- http://purl.org/roh#relatedBy -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_eceb86d3_dd3d_4320_9554_64ea2d3dcb4c">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#relatedBy">
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
@@ -630,10 +629,9 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_eee63d8d_c106_490f_97e7_877e5c5b4438 -->
+    <!-- http://purl.org/roh#relates -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_eee63d8d_c106_490f_97e7_877e5c5b4438">
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#OWLObjectProperty_eee63d8d_c106_490f_97e7_877e5c5b4438"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#relates">
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -642,10 +640,10 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLObjectProperty_ffed5729_439d_41a8_9872_ee2942bf7825 -->
+    <!-- http://purl.org/roh#isContractOf -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#OWLObjectProperty_ffed5729_439d_41a8_9872_ee2942bf7825">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#isContractOf">
+        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:label>isContractOf</rdfs:label>
@@ -1319,40 +1317,39 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_102ca752_8104_4838_9c87_a3c1f2ede7ba -->
+    <!-- http://purl.org/roh#rankings -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_102ca752_8104_4838_9c87_a3c1f2ede7ba">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_c2203450_48f8_4219_bdef_4961a5c52f15"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#rankings">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">rankings</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_4c4f3bef_55e0_405f_a733_3c2e4b673753 -->
+    <!-- http://purl.org/roh#metricType -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_4c4f3bef_55e0_405f_a733_3c2e4b673753">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricType">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">metricType</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_72321fd8_1093_442c_8733_a8395b11a6fa -->
+    <!-- http://purl.org/roh#infrastructureDescription -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_72321fd8_1093_442c_8733_a8395b11a6fa">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureDescription">
+        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">infrustructureDescription</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_7621a9b8_f430_461c_8338_94e21f0a28ce -->
+    <!-- http://purl.org/roh#impactIndex -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_7621a9b8_f430_461c_8338_94e21f0a28ce">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_62182fc4_2a1b_4882_a677_cce48d41f444"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactIndex">
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -1375,29 +1372,29 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_7c3ccce7_d9af_444d_8dc5_16e58ebb4a89 -->
+    <!-- http://purl.org/roh#contractID -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_7c3ccce7_d9af_444d_8dc5_16e58ebb4a89">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractID">
+        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">contractID</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_7d3109b9_c48b_44a2_9a01_c1c464040a08 -->
+    <!-- http://purl.org/roh#cites -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_7d3109b9_c48b_44a2_9a01_c1c464040a08">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_13d0442b_7ad4_4d0c_b180_8bc46ccd3b74"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#cites">
+        <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label xml:lang="en">cites</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_8634bc93_c434_4822_893c_98472cbb7f0c -->
+    <!-- http://purl.org/roh#positionName -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_8634bc93_c434_4822_893c_98472cbb7f0c">
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#positionName">
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">positionName</rdfs:label>
@@ -1405,109 +1402,109 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_8cfbef4b_fcce_4d29_9c86_49bc1ccf6737 -->
+    <!-- http://purl.org/roh#positionName -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_8cfbef4b_fcce_4d29_9c86_49bc1ccf6737">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#positionName">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">metricName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_92d4fcca_7d7b_44ff_a4c9_48660063165a -->
+    <!-- http://purl.org/roh#metricDescription -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_92d4fcca_7d7b_44ff_a4c9_48660063165a">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricDescription">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">metricDesciption</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_9db4d1ab_f3c9_43ed_ac4f_98fc1551e643 -->
+    <!-- http://purl.org/roh#impactFactor -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_9db4d1ab_f3c9_43ed_ac4f_98fc1551e643">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_c2203450_48f8_4219_bdef_4961a5c52f15"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactFactor">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">impactFactor</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_a7d4a766_0543_46cd_91cf_38060fda6d4c -->
+    <!-- http://purl.org/roh#contractURI -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_a7d4a766_0543_46cd_91cf_38060fda6d4c">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractURI">
+        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">contractURI</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_a8624289_662f_4f82_839e_6de1b8088ccc -->
+    <!-- http://purl.org/roh#contractType -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_a8624289_662f_4f82_839e_6de1b8088ccc">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractType">
+        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">contractType</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_a94f64ad_f16b_4803_880f_0349072a2aaa -->
+    <!-- http://purl.org/roh#summary -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_a94f64ad_f16b_4803_880f_0349072a2aaa">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_13d0442b_7ad4_4d0c_b180_8bc46ccd3b74"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#summary">
+        <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">summary</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_acdaa1a5_2ff1_43d4_9876_b23a35efcf4c -->
+    <!-- http://purl.org/roh#quartile -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_acdaa1a5_2ff1_43d4_9876_b23a35efcf4c">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_c2203450_48f8_4219_bdef_4961a5c52f15"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#quartile">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label xml:lang="en">quartile</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_ba18cf29_0958_4184_910f_4f7a8a7293d5 -->
+    <!-- http://purl.org/roh#infrastructureName -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_ba18cf29_0958_4184_910f_4f7a8a7293d5">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureName">
+        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">infrastructureName</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_bdde8d12_86d2_4045_8c4c_1d8155a81f3e -->
+    <!-- http://purl.org/roh#factorH -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_bdde8d12_86d2_4045_8c4c_1d8155a81f3e">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_13d0442b_7ad4_4d0c_b180_8bc46ccd3b74"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#factorH">
+        <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">factorH</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_c590f535_82bf_4eab_9c88_43f2ef0b25f5 -->
+    <!-- http://purl.org/roh#phdThesisQualification -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_c590f535_82bf_4eab_9c88_43f2ef0b25f5">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_62182fc4_2a1b_4882_a677_cce48d41f444"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#phdThesisQualification">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">phdThesisQualification</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_d7346da4_e533_4b22_ad77_dff3d34de7cb -->
+    <!-- http://purl.org/roh#fundingProgramTopic -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_d7346da4_e533_4b22_ad77_dff3d34de7cb">
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#fundingProgramTopic">
         <rdfs:domain rdf:resource="http://purl.org/roh#FundingProgram"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">fundingProgramTopic</rdfs:label>
@@ -1515,10 +1512,10 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_e26d3a7e_8eeb_4710_a264_7dbb863b5615 -->
+    <!-- http://purl.org/roh#phdThesisScope -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_e26d3a7e_8eeb_4710_a264_7dbb863b5615">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_62182fc4_2a1b_4882_a677_cce48d41f444"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#phdThesisScope">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -1541,10 +1538,10 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLDataProperty_f32706d7_d9ae_4971_9ed1_9571740c4b40 -->
+    <!-- http://purl.org/roh#infrastructureAcronym -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#OWLDataProperty_f32706d7_d9ae_4971_9ed1_9571740c4b40">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureAcronym">
+        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">infrastructureAcronym</rdfs:label>
     </owl:DatatypeProperty>
@@ -1868,9 +1865,9 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27 -->
+    <!-- http://purl.org/roh#workContract -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_009a479e_5787_413f_9848_ebc386672b27">
+    <owl:Class rdf:about="http://purl.org/roh#workContract">
         <rdfs:comment>A Contract is a legal document which gathers the conditions and obligations of a Researcher or the conditions and obligations of a Project and the different organizations which take part in it.</rdfs:comment>
         <rdfs:label xml:lang="en">Contract</rdfs:label>
     </owl:Class>
@@ -1886,90 +1883,90 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_13d0442b_7ad4_4d0c_b180_8bc46ccd3b74 -->
+    <!-- http://purl.org/roh#CurriculumVitae -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_13d0442b_7ad4_4d0c_b180_8bc46ccd3b74">
+    <owl:Class rdf:about="http://purl.org/roh#CurriculumVitae">
         <rdfs:comment>Entify which includes essential metadata to complement the data that can be aggregated from exploring relationships of Person, e.g. CV summary, H factor or cites.</rdfs:comment>
         <rdfs:label xml:lang="en">CurriculumVitae</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_62182fc4_2a1b_4882_a677_cce48d41f444 -->
+    <!-- http://purl.org/roh#PhDThesisMetric -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_62182fc4_2a1b_4882_a677_cce48d41f444">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf"/>
+    <owl:Class rdf:about="http://purl.org/roh#PhDThesisMetric">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
         <rdfs:label xml:lang="es">PhDThesisMetric</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_699db86b_04ec_417d_b447_a97d5dbda7d1 -->
+    <!-- http://purl.org/roh#Equipment -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_699db86b_04ec_417d_b447_a97d5dbda7d1">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e"/>
+    <owl:Class rdf:about="http://purl.org/roh#Equipment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#infrustructureDescription"/>
         <rdfs:label xml:lang="en">Equipment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_6d00abf8_834d_4128_ad2e_d4ad9f83cb44 -->
+    <!-- http://purl.org/roh#Facility -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_6d00abf8_834d_4128_ad2e_d4ad9f83cb44">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e"/>
+    <owl:Class rdf:about="http://purl.org/roh#Facility">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#infrustructureDescription"/>
         <rdfs:label xml:lang="en">Facility</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_7a60aab9_409c_4c62_a9f9_17d4d8ba5cba -->
+    <!-- http://purl.org/roh#NonAcademicPosition -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_7a60aab9_409c_4c62_a9f9_17d4d8ba5cba">
+    <owl:Class rdf:about="http://purl.org/roh#NonAcademicPosition">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
         <rdfs:label>NonAcademicPosition</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_9b719fd6_5e3d_48cf_a742_a8cbed2e9561 -->
+    <!-- http://purl.org/roh#AcademicPosition -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_9b719fd6_5e3d_48cf_a742_a8cbed2e9561">
+    <owl:Class rdf:about="http://purl.org/roh#AcademicPosition">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
         <rdfs:label>AcademicPosition</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_c2203450_48f8_4219_bdef_4961a5c52f15 -->
+    <!-- http://purl.org/roh#PublicationMetric -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_c2203450_48f8_4219_bdef_4961a5c52f15">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf"/>
+    <owl:Class rdf:about="http://purl.org/roh#PublicationMetric">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
         <rdfs:label xml:lang="en">PublicationMetric</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_f1ec8e5b_9d99_456a_9787_85100210315e -->
+    <!-- http://purl.org/roh#MasterThesis -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_f1ec8e5b_9d99_456a_9787_85100210315e">
+    <owl:Class rdf:about="http://purl.org/roh#MasterThesis">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
         <rdfs:label xml:lang="es">MasterThesis</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf -->
+    <!-- http://purl.org/roh#Metric -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_f85ee69f_988c_4b42_9993_e57ab7fc7ddf">
+    <owl:Class rdf:about="http://purl.org/roh#Metric">
         <rdfs:comment>Metric based on cfMetric, including attributes Identifier, Uniform Resource Identifier, Name, Description and linked to foaf:Agent, Keyword and optionally to ResearchObject</rdfs:comment>
         <rdfs:label xml:lang="en">Metric</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e -->
+    <!-- http://purl.org/roh#infrustructureDescription -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_fb7c85e8_f7ec_406e_b1a3_2acc3f16a96e">
+    <owl:Class rdf:about="http://purl.org/roh#infrustructureDescription">
         <rdfs:label xml:lang="en">Infrastructure</rdfs:label>
     </owl:Class>
     
