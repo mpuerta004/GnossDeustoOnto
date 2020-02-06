@@ -56,6 +56,35 @@
     
 
 
+    <!-- http://purl.org/roh#academicDegreeAwardedDegree -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#academicDegreeAwardedDegree">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
+        <rdfs:label>academicDegreeAwardedDegree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#activityDateTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#activityDateTimeInterval">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Activity"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#activityExpense -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#activityExpense">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#expenseActivity"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Activity"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#ProjectExpense"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/roh#activityGeoScope -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#activityGeoScope">
@@ -65,47 +94,120 @@
     
 
 
-    <!-- http://purl.org/roh#activityHasRelatedProjects -->
+    <!-- http://purl.org/roh#activityPerson -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#activityHasRelatedProjects">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#projectHasActivitiy"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Activity"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#activityPerson">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#personActivity"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Activity"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#carriedOutBy -->
+    <!-- http://purl.org/roh#agentMetric -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#carriedOutBy">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#carriesOut"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#agentMetric">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:label xml:lang="en">agentMetric</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#carriesOut -->
+    <!-- http://purl.org/roh#awardedDegreeAcademicDegree -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#carriesOut">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#awardedDegreeAcademicDegree">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
+        <rdfs:label>Awarded Degree for Academic Degree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#awardedDegreePerson -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#awardedDegreePerson">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label>Awarded Degree to Person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#childOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#childOrganization">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#parentOrganization"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label xml:lang="en">childOrganization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#childProject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#childProject">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#parentProject"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#expenseFor -->
+    <!-- http://purl.org/roh#contractAgent -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#expenseFor">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#contractAgent">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#hasContract"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Contract"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:label>contractAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#contractDateTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#contractDateTimeInterval">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Contract"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#contractProject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#contractProject">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#projectContract"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Contract"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:label>contractProject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#expenseActivity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#expenseActivity">
+        <rdfs:domain rdf:resource="http://purl.org/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#expenseProject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#expenseProject">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#projectExpense"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#ProjectExpense"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#funderFunds -->
+    <!-- http://purl.org/roh#funderFunding -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#funderFunds">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#funderFunding">
         <owl:inverseOf rdf:resource="http://purl.org/roh#fundingFunder"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Funder"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
@@ -113,31 +215,32 @@
     
 
 
-    <!-- http://purl.org/roh#funderHasFundingProgram -->
+    <!-- http://purl.org/roh#funderFundingProgram -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#funderHasFundingProgram">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#fundingProgramBelongsTo"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#funderFundingProgram">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#fundingProgramFunder"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Funder"/>
         <rdfs:range rdf:resource="http://purl.org/roh#FundingProgram"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#fundingAmountFor -->
+    <!-- http://purl.org/roh#fundingAmountFunding -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingAmountFor">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#fundingAmountFrom"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingAmountFunding">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#fundingFundingAmount"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#FundingAmount"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#fundingAmountFrom -->
+    <!-- http://purl.org/roh#fundingAmountOrganization -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingAmountFrom">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#FundingAmount"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingAmountOrganization">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#organizationFundingAmount"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#FundingAmount"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
@@ -151,39 +254,47 @@
     
 
 
-    <!-- http://purl.org/roh#fundingPartOf -->
+    <!-- http://purl.org/roh#fundingFundingAmount -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingPartOf">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#fundingProgramHas"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingFundingAmount">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Funding"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#FundingAmount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#fundingFundingProgram -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingFundingProgram">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#fundingProgramFunding"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Funding"/>
         <rdfs:range rdf:resource="http://purl.org/roh#FundingProgram"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#fundingProgramBelongsTo -->
+    <!-- http://purl.org/roh#fundingProgramFunder -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingProgramBelongsTo">
-        <rdfs:domain rdf:resource="http://purl.org/roh#FundingProgram"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Funder"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingProgramFunder"/>
     
 
 
-    <!-- http://purl.org/roh#fundingProgramHas -->
+    <!-- http://purl.org/roh#fundingProgramFunding -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingProgramHas">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingProgramFunding">
         <rdfs:domain rdf:resource="http://purl.org/roh#FundingProgram"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Funder"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#generatesExpense -->
+    <!-- http://purl.org/roh#fundingProject -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#generatesExpense">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#ProjectExpense"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fundingProject">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#projectFunding"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Funding"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
     </owl:ObjectProperty>
     
 
@@ -197,143 +308,78 @@
     
 
 
-    <!-- http://purl.org/roh#hasAuthored -->
+    <!-- http://purl.org/roh#hasContract -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasAuthored">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#isAuthoredBy"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Participation"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#ResearchObject"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasContract">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Contract"/>
+        <rdfs:label xml:lang="en">agentContract</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#hasExpenses -->
+    <!-- http://purl.org/roh#infrastructureAgent -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasExpenses">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#spentBy"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#ProjectExpense"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#infrastructureAgent">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Infrastructure"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:label xml:lang="en">Infrastructure of Agent</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#hasImpactMetrics -->
+    <!-- http://purl.org/roh#metricKeyword -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasImpactMetrics">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#isImpactMetricOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Researcher"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasKeyword -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasKeyword">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#isKeywordFor"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#metricKeyword">
         <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Keyword"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#hasPersonsParticipating -->
+    <!-- http://purl.org/roh#organizationFundingAmount -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasPersonsParticipating">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#participatesInActivity"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Activity"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#organizationFundingAmount">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#FundingAmount"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#hasRelatedExpense -->
+    <!-- http://purl.org/roh#organizationGeoScope -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasRelatedExpense">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#isExpenseFor"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Activity"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#ProjectExpense"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#organizationGeoScope">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#GeographicalScope"/>
+        <rdfs:label xml:lang="en">organizationGeoScope</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#hasResearchLine -->
+    <!-- http://purl.org/roh#organizationKeyword -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasResearchLine">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#isResearchLineOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#organizationKeyword">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#organizationProject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#organizationProject">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#projectOrganization"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#organizationResearchLine -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#organizationResearchLine">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://purl.org/roh#ResearchLine"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasResult -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasResult">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#isResultOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#ResearchObject"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isAuthoredBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isAuthoredBy">
-        <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Participation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isExpenseFor -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isExpenseFor">
-        <rdfs:domain rdf:resource="http://purl.org/roh#ProjectExpense"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Activity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isFundedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isFundedBy">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#providesFunding"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isImpactMetricOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isImpactMetricOf">
-        <rdfs:range rdf:resource="http://purl.org/roh#Researcher"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isKeywordFor -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isKeywordFor">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Keyword"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#ResearchObject"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isResultOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isResultOf">
-        <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
     </owl:ObjectProperty>
     
 
@@ -348,30 +394,130 @@
     
 
 
-    <!-- http://purl.org/roh#participatesIn -->
+    <!-- http://purl.org/roh#parentOrganization -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#participatesIn">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#participationFor"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Participation"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#parentOrganization">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label xml:lang="en">parentOrganization</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#participatesInActivity -->
+    <!-- http://purl.org/roh#parentProject -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#participatesInActivity">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#parentProject">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+
+
+    <!-- http://purl.org/roh#participationResearchObject -->
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#participationResearchObject">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#researchObjectParticipation"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Participation"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#ResearchObject"/>
+    </owl:ObjectProperty>
+    
+	
+	<!-- http://purl.org/roh#personParticipation -->
+	<owl:ObjectProperty rdf:about="http://purl.org/roh#personParticipation">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#participationAgent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Participation"/>
+    </owl:ObjectProperty>
+	
+
+	<!-- http://purl.org/roh#participationPerson-->
+	<owl:ObjectProperty rdf:about="http://purl.org/roh#participationPerson">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#agentParticipation"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Participation"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+	
+	<!-- http://purl.org/roh#organizationParticipation -->
+	<owl:ObjectProperty rdf:about="http://purl.org/roh#organizationParticipation">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#participationOrganization"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Participation"/>
+    </owl:ObjectProperty>
+	
+
+	<!-- http://purl.org/roh#participationOrganization-->
+	<owl:ObjectProperty rdf:about="http://purl.org/roh#participationOrganization">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#organizationParticipation"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Participation"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+
+    <!-- http://purl.org/roh#periodicalPublicationMetric -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#periodicalPublicationMetric">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#PublicationMetric"/>
+        <rdfs:label xml:lang="en">periodicalPublicationMetric</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#personActivity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#personActivity">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Activity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#participationFor -->
+    <!-- http://purl.org/roh#personAwardedDegree -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#participationFor">
-        <rdfs:domain rdf:resource="http://purl.org/roh#ProjectExpense"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#personAwardedDegree">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
+        <rdfs:label>personAwardedDegree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#personCV -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#personCV">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#CurriculumVitae"/>
+        <rdfs:label xml:lang="en">personCV</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#personKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#personKeyword">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+    
+
+
+    <!-- http://purl.org/roh#personPosition -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#personPosition">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+        <rdfs:label xml:lang="en">personPosition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#personProjectExpense -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#personProjectExpense">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#ProjectExpense"/>
     </owl:ObjectProperty>
     
 
@@ -386,11 +532,138 @@
     
 
 
-    <!-- http://purl.org/roh#projectHasActivitiy -->
+    <!-- http://purl.org/roh#positionDateTimeInterval -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectHasActivitiy">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#positionDateTimeInterval">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#positionOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#positionOrganization">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>positionOrganization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectActivity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectActivity">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#projectHasActivitiy"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectContract -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectContract">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Contract"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectExpense -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectExpense">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#ProjectExpense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectExpensePerson -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectExpensePerson">
+        <rdfs:domain rdf:resource="http://purl.org/roh#ProjectExpense"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectFunding -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectFunding">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
+        <rdfs:label xml:lang="en">projectFunding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectGeoScope -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectGeoScope">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#GeographicalScope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectHasActivitiy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectHasActivitiy"/>
+    
+
+
+    <!-- http://purl.org/roh#projectKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectKeyword">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectOrganization">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectProposal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectProposal">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Proposal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectReport -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectReport">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Report"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectResearchLine -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectResearchLine">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#ResearchLine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#projectResearchObject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectResearchObject">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#researchObjectProject"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#ResearchObject"/>
     </owl:ObjectProperty>
     
 
@@ -405,39 +678,36 @@
     
 
 
-    <!-- http://purl.org/roh#projectScope -->
+    <!-- http://purl.org/roh#researchObjectKeyword -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#projectScope">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#GeographicalScope"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#researchObjectKeyword">
+        <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Keyword"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#providedBy -->
+    <!-- http://purl.org/roh#researchObjectMetric -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#providedBy">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#providesTo"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#FundingAmount"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#researchObjectMetric">
+        <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:label xml:lang="en">researchObjectMetric</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#providesFunding -->
+    <!-- http://purl.org/roh#researchObjectParticipation -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#providesFunding">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Funding"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#researchObjectParticipation"/>
+    
+
+
+    <!-- http://purl.org/roh#researchObjectProject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#researchObjectProject">
+        <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#providesTo -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#providesTo">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Funding"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#FundingAmount"/>
     </owl:ObjectProperty>
     
 
@@ -469,52 +739,11 @@
     
 
 
-    <!-- http://purl.org/roh#spentBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#spentBy">
-        <rdfs:domain rdf:resource="http://purl.org/roh#ProjectExpense"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/roh#thesisDirector -->
+
     <owl:ObjectProperty rdf:about="http://purl.org/roh#thesisDirector">
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasContract -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasContract">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#isContractOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#workContract"/>
-        <rdfs:label xml:lang="en">hasContract</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasPosition -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasPosition">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:label xml:lang="en">hasPosition</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasMetric -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasMetric">
-        <rdfs:domain rdf:resource="http://purl.org/roh#ResearchObject"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Metric"/>
-        <rdfs:label xml:lang="en">hasMetric</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -523,158 +752,17 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#workContract">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#workContract"/>
+        <rdfs:range rdf:resource="http://purl.org/roh#Contract"/>
         <rdfs:label xml:lang="en">workContract</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/roh#belongsTo -->
+    <!-- http://vivoweb.org/ontology/core#organizationAwardedDegree -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#belongsTo">
-        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:label xml:lang="en">belongsTo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isResearchLineOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isResearchLineOf">
-        <rdfs:label xml:lang="en">isResearchLineOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#organizationScope -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#organizationScope">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#GeographicalScope"/>
-        <rdfs:label xml:lang="en">organizationGeoScope</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasCV -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasCV">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#CurriculumVitae"/>
-        <rdfs:label xml:lang="en">hasCV</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isFundedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isFundedBy">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
-        <rdfs:label xml:lang="en">isFundedBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#takesPositionIn -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#takesPositionIn">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>takesPositionIn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#partOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#partOf">
-        <owl:inverseOf rdf:resource="http://purl.org/roh#hasPart"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label xml:lang="en">partOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasPublicationMetric -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasPublicationMetric">
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#PublicationMetric"/>
-        <rdfs:label xml:lang="en">hasPublicationMetric</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#hasPart -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasPart">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label xml:lang="en">hasPart</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#relatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#relatedBy">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
-        <rdfs:label>relatedBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#relates -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#relates">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label>relates</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh#isContractOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#isContractOf">
-        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Project"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:label>isContractOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#assignedBy -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#assigns"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#assigns -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assigns">
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#organizationAwardedDegree">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Activity"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
     </owl:ObjectProperty>
     
 
@@ -717,6 +805,46 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#cites -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#cites">
+        <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">cites</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#contractID -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractID">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Contract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">contractID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#contractType -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractType">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Contract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">contractType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#contractURI -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractURI">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Contract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">contractURI</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -793,6 +921,16 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#factorH -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#factorH">
+        <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">factorH</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -957,6 +1095,16 @@
     
 
 
+    <!-- http://purl.org/roh#fundingProgramTopic -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#fundingProgramTopic">
+        <rdfs:domain rdf:resource="http://purl.org/roh#FundingProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">fundingProgramTopic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#fundingProgramURL -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#fundingProgramURL">
@@ -1006,6 +1154,41 @@
     
 
 
+    <!-- http://purl.org/roh#impactFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactFactor">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">impactFactor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#impactIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactIndex">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>SCOPUS</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>WOS</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">impactIndex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#impactMetricType -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactMetricType">
@@ -1019,6 +1202,66 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactMetricValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#infrastructureAcronym -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureAcronym">
+        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">infrastructureAcronym</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#infrastructureDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureDescription">
+        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">infrustructureDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#infrastructureName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureName">
+        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">infrastructureName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#metricDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricDescription">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">metricDesciption</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#metricName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricName">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">metricName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#metricType -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricType">
+        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">metricType</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1041,6 +1284,52 @@
     
 
 
+    <!-- http://purl.org/roh#phdThesisQualification -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#phdThesisQualification">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">phdThesisQualification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#phdThesisScope -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#phdThesisScope">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>EUROPEAN</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>INTERNATIONAL</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">phdThesisScope</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#positionName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#positionName">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">positionName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#projectAcronym -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#projectAcronym">
@@ -1053,7 +1342,6 @@
     <!-- http://purl.org/roh#projectContract -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#projectContract">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Project"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1236,6 +1524,26 @@
     
 
 
+    <!-- http://purl.org/roh#quartile -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#quartile">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">quartile</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#rankings -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#rankings">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">rankings</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#researchObjectId -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#researchObjectId">
@@ -1317,233 +1625,12 @@
     
 
 
-    <!-- http://purl.org/roh#rankings -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#rankings">
-        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">rankings</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#metricType -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricType">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">metricType</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#infrastructureDescription -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureDescription">
-        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">infrustructureDescription</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#impactIndex -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactIndex">
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>SCOPUS</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>WOS</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">impactIndex</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#contractID -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractID">
-        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">contractID</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#cites -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#cites">
-        <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="en">cites</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#positionName -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#positionName">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">positionName</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#positionName -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#positionName">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">metricName</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#metricDescription -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricDescription">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Metric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">metricDesciption</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#impactFactor -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#impactFactor">
-        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label xml:lang="en">impactFactor</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#contractURI -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractURI">
-        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">contractURI</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#contractType -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractType">
-        <rdfs:domain rdf:resource="http://purl.org/roh#workContract"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">contractType</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.org/roh#summary -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#summary">
         <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">summary</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#quartile -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#quartile">
-        <rdfs:domain rdf:resource="http://purl.org/roh#PublicationMetric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="en">quartile</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#infrastructureName -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureName">
-        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">infrastructureName</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#factorH -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#factorH">
-        <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-        <rdfs:label xml:lang="en">factorH</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#phdThesisQualification -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#phdThesisQualification">
-        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">phdThesisQualification</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#fundingProgramTopic -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#fundingProgramTopic">
-        <rdfs:domain rdf:resource="http://purl.org/roh#FundingProgram"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">fundingProgramTopic</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#phdThesisScope -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#phdThesisScope">
-        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>EUROPEAN</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>INTERNATIONAL</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">phdThesisScope</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/roh#infrastructureAcronym -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#infrastructureAcronym">
-        <rdfs:domain rdf:resource="http://purl.org/roh#infrustructureDescription"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">infrastructureAcronym</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1681,15 +1768,18 @@
     
 
 
+    <!-- http://purl.org/roh#AcademicPosition -->
+
+    <owl:Class rdf:about="http://purl.org/roh#AcademicPosition">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+        <rdfs:label>AcademicPosition</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#Activity -->
 
     <owl:Class rdf:about="http://purl.org/roh#Activity">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>An Activity is participated by Persons and organized by Organizations, each activity is usually linked to a Project and causes a ProjectExpense. The activityType data property defines categories: CONFERENCE, PLACEMENT, THESIS, VIVA.</rdfs:comment>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
@@ -1712,10 +1802,46 @@
     
 
 
+    <!-- http://purl.org/roh#Contract -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Contract">
+        <rdfs:comment>A Contract is a legal document which gathers the conditions and obligations of a Researcher or the conditions and obligations of a Project and the different organizations which take part in it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#CurriculumVitae -->
+
+    <owl:Class rdf:about="http://purl.org/roh#CurriculumVitae">
+        <rdfs:comment>Entify which includes essential metadata to complement the data that can be aggregated from exploring relationships of Person, e.g. CV summary, H factor or cites.</rdfs:comment>
+        <rdfs:label xml:lang="en">CurriculumVitae</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#EditorialArticle -->
 
     <owl:Class rdf:about="http://purl.org/roh#EditorialArticle">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Equipment -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Equipment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#infrustructureDescription"/>
+        <rdfs:label xml:lang="en">Equipment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Facility -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Facility">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#infrustructureDescription"/>
+        <rdfs:label xml:lang="en">Facility</rdfs:label>
     </owl:Class>
     
 
@@ -1761,11 +1887,44 @@
     
 
 
+    <!-- http://purl.org/roh#Infrastructure -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Infrastructure"/>
+    
+
+
     <!-- http://purl.org/roh#Keyword -->
 
     <owl:Class rdf:about="http://purl.org/roh#Keyword">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment>Subclass of concept, entity to qualify a ROH concept and facilitate search and classification</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#MasterThesis -->
+
+    <owl:Class rdf:about="http://purl.org/roh#MasterThesis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+        <rdfs:label xml:lang="es">MasterThesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Metric -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Metric">
+        <rdfs:comment>Metric based on cfMetric, including attributes Identifier, Uniform Resource Identifier, Name, Description and linked to foaf:Agent, Keyword and optionally to ResearchObject</rdfs:comment>
+        <rdfs:label xml:lang="en">Metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#NonAcademicPosition -->
+
+    <owl:Class rdf:about="http://purl.org/roh#NonAcademicPosition">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+        <rdfs:label>NonAcademicPosition</rdfs:label>
     </owl:Class>
     
 
@@ -1776,15 +1935,27 @@
     
 
 
+    <!-- http://purl.org/roh#PhDThesis -->
+
+    <owl:Class rdf:about="http://purl.org/roh#PhDThesis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+        <rdfs:label xml:lang="es">PhDThesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#PhDThesisMetric -->
+
+    <owl:Class rdf:about="http://purl.org/roh#PhDThesisMetric">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:label xml:lang="es">PhDThesisMetric</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#Project -->
 
     <owl:Class rdf:about="http://purl.org/roh#Project">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A Project is a new entity in ROH – a project in business and science is typically defined as a collaborative enterprise, frequently involving research or design, that is carefully planned to achieve a particular aim. Its configuration is inspired by the swrc:project and takes into account cerif:Project’s data properties. It encompasss all those properties and adds some new ones, e.g. projectStatus or projectType. This entiry is linked with classes Organization, Person, ResearchResult and Funding</rdfs:comment>
     </owl:Class>
     
@@ -1794,6 +1965,23 @@
 
     <owl:Class rdf:about="http://purl.org/roh#ProjectExpense">
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A ProjectExpense is carried out by a Researcher (by default the principal researcher) in charge of a Project, which indirectly links it to Funding, understood as a set of FundingAmounts. It timestamps each expense with a xsd:dateTime through property expenseDate and has attributes expenseConcept, expenseType and expenseAmount . The types of expenses considered are: Personnel Expenses, Subcontracting, Travel, Equipment, Research Infrastructure and Other Goods and Services.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Proposal -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Proposal">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#PublicationMetric -->
+
+    <owl:Class rdf:about="http://purl.org/roh#PublicationMetric">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:label xml:lang="en">PublicationMetric</rdfs:label>
     </owl:Class>
     
 
@@ -1827,13 +2015,15 @@
     <!-- http://purl.org/roh#Role -->
 
     <owl:Class rdf:about="http://purl.org/roh#Role">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Based on VIVO defined roles, however in ROH, roles might be specific to a country or a university in a country. Therefore, their types have to refined per country and university case.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#infrustructureDescription -->
+
+    <owl:Class rdf:about="http://purl.org/roh#infrustructureDescription">
+        <rdfs:label xml:lang="en">Infrastructure</rdfs:label>
     </owl:Class>
     
 
@@ -1865,123 +2055,9 @@
     
 
 
-    <!-- http://purl.org/roh#workContract -->
-
-    <owl:Class rdf:about="http://purl.org/roh#workContract">
-        <rdfs:comment>A Contract is a legal document which gathers the conditions and obligations of a Researcher or the conditions and obligations of a Project and the different organizations which take part in it.</rdfs:comment>
-        <rdfs:label xml:lang="en">Contract</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#OWLClass_07b78330_9317_4b68_a888_f1a40c5c5225 -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_07b78330_9317_4b68_a888_f1a40c5c5225">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
-        <rdfs:label xml:lang="es">PhDThesis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#CurriculumVitae -->
-
-    <owl:Class rdf:about="http://purl.org/roh#CurriculumVitae">
-        <rdfs:comment>Entify which includes essential metadata to complement the data that can be aggregated from exploring relationships of Person, e.g. CV summary, H factor or cites.</rdfs:comment>
-        <rdfs:label xml:lang="en">CurriculumVitae</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#PhDThesisMetric -->
-
-    <owl:Class rdf:about="http://purl.org/roh#PhDThesisMetric">
-        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
-        <rdfs:label xml:lang="es">PhDThesisMetric</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#Equipment -->
-
-    <owl:Class rdf:about="http://purl.org/roh#Equipment">
-        <rdfs:subClassOf rdf:resource="http://purl.org/roh#infrustructureDescription"/>
-        <rdfs:label xml:lang="en">Equipment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#Facility -->
-
-    <owl:Class rdf:about="http://purl.org/roh#Facility">
-        <rdfs:subClassOf rdf:resource="http://purl.org/roh#infrustructureDescription"/>
-        <rdfs:label xml:lang="en">Facility</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#NonAcademicPosition -->
-
-    <owl:Class rdf:about="http://purl.org/roh#NonAcademicPosition">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:label>NonAcademicPosition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#AcademicPosition -->
-
-    <owl:Class rdf:about="http://purl.org/roh#AcademicPosition">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:label>AcademicPosition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#PublicationMetric -->
-
-    <owl:Class rdf:about="http://purl.org/roh#PublicationMetric">
-        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
-        <rdfs:label xml:lang="en">PublicationMetric</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#MasterThesis -->
-
-    <owl:Class rdf:about="http://purl.org/roh#MasterThesis">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
-        <rdfs:label xml:lang="es">MasterThesis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#Metric -->
-
-    <owl:Class rdf:about="http://purl.org/roh#Metric">
-        <rdfs:comment>Metric based on cfMetric, including attributes Identifier, Uniform Resource Identifier, Name, Description and linked to foaf:Agent, Keyword and optionally to ResearchObject</rdfs:comment>
-        <rdfs:label xml:lang="en">Metric</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#infrustructureDescription -->
-
-    <owl:Class rdf:about="http://purl.org/roh#infrustructureDescription">
-        <rdfs:label xml:lang="en">Infrastructure</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#Position -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
     
 
 
@@ -2028,6 +2104,20 @@
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>In ROH, there is a foaf:Person entity who inherits from foaf:Agent. However, the main entity that users of ROH will deal with is Researcher.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/roh#projectContract">
+        <rdfs:label xml:lang="en">projectContract</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
