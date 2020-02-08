@@ -1,10 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2020/0/rohes#"
      xml:base="http://www.semanticweb.org/user/ontologies/2020/0/rohes"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
@@ -12,8 +15,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core"
      xmlns:vivo="http://vivoweb.org/ontology/core"
+     xmlns:foaf1="http://xmlns.com/foaf/0.1/"
      xmlns:rohes="http://purl.org/rohes#">
     <owl:Ontology rdf:about="http://purl.org/rohes">
+        <owl:imports rdf:resource="http://purl.org/roh"/>
         <rohes:Prefix></rohes:Prefix>
     </owl:Ontology>
     
@@ -199,24 +204,6 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
         <rdfs:comment>Models a time span, very similarly as in CERIF but more nicely encompasses the time interval as instance of class vivo:DateTimeInterval</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#OWLClass_73e82eaa_02a6_44d3_92ea_9faa6ee897ba -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_73e82eaa_02a6_44d3_92ea_9faa6ee897ba">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:label xml:lang="en">NonAcademicPosition</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#OWLClass_c25901a4_9787_4eeb_817c_395e9ab5a1e4 -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OWLClass_c25901a4_9787_4eeb_817c_395e9ab5a1e4">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <rdfs:label xml:lang="en">AcademicPosition</rdfs:label>
     </owl:Class>
     
 
