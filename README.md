@@ -12,3 +12,9 @@
 - [Widoco](https://deustohercules.github.io/roh/rohes/index.html)
 - [OOPs](https://deustohercules.github.io/roh/rohes/OOPSevaluation/oopsEval.html)
 
+
+### `rohum`
+
+- [Widoco](https://deustohercules.github.io/roh/rohum/index.html)
+- [OOPs](https://deustohercules.github.io/roh/rohum/OOPSevaluation/oopsEval.html)
+
