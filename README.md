@@ -11,10 +11,9 @@ Therefore, the purpose of this agreement was to contribute to the improvement of
 * detection of synergies in R&D between universities.
 * transfer of R&D results to companies.
 * efficiency in the management of research. 
+* by creating a research management system with semantic capacities based on semantic open data and that will provide a global view of the research data contained in the Spanish University System.
 
-by creating a research management system with semantic capacities based on semantic open data and that will provide a global view of the research data contained in the Spanish University System.
-
-## Documentación
+## Documentation
 
 ### `roh`
 
