@@ -38,9 +38,7 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http://purl.org/rohes#chargedTo -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/rohes#chargedTo"/>
     
 
 
@@ -735,6 +733,24 @@ Se incluyen las coronas y cojines de flores de defunción...</rdfs:comment>
     
 
 
+    <!-- http://purl.org/rohum#ComunidadAutonomaRegionDeMurcia -->
+
+    <owl:Class rdf:about="http://purl.org/rohum#ComunidadAutonomaRegionDeMurcia">
+        <rdfs:subClassOf rdf:resource="http:/purl.org/roh#FundingSource"/>
+        <rdfs:label xml:lang="es">Comunidad Autónoma. Región de Murcia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohum#ConcesionDirectaRegional -->
+
+    <owl:Class rdf:about="http://purl.org/rohum#ConcesionDirectaRegional">
+        <rdfs:subClassOf rdf:resource="http:/purl.org/roh#FundingSource"/>
+        <rdfs:label xml:lang="es">Concesión directa regional</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohum#ConstruccionesEdificios -->
 
     <owl:Class rdf:about="http://purl.org/rohum#ConstruccionesEdificios">
@@ -1121,6 +1137,15 @@ Ejemplo: Diseño de logo.</rdfs:comment>
     
 
 
+    <!-- http://purl.org/rohum#FinanciadoPorElCoordinador -->
+
+    <owl:Class rdf:about="http://purl.org/rohum#FinanciadoPorElCoordinador">
+        <rdfs:subClassOf rdf:resource="http:/purl.org/roh#FundingSource"/>
+        <rdfs:label xml:lang="es">Financiado por el coordinador</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohum#FondoArtistico -->
 
     <owl:Class rdf:about="http://purl.org/rohum#FondoArtistico">
@@ -1191,6 +1216,15 @@ Ejemplo: Diseño de logo.</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Libros que se integran en los fondos bibliográficos de la Universidad en formato electrónico (LE). Se exceptúan las Revistas, que tienen tipo de gasto “RV”.</rdfs:comment>
         <rdfs:label xml:lang="es">Fondos bibliográficos electrónicos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohum#FondosEuropeosGenericos -->
+
+    <owl:Class rdf:about="http://purl.org/rohum#FondosEuropeosGenericos">
+        <rdfs:subClassOf rdf:resource="http:/purl.org/roh#FundingSource"/>
+        <rdfs:label xml:lang="es">Fondos europeos genéricos</rdfs:label>
     </owl:Class>
     
 
@@ -4165,6 +4199,18 @@ Se excluyen los transportes complementarios ligados a comisiones de servicios qu
             <rdf:Description rdf:about="http://purl.org/rohum#ProductosAlimenticios"/>
             <rdf:Description rdf:about="http://purl.org/rohum#ProductosFarmaceuticos"/>
             <rdf:Description rdf:about="http://purl.org/rohum#Vestuarios"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/rohes#InstrumentoFinancieroDeOrientacionDeLaPesca"/>
+            <rdf:Description rdf:about="http://purl.org/rohes#PlanE"/>
+            <rdf:Description rdf:about="http://purl.org/rohes#PresupuestosGeneralesDelEstado"/>
+            <rdf:Description rdf:about="http://purl.org/rohum#ComunidadAutonomaRegionDeMurcia"/>
+            <rdf:Description rdf:about="http://purl.org/rohum#ConcesionDirectaRegional"/>
+            <rdf:Description rdf:about="http://purl.org/rohum#FinanciadoPorElCoordinador"/>
+            <rdf:Description rdf:about="http://purl.org/rohum#FondosEuropeosGenericos"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
