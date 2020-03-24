@@ -246,6 +246,30 @@ by creating a research management system with semantic capacities based on seman
 
     <owl:DatatypeProperty rdf:about="http://purl.org/rohes#finalist">
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>F</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>N</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>P</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>A finalist project can have one value of the following three types: a) finalist (F), non-finalist (N), and partially finalist (P).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -603,7 +627,7 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/rohes#CuerpoDocente -->
 
     <owl:Class rdf:about="http://purl.org/rohes#CuerpoDocente">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PublicUniversityPosition"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
         <owl:disjointWith rdf:resource="http://purl.org/rohes#PDIContratado"/>
     </owl:Class>
     
@@ -1040,7 +1064,7 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/rohes#PDIContratado -->
 
     <owl:Class rdf:about="http://purl.org/rohes#PDIContratado">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PublicUniversityPosition"/>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
     </owl:Class>
     
 
@@ -1155,15 +1179,6 @@ c) El contrato será de carácter indefinido y con dedicación a tiempo completo
     
 
 
-    <!-- http://purl.org/rohes#ProfesorDeUniversidadPrivada -->
-
-    <owl:Class rdf:about="http://purl.org/rohes#ProfesorDeUniversidadPrivada">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
-        <rdfs:label xml:lang="es">Profesor de Universidad Privada</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rohes#ProfesorEmerito -->
 
     <owl:Class rdf:about="http://purl.org/rohes#ProfesorEmerito">
@@ -1216,14 +1231,6 @@ c) El contrato será de carácter temporal con la duración que se acuerde entre
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">Propiedad industrial e intelectual</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rohes#PublicUniversityPosition -->
-
-    <owl:Class rdf:about="http://purl.org/rohes#PublicUniversityPosition">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
     </owl:Class>
     
 
