@@ -200,6 +200,44 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#awardedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#awardedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#awards"/>
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#awards -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#awards">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#University"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AwardedDegree"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#fedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#fedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#feeds"/>
+        <rdfs:domain rdf:resource="http:/purl.org/roh#Funding"/>
+        <rdfs:range rdf:resource="http:/purl.org/roh#FundingSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#feeds -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#feeds">
+        <rdfs:domain rdf:resource="http:/purl.org/roh#FundingSource"/>
+        <rdfs:range rdf:resource="http:/purl.org/roh#Funding"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/roh#hasInfrastructure -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#hasInfrastructure">
@@ -220,6 +258,7 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/roh#isSupportedBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#isSupportedBy">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#supports"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
         <rdfs:range rdf:resource="http:/purl.org/roh#Funding"/>
     </owl:ObjectProperty>
@@ -229,7 +268,7 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/roh#issues -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#issues">
-        <rdfs:domain rdf:resource="http://purl.org/roh#Accreditation_Issuer"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh#AccreditationIssuer"/>
         <rdfs:range rdf:resource="http://pur.org/roh#Accreditation"/>
     </owl:ObjectProperty>
     
@@ -519,27 +558,6 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http:/purl.org/roh#fundingSource -->
-
-    <owl:ObjectProperty rdf:about="http:/purl.org/roh#fundingSource">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http:/purl.org/roh#fundingSourceOf"/>
-        <rdfs:domain rdf:resource="http:/purl.org/roh#Funding"/>
-        <rdfs:range rdf:resource="http:/purl.org/roh#FundingSource"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http:/purl.org/roh#fundingSourceOf -->
-
-    <owl:ObjectProperty rdf:about="http:/purl.org/roh#fundingSourceOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http:/purl.org/roh#FundingSource"/>
-        <rdfs:range rdf:resource="http:/purl.org/roh#Funding"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http:/purl.org/roh#funds -->
 
     <owl:ObjectProperty rdf:about="http:/purl.org/roh#funds">
@@ -811,7 +829,9 @@ by creating a research management system with semantic capacities based on seman
 
     <!-- http://purl.org/ontology/bibo/doi -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/doi">
+        <rdfs:comment>This data property can be used to qualify many entities in ROH, e.g. Projects. Notice that there derivatives of this data property to be used for researchers, e.g. ORCID or Scopus ID. There are other type of IDs, like DOI which have been imported from other ontologies such as bibo:doi</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -926,6 +946,14 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#birthdate -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#birthdate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#contractPDF -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#contractPDF"/>
@@ -934,7 +962,9 @@ by creating a research management system with semantic capacities based on seman
 
     <!-- http://purl.org/roh#currency -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#currency"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#currency">
+        <rdfs:comment>Data property used by roh:Funding and roh:FundingAmount</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -948,6 +978,7 @@ by creating a research management system with semantic capacities based on seman
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#monetaryAmount">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Data property used by roh:Funding and roh:FundingAmount</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -963,7 +994,9 @@ by creating a research management system with semantic capacities based on seman
 
     <!-- http://purl.org/roh#title -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/roh#title"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#title">
+        <rdfs:comment>A data property that associates a title to any ROH entity requiring it.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -1003,6 +1036,7 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://vivoweb.org/ontology/core#description -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description">
+        <rdfs:comment>This data property may be associated to any roh entity which needs to include a description</rdfs:comment>
         <rdfs:label xml:lang="en">description</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1025,6 +1059,7 @@ by creating a research management system with semantic capacities based on seman
 
 use one freetextKeyword assertion for each keyword or phrase.</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one keyword or phrase per freetextKeyword assertion</obo:IAO_0000112>
+        <rdfs:comment>Any ROH entity may be qualified by several keywords</rdfs:comment>
         <rdfs:label xml:lang="en">keywords</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1075,7 +1110,9 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
 
     <!-- http:/purl.org/roh#acronym -->
 
-    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#acronym"/>
+    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#acronym">
+        <rdfs:comment>This data property describes the acronym that normaly research projects are assigned. The Domain is not specified to make it more generic and applicable to other ententies</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -1115,7 +1152,10 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
 
     <!-- http:/purl.org/roh#impactFactor -->
 
-    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#impactFactor"/>
+    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#impactFactor">
+        <rdfs:domain rdf:resource="http:/purl.org/roh#PublicationMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -1129,7 +1169,27 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
 
     <!-- http:/purl.org/roh#projectStatus -->
 
-    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#projectStatus"/>
+    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#projectStatus">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>CLOSED</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>OPEN</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>A project may be in a CLOSED, OPEN or in other future status that may be defined.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -1145,6 +1205,7 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
     <!-- http:/purl.org/roh#quartile -->
 
     <owl:DatatypeProperty rdf:about="http:/purl.org/roh#quartile">
+        <rdfs:domain rdf:resource="http:/purl.org/roh#PublicationMetric"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -1180,7 +1241,10 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
 
     <!-- http:/purl.org/roh#ranking -->
 
-    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#ranking"/>
+    <owl:DatatypeProperty rdf:about="http:/purl.org/roh#ranking">
+        <rdfs:domain rdf:resource="http:/purl.org/roh#PublicationMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -2211,10 +2275,11 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
     
 
 
-    <!-- http://purl.org/roh#Accreditation_Issuer -->
+    <!-- http://purl.org/roh#AccreditationIssuer -->
 
-    <owl:Class rdf:about="http://purl.org/roh#Accreditation_Issuer">
+    <owl:Class rdf:about="http://purl.org/roh#AccreditationIssuer">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label xml:lang="en">Accreditation Issuer</rdfs:label>
     </owl:Class>
     
 
@@ -2285,7 +2350,7 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
 
 The previous short definition was: &quot;An arbitrary classification of a space/time region, by a cognitive agent.&quot;</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something that happens at a given place and time.</obo:IAO_0000115>
-        <rdfs:comment>An Activity is participated by Persons and organized by Organizations, each activity is usually linked to a Project and causes a ProjectExpense. The activityType data property defines categories: CONFERENCE, PLACEMENT, THESIS, VIVA.</rdfs:comment>
+        <rdfs:comment>The entity research activity (roh:Activity), new in ROH represents the activities in which People participate (roh:participes) and organized by Organizations (foaf:Organization) reflected through the roh:hasRole relationship that connects with the intermediary entity vivo:OrganizerRole. Each activity is usually linked to a project through the relationship (roh:participes) and causes a project expenditure linked through (vivo:relates). A detailed hierarchy of activity subtypes is defined as roh:Activity: bibo:Conference, vivo:Internship or roh:ThesisViva.</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
     
@@ -2787,7 +2852,9 @@ The previous short definition was: &quot;An arbitrary classification of a space/
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A defined class of organizations that fund Grants</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization that provides financial support to individuals or organizations to carry out specified activities.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
-        <rdfs:comment>A Funder inherits from foaf:Organization, it funds several Projects, “funds” several Fundings</rdfs:comment>
+        <rdfs:comment>A Funder inherits from foaf:Organization, it funds several Projects, “funds” several Fundings
+
+The funding organization (vivo:FundingOrganization), imported from VIVO, inherits from foaf:Organization, finances (roh:funds) through different funding aids (roh:Funding) to projects (roh:Project) through the roh:supports relationship and through the roh:FundingAmounts into which a roh:Funding is divided. A funding organization in turn divides a roh:Funding into several roh:FundingAmounts associated with different foaf:Organizations through the roh:grants relationship.</rdfs:comment>
         <rdfs:label xml:lang="en">Funding Organization</rdfs:label>
     </owl:Class>
     
@@ -3174,7 +3241,25 @@ Contents
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endeavor, frequently collaborative, that occurs over a finite period of time and is intended to achieve a particular aim.
 </obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endeavor, frequently collaborative, that occurs over a finite period of time and is intended to achieve a particular aim.</obo:IAO_0000115>
-        <rdfs:comment>A project in business and science is typically defined as a collaborative enterprise, frequently involving research or design, that is carefully planned to achieve a particular aim. Its configuration is inspired by the swrc:project and takes into account cerif:Project’s data properties. It encompasss all those properties and adds some new ones, e.g. projectStatus or projectType. This entiry is linked with classes Organization, Person, ResearchResult and Funding</rdfs:comment>
+        <rdfs:comment>The main ROH entity is roh:Project, a new entity defined within ROH. In ROH, a Project models a collaborative activity in business and science that often involves research or design, and is carefully planned to achieve a particular goal. Its configuration is inspired by the swrc:Project and takes into account the data properties of the cerif:Project. It comprises all those properties and adds some new ones, for example, roh:projectStatus or roh:title.
+
+It includes the Data Properties vivo:identifier, roh:acronym, vivo:description, roh:title, roh:projectStatus and vivo:keywords. 
+
+An roh:Project includes several sub-classes roh:PrivateProject and roh:PublicFundingProject. The first subclass includes the subclasses roh:Agreement whilst the latter one defines as its subclasses: roh:Bidding, roh:EuropeanProject, roh:NationalProject or roh:RegionalProject.
+
+Besides an instance of a roh:Project is associated to the following entities:
+- oaf:Organización, where different organizations may play different obo:Roles in a project, e.g. vivo:MemberRole or vivo:AdministratorRole. 
+- foaf:Person, where an person may play different obo:Roles, e.g. vivo:PrincipalInvestigatorRole or vivo:ResearcherRole, 
+- roh:ResearchObject, where a project roh:produces several roh:ResearchObject, where some results of a project might be for example of types bibo:Journal, obo:JournalArticle, or roh:PhDThesis.
+- roh:Funding sponsors (roh:funds) a project, it describes the details about the funding associated to a project. 
+- roh:Expense is roh:spentBy a project, details allows to associate a project with its expenses. 
+- oh:Activity is roh:participatedBy a project, describes what activities a project participates in. 
+- skos:Concept is linked through roh:knowledgeAreaOf to a project, indicating the topics/concepts a project deals with. 
+- roh:ProjectContract subtype of vivo:Contract, a project may be associated to a contract through relationship roh:hasContract. 
+- roh:Justification through relationship vivo:relates binds justifications with a roh:Project.
+- roh:File through relationship vivo:relates binds administrative file with a roh:Project. An administrative file a collection in which all assets related to a Project are stored, including the Research Proposal, approval documents, viability plans and so on associated to a project are stored.
+
+Notice that a roh:Project may also be part (vivo:hasPart) of another project, e.g. child of a parent project. Besides, every instance of a roh:Project is time bound by being associated with an instance of vivo:DateTimeInterval and geographically bound to an instance of gn:Feature (through relationship (gn:locatedIn).</rdfs:comment>
         <rdfs:label xml:lang="en">Project</rdfs:label>
     </owl:Class>
     
@@ -3379,9 +3464,25 @@ Contents
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A kind of Agent corresponding to social instititutions such as companies, societies etc.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <rdfs:comment>An Organization in ROH is a foaf:Organization which carries out several roh:Project. It is a child of foaf:Agent. Some organization can emit roh:Acreditation (e.g. ANECA or CENAI in Spain), those belonging to subclass roh:AccreditationIssuer, or award degrees (vivo:AwardedDegree), those of subclass vivo:University. An Organization may receive several roh:FundingAmount, corresponding to a roh:Funding, obtained through a roh:FundingProgram provided by a vivo:FundingOrganization through a roh:FundingSource. As a foaf:Agent an Organization may be involved in several roh:Actitity, has several instances of attribute roh:researchLine, is associated through roh:hasKnowledgeArea with roh:KnowledgeArea and bound to a geographical scope through gn:locatedIn with gn:Feature, it may also have a time span through vivo:dateTimeInterval linking it with an instance of vivo:DateTimeInterval.
+
+Based on FOAF, the foaf:Organization entity takes into account the object properties (attributes: roh:acronym, headcount, turnover, foaf:homepage) and data properties (links) defined by the Organization Unit in CERIF. It also takes into account and supports the relationships of CERIF Equipment (via roh:Equipment and roh:hasInfrastructure), ElectronicAddress (obo:hasContactInfo), Event (roh:Activity), Expertise and Skill (via vivo:keywords and roh:hasKnowledgeArea), Facility (roh:Facility and roh:hasInfrastructure), Funding (roh:Funding), Organization Unit (kinship relationships between organizations can be established with vivo:hasPart and vivo:partOf), Prize Award (through roh:Accreditation), Result Patent, Result Product, Result Publication and Service - all of them through roh:ResearchObject which can be obtained through the roh:produces relationship from the Projects in which an organization participates by playing a declared role through roh:hasRole, Person (through roh:hasPosition). Therefore, the CERIF data model for Organization is covered.
+
+An exhaustive hierarchy of organizations is includes, e.g. roh:AccreditationIssuer, vivo:Company or vivo:University, among many others. 
+
+Besides, an instance of a foaf:Organization is associated to the following entities through object properties:
+- roh:Accreditation, where an organization of type roh:AccrediationIssuer issues (roh:issues) accreditations, e.g. roh:ResearchAccreditation or roh:AcademicAccreditation.  
+- roh:Activity, where an organization may play vivo:OrganizerRole through roh:hasRole in an activity or may through its participation role in a project participate (roh:participates) in an activity. 
+- vivo:AwardedDegree, where and organization may roh:awards degrees which are related to both a concrete vivo:AcademicDegree and an instance of foaf:Person. 
+- skos:Concept, where an organization through roh:hasKnowledgeArea may be associated to several knowledge areas, defined as instance data of thesaurus created with SKOS ontology. 
+- vivo:DateTimeInterval, where an organization may exist during a given time interval
+- gn:Feature through relationship gn:locatedIn, where an organization may be associated a geographical scope.  
+- roh:FundingAmount where an organization may receive several funding amounts part of a roh:Funding through roh:grants object property. 
+- vcard:Individual, where an organization obo:hasContactInfo described through ontology vcard. 
+- roh:Infrastructure, where an organization may roh:hasInfrastructure, belonging to any of its subclasses, e.g. roh:Equipment or roh:Facility. 
+- foaf:Organization, where a foaf:Organization may be linked through vivo:hasSucessorOrganization or vivo:hasPredecessorOrganization with another foaf:Organization or may be part of (vivo:partOf) or include (vivo:hasPart) other several foaf:Organization.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization</rdfs:comment>
         <rdfs:comment>An organization.</rdfs:comment>
-        <rdfs:comment>It is a child of foaf:Agent and is the parent of roh:Funder. An Organization is a foaf:Organization which carries out several Projects. Some organization can emit Acreditations (e.g. ANECA or CENAI in Spain) or award degrees and “has knowledge areas”. An Organization may receive several FundingAmount, corresponding to a Funding, obtainted through a FundingProgram providing by a Funder. As a foaf:Agent an Organization may be involved in several Actitity, has ResearchLine, is associated to KnowledgeArea and bound to a GeographicalScope, it may also have a time span.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label>Organization</rdfs:label>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
@@ -3432,7 +3533,26 @@ Contents
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person</rdfs:comment>
         <rdfs:comment>A person.</rdfs:comment>
-        <rdfs:comment>In ROH, there is a foaf:Person entity who inherits from foaf:Agent. However, the main entity that users of ROH will deal with is Researcher. Such entity inherits from foaf:Person. It adds to this widely used entity object properties for TAX ID, ORCID and also several object properties specific to the research domain like “takes” a Role in an Organization, or “participates in”  ResearchObject, can “have different roles” in Projects, may “hasImpactMetric” which is a new type of class also defined in ROH.</rdfs:comment>
+        <rdfs:comment>In ROH, there is a foaf:Person entity that inherits from foaf:Agent. However, the main entity that users of ROH will deal with is roh:Researcher. Such entity inherits from foaf:Person.
+
+The specialization of this entity imported from the VIVO ontology already adds some DataType properties of the research domain, but in ROH we also incorporate roh:taxID or roh:ORCID and also several object specific properties of the research domain as &quot;has a Role&quot; (roh: hasRole) in an Organization, &quot;has a CurriculumVitae&quot; (roh:hasCV), &quot;has some Accreditations&quot; (roh:hasAccreditation), &quot;has an Employment Contract&quot; (roh:hasContract), &quot;has some Knowledge Areas&quot; (roh:hasKnowledgeArea) or &quot;has some Roles&quot; (roh:hasRole) in Projects or participates through &quot;bibo:authorList&quot; with Research Objects. A person can &quot;have different roles&quot; in the Project over time.
+
+As mentioned above, foaf:Person in ROH is based on FOAF (Friend of a Friend [2], following patterns used in VIVO. That explains why it includes some of the basic FOAF properties such as foaf:name, foaf:nick, foaf:title, foaf:mbox, foaf:img, foaf:depiction, foaf:firstName and foaf:surname. However, it considers all attributes and links defined in CERIF through the cfPers entity. foaf:Person incorporates the following data properties declared as attributes in cfPers, especially: identifier (vivo:identifier but preferrably roh:ORCID), roh:birthdate, foaf:gender, foaf:homepage, roh:researchLine, vivo:keywords. Some important CERIF relationships that have also been adopted: Curriculum Vitae (roh:hasCV) which links foaf:Person with roh:CurriculumVitae, Event (roh:Activity) and Indicator (roh:Accreditation). 
+
+A taxonomy of types of persons has been imported in the research field from VIVO [1], such as vivo:FacultyMember, vivo:Librarian, vivo:NonAcademic, vivo:PostDoc or vivo:GraduateStudent  or some additional one by ROH as, the very important subclass roh:Researcher.
+
+Besides, an instance of a foaf:Person / roh:Researcher is associated to the following entities through object properties:
+- roh:Accreditation, where a researcher roh:hasAccreditation of different types, e.g. roh:ResearchAccreditation or roh:AcademicAccreditation.  
+- roh:Activity, where a researcher roh:participates in diverse activities, e.g. vivo:InvitedTalk or bibo:Conference.
+- vivo:AwardedDegree, where a researcher vivo:relates with an roh:AcademicDegree
+- roh:CorrespondingAuthor, where a researcher is the roh:correspondingAuthor of different subtypes of roh:ResearchObject, e.g. obo:JournalArticle, vivo:ConferencePaper or  bibo:Proceedings. 
+- roh:CurriculumVitae, where a researcher roh:hasCV which includes data type properties like roh:cites, roh:factorH or roh:summary
+- bibo:Document, where a researcher through bibo:authorList is participating in a bibo:Document as one of its authors. 
+- vcard:Individual, where a researcher obo:hasContactInfo described through ontology vcard. 
+- vivo:Position, where a researcher roh:hasPosition usually in an organization linking it to any of the vivo:Position subclasess like vivo:FacultyAdministrativePosition or vivo:FacultyPosition. 
+- roh:Role, where a foaf:Agent, i.e. and its subclasses like foaf:Person or roh:Researcher, roh:hasRole like vivo:ResearcherRole or vivo:TeacherRole either in a roh:Project or a foaf:Organization.
+- roh:PersonContract, where a researcher roh:hasContract described according to the attributes corresponding to parent class vivo:Contract.
+- bibo:Thesis, where a researcher is roh:supervisor of a bibo:Thesis, concretely, any of its subtypes  subclasess like roh:MasterThesis or roh:PhDThesis.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <rdfs:label>Person</rdfs:label>
         <rdfs:label xml:lang="en">Person</rdfs:label>
@@ -3536,7 +3656,9 @@ Contents
 
     <!-- http:/purl.org/roh#Expense -->
 
-    <owl:Class rdf:about="http:/purl.org/roh#Expense"/>
+    <owl:Class rdf:about="http:/purl.org/roh#Expense">
+        <rdfs:comment>roh:Expense denotes the expenses incurred either by a project (roh:Project) or person (foaf:Person) and linked through roh:spends. Every expense has a time instant of associated expense (live:DateTimeValue) and other properties that qualify it as (roh:monetaryAmount, roh:currency, roh:title or vivo:description. It should be extended with more types of expenses, such as personnel costs, subcontracting, travel, equipment, research infrastructure and other goods and services. Currently, a distinction is made between roh:PersonExpense and roh:ProjectExpense.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -3564,7 +3686,7 @@ Contents
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">File is a collection in which all assets related to a Project are stored, including the Research Proposal and the Project itself.</rdfs:comment>
+        <rdfs:comment xml:lang="en">File is a collection in which all assets related to a Project are stored, including the Research Proposal, approval documents, viability plans and so on associated to a project are stored.</rdfs:comment>
     </owl:Class>
     
 
@@ -3602,9 +3724,11 @@ Contents
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A Funding is the funding associated to a Project whose funding is associated to a FundingProgram, which in turn is associated to a Funder. A Funding consists of several FundingAmounts, associated to the different entities that participate in a project and to the annuities in which they do it.  Funding gathers information about the total funding received for a Project. 
+        <rdfs:comment>The roh:Funding entity, new in ROH, represents the funding associated with a project (roh:Project) whose funding is associated with a funding program (roh:FundingProgram) and comes from a (roh:FundingSource), which in turn is associated with a funding organization (vivo:FundingOrganization). A funding is divided into several amounts (roh:FundingAmount), associated with the different entities that participate in a project and the annuities in which they do so.  Funding gathers information about the total funding received for a project and its currency through the roh:monetaryAmount and roh:currency properties.
 
-Funding can be tagged as public or private and has several subclasses that identify the type of Funding (Grant, Loan, Outsourcing, RefundableAdvice). More subtypes could be added.</rdfs:comment>
+The funding organization (vivo:FundingOrganization), imported from VIVO, inherits from foaf:Organization, finances (roh:funds) through different funding aids (roh:Funding) to projects (roh:Project) through the roh:supports relationship and through the roh:FundingAmounts into which a roh:Funding is divided. A funding organization in turn divides a roh:Funding into several roh:FundingAmounts associated with different foaf:Organizations through the roh:grants relationship.
+
+The Funding Program entity (roh:FundingProgram), new in ROH, defines the funding initiatives promoted (roh:promotedBy) by a Funding Organization (vivo:FundingOrganization) and is in operation during a time interval (vivo:dateTimeInterval) and is usually linked to a geographical scope (geonames:Feature).</rdfs:comment>
     </owl:Class>
     
 
@@ -3638,7 +3762,7 @@ Funding can be tagged as public or private and has several subclasses that ident
                 <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A FundingProgram providers several Fundings, belongs to a Funder, the funding provided is divided into several FundingAmounts. Each organization taking part in a Project has a Funding, which is divided into several FundingAmounts</rdfs:comment>
+        <rdfs:comment>The Funding Program entity (roh:FundingProgram), new in ROH, defines the funding initiatives promoted (roh:promotedBy) by a Funding Organization (vivo:FundingOrganization) and is in operation during a time interval (vivo:dateTimeInterval) and is usually linked to a geographical scope (geonames:Feature). Each organization taking part in a Project has a Funding, which is divided into several FundingAmounts</rdfs:comment>
     </owl:Class>
     
 
@@ -3646,7 +3770,9 @@ Funding can be tagged as public or private and has several subclasses that ident
     <!-- http:/purl.org/roh#FundingSource -->
 
     <owl:Class rdf:about="http:/purl.org/roh#FundingSource">
-        <rdfs:comment xml:lang="en">We have just considered a subset of the available funding sources, taking into account the sample datasets provided by University of Murcia</rdfs:comment>
+        <rdfs:comment xml:lang="en">We have just considered a subset of the available funding sources, taking into account the sample datasets provided by University of Murcia
+
+A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.</rdfs:comment>
     </owl:Class>
     
 
@@ -3675,6 +3801,7 @@ Funding can be tagged as public or private and has several subclasses that ident
                 <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Project"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A Justification is a bibo:Report used to justify eithet technically, economically or both a project.</rdfs:comment>
     </owl:Class>
     
 
@@ -3836,7 +3963,9 @@ Funding can be tagged as public or private and has several subclasses that ident
                 <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A ResearchObject is generated by one to several Persons as result of their participation in a Project. An elaborated taxonomy of ResearchObject is provided, covering all types of publications, Patents and Webpages. It is related with Person (property isAuthoredBy), i.e. Researcher which is a subclass, through Participation, which describes how is that person participation. It is also related to Project (property isResultOf)</rdfs:comment>
+        <rdfs:comment>The research object entity (roh:ResearchObject) is a new entity defined in ROH that corresponds to a research result generated by a person (researcher), usually through work on a project. A roh:ResearchObject is associated with several foaf:Person through the bibo:authorList property. Usually a roh:ResearchObject results from working on a roh:Project (roh:produces). This entity defines a complete taxonomy of research objects mostly imported from BIBO [4], covering all kinds of publications, patents, software and web pages. Some examples are: bibo:Collection, bibo:Journal, bibo:Article, bibo:Book, bibo:Chapter, bibo:Patent, bibo:Thesis and bibo:Webpage. The primary author of a research object is accessible through the roh:correspondingAuthor property.
+
+The most important research result is represented by the concept publication and is defined mainly through the imported entity vivo:Document. Currently, the following sets of entities related to the publication concept are supported: bibo:Collection (Newspaper, Magazine) and bibo:Document (Article, ConferencePaper, EditorialArticle, Book, Proceedings, ConferencePaper, Chapter, Thesis) and obo:Software. bibo:Thesis has been refined into roh:DegreeThesis, roh:MasterThesis and roh:PhDThesis.</rdfs:comment>
     </owl:Class>
     
 

@@ -246,7 +246,6 @@ by creating a research management system with semantic capacities based on seman
 
     <owl:DatatypeProperty rdf:about="http://purl.org/rohes#finalist">
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
