@@ -2461,6 +2461,12 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.org/roh/Activity">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#relates"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/presents"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
             </owl:Restriction>
@@ -3978,8 +3984,6 @@ Besides, an instance of a foaf:Organization is associated to the following entit
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The most general classification of a person</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person</rdfs:comment>
-        <rdfs:comment>A person.</rdfs:comment>
         <rdfs:comment>In ROH, there is a foaf:Person entity that inherits from foaf:Agent. However, the main entity that users of ROH will deal with is roh:Researcher. Such entity inherits from foaf:Person.
 
 The specialization of this entity imported from the VIVO ontology already adds some DataType properties of the research domain, but in ROH we also incorporate roh:taxID or roh:ORCID and also several object specific properties of the research domain as &quot;has a Role&quot; (roh: hasRole) in an Organization, &quot;has a CurriculumVitae&quot; (roh:hasCV), &quot;has some Accreditations&quot; (roh:hasAccreditation), &quot;has an Employment Contract&quot; (roh:hasContract), &quot;has some Knowledge Areas&quot; (roh:hasKnowledgeArea) or &quot;has some Roles&quot; (roh:hasRole) in Projects or participates through &quot;bibo:authorList&quot; with Research Objects. A person can &quot;have different roles&quot; in the Project over time.
@@ -4189,6 +4193,12 @@ Besides, an instance of a foaf:Person / roh:Researcher is associated to the foll
     <!-- http:/purl.org/roh#Funding -->
 
     <owl:Class rdf:about="http:/purl.org/roh#Funding">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#supports"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.org/roh#Funding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
