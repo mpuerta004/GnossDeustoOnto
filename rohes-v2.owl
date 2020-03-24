@@ -426,6 +426,16 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/rohes#Ayudante -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Ayudante">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PDIContratado"/>
+        <rdfs:comment xml:lang="es">Los ayudantes serán contratados entre quienes hayan superado todas las materias de estudio que se determinen en los criterios a que hace referencia el artículo 38 y con la finalidad principal de completar su formación investigadora. La contratación será con dedicación a tiempo completo, por una duración no superior a cuatro años improrrogables. Los ayudantes también podrán colaborar en tareas docentes en los términos que establezcan los Estatutos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Ayudante</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#BienesDelPatrimonioHistorico -->
 
     <owl:Class rdf:about="http://purl.org/rohes#BienesDelPatrimonioHistorico">
@@ -446,6 +456,24 @@ by creating a research management system with semantic capacities based on seman
     <owl:Class rdf:about="http://purl.org/rohes#Canones">
         <rdfs:subClassOf rdf:resource="http://purl.org/rohes#ArrendamientosYCanones"/>
         <rdfs:label xml:lang="es">Cánones</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#CatedraticoDeEscuelaUniversitaria -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#CatedraticoDeEscuelaUniversitaria">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#CuerpoDocente"/>
+        <rdfs:label xml:lang="es">Catedrático de Escuela Universitaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#CatedraticoDeUniversidad -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#CatedraticoDeUniversidad">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#CuerpoDocente"/>
+        <rdfs:label xml:lang="es">Catedrático de Universidad</rdfs:label>
     </owl:Class>
     
 
@@ -568,6 +596,15 @@ by creating a research management system with semantic capacities based on seman
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">Construcciones en curso. Inmovilizado material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#CuerpoDocente -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#CuerpoDocente">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PublicUniversityPosition"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#PDIContratado"/>
     </owl:Class>
     
 
@@ -1000,6 +1037,14 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/rohes#PDIContratado -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PDIContratado">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PublicUniversityPosition"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#Perdidas -->
 
     <owl:Class rdf:about="http://purl.org/rohes#Perdidas">
@@ -1069,6 +1114,97 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/rohes#ProfesorAsociado -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorAsociado">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PDIContratado"/>
+        <rdfs:comment xml:lang="es">La contratación de Profesoras y Profesores Asociados se ajustará a las siguientes reglas:
+a) El contrato se podrá celebrar con especialistas de reconocida competencia que acrediten ejercer su actividad profesional fuera del ámbito académico universitario.
+b) La finalidad del contrato será la de desarrollar tareas docentes a través de las que se aporten sus conocimientos y experiencia profesionales a la universidad.
+c) El contrato será de carácter temporal y con dedicación a tiempo parcial.
+d) La duración del contrato será trimestral, semestral o anual, y se podrá renovar por períodos de igual duración, siempre que se siga acreditando el ejercicio de la actividad profesional fuera del ámbito académico universitario.</rdfs:comment>
+        <rdfs:label xml:lang="es">Profesor Asociado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#ProfesorAyudanteDoctor -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorAyudanteDoctor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PDIContratado"/>
+        <rdfs:comment xml:lang="es">La contratación de Profesoras y Profesores Ayudantes Doctores se ajustará a las siguientes reglas:
+a) El contrato se celebrará con doctores. La contratación exigirá la previa evaluación positiva de su actividad por parte de la Agencia Nacional de Evaluación de la Calidad y Acreditación o del órgano de evaluación externa que la ley de la Comunidad Autónoma determine, y será mérito preferente la estancia del candidato en universidades o centros de investigación de reconocido prestigio, españoles o extranjeros, distintos de la universidad que lleve a cabo la contratación.
+b) La finalidad del contrato será la de desarrollar tareas docentes y de investigación.
+c) El contrato será de carácter temporal y con dedicación a tiempo completo.
+d) La duración del contrato no podrá ser inferior a un año ni superior a cinco, pudiendo prorrogarse o renovarse si se hubiera concertado por duración inferior a la máxima, siempre que la duración total no exceda de los indicados cinco años. En cualquier caso, el tiempo total de duración conjunta entre esta figura contractual y la prevista en el artículo anterior, en la misma o distinta universidad, no podrá exceder de ocho años. Las situaciones de incapacidad temporal, maternidad y adopción o acogimiento durante el período de duración del contrato, interrumpirán su cómputo</rdfs:comment>
+        <rdfs:label xml:lang="es">Profesor Ayudante Doctor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#ProfesorContratadoDoctor -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorContratadoDoctor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PDIContratado"/>
+        <rdfs:comment xml:lang="es">La contratación de Profesoras y Profesores Contratados Doctores se ajustará a las siguientes reglas:
+a) El contrato se celebrará con doctores que reciban la evaluación positiva por parte de la Agencia Nacional de Evaluación de la Calidad y Acreditación o del órgano de evaluación externo que la ley de la Comunidad Autónoma determine.
+b) La finalidad del contrato será la de desarrollar, con plena capacidad docente e investigadora, tareas de docencia y de investigación, o prioritariamente de investigación.
+c) El contrato será de carácter indefinido y con dedicación a tiempo completo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Profesor Contratado Doctor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#ProfesorDeUniversidadPrivada -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorDeUniversidadPrivada">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
+        <rdfs:label xml:lang="es">Profesor de Universidad Privada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#ProfesorEmerito -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorEmerito">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PDIContratado"/>
+        <rdfs:comment xml:lang="es">Las universidades, de acuerdo con sus estatutos, podrán nombrar a Profesores Eméritos entre profesoras y profesores jubilados que hayan prestado servicios destacados a la universidad</rdfs:comment>
+        <rdfs:label xml:lang="es">Profesor Emérito</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#ProfesorTitularDeEscuelaUniversitaria -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorTitularDeEscuelaUniversitaria">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#CuerpoDocente"/>
+        <rdfs:label xml:lang="es">Profesor Titular de Escuela Universitaria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#ProfesorTitularDeUniversidad -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorTitularDeUniversidad">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#CuerpoDocente"/>
+        <rdfs:label xml:lang="es">Profesor Titular de Universidad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#ProfesorVisitante -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ProfesorVisitante">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PDIContratado"/>
+        <rdfs:comment xml:lang="es">La contratación de Profesoras y Profesores Visitantes se ajustará a las siguientes reglas:
+a) El contrato se podrá celebrar con profesores o investigadores de reconocido prestigio de otras universidades y centros de investigación, tanto españoles como extranjeros.
+b) La finalidad del contrato será la de desarrollar tareas docentes o investigadoras a través de las que se aporten los conocimientos y la experiencia docente e investigadora de los indicados profesores a la universidad.
+c) El contrato será de carácter temporal con la duración que se acuerde entre las partes y dedicación a tiempo parcial o completo</rdfs:comment>
+        <rdfs:label xml:lang="es">Profesor Visitante</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#PropiedadIndustrial -->
 
     <owl:Class rdf:about="http://purl.org/rohes#PropiedadIndustrial">
@@ -1080,6 +1216,14 @@ by creating a research management system with semantic capacities based on seman
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">Propiedad industrial e intelectual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#PublicUniversityPosition -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PublicUniversityPosition">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
     </owl:Class>
     
 
@@ -1432,9 +1576,27 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://vivoweb.org/ontology/core#FacultyPosition -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyPosition">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professor, associate professor and assistant professor are common positions for academic faculty.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professor; Associate Professor; Assistant Professor</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Academic position in a university or institution</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Faculty Position</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#FundingOrganization -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#FundingOrganization"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Position -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
     
 
 
@@ -1673,6 +1835,15 @@ by creating a research management system with semantic capacities based on seman
             <rdf:Description rdf:about="http://purl.org/rohes#MobiliarioCompras"/>
             <rdf:Description rdf:about="http://purl.org/rohes#OtroInmovilizadoMaterialCompras"/>
             <rdf:Description rdf:about="http://purl.org/rohes#TerrenosYBienesNaturalesCompras"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/rohes#CatedraticoDeEscuelaUniversitaria"/>
+            <rdf:Description rdf:about="http://purl.org/rohes#CatedraticoDeUniversidad"/>
+            <rdf:Description rdf:about="http://purl.org/rohes#ProfesorTitularDeEscuelaUniversitaria"/>
+            <rdf:Description rdf:about="http://purl.org/rohes#ProfesorTitularDeUniversidad"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
