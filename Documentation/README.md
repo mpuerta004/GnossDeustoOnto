@@ -54,7 +54,7 @@ entities. Finally, the dashed arrows reflect the fact that several
 entities in ROH have geographic (class Geonames:Feature) and temporal
 (class vivo:DateTimeInterval) constraints.
 
-![](.//media/image2.png)
+![](.//media/ROH-high-level-diagram.png)
 
 **Figura** **1**. High level diagram of ROH --Red de Ontologías
 Hércules.
@@ -126,7 +126,7 @@ roh:Project is time bound by being associated with an instance of
 vivo:DateTimeInterval and geographically bound to an instance of
 gn:Feature (through relationship (gn:locatedIn).
 
-![](.//media/image3.png)
+![](.//media/1.roh-project.png)
 
 **Figura** **2**. Ontological diagram for entity Project.
 
@@ -136,7 +136,7 @@ gn:Feature (through relationship (gn:locatedIn).
 In ROH, there is a foaf:Person entity (see Figura 3) that inherits from
 foaf:Agent. The specialization of this entity imported from the VIVO
 ontology already adds some DataType properties of the research domain,
-but in ROH we also incorporate roh:taxID or roh:ORCID and also several
+but in ROH we also incorporate roh:taxID, roh:ORCID, vivo:researcherId or vivo:scopusId (all of them are subtypes of vivo:identifier, a given person may use or several alternatives of those identifiers) and also several
 object specific properties of the research domain as \"has a Role\"
 (roh: hasRole) in an Organization, \"has a CurriculumVitae\"
 (roh:hasCV), \"has some Accreditations\" (roh:hasAccreditation), \"has
@@ -203,7 +203,7 @@ entities through object properties:
     concretely, any of its subtypes subclasess like roh:MasterThesis or
     roh:PhDThesis.
 
-![](.//media/image4.png)
+![](.//media/2.roh-person.png)
 
 **Figura** **3**. Ontological Diagram for entity Person.
 
@@ -273,7 +273,7 @@ following entities through object properties:
 -   roh:FundingAmount where an organization may receive several funding
     amounts part of a roh:Funding through roh:grants object property.
 
--   vcard:Individual, where an organization obo:hasContactInfo described
+-   vcard:Organization, where an organization obo:hasContactInfo is described
     through ontology vcard.
 
 -   roh:Infrastructure, where an organization may roh:hasInfrastructure,
@@ -286,7 +286,7 @@ following entities through object properties:
     (vivo:hasPart) other several foaf:Organization.
 
 ![A picture containing map, text Description automatically
-generated](.//media/image5.png)
+generated](.//media/3.roh-organization.png)
 
 **Figura** **4**. Ontological diagram for entity Organization.
 
@@ -320,7 +320,7 @@ during a time interval (vivo:dateTimeInterval) and is usually linked to
 a geographical scope (geonames:Feature).
 
 ![A picture containing text, map Description automatically
-generated](.//media/image6.png)
+generated](.//media/4.roh-funding-source.png)
 
 **Figura** **5**. Ontological diagram for Funding.
 
@@ -350,7 +350,7 @@ bibo:Thesis has been refined into roh:DegreeThesis, roh:MasterThesis and
 roh:PhDThesis.
 
 ![A picture containing text, map Description automatically
-generated](.//media/image7.png)
+generated](.//media/5.roh-research-object.png)
 
 **Figura** **6**. Ontological diagram for ResearchObject.
 
@@ -378,7 +378,7 @@ research infrastructure and other goods and services. Currently, a
 distinction is made between roh:PersonExpense and roh:ProjectExpense.
 
 ![A picture containing map, text Description automatically
-generated](.//media/image8.png)
+generated](.//media/6.roh-activity.png)
 
 **Figura** **7**. Ontological diagram for entity Activity.
 
