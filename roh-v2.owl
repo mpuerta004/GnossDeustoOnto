@@ -2981,19 +2981,20 @@ The most important research result is represented by the concept publication and
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#relates"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/roh#Expense"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#participatedBy"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/roh#spends"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/roh#Expense"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3254,6 +3255,12 @@ The previous short definition was: &quot;An arbitrary classification of a space/
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#hasPublicationVenue"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/bibo#Collection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/bibo#abstract"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.org/roh/mirror/foaf#Document"/>
@@ -3817,6 +3824,12 @@ Besides, an instance of a foaf:Organization is associated to the following entit
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#participates"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#spends"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#PersonExpense"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
