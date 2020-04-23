@@ -1,0 +1,15 @@
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+PREFIX roh: <http://purl.org/roh>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?supervisee
+WHERE {
+  ?supervisorRole a roh:SupervisorRole ;
+  obo:RO_0000052 <http://myuri.net/dipina> ;
+        vivo:relatedBy ?supervisingRelationship .
+  ?supervisingRelationship a roh:PhDSupervisingRelationship ;
+                            vivo:relates ?superviseeRole .
+  ?superviseeRole a roh:SuperviseeRole ;
+    obo:RO_0000052 ?supervisee
+}
+

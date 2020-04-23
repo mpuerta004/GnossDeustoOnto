@@ -1,0 +1,40 @@
+<http://myuri.net/john>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myuri.net/frank>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myuri.net/robert>
+        a       <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myuri.net/johnPhDAdvisingRelationship>
+        a       <http://purl.org/rohPhDSupervisingRelationship> ;
+        <http://vivoweb.org/ontology/core#dateTimeInterval>
+                [ a       <http://vivoweb.org/ontology/core#DateTimeInterval> ;
+                  <http://vivoweb.org/ontology/core#end>
+                          [ a       <http://vivoweb.org/ontology/core#DateTimeValue> ;
+                            <http://vivoweb.org/ontology/core#dateTime>
+                                    "2015-11-13"
+                          ] ;
+                  <http://vivoweb.org/ontology/core#start>
+                          [ a       <http://vivoweb.org/ontology/core#DateTimeValue> ;
+                            <http://vivoweb.org/ontology/core#dateTime>
+                                    "2011-09-01"
+                          ]
+                ] ;
+        <http://vivoweb.org/ontology/core#relates>
+                <http://myuri.net/john> , <http://myuri.net/frank> , <http://myuri.net/robert> ;
+        <http://vivoweb.org/ontology/core#relates>
+                [ a       <http://purl.org/rohSuperviseeRole> ;
+                  <http://purl.obolibrary.org/obo/RO_0000052>
+                          <http://myuri.net/john> ;
+                  <http://vivoweb.org/ontology/core#relatedBy>
+                          <http://myuri.net/johnPhDAdvisingRelationship>
+                ] ;
+        <http://vivoweb.org/ontology/core#relates>
+                [ a       <http://purl.org/rohSupervisorRole> ;
+                  <http://purl.obolibrary.org/obo/RO_0000052>
+                          <http://myuri.net/frank> , <http://myuri.net/robert> ;
+                  <http://vivoweb.org/ontology/core#relatedBy>
+                          <http://myuri.net/johnPhDAdvisingRelationship>
+                ] .

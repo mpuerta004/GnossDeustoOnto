@@ -1,0 +1,10 @@
+<http:///myurl/publication>
+        <http://purl.org/ontology/bibo/authorList>
+                [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                          <http://myurl/FirstAuthor> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
+                          <http://myurl/SecondAuthor> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3>
+                          <http://myurl/ThirdAuthor>
+                ] .

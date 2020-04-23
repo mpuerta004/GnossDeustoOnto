@@ -1,0 +1,6 @@
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+
+SELECT ?author ?order WHERE {
+	<http:///myurl/publication> bibo:authorList ?authorList .
+	?authorList ?order ?author
+}
