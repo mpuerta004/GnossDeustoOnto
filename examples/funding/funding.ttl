@@ -1,0 +1,19 @@
+<http://mysite/gobierno-vasco>
+        a          :GovernmentAgency ;
+        :promotes  <http://mysite/hazitek2020> .
+
+<http://mysite/hazitek2020>
+        a            :FundingProgram ;
+        :promotedBy  <http://mysite/gobierno-vasco> .
+
+<http://mysite/myHazitekProject>
+        a               :Project ;
+        :isSupportedBy  [ a               :Funding ;
+                          obo:hasPart     [ a                :FundingAmount ;
+                                            :grants          <http://mysite/centro-investigacion-1> ;
+                                            :monetaryAmount  "10000"
+                                          ] ;
+                          :fundedBy       <http://mysite/hazitek2020> ;
+                          :publicFunding  "true"
+                        ] ;
+        :title          "MY HAZITEK PROJECT" .

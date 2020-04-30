@@ -5,10 +5,9 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-SELECT ?chapter ?order ?author
+SELECT ?editor
 WHERE {
-	?chapter vivo:hasPublicationVenue <http://myurl/book> ;
-    		 bibo:authorList ?authorList .
-  	?authorList ?order	?author .
-  	?author	a	foaf:Person .
+	<http://myurl/book> bibo:editorList ?editorList .
+  	?editorList ?p	?editor .
+  	?editor a	foaf:Person .
 }

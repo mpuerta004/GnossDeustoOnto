@@ -1,0 +1,38 @@
+<http://mysite/centro-investigacion-1>
+        a                  :ResearchGroup ;
+        :hasAccreditation  [ a                       :Accreditation ;
+                             :hasGoverningAuthority  <http://mysite/gobierno-vasco> ;
+                             :title                  "Grupo reconocido por el Gobierno Vasco"
+                           ] ;
+        :hasKnowledgeArea  <http://purl.org/roh/unesco-individuals#C00758> , <http://purl.org/roh/unesco-individuals#C00261> , <http://purl.org/roh/unesco-individuals#C00134> .
+
+:ResearchGroup  a        owl:Class ;
+        rdfs:subClassOf  <http://purl.org/roh/mirror/foaf#Organization> .
+
+:hasKnowledgeArea  a   owl:ObjectProperty ;
+        rdfs:range     skos:Concept ;
+        owl:inverseOf  :knowledgeAreaOf .
+
+<http://mysite/centro-investigacion-2>
+        a                  :ResearchGroup ;
+        :hasKnowledgeArea  <http://purl.org/roh/unesco-individuals#C00758> , <http://purl.org/roh/unesco-individuals#C00261> , <http://purl.org/roh/unesco-individuals#C03604> .
+
+<http://mysite/centro-investigacion-3>
+        a                  :ResearchGroup ;
+        :hasKnowledgeArea  <http://purl.org/roh/unesco-individuals#C00758> , <http://purl.org/roh/unesco-individuals#C03604> .
+
+<http://mysite/investigador-1>
+        a                  <http://xmlns.com/foaf/0.1/Person> ;
+        :hasKnowledgeArea  <http://purl.org/roh/unesco-individuals#C00261> , <http://purl.org/roh/unesco-individuals#C00134> ;
+        :hasPosition       [ a       :ResearcherPosition ;
+                             <http://vivoweb.org/ontology/core#dateTimeInterval>
+                                     [ a       <http://vivoweb.org/ontology/core#DateTimeInterval> ;
+                                       <http://vivoweb.org/ontology/core#start>
+                                               [ a       <http://vivoweb.org/ontology/core#DateTimeValue> ;
+                                                 <http://vivoweb.org/ontology/core#dateTime>
+                                                         "2010-09-15T00:00:00"
+                                               ]
+                                     ] ;
+                             <http://vivoweb.org/ontology/core#relates>
+                                     <http://mysite/centro-investigacion-1> , <http://mysite/investigador-1>
+                           ] .

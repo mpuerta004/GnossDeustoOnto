@@ -1,0 +1,30 @@
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+PREFIX roh: <http://purl.org/roh#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX bibo: <http://purl.org/roh/mirror/bibo#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://purl.org/roh/mirror/foaf#>
+PREFIX unesco: <http://purl.org/roh/unesco-individuals#>
+PREFIX ro: <http://purl.org/obo/owl/ro#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ero: <http://purl.org/roh/mirror/obo/ero#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX iao: <http://purl.org/roh/mirror/obo/iao#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+INSERT DATA {
+  	<http://mysite/excelent-journal>	a bibo:Journal ;
+    									dc:title "An excelent Journal" ;
+    vivo:dateIssued [	a	vivo:DateTimeValue ; 
+  						vivo:dateTime	"2020-04-27" ] ;
+    vivo:publicationVenueFor	<http://mysite/journal-article-1> .
+  
+	<http://mysite/journal-article-1> 	a iao:IAO_0000013 ;
+    									dc:title "My great journal article" ;
+    									vivo:hasPublicationVenue <http://mysite/excelent-journal> ;
+    									roh:correspondingAuthor	<http://mysite/investigador-1> ;
+    bibo:authorList	[	a	rdf:Seq ;
+  						rdf:_1	<http://mysite/investigador-1> ;
+  						rdf:_2	<http://mysite/investigador-3>] .
+  	
+}

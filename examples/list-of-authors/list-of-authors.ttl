@@ -1,10 +1,40 @@
-<http:///myurl/publication>
-        <http://purl.org/ontology/bibo/authorList>
+<http://myurl/John>  a  <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myurl/Peter>  a  <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myurl/Alex>  a  <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myurl/Diane>  a  <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myurl/Anna>  a  <http://xmlns.com/foaf/0.1/Person> .
+
+<http://myurl/book>  a  <http://purl.org/ontology/bibo/Book> ;
+        <http://purl.org/ontology/bibo/editorList>
                 [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> ;
                   <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
-                          <http://myurl/FirstAuthor> ;
+                          <http://myurl/Anna> ;
                   <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
-                          <http://myurl/SecondAuthor> ;
-                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3>
-                          <http://myurl/ThirdAuthor>
+                          <http://myurl/John>
                 ] .
+
+<http://myurl/chapterA>
+        a       <http://purl.org/ontology/bibo/Chapter> ;
+        <http://purl.org/ontology/bibo/authorList>
+                [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seql> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                          <http://myurl/Peter> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2>
+                          <http://myurl/Alex>
+                ] ;
+        <http://vivoweb.org/ontology/core#hasPublicationVenue>
+                <http://myurl/book> .
+
+<http://myurl/chapterB>
+        a       <http://purl.org/ontology/bibo/Chapter> ;
+        <http://purl.org/ontology/bibo/authorList>
+                [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seql> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1>
+                          <http://myurl/Diane>
+                ] ;
+        <http://vivoweb.org/ontology/core#hasPublicationVenue>
+                <http://myurl/book> .

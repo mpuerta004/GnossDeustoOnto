@@ -1,16 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:bibo="http://purl.org/ontology/bibo/">
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:bibo="http://purl.org/ontology/bibo/"
+         xmlns:ns0="http://vivoweb.org/ontology/core#">
 
-  <rdf:Description rdf:about="http:///myurl/publication">
+  <foaf:Person rdf:about="http://myurl/John">
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://myurl/Peter">
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://myurl/Alex">
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://myurl/Diane">
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://myurl/Anna">
+  </foaf:Person>
+
+  <bibo:Book rdf:about="http://myurl/book">
+    <bibo:editorList>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://myurl/Anna"/>
+        <rdf:li rdf:resource="http://myurl/John"/>
+      </rdf:Seq>
+    </bibo:editorList>
+
+  </bibo:Book>
+
+  <bibo:Chapter rdf:about="http://myurl/chapterA">
     <bibo:authorList>
       <rdf:Seq>
-        <rdf:li rdf:resource="http://myurl/FirstAuthor"/>
-        <rdf:li rdf:resource="http://myurl/SecondAuthor"/>
-        <rdf:li rdf:resource="http://myurl/ThirdAuthor"/>
+        <rdf:li rdf:resource="http://myurl/Peter"/>
+        <rdf:li rdf:resource="http://myurl/Alex"/>
       </rdf:Seq>
     </bibo:authorList>
 
-  </rdf:Description>
+    <ns0:hasPublicationVenue rdf:resource="http://myurl/book"/>
+  </bibo:Chapter>
+
+  <bibo:Chapter rdf:about="http://myurl/chapterB">
+    <bibo:authorList>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://myurl/Diane"/>
+      </rdf:Seq>
+    </bibo:authorList>
+
+    <ns0:hasPublicationVenue rdf:resource="http://myurl/book"/>
+  </bibo:Chapter>
 
 </rdf:RDF>

@@ -34,7 +34,14 @@
         <http://vivoweb.org/ontology/core#relates>
                 [ a       <http://purl.org/rohSupervisorRole> ;
                   <http://purl.obolibrary.org/obo/RO_0000052>
-                          <http://myuri.net/frank> , <http://myuri.net/robert> ;
+                          <http://myuri.net/frank> ;
+                  <http://vivoweb.org/ontology/core#relatedBy>
+                          <http://myuri.net/johnPhDAdvisingRelationship>
+                ] ;
+		<http://vivoweb.org/ontology/core#relates>
+                [ a       <http://purl.org/rohSupervisorRole> ;
+                  <http://purl.obolibrary.org/obo/RO_0000052>
+                          <http://myuri.net/robert> ;
                   <http://vivoweb.org/ontology/core#relatedBy>
                           <http://myuri.net/johnPhDAdvisingRelationship>
                 ] .

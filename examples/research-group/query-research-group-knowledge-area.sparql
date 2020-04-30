@@ -4,11 +4,10 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX unesco: <http://purl.org/roh/unesco-individuals#>
+PREFIX ro: <http://purl.org/obo/owl/ro#>
 
-SELECT ?chapter ?order ?author
-WHERE {
-	?chapter vivo:hasPublicationVenue <http://myurl/book> ;
-    		 bibo:authorList ?authorList .
-  	?authorList ?order	?author .
-  	?author	a	foaf:Person .
+SELECT ?centro WHERE {
+        ?centro a roh:ResearchGroup ;
+                          roh:hasKnowledgeArea unesco:C00261 .
 }

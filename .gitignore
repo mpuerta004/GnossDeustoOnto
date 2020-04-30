@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+widoco/output/*
+widoco/tmp*
+
+catalog-v001.xml
+scripts/unesco-individuals/generated.rdf
