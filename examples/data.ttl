@@ -152,6 +152,10 @@
         a          :GovernmentAgency ;
         :promotes  <http://purl.org/roh/data#hazitek2020> .
 
+<http://purl.org/roh/data#feder> 
+	a	   :FundingSource ;
+	:funds     <http://purl.org/roh/data#hazitek2020> .
+
 <http://purl.org/roh/data#hazitek2020>
         a            :FundingProgram ;
         :promotedBy  <http://purl.org/roh/data#gobierno-vasco> .
