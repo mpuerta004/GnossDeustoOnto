@@ -28,12 +28,7 @@
         :hasKnowledgeArea  uneskos:C00758 , uneskos:C00261 , uneskos:C00134 ;
         gn:locatedIn <https://sws.geonames.org/3128026/> .
 
-:ResearchGroup  a        owl:Class ;
-        rdfs:subClassOf  foaf:Organization .
 
-:hasKnowledgeArea  a   owl:ObjectProperty ;
-        rdfs:range     skos:Concept ;
-        owl:inverseOf  :knowledgeAreaOf .
 
 <http://purl.org/roh/data#centro-investigacion-2>
         a                  :ResearchGroup ;
@@ -63,7 +58,22 @@
                 "Pedro" ;
         vivo:relatedBy     [ a             :ResearcherPosition ;
                              vivo:relates  <http://purl.org/roh/data#centro-investigacion-1> , <http://purl.org/roh/data#investigador-1>
-                           ] .
+                           ] ;
+        :hasCV       [ a      :CurriculumVitae ;
+                          :cites "21" ;
+                          :factorH "3" ] .
+
+<http://purl.org/roh/data#investigador-1-contract>
+        a       :PersonContract ;
+        vivo:relates    <http://purl.org/roh/data#investigador-1>, <http://purl.org/roh/data#investigador-1-juan-de-la-cierva> .
+
+<http://purl.org/roh/data#investigador-1-juan-de-la-cierva>
+        a       :Grant ;
+        ro:BFO_0000051 [ a :FundingAmount ;
+                         :monetaryAmount "35000"^^xsd:integer ;
+                         :currency "€" ] .
+
+
 
 <http://purl.org/roh/data#investigador-2>
         a                  foaf:Person ;
@@ -84,7 +94,10 @@
                 "Maria" ;
         vivo:relatedBy     [ a             :ResearcherPosition ;
                              vivo:relates  <http://purl.org/roh/data#centro-investigacion-1> , <http://purl.org/roh/data#investigador-2>
-                           ] .
+                           ] ;
+        :hasCV       [ a      :CurriculumVitae ;
+                        :cites "53" ;
+                        :factorH "5" ] .
 
 
 <http://purl.org/roh/data#investigador-3>
@@ -111,7 +124,10 @@
                 [ a       :ResearcherPosition ;
                   vivo:relates
                           <http://purl.org/roh/data#centro-investigacion-1> , <http://purl.org/roh/data#investigador-3>
-                ] .
+                ] ;
+        :hasCV       [ a      :CurriculumVitae ;
+                :cites "5" ;
+                :factorH "1" ] .
 
 <http://purl.org/roh/data#investigador-3-phd-relationship>
         a       :PhDSupervisingRelationship ;
@@ -142,6 +158,17 @@
 
 <http://purl.org/roh/data#company-one>
         a       vivo:Company .
+
+<http://purl.org/roh/data#a-project-dossier>
+        a       :Dossier ;
+        vivo:relates    <http://purl.org/roh/data#a-project>, <http://purl.org/roh/data#a-project-research-proposal>,  <http://purl.org/roh/data#a-project-justification> .
+        
+
+<http://purl.org/roh/data#a-project-research-proposal>
+        a       vivo:ResearchProposal .
+
+<http://purl.org/roh/data#a-project-justification> 
+        a       :Justification .
 
 <http://purl.org/roh/data#a-project>
         a                      :Project ;
@@ -176,7 +203,13 @@
                                  vivo:relatedBy  <http://purl.org/roh/data#a-project>
 
         ] ;
-        gn:locatedIn    <https://www.geonames.org/3336903> .
+        gn:locatedIn    <https://www.geonames.org/3336903> ;
+        :spends      <http://purl.org/roh/data#an-intern-expense> ;
+        :foreseenJustificationDate "2019-03-31"^^xsd:date, "2020-03-31"^^xsd:date .
+
+<http://purl.org/roh/data#an-intern-expense>
+        a       :ProjectExpense ;
+        vivo:description        "The salary of an intern working for the project".
 							   
 <http://purl.org/roh/data#investigador-4>
         a               foaf:Person ;
@@ -196,18 +229,13 @@
         dc:title
                 "An excelent Journal" ;
         vivo:dateIssued           [ a              vivo:DateTimeValue ;
-                                    vivo:dateTime  "2020-04-27"
+                                    vivo:dateTime  "2020-04-27"^^xsd:date
                                   ] ;
         vivo:publicationVenueFor  <http://purl.org/roh/data#journal-article-1> ;
         vivo:dateIssued
                 [ a       vivo:DateTimeValue ;
                   vivo:dateTime
-                          "2020-04-27"
-                ] ;
-        vivo:dateIssued
-                [ a       vivo:DateTimeValue ;
-                  vivo:dateTime
-                          "2020-04-27"
+                          "2020-04-27"^^xsd:date
                 ] ;
         vivo:publicationVenueFor
                 <http://purl.org/roh/data#journal-article-1> .
@@ -222,6 +250,11 @@
                                     rdf:_1  <http://purl.org/roh/data#investigador-1> ;
                                     rdf:_2  <http://purl.org/roh/data#investigador-3>
                                   ] ;
+         vivo:dateIssued
+                [ a       vivo:DateTimeValue ;
+                  vivo:dateTime
+                          "2020-04-27"^^xsd:date
+                ] ;
         vivo:hasPublicationVenue
                 <http://purl.org/roh/data#excelent-journal> .
 
@@ -236,5 +269,5 @@
         vivo:dateIssued
                 [ a       vivo:DateTimeValue ;
                   vivo:dateTime
-                          "2020-04-27"
+                          "2020-04-27"^^xsd:date
                 ] .
