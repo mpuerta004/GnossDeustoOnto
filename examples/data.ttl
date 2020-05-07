@@ -19,6 +19,16 @@
 @prefix gn:	<http://purl.org/roh/mirror/geonames#> .
 @prefix dc:	<http://purl.org/dc/elements/1.1/> .
 
+
+[ rdf:type owl:Ontology ;
+   owl:imports <http://purl.org/roh/2.0.0>
+ ] .
+
+<http://purl.org/roh/data#universidad-1>
+        a       vivo:University ;
+        ro:BFO_0000051  <http://purl.org/roh/data#centro-investigacion-1>, <http://purl.org/roh/data#centro-investigacion-2> .
+
+
 <http://purl.org/roh/data#centro-investigacion-1>
         a                  :ResearchGroup ;
         :hasAccreditation  [ a                       :Accreditation ;
@@ -48,7 +58,7 @@
                                        vivo:start
                                                [ a       vivo:DateTimeValue ;
                                                  vivo:dateTime
-                                                         "2010-09-15T00:00:00"
+                                                         "2010-09-15T00:00:00"^^xsd:dateTime
                                                ]
                                      ] ;
                              vivo:relates
@@ -70,7 +80,7 @@
 <http://purl.org/roh/data#investigador-1-juan-de-la-cierva>
         a       :Grant ;
         ro:BFO_0000051 [ a :FundingAmount ;
-                         :monetaryAmount "35000"^^xsd:integer ;
+                         :monetaryAmount "35000"^^xsd:decimal ;
                          :currency "€" ] .
 
 
@@ -84,7 +94,7 @@
                                        vivo:start
                                                [ a       vivo:DateTimeValue ;
                                                  vivo:dateTime
-                                                         "2013-05-10T00:00:00"
+                                                         "2013-05-10T00:00:00"^^xsd:dateTime
                                                ]
                                      ] ;
                              vivo:relates
@@ -109,7 +119,7 @@
                                        vivo:start
                                                [ a       vivo:DateTimeValue ;
                                                  vivo:dateTime
-                                                         "2012-05-10T00:00:00"
+                                                         "2012-05-10T00:00:00"^^xsd:dateTime
                                                ]
                                      ] ;
                              vivo:relates
@@ -133,7 +143,7 @@
         a       :PhDSupervisingRelationship ;
         vivo:dateTimeInterval [ a       vivo:DateTimeInterval ;
                                 vivo:start [ a  vivo:DateTimeValue ;
-                                             vivo:dateTime  "2018-11-13" ]] ;
+                                             vivo:dateTime  "2018-11-13T00:00:00"^^xsd:dateTime ]] ;
         vivo:relates <http://purl.org/roh/data#investigador-3>, <http://purl.org/roh/data#investigador-1> ;
         vivo:relates [ a        :SuperviseeRole ;
                        obo:RO_0000052 <http://purl.org/roh/data#investigador-3> ;
@@ -147,6 +157,10 @@
         obo:BFO_0000055 [ a     vivo:AttendeeRole ;
                           obo:RO_0000052        <http://purl.org/roh/data#investigador-2> ] .
 
+
+<http://purl.org/roh/data#european-comission>
+        a          :GovernmentAgency ;
+        :promotes  <http://purl.org/roh/data#feder> .
 
 <http://purl.org/roh/data#gobierno-vasco>
         a          :GovernmentAgency ;
@@ -180,18 +194,18 @@
         :isSupportedBy         [ a               :Funding ;
                                  obo:hasPart     [ a                :FundingAmount ;
                                                    :grants          <http://purl.org/roh/data#centro-investigacion-1> ;
-                                                   :monetaryAmount  "10000"
+                                                   :monetaryAmount  "10000"^^xsd:decimal
                                                  ] ;
                                  :fundedBy       <http://purl.org/roh/data#hazitek2020> ;
-                                 :publicFunding  "true"
+                                 :publicFunding  "true"^^xsd:boolean
                                ] ;
         :title                 "A GREAT PROJECT" ;
         vivo:dateTimeInterval  [ a           vivo:DateTimeInterval ;
                                  vivo:end    [ a              vivo:DateTimeValue ;
-                                               vivo:dateTime  "2019-12-01"^^xsd:date
+                                               vivo:dateTime  "2019-12-01T00:00:00"^^xsd:dateTime
                                              ] ;
                                  vivo:start  [ a              vivo:DateTimeValue ;
-                                               vivo:dateTime  "2018-01-01"^^xsd:date
+                                               vivo:dateTime  "2018-01-01T00:00:00"^^xsd:dateTime
                                              ]
                                ] ;
         vivo:relates           [ a               vivo:MemberRole ;
@@ -209,7 +223,7 @@
         ] ;
         gn:locatedIn    <https://www.geonames.org/3336903> ;
         :spends      <http://purl.org/roh/data#an-intern-expense> ;
-        :foreseenJustificationDate "2019-03-31"^^xsd:date, "2020-03-31"^^xsd:date .
+        :foreseenJustificationDate "2019-03-31T00:00:00"^^xsd:dateTime, "2020-03-31T00:00:00"^^xsd:dateTime .
 
 <http://purl.org/roh/data#an-intern-expense>
         a       :ProjectExpense ;
@@ -233,13 +247,13 @@
         dc:title
                 "An excelent Journal" ;
         vivo:dateIssued           [ a              vivo:DateTimeValue ;
-                                    vivo:dateTime  "2020-04-27"^^xsd:date
+                                    vivo:dateTime  "2020-04-27T00:00:00"^^xsd:dateTime
                                   ] ;
         vivo:publicationVenueFor  <http://purl.org/roh/data#journal-article-1> ;
         vivo:dateIssued
                 [ a       vivo:DateTimeValue ;
                   vivo:dateTime
-                          "2020-04-27"^^xsd:date
+                          "2020-04-27T00:00:00"^^xsd:dateTime
                 ] ;
         vivo:publicationVenueFor
                 <http://purl.org/roh/data#journal-article-1> .
@@ -257,7 +271,7 @@
          vivo:dateIssued
                 [ a       vivo:DateTimeValue ;
                   vivo:dateTime
-                          "2020-04-27"^^xsd:date
+                          "2020-04-27T00:00:00"^^xsd:dateTime
                 ] ;
         vivo:hasPublicationVenue
                 <http://purl.org/roh/data#excelent-journal> .
@@ -273,5 +287,5 @@
         vivo:dateIssued
                 [ a       vivo:DateTimeValue ;
                   vivo:dateTime
-                          "2020-04-27"^^xsd:date
+                          "2020-04-27T00:00:00"^^xsd:dateTime
                 ] .

@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="http://purl.org/roh#"
      xml:base="http://purl.org/roh"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:ro="http://purl.org/roh/mirror/obo/ro/"
+     xmlns:ro="http://purl.org/roh/mirror/obo/ro#"
      xmlns:iao="http://purl.org/roh/mirror/obo/iao#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -565,18 +565,13 @@ by creating a research management system with semantic capacities based on seman
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#fundedBy">
         <owl:inverseOf rdf:resource="http://purl.org/roh#funds"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#Funding"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#FundingProgram"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.org/roh#funds -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh#funds">
-        <rdfs:domain rdf:resource="http://purl.org/roh#FundingProgram"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#Funding"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#funds"/>
     
 
 
@@ -738,6 +733,25 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#ownerOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#ownerOrganization">
+        <owl:inverseOf rdf:resource="http://purl.org/roh#ownerOrganizationOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/roh/mirror/bibo#Patent"/>
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/foaf#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh#ownerOrganizationOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#ownerOrganizationOf">
+        <rdfs:domain rdf:resource="http://purl.org/roh/mirror/foaf#Organization"/>
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/bibo#Patent"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/roh#participatedBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#participatedBy">
@@ -785,7 +799,14 @@ by creating a research management system with semantic capacities based on seman
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#promotedBy">
         <owl:inverseOf rdf:resource="http://purl.org/roh#promotes"/>
-        <rdfs:domain rdf:resource="http://purl.org/roh#FundingProgram"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/roh#FundingProgram"/>
+                    <rdf:Description rdf:about="http://purl.org/roh#FundingSource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/vivo#FundingOrganization"/>
     </owl:ObjectProperty>
     
@@ -794,8 +815,14 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/roh#promotes -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#promotes">
-        <rdfs:domain rdf:resource="http://purl.org/roh/mirror/vivo#FundingOrganization"/>
-        <rdfs:range rdf:resource="http://purl.org/roh#FundingProgram"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/roh#FundingProgram"/>
+                    <rdf:Description rdf:about="http://purl.org/roh#FundingSource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -999,10 +1026,10 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http://purl.org/roh/mirror/obo/bfo/BFO_0000054 -->
+    <!-- http://purl.org/roh/mirror/obo/bfo#BFO_0000054 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/bfo/BFO_0000054">
-        <owl:inverseOf rdf:resource="http://purl.org/roh/mirror/obo/bfo/BFO_0000055"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000054">
+        <owl:inverseOf rdf:resource="http://purl.org/roh/mirror/obo/bfo#BFO_0000055"/>
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Activity"/>
         <obo:BFO_0000179>realized-in</obo:BFO_0000179>
@@ -1016,9 +1043,9 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http://purl.org/roh/mirror/obo/bfo/BFO_0000055 -->
+    <!-- http://purl.org/roh/mirror/obo/bfo#BFO_0000055 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/bfo/BFO_0000055">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000055">
         <rdfs:domain rdf:resource="http://purl.org/roh#Activity"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
         <obo:BFO_0000179>realizes</obo:BFO_0000179>
@@ -1048,10 +1075,10 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http://purl.org/roh/mirror/obo/ro/RO_0000052 -->
+    <!-- http://purl.org/roh/mirror/obo/ro#RO_0000052 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/ro/RO_0000052">
-        <owl:inverseOf rdf:resource="http://purl.org/roh/mirror/obo/ro/RO_0000053"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/ro#RO_0000052">
+        <owl:inverseOf rdf:resource="http://purl.org/roh/mirror/obo/ro#RO_0000053"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a &apos;cardinality 1&apos; restriction to the definition of specifically dependent continuant.</obo:IAO_0000116>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation belongs in BFO/RO, and will be in BFO 2</obo:IAO_0000116>
@@ -1060,9 +1087,9 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http://purl.org/roh/mirror/obo/ro/RO_0000053 -->
+    <!-- http://purl.org/roh/mirror/obo/ro#RO_0000053 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/ro/RO_0000053">
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/ro#RO_0000053">
         <rdfs:label xml:lang="en">bearer of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1380,6 +1407,12 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#expenseModality -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#expenseModality"/>
+    
+
+
     <!-- http://purl.org/roh#factorH -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#factorH">
@@ -1591,8 +1624,14 @@ by creating a research management system with semantic capacities based on seman
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>REJECTED</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                        <rdf:first>PROPOSAL_SUBMITTED</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>REJECTED</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
@@ -2521,6 +2560,24 @@ The previous short definition was: &quot;An arbitrary classification of a space/
                 <owl:someValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#relates"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#AwardedDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#dateIssued"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#relates"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#AwardedDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2657,8 +2714,14 @@ The previous short definition was: &quot;An arbitrary classification of a space/
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#expenseModality"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#monetaryAmount"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2799,7 +2862,7 @@ The Funding Program entity (roh:FundingProgram), new in ROH, defines the funding
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#monetaryAmount"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A FundingAmount is linked to a Funding that finances a Project. Each FundingAmount is associated to an Organization participating in the Project and to a specific annuity.</rdfs:comment>
@@ -3138,6 +3201,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#produces"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#PhDThesis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#dateTimeInterval"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeInterval"/>
             </owl:Restriction>
@@ -3168,6 +3237,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
         <rdfs:comment xml:lang="en">A document created to summarize research findings associated with the completion of a doctoral thesis.</rdfs:comment>
         <rdfs:label xml:lang="en">PhD Thesis</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Project -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Project"/>
     
 
 
@@ -3231,30 +3306,57 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
     <owl:Class rdf:about="http://purl.org/roh#ResearchObject">
         <owl:equivalentClass>
             <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/roh#hasKnowledgeArea"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/roh#KnowledgeArea"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/roh#correspondingAuthor"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
-                    </owl:Restriction>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/roh#correspondingAuthor"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/roh#hasKnowledgeArea"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/roh#correspondingAuthor"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/roh#hasKnowledgeArea"/>
+                                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/roh#producedBy"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#Project"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/roh#Project"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#hasSubjectArea"/>
-                        <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
+                </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#spends"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#ResearchObjectExpense"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>The research object entity (roh:ResearchObject) is a new entity defined in ROH that corresponds to a research result generated by a person (researcher), usually through work on a project. A roh:ResearchObject is associated with several foaf:Person through the bibo:authorList property. Usually a roh:ResearchObject results from working on a roh:Project (roh:produces). This entity defines a complete taxonomy of research objects mostly imported from BIBO [4], covering all kinds of publications, patents, software and web pages. Some examples are: bibo:Collection, bibo:Journal, bibo:Article, bibo:Book, bibo:Chapter, bibo:Patent, bibo:Thesis and bibo:Webpage. The primary author of a research object is accessible through the roh:correspondingAuthor property.
 
 The most important research result is represented by the concept publication and is defined mainly through the imported entity vivo:Document. Currently, the following sets of entities related to the publication concept are supported: bibo:Collection (Newspaper, Magazine) and bibo:Document (Article, ConferencePaper, EditorialArticle, Book, Proceedings, ConferencePaper, Chapter, Thesis) and obo:Software. bibo:Thesis has been refined into roh:DegreeThesis, roh:MasterThesis and roh:PhDThesis.</rdfs:comment>
         <rdfs:label xml:lang="en">Research Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#ResearchObjectExpense -->
+
+    <owl:Class rdf:about="http://purl.org/roh#ResearchObjectExpense">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Expense"/>
+        <rdfs:label xml:lang="en">Research Object Expense</rdfs:label>
     </owl:Class>
     
 
@@ -3275,13 +3377,13 @@ The most important research result is represented by the concept publication and
         <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro/RO_0000052"/>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro#RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro/RO_0000052"/>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro#RO_0000052"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3775,6 +3877,12 @@ The most important research result is represented by the concept publication and
 
     <owl:Class rdf:about="http://purl.org/roh/mirror/bibo#Patent">
         <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/bibo#Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#ownerOrganization"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/geonames#locatedIn"/>
@@ -4392,19 +4500,8 @@ Besides, an instance of a foaf:Person / roh:Researcher is associated to the foll
 
     <owl:Class rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000023">
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#relatedBy"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#Relationship"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro/RO_0000052"/>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro#RO_0000052"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4416,7 +4513,7 @@ Besides, an instance of a foaf:Person / roh:Researcher is associated to the foll
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro/RO_0000052"/>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro#RO_0000052"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4424,6 +4521,19 @@ Besides, an instance of a foaf:Person / roh:Researcher is associated to the foll
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#dateTimeInterval"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#relatedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Relationship"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5347,6 +5457,12 @@ Besides, an instance of a foaf:Person / roh:Researcher is associated to the foll
         <rdfs:subClassOf rdf:resource="http://purl.org/roh#Activity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/obo/ro#BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#AcademicDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#courseHours"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -5546,7 +5662,14 @@ Besides, an instance of a foaf:Person / roh:Researcher is associated to the foll
                     <rdf:Description rdf:about="http://purl.org/roh/mirror/foaf#Organization"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/roh#promotes"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/roh#FundingProgram"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/roh#FundingProgram"/>
+                                    <rdf:Description rdf:about="http://purl.org/roh#FundingSource"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/roh#funds"/>
@@ -5554,7 +5677,14 @@ Besides, an instance of a foaf:Person / roh:Researcher is associated to the foll
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/roh#promotes"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/roh#FundingProgram"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/roh#FundingProgram"/>
+                                    <rdf:Description rdf:about="http://purl.org/roh#FundingSource"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -5908,6 +6038,7 @@ Contents
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.org/roh#Dossier"/>
                             <rdf:Description rdf:about="http://purl.org/roh#Justification"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -6164,6 +6295,15 @@ Notice that a roh:Project may also be part (vivo:hasPart) of another project, e.
     
 
 
+    <!-- http://purl.org/roh#TestAnotherGovernmentAgency -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh#TestAnotherGovernmentAgency">
+        <rdf:type rdf:resource="http://purl.org/roh/mirror/vivo#GovernmentAgency"/>
+        <promotes rdf:resource="http://purl.org/roh#TestFundingSource"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/roh#TestBook -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/roh#TestBook">
@@ -6226,6 +6366,32 @@ Notice that a roh:Project may also be part (vivo:hasPart) of another project, e.
     <owl:NamedIndividual rdf:about="http://purl.org/roh#TestEndDateTimeValue">
         <rdf:type rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeValue"/>
         <vivo:dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-11-13T00:00:00</vivo:dateTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh#TestFundingProgram -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh#TestFundingProgram">
+        <rdf:type rdf:resource="http://purl.org/roh#FundingProgram"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh#TestFundingSource -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh#TestFundingSource">
+        <rdf:type rdf:resource="http://purl.org/roh#FundingSource"/>
+        <funds rdf:resource="http://purl.org/roh#TestFundingProgram"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh#TestGovernmentAgency -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh#TestGovernmentAgency">
+        <rdf:type rdf:resource="http://purl.org/roh/mirror/vivo#GovernmentAgency"/>
+        <promotes rdf:resource="http://purl.org/roh#TestFundingProgram"/>
     </owl:NamedIndividual>
     
 

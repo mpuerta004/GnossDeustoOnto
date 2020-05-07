@@ -446,6 +446,15 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/rohes#secondFamilyName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#secondFamilyName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
