@@ -13,8 +13,8 @@
 @prefix bibo:  <http://purl.org/roh/mirror/bibo#> .
 @prefix vivo:  <http://purl.org/roh/mirror/vivo#> .
 @prefix uneskos: <http://purl.org/roh/unesco-individuals#> .
-@prefix ro:    <http://purl.org/roh/mirror/obo/ro/> .
-@prefix obo:   <http://purl.obolibrary.org/obo/> .
+@prefix ro:    <http://purl.org/roh/mirror/obo/ro#> .
+@prefix bfo:    <http://purl.org/roh/mirror/obo/bfo#> .
 @prefix foaf: 	<http://purl.org/roh/mirror/foaf#> .
 @prefix gn:	<http://purl.org/roh/mirror/geonames#> .
 @prefix dc:	<http://purl.org/dc/elements/1.1/> .
@@ -32,11 +32,11 @@
 <http://purl.org/roh/data#centro-investigacion-1>
         a                  :ResearchGroup ;
         :hasAccreditation  [ a                       :Accreditation ;
-                             :hasGoverningAuthority  <http://purl.org/roh/data#gobierno-vasco> ;
+                             vivo:hasGoverningAuthority  <http://purl.org/roh/data#gobierno-vasco> ;
                              :title                  "Grupo reconocido por el Gobierno Vasco"
                            ] ;
         :hasKnowledgeArea  uneskos:C00758 , uneskos:C00261 , uneskos:C00134 ;
-        gn:locatedIn <https://sws.geonames.org/3128026/> .
+        gn:locatedIn <http://sws.geonames.org/3128026/> .
 
 
 
@@ -47,7 +47,7 @@
 <http://purl.org/roh/data#centro-investigacion-3>
         a                  :ResearchGroup ;
         :hasKnowledgeArea  uneskos:C00758 , uneskos:C03604 ;
-        gn:locatedIn <https://sws.geonames.org/3128026/> .
+        gn:locatedIn <http://sws.geonames.org/3128026/> .
 
 <http://purl.org/roh/data#investigador-1>
         a                  foaf:Person ;
@@ -146,10 +146,10 @@
                                              vivo:dateTime  "2018-11-13T00:00:00"^^xsd:dateTime ]] ;
         vivo:relates <http://purl.org/roh/data#investigador-3>, <http://purl.org/roh/data#investigador-1> ;
         vivo:relates [ a        :SuperviseeRole ;
-                       obo:RO_0000052 <http://purl.org/roh/data#investigador-3> ;
+                       ro:RO_0000052 <http://purl.org/roh/data#investigador-3> ;
                        vivo:relatedBy <http://purl.org/roh/data#investigador-3-phd-relationship> ] ;
         vivo:relates [ a        :SupervisorRole ;
-                       obo:RO_0000052 <http://purl.org/roh/data#investigador-1> ; 
+                       ro:RO_0000052 <http://purl.org/roh/data#investigador-1> ; 
                        vivo:relatedBy <http://purl.org/roh/data#investigador-3-phd-relationship> ] ;
 
         :produces <http://purl.org/roh/data#investigador-3-phd-thesis> .
@@ -164,16 +164,16 @@
 
 <http://purl.org/roh/data#a-great-conference>
         a       bibo:Conference ;
-        obo:BFO_0000055 [ a     vivo:AttendeeRole ;
-                          obo:RO_0000052        <http://purl.org/roh/data#investigador-2> ] .
+        bfo:BFO_0000055 [ a     vivo:AttendeeRole ;
+                          ro:RO_0000052        <http://purl.org/roh/data#investigador-2> ] .
 
 
 <http://purl.org/roh/data#european-comission>
-        a          :GovernmentAgency ;
+        a          vivo:GovernmentAgency ;
         :promotes  <http://purl.org/roh/data#feder> .
 
 <http://purl.org/roh/data#gobierno-vasco>
-        a          :GovernmentAgency ;
+        a          vivo:GovernmentAgency ;
         :promotes  <http://purl.org/roh/data#hazitek2020> .
 
 <http://purl.org/roh/data#feder> 
@@ -202,7 +202,7 @@
         a                     vivo:Project ;
         :hasKnowledgeArea     uneskos:C00750 ;
         :isSupportedBy         [ a               :Funding ;
-                                 obo:hasPart     [ a                :FundingAmount ;
+                                 ro:hasPart     [ a                :FundingAmount ;
                                                    :grants          <http://purl.org/roh/data#centro-investigacion-1> ;
                                                    :monetaryAmount  "10000"^^xsd:decimal
                                                  ] ;
@@ -231,7 +231,7 @@
                                  vivo:relatedBy  <http://purl.org/roh/data#a-project>
 
         ] ;
-        gn:locatedIn    <https://www.geonames.org/3336903> ;
+        gn:locatedIn    <http://www.geonames.org/3336903/> ;
         :spends      <http://purl.org/roh/data#an-intern-expense> ;
         :foreseenJustificationDate "2019-03-31T00:00:00"^^xsd:dateTime, "2020-03-31T00:00:00"^^xsd:dateTime .
 
@@ -297,5 +297,19 @@
         vivo:dateIssued
                 [ a       vivo:DateTimeValue ;
                   vivo:dateTime
-                          "2020-04-27T00:00:00"^^xsd:dateTime
+                          "2020-03-17T00:00:00"^^xsd:dateTime
+                ] .
+
+<http://purl.org/roh/data#another-fabulous-patent>
+        a       bibo:Patent ;
+        vivo:identifier "another-fabulous-patent"^^xsd:string ;
+        :hasKnowledgeArea     uneskos:C00750 ;
+        :correspondingAuthor <http://purl.org/roh/data#investigador-3> ;
+        bibo:authorList           [ a       rdf:Seq ;
+                                    rdf:_1  <http://purl.org/roh/data#investigador-1> ;
+                                    rdf:_2  <http://purl.org/roh/data#investigador-1> ];
+        vivo:dateIssued
+                [ a       vivo:DateTimeValue ;
+                  vivo:dateTime
+                          "2015-02-12T00:00:00"^^xsd:dateTime
                 ] .
