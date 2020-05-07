@@ -189,7 +189,7 @@
         a       :Justification .
 
 <http://purl.org/roh/data#a-project>
-        a                      :Project ;
+        a                     vivo:Project ;
         :hasKnowledgeArea     uneskos:C00750 ;
         :isSupportedBy         [ a               :Funding ;
                                  obo:hasPart     [ a                :FundingAmount ;

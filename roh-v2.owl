@@ -2742,6 +2742,16 @@ The previous short definition was: &quot;An arbitrary classification of a space/
     
 
 
+    <!-- http://purl.org/roh#ExternalMemberRole -->
+
+    <owl:Class rdf:about="http://purl.org/roh#ExternalMemberRole">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
+        <rdfs:comment xml:lang="en">A member who works in a Project or participates in an Activity but do not belong to the main Organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">External Member Role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#FacultyPositionEmeritus -->
 
     <owl:Class rdf:about="http://purl.org/roh#FacultyPositionEmeritus">
@@ -3240,12 +3250,6 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
     
 
 
-    <!-- http://purl.org/roh#Project -->
-
-    <owl:Class rdf:about="http://purl.org/roh#Project"/>
-    
-
-
     <!-- http://purl.org/roh#ProjectContract -->
 
     <owl:Class rdf:about="http://purl.org/roh#ProjectContract">
@@ -3333,7 +3337,7 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.org/roh#producedBy"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.org/roh#Project"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#Project"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
