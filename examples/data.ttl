@@ -150,7 +150,17 @@
                        vivo:relatedBy <http://purl.org/roh/data#investigador-3-phd-relationship> ] ;
         vivo:relates [ a        :SupervisorRole ;
                        obo:RO_0000052 <http://purl.org/roh/data#investigador-1> ; 
-                       vivo:relatedBy <http://purl.org/roh/data#investigador-3-phd-relationship> ] .
+                       vivo:relatedBy <http://purl.org/roh/data#investigador-3-phd-relationship> ] ;
+
+        :produces <http://purl.org/roh/data#investigador-3-phd-thesis> .
+
+
+<http://purl.org/roh/data#investigador-3-phd-thesis> 
+        a :PhDThesis ;
+        :correspondingAuthor <http://purl.org/roh/data#investigador-3> ;
+        bibo:authorList [ a     rdf:Seq ;
+                          rdf:_1        <http://purl.org/roh/data#investigador-3> ;
+                          rdf:_2        <http://purl.org/roh/data#investigador-1> ] .
 
 <http://purl.org/roh/data#a-great-conference>
         a       bibo:Conference ;
