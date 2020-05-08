@@ -198,6 +198,15 @@
 <http://purl.org/roh/data#a-project-justification> 
         a       :Justification .
 
+
+<http://purl.org/roh/data#another-project>
+        a                     vivo:Project ;
+        :hasKnowledgeArea     uneskos:C00944 .
+
+<http://purl.org/roh/data#another-great-project>
+        a                     vivo:Project ;
+        :hasKnowledgeArea     uneskos:C00261 .
+
 <http://purl.org/roh/data#a-project>
         a                     vivo:Project ;
         :hasKnowledgeArea     uneskos:C00750 ;
@@ -284,13 +293,21 @@
                           "2020-04-27T00:00:00"^^xsd:dateTime
                 ] ;
         vivo:hasPublicationVenue
-                <http://purl.org/roh/data#excelent-journal> .
+                <http://purl.org/roh/data#excelent-journal> ;
+
+        :hasMetric   <http://purl.org/roh/data#journal-article-1-metric> .
+
+<http://purl.org/roh/data#journal-article-1-metric>
+        a :PublicationMetric ;
+        :impactFactor "2.5"^^xsd:float ;
+        :quartile "Q2"^^xsd:string .
 
 <http://purl.org/roh/data#my-fabulous-patent>
         a       bibo:Patent ;
         vivo:identifier "my-fabulous-patent"^^xsd:string ;
         :hasKnowledgeArea     uneskos:C00750 ;
         :correspondingAuthor <http://purl.org/roh/data#investigador-1> ;
+        :ownerOrganization  <http://purl.org/roh/data#centro-investigacion-1>;
         bibo:authorList           [ a       rdf:Seq ;
                                     rdf:_1  <http://purl.org/roh/data#investigador-1> ;
                                     rdf:_2  <http://purl.org/roh/data#investigador-3> ];
@@ -305,6 +322,7 @@
         vivo:identifier "another-fabulous-patent"^^xsd:string ;
         :hasKnowledgeArea     uneskos:C00750 ;
         :correspondingAuthor <http://purl.org/roh/data#investigador-3> ;
+        :ownerOrganization  <http://purl.org/roh/data#centro-investigacion-1>;
         bibo:authorList           [ a       rdf:Seq ;
                                     rdf:_1  <http://purl.org/roh/data#investigador-1> ;
                                     rdf:_2  <http://purl.org/roh/data#investigador-1> ];

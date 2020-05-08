@@ -49,87 +49,87 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+    <!--  http://purl.org/roh/mirror/obo/bfo#BFO_0000179 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/bfo#BFO_0000179"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+    <!--  http://purl.org/roh/mirror/obo/bfo#BFO_0000180 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/bfo#BFO_0000180"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000111"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000112 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000112"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000114 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000114"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000115"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000116 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000116"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000117 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000117"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000118"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000119"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000412 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000412"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000600 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000600"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000601 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000601"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+    <!--  http://purl.org/roh/mirror/obo/iao#IAO_0000602 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    <owl:AnnotationProperty rdf:about=" http://purl.org/roh/mirror/obo/iao#IAO_0000602"/>
     
 
 
@@ -431,9 +431,9 @@ by creating a research management system with semantic capacities based on seman
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+    <!--  http://purl.org/roh/mirror/obo/ro#RO_0001025 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
+    <owl:ObjectProperty rdf:about=" http://purl.org/roh/mirror/obo/ro#RO_0001025"/>
     
 
 
@@ -2268,10 +2268,10 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#hrJobTitle -->
+    <!-- http://purl.org/roh/mirror/vivo#hrJobTitle -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hrJobTitle">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh/mirror/vivo#hrJobTitle">
+        <rdfs:domain rdf:resource="http://purl.org/roh/mirror/vivo#Position"/>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition http://en.wikipedia.org/wiki/Job_title#Job_title.</vitro:descriptionAnnot>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administrative secretary</vitro:exampleAnnot>
         <rdfs:label xml:lang="en">HR job title</rdfs:label>
@@ -6244,9 +6244,9 @@ Notice that a roh:Project may also be part (vivo:hasPart) of another project, e.
     
 
 
-    <!-- http://vivoweb.org/ontology/core#Position -->
+    <!-- http://purl.org/roh/mirror/vivo#Position -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    <owl:Class rdf:about="http://purl.org/roh/mirror/vivo#Position"/>
     
 
 
