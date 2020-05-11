@@ -498,12 +498,46 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#European -->
+
+    <owl:Class rdf:about="http://purl.org/roh#European"/>
+    
+
+
+    <!-- http://purl.org/roh#International -->
+
+    <owl:Class rdf:about="http://purl.org/roh#International"/>
+    
+
+
+    <!-- http://purl.org/roh#KnowledgeArea -->
+
+    <owl:Class rdf:about="http://purl.org/roh#KnowledgeArea">
+        <owl:disjointWith rdf:resource="http://purl.org/roh#ProjectClassification"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#Metric -->
 
     <owl:Class rdf:about="http://purl.org/roh#Metric">
         <rdfs:comment>Metric based on cfMetric, including attributes Identifier, Uniform Resource Identifier, Name, Description and linked to foaf:Agent, Keyword and optionally to ResearchObject</rdfs:comment>
         <rdfs:label xml:lang="en">Metric</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#National -->
+
+    <owl:Class rdf:about="http://purl.org/roh#National">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#ProjectClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Own -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Own"/>
     
 
 
@@ -537,6 +571,20 @@ by creating a research management system with semantic capacities based on seman
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PhD Thesis Metric</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#ProjectClassification -->
+
+    <owl:Class rdf:about="http://purl.org/roh#ProjectClassification">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Regional -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Regional"/>
     
 
 
@@ -1140,6 +1188,24 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
+    <!-- http://purl.org/rohes#FomentoInvestigacionCientificoTecnica -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#FomentoInvestigacionCientificoTecnica">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2013-2016"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#PromocionTalento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#FormacionTalento -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#FormacionTalento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2017-2020"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#GeneracionConocimiento"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#Gas -->
 
     <owl:Class rdf:about="http://purl.org/rohes#Gas">
@@ -1175,6 +1241,14 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <owl:Class rdf:about="http://purl.org/rohes#GastosExcepcionales">
         <rdfs:subClassOf rdf:resource="http://purl.org/rohes#Perdidas"/>
         <rdfs:label xml:lang="es">Gastos excepcionales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#GeneracionConocimiento -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#GeneracionConocimiento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2017-2020"/>
     </owl:Class>
     
 
@@ -1217,6 +1291,14 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <owl:Class rdf:about="http://purl.org/rohes#IVA">
         <rdfs:subClassOf rdf:resource="http://purl.org/rohes#Tax"/>
         <rdfs:label xml:lang="es">Impuesto sobre el Valor Añadido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#InfrastructurasInvestigacionEquipamientoCientifico -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#InfrastructurasInvestigacionEquipamientoCientifico">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#GeneracionConocimiento"/>
     </owl:Class>
     
 
@@ -1401,6 +1483,15 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
+    <!-- http://purl.org/rohes#Movilidad -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Movilidad">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FormacionTalento"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#FormacionI+D+i"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#OtrasComunicaciones -->
 
     <owl:Class rdf:about="http://purl.org/rohes#OtrasComunicaciones">
@@ -1503,6 +1594,23 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">PÉRDIDAS PROCEDENTES DE ACTIVOS NO CORRIENTES, OTROS GASTOS DE GESTIÓN ORDINARIA Y GASTOS EXCEPCIONALES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#PlanEstatal2013-2016 -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PlanEstatal2013-2016">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#National"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#PlanEstatal2017-2020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#PlanEstatal2017-2020 -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PlanEstatal2017-2020">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#National"/>
     </owl:Class>
     
 
@@ -1624,6 +1732,14 @@ a) El contrato se podrá celebrar con profesores o investigadores de reconocido 
 b) La finalidad del contrato será la de desarrollar tareas docentes o investigadoras a través de las que se aporten los conocimientos y la experiencia docente e investigadora de los indicados profesores a la universidad.
 c) El contrato será de carácter temporal con la duración que se acuerde entre las partes y dedicación a tiempo parcial o completo</rdfs:comment>
         <rdfs:label xml:lang="es">Profesor Visitante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#PromocionTalento -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PromocionTalento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2013-2016"/>
     </owl:Class>
     
 
@@ -1847,6 +1963,40 @@ c) El contrato será de carácter temporal con la duración que se acuerde entre
     
 
 
+    <!-- http://purl.org/rohes#SubprogramaEstatalFormacion -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaEstatalFormacion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PromocionTalento"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#SubprogramaEstatalIncorporacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#SubprogramaEstatalIncorporacion -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaEstatalIncorporacion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PromocionTalento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#SubprogramaFortalecimientoInstitucional -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaFortalecimientoInstitucional">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FomentoInvestigacionCientificoTecnica"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#SubprogramaGeneracionConocimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#SubprogramaGeneracionConocimiento -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaGeneracionConocimiento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FomentoInvestigacionCientificoTecnica"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#Suministros -->
 
     <owl:Class rdf:about="http://purl.org/rohes#Suministros">
@@ -1981,6 +2131,14 @@ c) El contrato será de carácter temporal con la duración que se acuerde entre
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">Tributos de carácter local</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#FormacionI+D+i -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#FormacionI+D+i">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FormacionTalento"/>
     </owl:Class>
     
 
@@ -2127,6 +2285,16 @@ El IFOP contribuye en primer lugar a la consecución de los objetivos de la pol�
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/roh#European"/>
+            <rdf:Description rdf:about="http://purl.org/roh#International"/>
+            <rdf:Description rdf:about="http://purl.org/roh#National"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Own"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Regional"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
