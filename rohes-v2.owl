@@ -364,6 +364,7 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/roh/mirror/vivo#identifier -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh/mirror/vivo#identifier"/>
+
     
 
 
@@ -2661,6 +2662,7 @@ El IFOP contribuye en primer lugar a la consecuci√≥n de los objetivos de la pol√
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesIntangibles"/>
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesMateriales"/>
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesMaterialesEInversionesInmobiliarias"/>
+            <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionsMateriales"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
