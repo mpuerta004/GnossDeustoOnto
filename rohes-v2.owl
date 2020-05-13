@@ -150,6 +150,12 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#metricOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#metricOf"/>
+    
+
+
     <!-- http://purl.org/roh/mirror/obo/bfo#BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000051"/>
@@ -337,6 +343,12 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#metricName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#metricName"/>
+    
+
+
     <!-- http://purl.org/roh/mirror/vivo#description -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh/mirror/vivo#description"/>
@@ -352,28 +364,6 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/roh/mirror/vivo#identifier -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh/mirror/vivo#identifier"/>
-    
-
-
-    <!-- http://purl.org/rohes#MencionCalidad -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#MencionCalidad">
-        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="es">La mención de calidad es una expresión de reconocimiento a la solvencia científico/técnica y formadora otorgada al programa de doctorado en su conjunto y a los grupos de investigación y departamentos que intervienen en el mismo. La mención de calidad ha sido sustituida por la mención hacia la excelencia, distinción con la que el Ministerio de Educación reconoce la calidad de los mejores programas oficiales de Doctorado, y supone un proceso previo de acreditación de los méritos y la trayectoria del programa ante la ANECA (artículo 16.1 del Real Decreto 99/2011, de 28 de enero, por el que se regulan las enseñanzas oficiales de doctorado: http://www.boe.es/boe/dias/2011/02/10/pdfs/BOE-A-2011-2541.pdf)</rdfs:comment>
-        <rdfs:label xml:lang="es">Mención de Calidad</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rohes#PremioExtraordinarioDoctorado -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#PremioExtraordinarioDoctorado">
-        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="es">El premio extraordinario de doctorado se concede a aquellos Doctores que, habiendo obtenido la mención &quot;cum laude&quot;, sean beneficiarios asimismo de dicho premio.</rdfs:comment>
-        <rdfs:label xml:lang="es">Premio extraordinario del doctorado</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -393,6 +383,15 @@ by creating a research management system with semantic capacities based on seman
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="es">La mención europea en el título de Doctor está regulada en el artículo 14 del Real Decreto 56/2005, de 21 de enero, sobre estudios universitarios oficiales de posgrado y en el artículo 22 del Real Decreto 1393/2007, de 29 de octubre, por el que se establece la ordenación de las enseñanzas universitarias oficiales. Los doctorandos que hayan comenzado sus estudios de doctorado con posterioridad al 11 de febrero de 2011 podrán obtener la mención internacional pero no la mención europea en el título de Doctor, ya que ésta ha sido derogada por el RD 99/2011. Los doctorandos que comenzaron sus estudios antes del 11 de febrero de 2011 y que hayan leído o lean sus tesis con posterioridad a dicha fecha, podrán obtener la mención europea, de acuerdo con la anterior normativa, o la mención internacional.</rdfs:comment>
         <rdfs:label xml:lang="es">Doctorado Europeo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rohes#doctoradoInternacional -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#doctoradoInternacional">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">Doctorado Internacional</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -438,10 +437,33 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/rohes#mencionCalidad -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#mencionCalidad">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">La mención de calidad es una expresión de reconocimiento a la solvencia científico/técnica y formadora otorgada al programa de doctorado en su conjunto y a los grupos de investigación y departamentos que intervienen en el mismo. La mención de calidad ha sido sustituida por la mención hacia la excelencia, distinción con la que el Ministerio de Educación reconoce la calidad de los mejores programas oficiales de Doctorado, y supone un proceso previo de acreditación de los méritos y la trayectoria del programa ante la ANECA (artículo 16.1 del Real Decreto 99/2011, de 28 de enero, por el que se regulan las enseñanzas oficiales de doctorado: http://www.boe.es/boe/dias/2011/02/10/pdfs/BOE-A-2011-2541.pdf)</rdfs:comment>
+        <rdfs:label xml:lang="es">Mención de Calidad</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rohes#premioExtraordinarioDoctorado -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#premioExtraordinarioDoctorado">
+        <rdfs:domain rdf:resource="http://purl.org/roh#PhDThesisMetric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">El premio extraordinario de doctorado se concede a aquellos Doctores que, habiendo obtenido la mención &quot;cum laude&quot;, sean beneficiarios asimismo de dicho premio.</rdfs:comment>
+        <rdfs:label xml:lang="es">Premio extraordinario del doctorado</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/rohes#rate -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/rohes#rate">
         <rdfs:domain rdf:resource="http://purl.org/rohes#Tax"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -498,19 +520,128 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#Accreditation -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Accreditation"/>
+    
+
+
+    <!-- http://purl.org/roh#Activity -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Activity"/>
+    
+
+
+    <!-- http://purl.org/roh#CurriculumVitae -->
+
+    <owl:Class rdf:about="http://purl.org/roh#CurriculumVitae"/>
+    
+
+
+    <!-- http://purl.org/roh#DegreeMetric -->
+
+    <owl:Class rdf:about="http://purl.org/roh#DegreeMetric">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
+        <owl:disjointWith rdf:resource="http://purl.org/roh#PublicationMetric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#European -->
+
+    <owl:Class rdf:about="http://purl.org/roh#European"/>
+    
+
+
+    <!-- http://purl.org/roh#Expense -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Expense"/>
+    
+
+
+    <!-- http://purl.org/roh#Funding -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Funding"/>
+    
+
+
+    <!-- http://purl.org/roh#FundingAmount -->
+
+    <owl:Class rdf:about="http://purl.org/roh#FundingAmount"/>
+    
+
+
+    <!-- http://purl.org/roh#FundingProgram -->
+
+    <owl:Class rdf:about="http://purl.org/roh#FundingProgram"/>
+    
+
+
+    <!-- http://purl.org/roh#FundingSource -->
+
+    <owl:Class rdf:about="http://purl.org/roh#FundingSource"/>
+    
+
+
+    <!-- http://purl.org/roh#Infrastructure -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Infrastructure"/>
+    
+
+
+    <!-- http://purl.org/roh#International -->
+
+    <owl:Class rdf:about="http://purl.org/roh#International"/>
+    
+
+
+    <!-- http://purl.org/roh#KnowledgeArea -->
+
+    <owl:Class rdf:about="http://purl.org/roh#KnowledgeArea">
+        <owl:disjointWith rdf:resource="http://purl.org/roh#ProjectClassification"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#Metric -->
 
     <owl:Class rdf:about="http://purl.org/roh#Metric">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#metricOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#ResearchObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#metricName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Metric based on cfMetric, including attributes Identifier, Uniform Resource Identifier, Name, Description and linked to foaf:Agent, Keyword and optionally to ResearchObject</rdfs:comment>
         <rdfs:label xml:lang="en">Metric</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.org/roh#National -->
+
+    <owl:Class rdf:about="http://purl.org/roh#National">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#ProjectClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#Own -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Own"/>
+    
+
+
     <!-- http://purl.org/roh#PhDThesisMetric -->
 
     <owl:Class rdf:about="http://purl.org/roh#PhDThesisMetric">
-        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Metric"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Thesis_Metric"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#cumLaude"/>
@@ -535,8 +666,52 @@ by creating a research management system with semantic capacities based on seman
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rohes#doctoradoEuropeo"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rohes#doctoradoInternacional"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rohes#mencionCalidad"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rohes#premioExtraordinarioDoctorado"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PhD Thesis Metric</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#ProjectClassification -->
+
+    <owl:Class rdf:about="http://purl.org/roh#ProjectClassification">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#PublicationMetric -->
+
+    <owl:Class rdf:about="http://purl.org/roh#PublicationMetric"/>
+    
+
+
+    <!-- http://purl.org/roh#Regional -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Regional"/>
     
 
 
@@ -546,6 +721,20 @@ by creating a research management system with semantic capacities based on seman
         <rdfs:subClassOf rdf:resource="http://pur.org/roh#Accreditation"/>
         <rdfs:comment xml:lang="en">An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so in the research field.</rdfs:comment>
         <rdfs:label xml:lang="en">Research Accreditation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#ResearchObject -->
+
+    <owl:Class rdf:about="http://purl.org/roh#ResearchObject"/>
+    
+
+
+    <!-- http://purl.org/roh#Thesis_Metric -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Thesis_Metric">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#DegreeMetric"/>
     </owl:Class>
     
 
@@ -561,6 +750,18 @@ The previous short definition was: &quot;An arbitrary classification of a space/
         <rdfs:comment>The entity research activity (roh:Activity), new in ROH represents the activities in which People participate (roh:participes) and organized by Organizations (foaf:Organization) reflected through the roh:hasRole relationship that connects with the intermediary entity vivo:OrganizerRole. Each activity is usually linked to a project through the relationship (roh:participes) and causes a project expenditure linked through (vivo:relates). A detailed hierarchy of activity subtypes is defined as roh:Activity: bibo:Conference, vivo:Internship or roh:ThesisViva.</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh/mirror/foaf#Agent -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/foaf#Agent"/>
+    
+
+
+    <!-- http://purl.org/roh/mirror/foaf#Document -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/foaf#Document"/>
     
 
 
@@ -602,12 +803,48 @@ Besides, an instance of a foaf:Organization is associated to the following entit
     
 
 
+    <!-- http://purl.org/roh/mirror/geonames#Feature -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/geonames#Feature"/>
+    
+
+
+    <!-- http://purl.org/roh/mirror/obo/bfo#BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000008"/>
+    
+
+
     <!-- http://purl.org/roh/mirror/obo/bfo#BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000023">
         <rdfs:comment>Based on VIVO defined roles, however in ROH, roles might be specific to a country or a university in a country. Therefore, their types have to refined per country and university case.</rdfs:comment>
         <rdfs:label xml:lang="en">Role</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh/mirror/obo/ero#ERO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0000005"/>
+    
+
+
+    <!-- http://purl.org/roh/mirror/obo/iao#IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/obo/iao#IAO_0000030"/>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#Kind -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/vcard#Kind"/>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vivo#AcademicDegree -->
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/vivo#AcademicDegree"/>
     
 
 
@@ -761,6 +998,22 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
+    <!-- http://purl.org/rohes#ActivoNoCorriente -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ActivoNoCorriente">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#Account"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#ComprasYGastosPorNaturaleza"/>
+        <rdfs:label xml:lang="es">Activo no corriente</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#AdaptacionDeTerrenos -->
 
     <owl:Class rdf:about="http://purl.org/rohes#AdaptacionDeTerrenos">
@@ -865,7 +1118,7 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <!-- http://purl.org/rohes#BienesDelPatrimonioHistorico -->
 
     <owl:Class rdf:about="http://purl.org/rohes#BienesDelPatrimonioHistorico">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -938,7 +1191,6 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
                 <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.org/rohes#Grupo2"/>
         <rdfs:label xml:lang="es">Compras y gastos por naturaleza</rdfs:label>
     </owl:Class>
     
@@ -977,7 +1229,7 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <!-- http://purl.org/rohes#Construcciones -->
 
     <owl:Class rdf:about="http://purl.org/rohes#Construcciones">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1073,7 +1325,7 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <!-- http://purl.org/rohes#ElementosDeTransporte -->
 
     <owl:Class rdf:about="http://purl.org/rohes#ElementosDeTransporte">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1103,7 +1355,7 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <!-- http://purl.org/rohes#EquiposParaProcesosDeInformacion -->
 
     <owl:Class rdf:about="http://purl.org/rohes#EquiposParaProcesosDeInformacion">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1136,6 +1388,24 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
         <rdfs:subClassOf rdf:resource="http:/purl.org/roh#KnowledgeArea"/>
         <rdfs:comment xml:lang="es">List of terms used in subject analysis and retrieval of documents and publications in the fields of education, culture, natural sciences, social and human sciences, communication and information by FECYT.</rdfs:comment>
         <rdfs:label xml:lang="es">FECYT Knowledge Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#FomentoInvestigacionCientificoTecnica -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#FomentoInvestigacionCientificoTecnica">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2013-2016"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#PromocionTalento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#FormacionTalento -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#FormacionTalento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2017-2020"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#GeneracionConocimiento"/>
     </owl:Class>
     
 
@@ -1179,17 +1449,10 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
-    <!-- http://purl.org/rohes#Grupo2 -->
+    <!-- http://purl.org/rohes#GeneracionConocimiento -->
 
-    <owl:Class rdf:about="http://purl.org/rohes#Grupo2">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#Account"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="es">Activo no corriente</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/rohes#GeneracionConocimiento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2017-2020"/>
     </owl:Class>
     
 
@@ -1221,10 +1484,18 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
+    <!-- http://purl.org/rohes#InfrastructurasInvestigacionEquipamientoCientifico -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#InfrastructurasInvestigacionEquipamientoCientifico">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#GeneracionConocimiento"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#InmovilizacionesIntangibles -->
 
     <owl:Class rdf:about="http://purl.org/rohes#InmovilizacionesIntangibles">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#Grupo2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#ActivoNoCorriente"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1236,25 +1507,10 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
-    <!-- http://purl.org/rohes#InmovilizacionesMaterialesEInversionesInmobiliarias -->
+    <!-- http://purl.org/rohes#InmovilizacionesMateriales -->
 
-    <owl:Class rdf:about="http://purl.org/rohes#InmovilizacionesMaterialesEInversionesInmobiliarias">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#Grupo2"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="es">INMOVILIZACIONES MATERIALES E INVERSIONES INMOBILIARIAS EN CURSO</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rohes#InmovilizacionsMateriales -->
-
-    <owl:Class rdf:about="http://purl.org/rohes#InmovilizacionsMateriales">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#Grupo2"/>
+    <owl:Class rdf:about="http://purl.org/rohes#InmovilizacionesMateriales">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#ActivoNoCorriente"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1266,10 +1522,25 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
+    <!-- http://purl.org/rohes#InmovilizacionesMaterialesEInversionesInmobiliarias -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#InmovilizacionesMaterialesEInversionesInmobiliarias">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#ActivoNoCorriente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">INMOVILIZACIONES MATERIALES E INVERSIONES INMOBILIARIAS EN CURSO</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#InstalacionesTecnicas -->
 
     <owl:Class rdf:about="http://purl.org/rohes#InstalacionesTecnicas">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1344,7 +1615,7 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <!-- http://purl.org/rohes#MaquinariaYUtillaje -->
 
     <owl:Class rdf:about="http://purl.org/rohes#MaquinariaYUtillaje">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1374,7 +1645,7 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <!-- http://purl.org/rohes#Mobiliario -->
 
     <owl:Class rdf:about="http://purl.org/rohes#Mobiliario">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1401,6 +1672,15 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     
 
 
+    <!-- http://purl.org/rohes#Movilidad -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Movilidad">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FormacionTalento"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#FormacionI+D+i"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/rohes#OtrasComunicaciones -->
 
     <owl:Class rdf:about="http://purl.org/rohes#OtrasComunicaciones">
@@ -1419,7 +1699,7 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
     <!-- http://purl.org/rohes#OtroInmovilizadoMaterial -->
 
     <owl:Class rdf:about="http://purl.org/rohes#OtroInmovilizadoMaterial">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1503,6 +1783,23 @@ The funding organization (vivo:FundingOrganization), imported from VIVO, inherit
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">PÉRDIDAS PROCEDENTES DE ACTIVOS NO CORRIENTES, OTROS GASTOS DE GESTIÓN ORDINARIA Y GASTOS EXCEPCIONALES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#PlanEstatal2013-2016 -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PlanEstatal2013-2016">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#National"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#PlanEstatal2017-2020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#PlanEstatal2017-2020 -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PlanEstatal2017-2020">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#National"/>
     </owl:Class>
     
 
@@ -1624,6 +1921,14 @@ a) El contrato se podrá celebrar con profesores o investigadores de reconocido 
 b) La finalidad del contrato será la de desarrollar tareas docentes o investigadoras a través de las que se aporten los conocimientos y la experiencia docente e investigadora de los indicados profesores a la universidad.
 c) El contrato será de carácter temporal con la duración que se acuerde entre las partes y dedicación a tiempo parcial o completo</rdfs:comment>
         <rdfs:label xml:lang="es">Profesor Visitante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#PromocionTalento -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PromocionTalento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PlanEstatal2013-2016"/>
     </owl:Class>
     
 
@@ -1841,8 +2146,54 @@ c) El contrato será de carácter temporal con la duración que se acuerde entre
 
     <owl:Class rdf:about="http://purl.org/rohes#Sexenio">
         <rdfs:subClassOf rdf:resource="http://purl.org/roh#ResearchAccreditation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#dateTimeInterval"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Tramo de investigación reconocido al profesorado universitario por los méritos de su actividad investigadora, labor realizada a través de un programa de ANECA. Se denomina así porque los solicitantes han de someter a evaluación una selección de los trabajos científicos publicados durante un período de seis años. La finalidad es el fomento, mediante la asignación de un complemento económico, del trabajo investigador de los docentes de las universidades españolas.</rdfs:comment>
         <rdfs:label xml:lang="es">Sexenio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#SubprogramaEstatalFormacion -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaEstatalFormacion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PromocionTalento"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#SubprogramaEstatalIncorporacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#SubprogramaEstatalIncorporacion -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaEstatalIncorporacion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#PromocionTalento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#SubprogramaFortalecimientoInstitucional -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaFortalecimientoInstitucional">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FomentoInvestigacionCientificoTecnica"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rohes#SubprogramaGeneracionConocimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rohes#SubprogramaGeneracionConocimiento -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#SubprogramaGeneracionConocimiento">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FomentoInvestigacionCientificoTecnica"/>
     </owl:Class>
     
 
@@ -1874,7 +2225,7 @@ c) El contrato será de carácter temporal con la duración que se acuerde entre
     <!-- http://purl.org/rohes#TerrenosYBienesNaturales -->
 
     <owl:Class rdf:about="http://purl.org/rohes#TerrenosYBienesNaturales">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionsMateriales"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#InmovilizacionesMateriales"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/rohes#code"/>
@@ -1985,6 +2336,26 @@ c) El contrato será de carácter temporal con la duración que se acuerde entre
     
 
 
+    <!-- http://purl.org/rohes#FormacionI+D+i -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#FormacionI+D+i">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rohes#FormacionTalento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
@@ -1995,6 +2366,12 @@ c) El contrato será de carácter temporal con la duración que se acuerde entre
         <rdfs:isDefinedBy rdf:resource="http://purl.org/roh/mirror/skos"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     
 
 
@@ -2130,6 +2507,46 @@ El IFOP contribuye en primer lugar a la consecución de los objetivos de la pol�
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/roh#Accreditation"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Activity"/>
+            <rdf:Description rdf:about="http://purl.org/roh#CurriculumVitae"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Expense"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Funding"/>
+            <rdf:Description rdf:about="http://purl.org/roh#FundingAmount"/>
+            <rdf:Description rdf:about="http://purl.org/roh#FundingProgram"/>
+            <rdf:Description rdf:about="http://purl.org/roh#FundingSource"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Infrastructure"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Metric"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/foaf#Agent"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/foaf#Document"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/geonames#Feature"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000008"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0000005"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/iao#IAO_0000030"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/vcard#Kind"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#AcademicDegree"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Relationship"/>
+            <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/roh#European"/>
+            <rdf:Description rdf:about="http://purl.org/roh#International"/>
+            <rdf:Description rdf:about="http://purl.org/roh#National"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Own"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Regional"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/rohes#AdaptacionDeTerrenos"/>
             <rdf:Description rdf:about="http://purl.org/rohes#ConstruccionesEnCurso"/>
             <rdf:Description rdf:about="http://purl.org/rohes#InstalacionesTecnicasEnMontaje"/>
@@ -2242,8 +2659,8 @@ El IFOP contribuye en primer lugar a la consecución de los objetivos de la pol�
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesIntangibles"/>
+            <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesMateriales"/>
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesMaterialesEInversionesInmobiliarias"/>
-            <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionsMateriales"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
