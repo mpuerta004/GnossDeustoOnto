@@ -11,6 +11,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/roh/mirror/bibo#"
+     xmlns:foaf="https://xmlns.com/foaf/0.1/"
      xmlns:iao1=" http://purl.org/roh/mirror/obo/iao#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -22,6 +23,7 @@
      xmlns:skos-thes="http://purl.org/iso25964/skos-thes#">
     <owl:Ontology rdf:about="http://purl.org/roh">
         <owl:versionIRI rdf:resource="http://purl.org/roh/2.0.0"/>
+        <terms:license rdf:resource="https://www.gnu.org/licenses/gpl-3.0.html"/>
         <rdfs:comment xml:lang="en">The University of Murcia signed on November 29, 2017, a Covenant with the Ministry of Economy, Industry and Competitiveness backing the “HÉRCULES: Semantic University Research Data” Project with a budget of FIVE MILLION FOUR HUNDRED AND SIXTY-TWO THOUSAND SIX HUNDRED euros with an 80% of co-financiering from the European Regional Development Fund program (ERDF) within the 2014-2020 period. 
 
 The project arose as a CRUE initiative, to create the basis for a new collaboration model between universities, to develop the information management systems and with the main objective of encouraging this type of collaboration.
@@ -36,6 +38,7 @@ Therefore, the purpose of this agreement was to contribute to the improvement of
     efficiency in the management of research. 
 
 by creating a research management system with semantic capacities based on semantic open data and that will provide a global view of the research data contained in the Spanish University System.</rdfs:comment>
+        <foaf:primaryTopic rdf:resource="http://purl.org/roh"/>
     </owl:Ontology>
     
 
@@ -486,6 +489,12 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- https://xmlns.com/foaf/0.1/primaryTopic -->
+
+    <owl:AnnotationProperty rdf:about="https://xmlns.com/foaf/0.1/primaryTopic"/>
     
 
 
@@ -1697,6 +1706,14 @@ by creating a research management system with semantic capacities based on seman
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#monetaryAmount">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>Data property used by roh:Funding and roh:FundingAmount</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#needsEthicalValidation -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#needsEthicalValidation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -3468,14 +3485,6 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">PhD Thesis Metric</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/roh#ProjectClassification -->
-
-    <owl:Class rdf:about="http://purl.org/roh#ProjectClassification">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
 
@@ -6445,6 +6454,12 @@ Contents
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#modality"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#needsEthicalValidation"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
