@@ -241,7 +241,7 @@ defined within the foaf:Person entity in ROH.
 -----------------------
 
 An Organization in ROH (see Figura 4) is a foaf:Organization which
-carries out several roh:Project. It is a child of foaf:Agent. Some
+carries out several vivo:Project. It is a child of foaf:Agent. Some
 organization can emit roh:Acreditation (e.g. ANECA or CENAI in Spain),
 those belonging to subclass roh:AccreditationIssuer, or award degrees
 (vivo:AwardedDegree), those of subclass vivo:University. An Organization
@@ -256,22 +256,23 @@ through vivo:dateTimeInterval linking it with an instance of
 vivo:DateTimeInterval.
 
 Based on FOAF \[10\], the foaf:Organization entity takes into account
-the object properties (attributes: roh:acronym, foaf:homepage) and data
-properties (links) defined by the Organization Unit in CERIF. It also
-takes into account and supports the relationships of CERIF Equipment
-(via roh:Equipment and roh:hasInfrastructure), Event (roh:Activity),
-Expertise and Skill (via vivo:keywords and roh:hasKnowledgeArea),
-Facility (roh:Facility and roh:hasInfrastructure), Funding
-(roh:Funding), Organization Unit (kinship relationships between
-organizations can be established with vivo:hasPart and vivo:partOf),
-Prize Award (through roh:Accreditation), Result Patent, Result Product,
-Result Publication and Service - all of them through roh:ResearchObject
-which can be obtained through the roh:produces relationship from the
-Projects in which an organization participates by playing a declared
-role through roh:hasRole, Person (through roh:hasPosition). Therefore,
-the CERIF data model for Organization is covered.
+the data properties (attributes: vivo:abbrevation, foaf:homepage) and
+data properties (links) defined by the Organization Unit in CERIF. It
+also takes into account and supports the relationships of CERIF
+Equipment (via entity vivo:Equipment and object property
+roh:hasInfrastructure), Event (roh:Activity), Expertise and Skill (via
+vivo:freeTextKeyword and roh:hasKnowledgeArea), Facility (roh:Facility
+and roh:hasInfrastructure), Funding (roh:Funding), Organization Unit
+(kinship relationships between organizations can be established with
+vivo:hasPart and vivo:partOf), Prize Award (through roh:Accreditation),
+Result Patent, Result Product, Result Publication and Service - all of
+them through roh:ResearchObject which can be obtained through the
+roh:produces relationship from the Projects in which an organization
+participates by playing a declared role through roh:hasRole, Person
+(through roh:hasPosition). Therefore, the CERIF data model for
+Organization is covered.
 
-An exhaustive hierarchy of organizations is includes, e.g.
+An exhaustive hierarchy of organizations is included, e.g.
 roh:AccreditationIssuer, vivo:Company or vivo:University, among many
 others.
 
@@ -286,7 +287,7 @@ following entities through object properties:
     through roh:hasRole in an activity or may through its participation
     role in a project participate (roh:participates) in an activity.
 
--   vivo:AwardedDegree, where and organization may roh:awards degrees
+-   vivo:AwardedDegree, where a vivo:University may roh:awards degrees
     which are related to both a concrete vivo:AcademicDegree and an
     instance of foaf:Person.
 
@@ -303,8 +304,8 @@ following entities through object properties:
 -   roh:FundingAmount where an organization may receive several funding
     amounts part of a roh:Funding through roh:grants object property.
 
--   vcard:Organization, where an organization obo:hasContactInfo is described
-    through ontology vcard.
+-   vcard:Organization, where an organization obo:hasContactInfo
+    described through ontology vcard.
 
 -   roh:Infrastructure, where an organization may roh:hasInfrastructure,
     belonging to any of its subclasses, e.g. roh:Equipment or
@@ -314,6 +315,9 @@ following entities through object properties:
     vivo:hasSucessorOrganization or vivo:hasPredecessorOrganization with
     another foaf:Organization or may be part of (vivo:partOf) or include
     (vivo:hasPart) other several foaf:Organization.
+
+See table in section [foaf:Person](#entity-person) for more details on object and data properties.
+
 
 ![A picture containing map, text Description automatically
 generated](.//media/3.roh-organization.png)
