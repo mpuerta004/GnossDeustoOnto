@@ -19,7 +19,7 @@ ROH Network of Ontology documentation
 
 [**Bibliography**](#bibliography)
 
-[**Other entities in ROH**] (#other-entities-in-roh)
+[**Other entities in ROH**](#other-entities-in-roh)
 
 **Ontological design**
 ======================
