@@ -316,7 +316,7 @@ following entities through object properties:
     another foaf:Organization or may be part of (vivo:partOf) or include
     (vivo:hasPart) other several foaf:Organization.
 
-See table in section [foaf:Person](#entity-person) for more details on object and data properties.
+See table in section [foaf:Person](#entity-person) for more details on object and data properties for foaf:Organization.
 
 
 ![A picture containing map, text Description automatically
