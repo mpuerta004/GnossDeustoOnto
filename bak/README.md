@@ -62,48 +62,42 @@ Hércules.
 **Entity Project**
 ------------------
 
-The main ROH entity is vivo:Project (see Figura 2), a new entity defined
+The main ROH entity is roh:Project (see Figura 2), a new entity defined
 within ROH. In ROH, a Project models a collaborative activity in
-business and science that often involves research or design and is
+business and science that often involves research or design, and is
 carefully planned to achieve a particular goal. Its configuration is
 inspired by the swrc:Project and takes into account the data properties
-of the cerif:Project and vivo:Project. It comprises all those properties
-and adds some new ones, for example, vivo:ProjectStatus, roh:modality or
-roh:title.
+of the cerif:Project. It comprises all those properties and adds some
+new ones, for example, roh:projectStatus or roh:title.
 
-It includes the Data Properties vivo:identifier, vivo:abbreviation,
-vivo:description, roh:title, vivo:ProjectStatus, vivo:freeTextKeyword,
-roh:modality, roh:foreseenJustificationDate and
-roh:needsEthicalValidation .
+It includes the Data Properties vivo:identifier, roh:acronym,
+vivo:description, roh:title, roh:projectStatus and vivo:keywords.
 
-An vivo:Project includes a property roh:hasKnowledgeArea with allows to
-associate a project with different instances of knowledge areas, e.g.
-instances of roh:UNESCOKnowledgeArea or rohes:FECYTKnowledgeArea concept
-hierarchies, but importantly allows a project also to be classified
-according the hierarchy defined under roh:ProjectClassification concept
-hierarchy, e.g. roh:Horizon2020.
+An roh:Project includes several sub-classes roh:PrivateProject and
+roh:PublicFundingProject. The first subclass includes the subclasses
+roh:Agreement whilst the latter one defines as its subclasses:
+roh:Bidding, roh:EuropeanProject, roh:NationalProject or
+roh:RegionalProject.
 
-Besides, an instance of a vivo:Project is associated to the following
+Besides, an instance of a roh:Project is associated to the following
 entities through object properties:
 
 -   foaf:Organización, where different organizations may play different
-    obo-bfo:Roles in a project, e.g. vivo:MemberRole or
+    obo:Roles in a project, e.g. vivo:MemberRole or
     vivo:AdministratorRole.
 
--   foaf:Person, where an person may play different obo-bfo:Roles, e.g.
+-   foaf:Person, where an person may play different obo:Roles, e.g.
     vivo:PrincipalInvestigatorRole or vivo:ResearcherRole,
 
 -   roh:ResearchObject, where a project roh:produces several
     roh:ResearchObject, where some results of a project might be for
-    example of types bibo:Journal, obo-iao:JournalArticle, or
-    roh:PhDThesis.
+    example of types bibo:Journal, obo:JournalArticle, or roh:PhDThesis.
 
--   roh:Funding roh:supports a vivo:Project, where funding roh:hasPart
-    roh:FundingAmount. A roh:FundingAmount roh:grants foaf:Organization
-    and describes the details about the funding associated to a project,
-    in what period and what organization it funds. A roh:FundingSource
-    is roh:promotedBy a vivo:FundingOrganization and roh:funds a
-    roh:FundingProgram.
+-   roh:FundingOrganization sponsors (roh:funds) a roh:Funding. A
+    funding roh:hasPart roh:FundingAmount. A roh:FundingAmount
+    roh:grants foaf:Organization it describes the details about the
+    funding associated to a project. A roh:Funding roh:supports a
+    roh:Project.
 
 -   roh:Expense is roh:spentBy a project, details allows to associate a
     project with its expenses.
@@ -112,33 +106,25 @@ entities through object properties:
     activities a project participates in.
 
 -   skos:Concept is linked through roh:knowledgeAreaOf to a project,
-    indicating the topics/concepts a project deals with and allowing it
-    to be classified under different taxonomies, e.g.
-    roh:ProjectClassification.
+    indicating the topics/concepts a project deals with.
 
--   vivo:ProjectContract subtype of vivo:Contract, a project may be
+-   roh:ProjectContract subtype of vivo:Contract, a project may be
     associated to a contract through relationship roh:hasContract.
 
 -   roh:Justification through relationship vivo:relates binds
-    justifications with a vivo:Project.
+    justifications with a roh:Project.
 
--   roh:Dossier through relationship vivo:relates binds a set of
-    documents, including the proposal, evaluation document, reports and
-    so on with a vivo:Project. A dossier is an administrative file
-    collection in which all assets related to a Project are stored,
-    including the Research Proposal, approval documents, viability plans
-    and so on associated to a project are stored.
+-   roh:File through relationship vivo:relates binds administrative file
+    with a roh:Project. An administrative file a collection in which all
+    assets related to a Project are stored, including the Research
+    Proposal, approval documents, viability plans and so on associated
+    to a project are stored.
 
-Notice that a vivo:Project may also be part (vivo:hasPart) of another
+Notice that a roh:Project may also be part (vivo:hasPart) of another
 project, e.g. child of a parent project. Besides, every instance of a
-vivo:Project is time bound by being associated with an instance of
+roh:Project is time bound by being associated with an instance of
 vivo:DateTimeInterval and geographically bound to an instance of
 gn:Feature (through relationship (gn:locatedIn).
-
-The following table shows the object and data properties associated to
-vivo:Project:
-
-![](.//media/1.roh-project-table.png)
 
 ![](.//media/1.roh-project.png)
 
