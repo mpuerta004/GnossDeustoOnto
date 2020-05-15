@@ -17,8 +17,6 @@ ROH Network of Ontology documentation
 
 [**Research Activity entity**](#activity-entity)
 
-[**Other entities in ROH**](#other-entities-in-roh)
-
 [**Bibliography**](#bibliography)
 
 **Ontological design**
@@ -32,23 +30,17 @@ reused ontologies together with their respective user licenses. All
 reused ontologies have been evaluated for compatibility with their
 import and extension.
 
-| prefix  | Ontology names           |      License                                          | Ontology namespace               |
+| prefix  | Ontology names           |      License                                          | Ontology website               |
 | --------| -------------------------|-------------------------------------------------------|--------------------------------|
-| bibo    | Bibliographic Ontology   | Creative Commons Attribution 1.0  Generic (CC BY 1.0) |<http://purl.org/roh/mirror/bibo#>|
-| foaf    | FOAF (Friend of a Friend)| Creative Commons Attribution License 1.0              |<http://purl.org/roh/mirror/foaf#>    |
-| gn      | Geonames ontology        | Creative Commons Attribution License 3.0              |<http://purl.org/roh/mirror/geonames#> |
-| obo-bfo     | OBO Foundry, Basic Formal Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/bfo#>|
-| obo-ero     | OBO Foundry, eagle-i Research Resource Ontology (ERO) |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/ero#>|
-| obo-iao     | OBO Foundry, Information Artifact Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/iao#>|
-| obo-ro     | OBO Foundry, Relations Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/ro#> |
-| owl    | OWL Web Ontology Language               |Creative Commons Attribution License 4.0       |<http://www.w3.org/2002/07/owl#>|
-| rdfs    | RDF Schema               |Creative Commons Attribution License 4.0               |<http://www.w3.org/2000/01/rdf-schema#>|
-| roh     | Red de Ontologías Hercules | Creative Commons Attribution License 4.0            |<http://purl.org/roh#>         |
-| rohes    | Red de Ontologías Hércules / Hercules Network of Ontologies, Spanish specialization | Creative Commons Attribution License 4.0            |<http://purl.org/rohes#>         |
-| rohum    | Red de Ontologías Hércules / Hercules Network of Ontologies – University of Murcia Specialization | Creative Commons Attribution License 4.0            |<http://purl.org/rohum#>         |
+| bibo    | Bibliographic Ontology   | Creative Commons Attribution 1.0  Generic (CC BY 1.0) |<http://purl.org/ontology/bibo>|
+| foaf    | FOAF (Friend of a Friend)| Creative Commons Attribution License 1.0              |<http://xmlns.com/foaf/0.1>    |
+| geonames| Geonames ontology        | Creative Commons Attribution License 3.0              |<http://www.geonames.org/ontology> |
+| obo     | Open Biological and Biomedical Ontology (OBO) |Creative Commons Attribution License 4.0| <http://purl.obolibrary.org/obo/>|
+| rdfs    | RDF Schema               |Creative Commons Attribution License 4.0               |<http://www.w3.org/2000/01/rdf-schema>|
+| roh     | Red de Ontologías Hercules | Creative Commons Attribution License 4.0            |<http://purl.org/roh>         |
 | skos    | SKOS Simple Knowledge Organization System RDF Schema | Creative Commons Attribution License 4.0 | <http://www.w3.org/2004/02/skos/core> |
-| vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vcard#> |
-| vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vivo#> |
+| vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <https://www.w3.org/2006/vcard/ns> |
+| vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://vivoweb.org/ontology/core> |
 
 **Conceptual diagram of ontology ROH**
 --------------------------------------
@@ -70,48 +62,42 @@ Hércules.
 **Entity Project**
 ------------------
 
-The main ROH entity is vivo:Project (see Figura 2), a new entity defined
+The main ROH entity is roh:Project (see Figura 2), a new entity defined
 within ROH. In ROH, a Project models a collaborative activity in
-business and science that often involves research or design and is
+business and science that often involves research or design, and is
 carefully planned to achieve a particular goal. Its configuration is
 inspired by the swrc:Project and takes into account the data properties
-of the cerif:Project and vivo:Project. It comprises all those properties
-and adds some new ones, for example, vivo:ProjectStatus, roh:modality or
-roh:title.
+of the cerif:Project. It comprises all those properties and adds some
+new ones, for example, roh:projectStatus or roh:title.
 
-It includes the Data Properties vivo:identifier, vivo:abbreviation,
-vivo:description, roh:title, vivo:ProjectStatus, vivo:freeTextKeyword,
-roh:modality, roh:foreseenJustificationDate and
-roh:needsEthicalValidation .
+It includes the Data Properties vivo:identifier, roh:acronym,
+vivo:description, roh:title, roh:projectStatus and vivo:keywords.
 
-An vivo:Project includes a property roh:hasKnowledgeArea with allows to
-associate a project with different instances of knowledge areas, e.g.
-instances of roh:UNESCOKnowledgeArea or rohes:FECYTKnowledgeArea concept
-hierarchies, but importantly allows a project also to be classified
-according the hierarchy defined under roh:ProjectClassification concept
-hierarchy, e.g. roh:Horizon2020.
+An roh:Project includes several sub-classes roh:PrivateProject and
+roh:PublicFundingProject. The first subclass includes the subclasses
+roh:Agreement whilst the latter one defines as its subclasses:
+roh:Bidding, roh:EuropeanProject, roh:NationalProject or
+roh:RegionalProject.
 
-Besides, an instance of a vivo:Project is associated to the following
+Besides, an instance of a roh:Project is associated to the following
 entities through object properties:
 
 -   foaf:Organización, where different organizations may play different
-    obo-bfo:Roles in a project, e.g. vivo:MemberRole or
+    obo:Roles in a project, e.g. vivo:MemberRole or
     vivo:AdministratorRole.
 
--   foaf:Person, where an person may play different obo-bfo:Roles, e.g.
+-   foaf:Person, where an person may play different obo:Roles, e.g.
     vivo:PrincipalInvestigatorRole or vivo:ResearcherRole,
 
 -   roh:ResearchObject, where a project roh:produces several
     roh:ResearchObject, where some results of a project might be for
-    example of types bibo:Journal, obo-iao:JournalArticle, or
-    roh:PhDThesis.
+    example of types bibo:Journal, obo:JournalArticle, or roh:PhDThesis.
 
--   roh:Funding roh:supports a vivo:Project, where funding roh:hasPart
-    roh:FundingAmount. A roh:FundingAmount roh:grants foaf:Organization
-    and describes the details about the funding associated to a project,
-    in what period and what organization it funds. A roh:FundingSource
-    is roh:promotedBy a vivo:FundingOrganization and roh:funds a
-    roh:FundingProgram.
+-   roh:FundingOrganization sponsors (roh:funds) a roh:Funding. A
+    funding roh:hasPart roh:FundingAmount. A roh:FundingAmount
+    roh:grants foaf:Organization it describes the details about the
+    funding associated to a project. A roh:Funding roh:supports a
+    roh:Project.
 
 -   roh:Expense is roh:spentBy a project, details allows to associate a
     project with its expenses.
@@ -120,33 +106,25 @@ entities through object properties:
     activities a project participates in.
 
 -   skos:Concept is linked through roh:knowledgeAreaOf to a project,
-    indicating the topics/concepts a project deals with and allowing it
-    to be classified under different taxonomies, e.g.
-    roh:ProjectClassification.
+    indicating the topics/concepts a project deals with.
 
--   vivo:ProjectContract subtype of vivo:Contract, a project may be
+-   roh:ProjectContract subtype of vivo:Contract, a project may be
     associated to a contract through relationship roh:hasContract.
 
 -   roh:Justification through relationship vivo:relates binds
-    justifications with a vivo:Project.
+    justifications with a roh:Project.
 
--   roh:Dossier through relationship vivo:relates binds a set of
-    documents, including the proposal, evaluation document, reports and
-    so on with a vivo:Project. A dossier is an administrative file
-    collection in which all assets related to a Project are stored,
-    including the Research Proposal, approval documents, viability plans
-    and so on associated to a project are stored.
+-   roh:File through relationship vivo:relates binds administrative file
+    with a roh:Project. An administrative file a collection in which all
+    assets related to a Project are stored, including the Research
+    Proposal, approval documents, viability plans and so on associated
+    to a project are stored.
 
-Notice that a vivo:Project may also be part (vivo:hasPart) of another
+Notice that a roh:Project may also be part (vivo:hasPart) of another
 project, e.g. child of a parent project. Besides, every instance of a
-vivo:Project is time bound by being associated with an instance of
+roh:Project is time bound by being associated with an instance of
 vivo:DateTimeInterval and geographically bound to an instance of
 gn:Feature (through relationship (gn:locatedIn).
-
-The following table shows the object and data properties associated to
-vivo:Project:
-
-![](.//media/1.roh-project-table.png)
 
 ![](.//media/1.roh-project.png)
 
@@ -158,11 +136,9 @@ vivo:Project:
 In ROH, there is a foaf:Person entity (see Figura 3) that inherits from
 foaf:Agent. The specialization of this entity imported from the VIVO
 ontology already adds some DataType properties of the research domain,
-but in ROH we also incorporate roh:taxID, roh:ORCID, vivo:researcherId
-or vivo:scopusId (all of them are subtypes of vivo:identifier, a given
-person may use or several alternatives of those identifiers) and also
-several object specific properties of the research domain as \"has a
-Role\" (roh:hasRole) in an Organization, \"has a CurriculumVitae\"
+but in ROH we also incorporate roh:taxID, roh:ORCID, vivo:researcherId or vivo:scopusId (all of them are subtypes of vivo:identifier, a given person may use or several alternatives of those identifiers) and also several
+object specific properties of the research domain as \"has a Role\"
+(roh: hasRole) in an Organization, \"has a CurriculumVitae\"
 (roh:hasCV), \"has some Accreditations\" (roh:hasAccreditation), \"has
 an Employment Contract\" (roh:hasContract), \"has some Knowledge Areas\"
 (roh:hasKnowledgeArea) or \"has some Roles\" (roh:hasRole) in Projects
@@ -172,26 +148,21 @@ Project over time.
 
 As mentioned above, foaf:Person in ROH is based on FOAF (Friend of a
 Friend \[2\], following patterns used in VIVO. That explains why it
-includes some of the basic FOAF properties such as foaf:name,
-foaf:nickname, foaf:title, foaf:mbox (note that this in fact an object
-property), foaf:img (note that this in fact an object property),
-vivo:description, foaf:firstName, foaf:surname, and
-rohes:secondFamilyName (for countries using two surnames). However, it
-considers all attributes and links defined in CERIF through the cfPers
-entity. foaf:Person incorporates the following data properties declared
-as attributes in cfPers, especially: identifier (vivo:identifier but
-preferrably roh:ORCID), roh:birthdate, foaf:gender, foaf:homepage (note
-that this in fact an object property), roh:researchLine,
-vivo:freeTextKeyword. Some important CERIF relationships that have also
-been adopted: Curriculum Vitae (roh:hasCV) which links foaf:Person with
-roh:CurriculumVitae, Event (roh:Activity) and Indicator
-(roh:Accreditation).
+includes some of the basic FOAF properties such as foaf:name, foaf:nick,
+foaf:title, foaf:mbox (note that this in fact an object property),
+foaf:img (note that this in fact an object property), vivo:description,
+foaf:firstName and foaf:surname. However, it considers all attributes
+and links defined in CERIF through the cfPers entity. foaf:Person
+incorporates the following data properties declared as attributes in
+cfPers, especially: identifier (vivo:identifier but preferrably
+roh:ORCID), roh:birthdate, foaf:gender, foaf:homepage (note that this in
+fact an object property), roh:researchLine, vivo:keywords. Some
+important CERIF relationships that have also been adopted: Curriculum
+Vitae (roh:hasCV) which links foaf:Person with roh:CurriculumVitae,
+Event (roh:Activity) and Indicator (roh:Accreditation).
 
 Besides, an instance of a foaf:Person is associated to the following
 entities through object properties:
-
--   vivo:AwardedDegree, where a researcher vivo:relates with an
-    roh:AcademicDegree
 
 -   roh:Accreditation, where a researcher roh:hasAccreditation of
     different types, e.g. roh:ResearchAccreditation or
@@ -200,10 +171,12 @@ entities through object properties:
 -   roh:Activity, where a researcher roh:participates in diverse
     activities, e.g. vivo:InvitedTalk or bibo:Conference.
 
+-   vivo:AwardedDegree, where a researcher vivo:relates with an
+    roh:AcademicDegree
+
 -   roh:CorrespondingAuthor, where a researcher is the
     roh:correspondingAuthor of different subtypes of roh:ResearchObject,
-    e.g. obo-iao:JournalArticle, vivo:ConferencePaper or
-    bibo:Proceedings.
+    e.g. obo:JournalArticle, vivo:ConferencePaper or bibo:Proceedings.
 
 -   roh:CurriculumVitae, where a researcher roh:hasCV which includes
     data type properties like roh:cites, roh:factorH or roh:summary
@@ -218,22 +191,17 @@ entities through object properties:
     organization linking it to any of the vivo:Position subclasess like
     vivo:FacultyAdministrativePosition or vivo:FacultyPosition.
 
--   roh:Role, where a foaf:Agent may roh:hasRole like
-    vivo:ResearcherRole or vivo:TeacherRole either in a vivo:Project or
-    a foaf:Organization.
+-   roh:Role, where a foaf:Agent, i.e. and its subclasses like
+    foaf:Person or roh:Researcher, roh:hasRole like vivo:ResearcherRole
+    or vivo:TeacherRole either in a roh:Project or a foaf:Organization.
 
 -   roh:PersonContract, where a researcher roh:hasContract described
     according to the attributes corresponding to parent class
     vivo:Contract.
 
--   bibo:Thesis, where a researcher is roh:supervisorOf of a
-    bibo:Thesis, concretely, any of its subtypes subclasess like
-    roh:MasterThesis or roh:PhDThesis.
-
-The following table fully describes the object and data properties
-defined within the foaf:Person entity in ROH.
-
-![](.//media/2.roh-person-table.png) 
+-   bibo:Thesis, where a researcher is roh:supervisor of a bibo:Thesis,
+    concretely, any of its subtypes subclasess like roh:MasterThesis or
+    roh:PhDThesis.
 
 ![](.//media/2.roh-person.png)
 
@@ -243,7 +211,7 @@ defined within the foaf:Person entity in ROH.
 -----------------------
 
 An Organization in ROH (see Figura 4) is a foaf:Organization which
-carries out several vivo:Project. It is a child of foaf:Agent. Some
+carries out several roh:Project. It is a child of foaf:Agent. Some
 organization can emit roh:Acreditation (e.g. ANECA or CENAI in Spain),
 those belonging to subclass roh:AccreditationIssuer, or award degrees
 (vivo:AwardedDegree), those of subclass vivo:University. An Organization
@@ -258,23 +226,22 @@ through vivo:dateTimeInterval linking it with an instance of
 vivo:DateTimeInterval.
 
 Based on FOAF \[10\], the foaf:Organization entity takes into account
-the data properties (attributes: vivo:abbrevation, foaf:homepage) and
-data properties (links) defined by the Organization Unit in CERIF. It
-also takes into account and supports the relationships of CERIF
-Equipment (via entity vivo:Equipment and object property
-roh:hasInfrastructure), Event (roh:Activity), Expertise and Skill (via
-vivo:freeTextKeyword and roh:hasKnowledgeArea), Facility (roh:Facility
-and roh:hasInfrastructure), Funding (roh:Funding), Organization Unit
-(kinship relationships between organizations can be established with
-vivo:hasPart and vivo:partOf), Prize Award (through roh:Accreditation),
-Result Patent, Result Product, Result Publication and Service - all of
-them through roh:ResearchObject which can be obtained through the
-roh:produces relationship from the Projects in which an organization
-participates by playing a declared role through roh:hasRole, Person
-(through roh:hasPosition). Therefore, the CERIF data model for
-Organization is covered.
+the object properties (attributes: roh:acronym, foaf:homepage) and data
+properties (links) defined by the Organization Unit in CERIF. It also
+takes into account and supports the relationships of CERIF Equipment
+(via roh:Equipment and roh:hasInfrastructure), Event (roh:Activity),
+Expertise and Skill (via vivo:keywords and roh:hasKnowledgeArea),
+Facility (roh:Facility and roh:hasInfrastructure), Funding
+(roh:Funding), Organization Unit (kinship relationships between
+organizations can be established with vivo:hasPart and vivo:partOf),
+Prize Award (through roh:Accreditation), Result Patent, Result Product,
+Result Publication and Service - all of them through roh:ResearchObject
+which can be obtained through the roh:produces relationship from the
+Projects in which an organization participates by playing a declared
+role through roh:hasRole, Person (through roh:hasPosition). Therefore,
+the CERIF data model for Organization is covered.
 
-An exhaustive hierarchy of organizations is included, e.g.
+An exhaustive hierarchy of organizations is includes, e.g.
 roh:AccreditationIssuer, vivo:Company or vivo:University, among many
 others.
 
@@ -289,7 +256,7 @@ following entities through object properties:
     through roh:hasRole in an activity or may through its participation
     role in a project participate (roh:participates) in an activity.
 
--   vivo:AwardedDegree, where a vivo:University may roh:awards degrees
+-   vivo:AwardedDegree, where and organization may roh:awards degrees
     which are related to both a concrete vivo:AcademicDegree and an
     instance of foaf:Person.
 
@@ -306,8 +273,8 @@ following entities through object properties:
 -   roh:FundingAmount where an organization may receive several funding
     amounts part of a roh:Funding through roh:grants object property.
 
--   vcard:Organization, where an organization obo:hasContactInfo
-    described through ontology vcard.
+-   vcard:Organization, where an organization obo:hasContactInfo is described
+    through ontology vcard.
 
 -   roh:Infrastructure, where an organization may roh:hasInfrastructure,
     belonging to any of its subclasses, e.g. roh:Equipment or
@@ -318,9 +285,6 @@ following entities through object properties:
     another foaf:Organization or may be part of (vivo:partOf) or include
     (vivo:hasPart) other several foaf:Organization.
 
-See table in section [foaf:Person](#entity-person) for more details on object and data properties for foaf:Organization.
-
-
 ![A picture containing map, text Description automatically
 generated](.//media/3.roh-organization.png)
 
@@ -330,7 +294,7 @@ generated](.//media/3.roh-organization.png)
 ------------------
 
 The roh:Funding entity (see Figura 5), new in ROH, represents the
-funding associated with a project (vivo:Project) whose funding is
+funding associated with a project (roh:Project) whose funding is
 associated with a funding program (roh:FundingProgram) and comes from a
 (roh:FundingSource), which in turn is associated with a funding
 organization (vivo:FundingOrganization). A funding is divided into
@@ -340,34 +304,23 @@ do so. Funding gathers information about the total funding received for
 a project and its currency through the roh:monetaryAmount and
 roh:currency properties.
 
-A funding can be marked as public through property roh:publicFunding and
-classified into roh:Grant, roh:Loan, roh:Outsourcing or
-roh:RefundableAdvance.
-
 The funding organization (vivo:FundingOrganization) (see Figura 5),
 imported from VIVO \[1\], inherits from foaf:Organization, finances
 (roh:funds) through different funding aids (roh:Funding) to projects
-(vivo:Project). A roh:Funding is associated with roh:FundingAmounts
-through object property obo-ro:hasPart. A roh:FundingProgram funds
-(roh:funds) a roh:Funding which is promoted by a roh:FundingSource.
-Notice that a roh:Funding is divided into several roh:FundingAmounts
-associated with different foaf:Organizations through the roh:grants
-relationship.
+(roh:Project) through the roh:supports relationship and through the
+roh:FundingAmounts into which a roh:Funding is divided. A funding
+organization in turn divides a roh:Funding into several
+roh:FundingAmounts associated with different foaf:Organizations through
+the roh:grants relationship.
 
 The Funding Program entity (roh:FundingProgram) (see Figura 5), new in
 ROH, defines the funding initiatives promoted (roh:promotedBy) by a
-Funding Source (roh:FundingSource) which is, likewise, promoted by a
-roh:FundingOrganization. A funding is in operation during a time
-interval (vivo:dateTimeInterval) and is usually linked to a geographical
-scope (geonames:Feature).
-
-The following table illustrates the object and data properties
-associated to entities dealing with the funding concept in ROH.
-
-![](.//media/4.roh-funding-table.png) 
+Funding Organization (vivo:FundingOrganization) and is in operation
+during a time interval (vivo:dateTimeInterval) and is usually linked to
+a geographical scope (geonames:Feature).
 
 ![A picture containing text, map Description automatically
-generated](.//media/4.roh-funding.png)
+generated](.//media/4.roh-funding-source.png)
 
 **Figura** **5**. Ontological diagram for Funding.
 
@@ -379,42 +332,22 @@ in ROH (see Figura 6) that corresponds to a research result generated by
 a person (researcher), usually through work on a project. A
 roh:ResearchObject is associated with several foaf:Person through the
 bibo:authorList property. Usually a roh:ResearchObject results from
-working on a vivo:Project (roh:produces). This entity defines a complete
+working on a roh:Project (roh:produces). This entity defines a complete
 taxonomy of research objects mostly imported from BIBO \[4\], covering
 all kinds of publications, patents, software and web pages. Some
 examples are: bibo:Collection, bibo:Journal, bibo:Article, bibo:Book,
 bibo:Chapter, bibo:Patent, bibo:Thesis and bibo:Webpage. The primary
 author of a research object is accessible through the
-roh:correspondingAuthor property. A roh:ResearchObject may have several
-knowledge areas bound to it through roh:hasKnowledgeArea.
+roh:correspondingAuthor property.
 
 The most important research result is represented by the concept
 publication and is defined mainly through the imported entity
-bibo:Document. Currently, the following sets of entities related to the
+vivo:Document. Currently, the following sets of entities related to the
 publication concept are supported: bibo:Collection (Newspaper, Magazine)
 and bibo:Document (Article, ConferencePaper, EditorialArticle, Book,
 Proceedings, ConferencePaper, Chapter, Thesis) and obo:Software.
 bibo:Thesis has been refined into roh:DegreeThesis, roh:MasterThesis and
 roh:PhDThesis.
-
-Two entities worth mentioning that belong to the hierarchy of classes
-associated to the roh:ResearchProject are: bibo:Report and roh:Dossier.
-A bibo:Report has been refined to include subclasses roh:EthicalReport
-(which includes roh:EthicalAudit and roh:EthicalValidation),
-roh:EvaluationSummary, roh:Justification and roh:ResearchProposal. This
-implies that a report may correspond to ethical validation and auditing
-needs of a project, correspond to the evaluation of the project, its
-proposal or the set of documents corresponding to its justification.
-
-On the other hand roh:Dossier represents a collection of reports related
-to a roh:Project, which may include all the types of reports above
-mentioned.
-
-The below table shows the data and object properties, as well as
-subclasses, of entity roh:ResearchObject.
-
-![](.//media/5.roh-research-object-table.png) 
-
 
 ![A picture containing text, map Description automatically
 generated](.//media/5.roh-research-object.png)
@@ -435,7 +368,7 @@ of activity subtypes is defined as roh:Activity: bibo:Conference,
 vivo:Internship or roh:ThesisViva.
 
 Related to Activity, it is also important to describe roh:Expense, which
-denotes the expenses incurred either by a project (vivo:Project) or
+denotes the expenses incurred either by a project (roh:Project) or
 person (foaf:Person) and linked through roh:spends. Every expense has a
 time instant of associated expense (vivo:DateTimeValue) and other
 properties that qualify it as (roh:monetaryAmount, roh:currency,
@@ -444,24 +377,10 @@ expenses, such as personnel costs, subcontracting, travel, equipment,
 research infrastructure and other goods and services. Currently, a
 distinction is made between roh:PersonExpense and roh:ProjectExpense.
 
-The following table illustrates the class hierarchy, object and data
-properties defined by roh:Activity.
-
-![](.//media/6.roh-activity-table.png) 
-
 ![A picture containing map, text Description automatically
 generated](.//media/6.roh-activity.png)
 
 **Figura** **7**. Ontological diagram for entity Activity.
-
-
-**Other entities in ROH**
--------------------------
-
-For more details on other entities in ROH check the tables detailing
-class hierarchies, object and data properties for all entities defined
-in ROH at the following PDF file:
-<https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/OntologyDocumentation.pdf>
 
 **Bibliography**
 ================
