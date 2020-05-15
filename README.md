@@ -15,6 +15,8 @@ Therefore, the purpose of this agreement was to contribute to the improvement of
 
 ## Documentation
 
+The manually generated documentation, recommended to be read firstly, is accessible at [Markdown documentation](https://github.com/HerculesCRUE/GnossDeustoOnto/tree/master/Documentation)
+
 ### `roh`
 
 - [Widoco](https://deustohercules.github.io/roh/roh/index.html)
