@@ -38,13 +38,15 @@ import and extension.
 | obo-bfo     | OBO Foundry, Basic Formal Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/bfo#>|
 | obo-ero     | OBO Foundry, eagle-i Research Resource Ontology (ERO) |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/ero#>|
 | obo-iao     | OBO Foundry, Information Artifact Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/iao#>|
-| obo-ro     | OBO Foundry, Relations Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/ro# >|
+| obo-ro     | OBO Foundry, Relations Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/ro#> |
 | owl    | OWL Web Ontology Language               |Creative Commons Attribution License 4.0       |<http://www.w3.org/2002/07/owl#>|
-| rdfs    | RDF Schema               |Creative Commons Attribution License 4.0               |<http://www.w3.org/2000/01/rdf-schema>|
-| roh     | Red de Ontologías Hercules | Creative Commons Attribution License 4.0            |<http://purl.org/roh>         |
+| rdfs    | RDF Schema               |Creative Commons Attribution License 4.0               |<http://www.w3.org/2000/01/rdf-schema#>|
+| roh     | Red de Ontologías Hercules | Creative Commons Attribution License 4.0            |<http://purl.org/roh#>         |
+| rohes    | Red de Ontologías Hércules / Hercules Network of Ontologies, Spanish specialization | Creative Commons Attribution License 4.0            |<http://purl.org/rohes#>         |
+| rohum    | Red de Ontologías Hércules / Hercules Network of Ontologies – University of Murcia Specialization | Creative Commons Attribution License 4.0            |<http://purl.org/rohum#>         |
 | skos    | SKOS Simple Knowledge Organization System RDF Schema | Creative Commons Attribution License 4.0 | <http://www.w3.org/2004/02/skos/core> |
-| vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <https://www.w3.org/2006/vcard/ns> |
-| vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://vivoweb.org/ontology/core> |
+| vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vcard#> |
+| vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vivo#> |
 
 **Conceptual diagram of ontology ROH**
 --------------------------------------
