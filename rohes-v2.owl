@@ -13,7 +13,8 @@
      xmlns:skos1="http://purl.org/roh/mirror/skos#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/rohes">
-        <owl:versionIRI rdf:resource="http://purl.org/rohes/2.0.0"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <owl:versionIRI rdf:resource="http://purl.org/rohes/1.0"/>
         <rdfs:comment xml:lang="en">The University of Murcia signed on November 29, 2017, a Covenant with the Ministry of Economy, Industry and Competitiveness backing the “HÉRCULES: Semantic University Research Data” Project with a budget of FIVE MILLION FOUR HUNDRED AND SIXTY-TWO THOUSAND SIX HUNDRED euros with an 80% of co-financiering from the European Regional Development Fund program (ERDF) within the 2014-2020 period. 
 
 The project arose as a CRUE initiative, to create the basis for a new collaboration model between universities, to develop the information management systems and with the main objective of encouraging this type of collaboration.
@@ -364,7 +365,6 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/roh/mirror/vivo#identifier -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/roh/mirror/vivo#identifier"/>
-
     
 
 
@@ -2662,7 +2662,6 @@ El IFOP contribuye en primer lugar a la consecución de los objetivos de la pol�
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesIntangibles"/>
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesMateriales"/>
             <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionesMaterialesEInversionesInmobiliarias"/>
-            <rdf:Description rdf:about="http://purl.org/rohes#InmovilizacionsMateriales"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

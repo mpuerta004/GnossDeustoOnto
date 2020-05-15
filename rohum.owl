@@ -13,6 +13,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
     <owl:Ontology rdf:about="http://purl.org/rohum">
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <owl:versionIRI rdf:resource="http://purl.org/rohum/1.0"/>
         <owl:imports rdf:resource="http://purl.org/rohes/2.0.0"/>
         <rdfs:comment xml:lang="en">The University of Murcia signed on November 29, 2017, a Covenant with the Ministry of Economy, Industry and Competitiveness backing the “HÉRCULES: Semantic University Research Data” Project with a budget of FIVE MILLION FOUR HUNDRED AND SIXTY-TWO THOUSAND SIX HUNDRED euros with an 80% of co-financiering from the European Regional Development Fund program (ERDF) within the 2014-2020 period. 
 
@@ -35,6 +37,23 @@ by creating a research management system with semantic capacities based on seman
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/rohes#chargedTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rohes#chargedTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -43,9 +62,15 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/rohes#code -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#code"/>
+    
+
+
     <!-- http://purl.org/rohes#finalist -->
 
-    <rdf:Description rdf:about="http://purl.org/rohes#finalist">
+    <owl:DatatypeProperty rdf:about="http://purl.org/rohes#finalist">
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -70,7 +95,7 @@ by creating a research management system with semantic capacities based on seman
             </rdfs:Datatype>
         </rdfs:range>
         <rdfs:comment>For finalist projects they may have one of the following three possible values: Finalist (F), Non finalist (N) y Partially Finalist (P)</rdfs:comment>
-    </rdf:Description>
+    </owl:DatatypeProperty>
     
 
 
@@ -82,6 +107,300 @@ by creating a research management system with semantic capacities based on seman
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/rohes#AdaptacionDeTerrenosInmovilizadoMaterial -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#AdaptacionDeTerrenosInmovilizadoMaterial"/>
+    
+
+
+    <!-- http://purl.org/rohes#Agua -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Agua"/>
+    
+
+
+    <!-- http://purl.org/rohes#AplicacionesInformaticas -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#AplicacionesInformaticas"/>
+    
+
+
+    <!-- http://purl.org/rohes#BienesDelPatrimonioHistorico -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#BienesDelPatrimonioHistorico"/>
+    
+
+
+    <!-- http://purl.org/rohes#Canones -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Canones"/>
+    
+
+
+    <!-- http://purl.org/rohes#Combustibles -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Combustibles"/>
+    
+
+
+    <!-- http://purl.org/rohes#ComunicacionesTelefonicas -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ComunicacionesTelefonicas"/>
+    
+
+
+    <!-- http://purl.org/rohes#Construcciones -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Construcciones"/>
+    
+
+
+    <!-- http://purl.org/rohes#ConstruccionesCompras -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ConstruccionesCompras"/>
+    
+
+
+    <!-- http://purl.org/rohes#ConstruccionesEnCursoInmovilizadoMaterial -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ConstruccionesEnCursoInmovilizadoMaterial"/>
+    
+
+
+    <!-- http://purl.org/rohes#Dietas -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Dietas"/>
+    
+
+
+    <!-- http://purl.org/rohes#ElementosDeTransporte -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ElementosDeTransporte"/>
+    
+
+
+    <!-- http://purl.org/rohes#EnergiaElectrica -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#EnergiaElectrica"/>
+    
+
+
+    <!-- http://purl.org/rohes#EquiposParaProcesosDeInformacion -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#EquiposParaProcesosDeInformacion"/>
+    
+
+
+    <!-- http://purl.org/rohes#EquiposParaProcesosDeInformacionCompras -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#EquiposParaProcesosDeInformacionCompras"/>
+    
+
+
+    <!-- http://purl.org/rohes#Gas -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Gas"/>
+    
+
+
+    <!-- http://purl.org/rohes#GastosExcepcionales -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#GastosExcepcionales"/>
+    
+
+
+    <!-- http://purl.org/rohes#InstalacionesTecnicasEnMontaje -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#InstalacionesTecnicasEnMontaje"/>
+    
+
+
+    <!-- http://purl.org/rohes#LimpiezaYAseo -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#LimpiezaYAseo"/>
+    
+
+
+    <!-- http://purl.org/rohes#Locomocion -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Locomocion"/>
+    
+
+
+    <!-- http://purl.org/rohes#MaquinariaUtillaje -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#MaquinariaUtillaje"/>
+    
+
+
+    <!-- http://purl.org/rohes#MaquinariaYUtillaje -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#MaquinariaYUtillaje"/>
+    
+
+
+    <!-- http://purl.org/rohes#MaterialDeOficina -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#MaterialDeOficina"/>
+    
+
+
+    <!-- http://purl.org/rohes#Mobiliario -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Mobiliario"/>
+    
+
+
+    <!-- http://purl.org/rohes#MobiliarioCompras -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#MobiliarioCompras"/>
+    
+
+
+    <!-- http://purl.org/rohes#OtrasComunicaciones -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#OtrasComunicaciones"/>
+    
+
+
+    <!-- http://purl.org/rohes#OtroInmovilizadoMaterial -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#OtroInmovilizadoMaterial"/>
+    
+
+
+    <!-- http://purl.org/rohes#OtroInmovilizadoMaterialCompras -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#OtroInmovilizadoMaterialCompras"/>
+    
+
+
+    <!-- http://purl.org/rohes#OtrosServicios -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#OtrosServicios"/>
+    
+
+
+    <!-- http://purl.org/rohes#OtrosSuministros -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#OtrosSuministros"/>
+    
+
+
+    <!-- http://purl.org/rohes#Prensa -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Prensa"/>
+    
+
+
+    <!-- http://purl.org/rohes#PrimasDeSeguros -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PrimasDeSeguros"/>
+    
+
+
+    <!-- http://purl.org/rohes#PropiedadIndustrial -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#PropiedadIndustrial"/>
+    
+
+
+    <!-- http://purl.org/rohes#Publicidad -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Publicidad"/>
+    
+
+
+    <!-- http://purl.org/rohes#ReparacionEquiposParaProcesosDeInformacion -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ReparacionEquiposParaProcesosDeInformacion"/>
+    
+
+
+    <!-- http://purl.org/rohes#ReparacionInstalacionesTecnicas -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ReparacionInstalacionesTecnicas"/>
+    
+
+
+    <!-- http://purl.org/rohes#ReparacionMaquinariaUtillaje -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ReparacionMaquinariaUtillaje"/>
+    
+
+
+    <!-- http://purl.org/rohes#ReparacionMobiliario -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ReparacionMobiliario"/>
+    
+
+
+    <!-- http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial"/>
+    
+
+
+    <!-- http://purl.org/rohes#Seguridad -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Seguridad"/>
+    
+
+
+    <!-- http://purl.org/rohes#ServiciosBancariosYSimilares -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ServiciosBancariosYSimilares"/>
+    
+
+
+    <!-- http://purl.org/rohes#ServiciosDeProfesionalesIndependientes -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#ServiciosDeProfesionalesIndependientes"/>
+    
+
+
+    <!-- http://purl.org/rohes#Suministros -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Suministros"/>
+    
+
+
+    <!-- http://purl.org/rohes#TerrenosYBienesNaturales -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#TerrenosYBienesNaturales"/>
+    
+
+
+    <!-- http://purl.org/rohes#TerrenosYBienesNaturalesCompras -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#TerrenosYBienesNaturalesCompras"/>
+    
+
+
+    <!-- http://purl.org/rohes#Transportes -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#Transportes"/>
+    
+
+
+    <!-- http://purl.org/rohes#TributosAutonomicos -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#TributosAutonomicos"/>
+    
+
+
+    <!-- http://purl.org/rohes#TributosEstatales -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#TributosEstatales"/>
+    
+
+
+    <!-- http://purl.org/rohes#TributosLocales -->
+
+    <owl:Class rdf:about="http://purl.org/rohes#TributosLocales"/>
     
 
 
@@ -4159,6 +4478,18 @@ Se excluyen los transportes complementarios ligados a comisiones de servicios qu
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">Vestuario</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http:/purl.org/roh#Expense -->
+
+    <owl:Class rdf:about="http:/purl.org/roh#Expense"/>
+    
+
+
+    <!-- http:/purl.org/roh#FundingSource -->
+
+    <owl:Class rdf:about="http:/purl.org/roh#FundingSource"/>
     
 
 

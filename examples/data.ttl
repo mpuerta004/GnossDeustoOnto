@@ -8,7 +8,7 @@
 @prefix skos-thes: <http://purl.org/iso25964/skos-thes#> .
 @prefix skos1: <http://purl.org/roh/mirror/skos#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix terms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix iao:   <http://purl.org/roh/mirror/obo/iao#> .
 @prefix bibo:  <http://purl.org/roh/mirror/bibo#> .
 @prefix vivo:  <http://purl.org/roh/mirror/vivo#> .
@@ -18,11 +18,26 @@
 @prefix foaf: 	<http://purl.org/roh/mirror/foaf#> .
 @prefix gn:	<http://purl.org/roh/mirror/geonames#> .
 @prefix dc:	<http://purl.org/dc/elements/1.1/> .
-
+@prefix void: <http://rdfs.org/ns/void#> .
 
 [ rdf:type owl:Ontology ;
    owl:imports <http://purl.org/roh/2.0.0>
  ] .
+
+ <http://purl.org/roh/data#> a void:Dataset ;
+        foaf:homepage <https://www.um.es/web/hercules/> ;
+        dcterms:title "ASIO example data"@en ;
+        dcterms:description "This dataset has been created to allow  the testing of the ROH ontology through the validation SPARQL queries"@en ;
+        dcterms:title "Datos de ejemplo ASIO"@es ;
+        dcterms:description "Este dataset ha sido creado para poder validar la ontología a través de las consultas SPARQL de validación"@es ;
+        dcterms:publisher "Universidad de Murcia";
+        dcterms:creator	"Universidad de Deusto", "GNOSS";
+        dcterms:created	"2020-05-15"^^xsd:date ;
+        dcterms:issued	"2020-05-15"^^xsd:date ;
+        dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+        dcterms:subject <http://dbpedia.org/resource/Semantic_Web> ;
+        void:feature <http://www.w3.org/ns/formats/Turtle> .
+
 
 <http://purl.org/roh/data#universidad-1>
         a       vivo:University ;
