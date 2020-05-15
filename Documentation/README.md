@@ -328,7 +328,7 @@ generated](.//media/3.roh-organization.png)
 ------------------
 
 The roh:Funding entity (see Figura 5), new in ROH, represents the
-funding associated with a project (roh:Project) whose funding is
+funding associated with a project (vivo:Project) whose funding is
 associated with a funding program (roh:FundingProgram) and comes from a
 (roh:FundingSource), which in turn is associated with a funding
 organization (vivo:FundingOrganization). A funding is divided into
@@ -338,23 +338,34 @@ do so. Funding gathers information about the total funding received for
 a project and its currency through the roh:monetaryAmount and
 roh:currency properties.
 
+A funding can be marked as public through property roh:publicFunding and
+classified into roh:Grant, roh:Loan, roh:Outsourcing or
+roh:RefundableAdvance.
+
 The funding organization (vivo:FundingOrganization) (see Figura 5),
 imported from VIVO \[1\], inherits from foaf:Organization, finances
 (roh:funds) through different funding aids (roh:Funding) to projects
-(roh:Project) through the roh:supports relationship and through the
-roh:FundingAmounts into which a roh:Funding is divided. A funding
-organization in turn divides a roh:Funding into several
-roh:FundingAmounts associated with different foaf:Organizations through
-the roh:grants relationship.
+(vivo:Project). A roh:Funding is associated with roh:FundingAmounts
+through object property obo-ro:hasPart. A roh:FundingProgram funds
+(roh:funds) a roh:Funding which is promoted by a roh:FundingSource.
+Notice that a roh:Funding is divided into several roh:FundingAmounts
+associated with different foaf:Organizations through the roh:grants
+relationship.
 
 The Funding Program entity (roh:FundingProgram) (see Figura 5), new in
 ROH, defines the funding initiatives promoted (roh:promotedBy) by a
-Funding Organization (vivo:FundingOrganization) and is in operation
-during a time interval (vivo:dateTimeInterval) and is usually linked to
-a geographical scope (geonames:Feature).
+Funding Source (roh:FundingSource) which is, likewise, promoted by a
+roh:FundingOrganization. A funding is in operation during a time
+interval (vivo:dateTimeInterval) and is usually linked to a geographical
+scope (geonames:Feature).
+
+The following table illustrates the object and data properties
+associated to entities dealing with the funding concept in ROH.
+
+![](.//media/4.roh-funding-table.png) 
 
 ![A picture containing text, map Description automatically
-generated](.//media/4.roh-funding-source.png)
+generated](.//media/4.roh-funding.png)
 
 **Figura** **5**. Ontological diagram for Funding.
 
