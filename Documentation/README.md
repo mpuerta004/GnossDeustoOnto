@@ -30,12 +30,16 @@ reused ontologies together with their respective user licenses. All
 reused ontologies have been evaluated for compatibility with their
 import and extension.
 
-| prefix  | Ontology names           |      License                                          | Ontology website               |
+| prefix  | Ontology names           |      License                                          | Ontology namespace               |
 | --------| -------------------------|-------------------------------------------------------|--------------------------------|
-| bibo    | Bibliographic Ontology   | Creative Commons Attribution 1.0  Generic (CC BY 1.0) |<http://purl.org/ontology/bibo>|
-| foaf    | FOAF (Friend of a Friend)| Creative Commons Attribution License 1.0              |<http://xmlns.com/foaf/0.1>    |
-| geonames| Geonames ontology        | Creative Commons Attribution License 3.0              |<http://www.geonames.org/ontology> |
-| obo     | Open Biological and Biomedical Ontology (OBO) |Creative Commons Attribution License 4.0| <http://purl.obolibrary.org/obo/>|
+| bibo    | Bibliographic Ontology   | Creative Commons Attribution 1.0  Generic (CC BY 1.0) |<http://purl.org/roh/mirror/bibo#>|
+| foaf    | FOAF (Friend of a Friend)| Creative Commons Attribution License 1.0              |<http://purl.org/roh/mirror/foaf#>    |
+| gn      | Geonames ontology        | Creative Commons Attribution License 3.0              |<http://purl.org/roh/mirror/geonames#> |
+| obo-bfo     | OBO Foundry, Basic Formal Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/bfo#>|
+| obo-ero     | OBO Foundry, eagle-i Research Resource Ontology (ERO) |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/ero#>|
+| obo-iao     | OBO Foundry, Information Artifact Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/iao#>|
+| obo-ro     | OBO Foundry, Relations Ontology |Creative Commons Attribution License 4.0| <http://purl.org/roh/mirror/obo/ro# >|
+| owl    | OWL Web Ontology Language               |Creative Commons Attribution License 4.0       |<http://www.w3.org/2002/07/owl#>|
 | rdfs    | RDF Schema               |Creative Commons Attribution License 4.0               |<http://www.w3.org/2000/01/rdf-schema>|
 | roh     | Red de Ontologías Hercules | Creative Commons Attribution License 4.0            |<http://purl.org/roh>         |
 | skos    | SKOS Simple Knowledge Organization System RDF Schema | Creative Commons Attribution License 4.0 | <http://www.w3.org/2004/02/skos/core> |
