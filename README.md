@@ -15,7 +15,7 @@ Therefore, the purpose of this agreement was to contribute to the improvement of
 
 ## Documentation
 
-The manually generated documentation, recommended to be read firstly, is accessible at [Markdown documentation](https://github.com/HerculesCRUE/GnossDeustoOnto/tree/master/Documentation). This documentation illustrates with diagrams how each main entity in ROH relates to other entities. It also includes for each entity a table listing its subclasses, object and data properties, which should be used by whoever wants to populate with instance data ROH. Finally, this documentation also links with the [ROH Reference specification](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/OntologyDocumentation.pdf).
+The manually generated documentation, recommended to be read firstly, is accessible at the [ROH Tutorial](https://github.com/HerculesCRUE/GnossDeustoOnto/tree/master/Documentation) in Markdown format. This documentation illustrates with diagrams how each main entity in ROH relates to other entities. It also includes for each entity a table listing its subclasses, object and data properties, which should be used by whoever wants to populate with instance data ROH. Finally, this documentation also links with the [ROH Reference specification](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/OntologyDocumentation.pdf).
 
 ### `roh`
 
