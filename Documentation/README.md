@@ -17,9 +17,9 @@ ROH Network of Ontology documentation
 
 [**Research Activity entity**](#activity-entity)
 
-[**Bibliography**](#bibliography)
-
 [**Other entities in ROH**](#other-entities-in-roh)
+
+[**Bibliography**](#bibliography)
 
 **Ontological design**
 ======================
