@@ -2550,7 +2550,7 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 
     <owl:NamedIndividual rdf:about="http://purl.org/rohes#General">
         <rdf:type rdf:resource="http://purl.org/rohes#IVA"/>
-        <rate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21%</rate>
+        <rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.0</rate>
     </owl:NamedIndividual>
     
 
