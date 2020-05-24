@@ -18,6 +18,10 @@ OWL en el proyecto Hércules. Dicho método incluye el uso de dos
 aplicaciones de control de versiones: WebProtégé
 (<https://webprotege.stanford.edu/>) y Git (<https://github.com/>).
 
+Instancia de WebProtégé desplegada en:
+
+http://herc-as-webprotege-desa.atica.um.es/
+
 Procedimiento
 =============
 
