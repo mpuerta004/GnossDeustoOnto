@@ -37,3 +37,5 @@ Next, you can find links to the automatically generated documentation with Widoc
 - [Widoco](https://deustohercules.github.io/roh/rohum/index.html)
 - [OOPs](https://deustohercules.github.io/roh/rohum/OOPSevaluation/oopsEval.html)
 
+### `FAIR tests`
+- [FAIR test for ROH ontology] (https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/#!/evaluations/4046)
