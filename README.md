@@ -16,7 +16,8 @@ Therefore, the purpose of this agreement was to contribute to the improvement of
 ## Documentation
 
 ### ROH Tutorial & ROH reference specification
-The manually generated documentation, recommended to be read firstly, is accessible at the [ROH Tutorial](https://github.com/HerculesCRUE/GnossDeustoOnto/tree/master/Documentation) in Markdown format. This documentation illustrates with diagrams how each main entity in ROH relates to other entities. It also includes for each entity a table listing its subclasses, object and data properties, which should be used by whoever wants to populate with instance data ROH. Finally, this documentation also links with the [ROH Reference specification](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/OntologyDocumentation.pdf).
+- The manually generated documentationis is accessible at [ROH Tutorial](https://github.com/HerculesCRUE/GnossDeustoOnto/tree/master/Documentation). It is written in Markdown format. It is recommended to be read firstly. This documentation illustrates with diagrams how each main entity in ROH relates to other entities. It also includes for each entity a table listing its subclasses, object and data properties, which should be used by whoever wants to populate with instance data ROH. 
+- The [ROH Reference specification](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/OntologyDocumentation.pdf) details for each ontology concept, each subclasses, object and datatype properties.
 
 Next, you can find links to the automatically generated documentation with Widoco and the ROH validation results returned by the tool OOPs:
 
