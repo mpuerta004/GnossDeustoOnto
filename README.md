@@ -1,4 +1,6 @@
-# Red de Ontologías Hércules
+![](./Documentation/media/CabeceraDocumentosMD.png)
+
+# ROH - Red de Ontologías Hércules
 
 The University of Murcia signed on November 29, 2017, a Covenant with the Ministry of Economy, Industry and Competitiveness backing the “HÉRCULES: Semantic University Research Data” Project with a budget of FIVE MILLION FOUR HUNDRED AND SIXTY-TWO THOUSAND SIX HUNDRED euros with an 80% of co-financiering from the European Regional Development Fund program (ERDF) within the 2014-2020 period. 
 
