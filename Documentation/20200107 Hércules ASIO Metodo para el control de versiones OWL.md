@@ -14,13 +14,15 @@ INTRODUCCIÓN
 ============
 
 El presente documento describe el método para el control de versiones
-OWL en el proyecto Hércules. Dicho método incluye el uso de dos
+OWL en el proyecto Hércules ASIO. Dicho método incluye el uso de dos
 aplicaciones de control de versiones: WebProtégé
 (<https://webprotege.stanford.edu/>) y Git (<https://github.com/>).
 
-Instancia de WebProtégé desplegada en:
+El proyecto Hércules ASIO dispone de una instancia de WebProtégé en:
 
 http://herc-as-webprotege-desa.atica.um.es/
+
+Contacte con el equipo de Hércules ASIO si desea acceso al repositorio.
 
 Procedimiento
 =============
