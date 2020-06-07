@@ -20,7 +20,7 @@ ROH stands for Red de Ontologías Hércules (Hercules Ontology Network).
 ## Documentation
 
 ### `ROH Tutorial & ROH reference specification`
-- [ROH Tutorial](https://github.com/HerculesCRUE/GnossDeustoOnto/tree/master/Documentation). This manually generated documentationis is written in Markdown format. It is recommended to be read firstly. This documentation illustrates with diagrams how each main entity in ROH relates to other entities. It also includes for each entity a table listing its subclasses, object and data properties, which should be used by whoever wants to populate with instance data ROH. 
+- [ROH Tutorial](https://github.com/HerculesCRUE/GnossDeustoOnto/tree/master/Documentation). This manually generated documentation is written in Markdown format. It is recommended to be read firstly. This documentation illustrates with diagrams how each main entity in ROH relates to other entities. It also includes for each entity a table listing its subclasses, object and data properties, which should be used by whoever wants to populate with instance data ROH. 
 - [ROH Reference specification](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/OntologyDocumentation.pdf). This document details in tabular form, for each ontology concept, each subclasses, object and datatype properties.
 
 Next, you can find links to the automatically generated documentation with Widoco and the ROH validation results returned by the tool OOPs:
