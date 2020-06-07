@@ -2,13 +2,13 @@
 
 # Hércules Backend ASIO. Método para el control de versiones OWL 
 
-[1 INTRODUCCIÓN](#introducción)
+[INTRODUCCIÓN](#introducción)
 
-[2 Procedimiento](#procedimiento)
+[Procedimiento](#procedimiento)
 
-[2.1 Edición y versionado en WebProtégé](#edición-y-versionado-en-webprotégé)
+[  Edición y versionado en WebProtégé](#edición-y-versionado-en-webprotégé)
 
-[2.2 Publicación en GitHub](#publicación-en-github)
+[  Publicación en GitHub](#publicación-en-github)
 
 INTRODUCCIÓN
 ============
