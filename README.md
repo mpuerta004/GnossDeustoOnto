@@ -25,7 +25,7 @@ The ROH network of ontologies is divided into 3 main parts.
 
 The following subsections provide documentation about the Hercules Network of Ontologies (ROH). 
 * Firstly, readers should explore the [ROH Tutorial & ROH reference specification](#headManualDoc)
-* Secondly, readers can access to the automatically generated documentation, thanks to Widoco, where full details about the entities, object and data type properties for each of the network of ontologies parts are described: [ROH](#headROH), [ROHES](#headROHES), [ROHUM](#headROHUM). 
+* Secondly, readers can access to the automatically generated documentation, thanks to Widoco, where full details about the entities, object and data type properties for each of the entities modelled in the different parts of teh network of ontologies are described: [ROH](#headROH), [ROHES](#headROHES), [ROHUM](#headROHUM). 
 
 A section to review the [FAIR principles](#headFAIR) compliance of ROH has also been included. 
 
