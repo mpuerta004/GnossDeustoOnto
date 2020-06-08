@@ -7,15 +7,15 @@ ROH Network of Ontology documentation
 
 [**2. Conceptual diagram of ontology ROH**](#headSection2)
 
-[**3. Entity Project**](#headSection3)
+[**3. Project entity**](#headSection3)
 
-[**4. Entity Person**](#headSection4)
+[**4. Person entity**](#headSection4)
 
 [**5. Organization entity**](#headSection5)
 
 [**6. Funding entity**](#headSection6)
 
-[**7. Research Object Entity**](#headSection7)
+[**7. Research Object entity**](#headSection7)
 
 [**8. Research Activity entity**](#headSection8)
 
@@ -29,7 +29,19 @@ ROH Network of Ontology documentation
 This section is going to break down from minor to major detail the
 design of the ROH ontology network. Starting in [section 2](#headSection2) with a high
 level diagram, the most important entities will be shown. Then, the main
-entities modelled are broken down (sections 1.6 to 1.7). Before, the following table shows a summary of the
+entities modelled are broken down (sections [section 3](#headSection3) to [section 9](#headSection9)). 
+
+Notice that ROH network of ontologies is divided into 3 main parts. 
+* The generic ontology, named ROH, contains the most important entities and properties to model information in the academic domain. It contains the most important part of the network of ontologies. It covers the academic domain, being agnostic to the country or the research organization whose information wants to be modelled with. 
+* ROHES is a specialization of ROH for the Spanish science and research domain. It includes some additional entities which are only used in the Spanish science and research domain, e.g. rohes:Sexenio or rohes:ProfesorTitularDeEscuelaUniversitaria. 
+* Finally, ROHUM is a specialization to cater with the special modelling needs of University of Murcia. More concretely, a wide range of entities to support the accounting system and be able to model expense types are included, e.g. rohum:ArrendamientosYCanones or rohum:InversionNueva.
+
+The automatically generated documentation, through the Widoco tool, for each ontological part is referenced below:
+- Widoco generated documentation for [ROH](https://deustohercules.github.io/roh/roh/index.html)
+- Widoco generated documentation for [ROHES](https://deustohercules.github.io/roh/rohes/index.html)
+- Widoco generated documentation for [ROHUM](https://deustohercules.github.io/roh/rohum/index.html)
+
+The following table shows a summary of the
 reused ontologies together with their respective user licenses. All
 reused ontologies have been evaluated for compatibility with their
 import and extension.
@@ -69,7 +81,7 @@ entities in ROH have geographic (class Geonames:Feature) and temporal
 **Figura** **1**. High level diagram of ROH --Red de Ontologías
 Hércules.
 
-**<a name="headSection3">3. Project Entity**
+**<a name="headSection3">3. Project entity**
 ============================================
 
 The main ROH entity is vivo:Project (see Figura 2), a new entity defined
@@ -154,7 +166,7 @@ vivo:Project:
 
 **Figura** **2**. Ontological diagram for entity Project.
 
-**<a name="headSection4">4. Person Entity**
+**<a name="headSection4">4. Person entity**
 ===========================================
 
 In ROH, there is a foaf:Person entity (see Figura 3) that inherits from
@@ -373,7 +385,7 @@ generated](.//media/4.roh-funding.png)
 
 **Figura** **5**. Ontological diagram for Funding.
 
-**<a name="headSection7">7. Research Object Entity**
+**<a name="headSection7">7. Research Object entity**
 ====================================================
 
 The research object entity (roh:ResearchObject) is a new entity defined
