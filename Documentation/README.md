@@ -5,7 +5,7 @@ ROH Network of Ontology documentation
 
 [**1. Ontological design**](#headSection1)
 
-[**2. Conceptual diagram of ontology ROH**](#conceptual-diagram-of-ontology-roh)
+[**2. Conceptual diagram of ontology ROH**](#headSection2)
 
 [**3. Entity Project**](#entity-project)
 
@@ -27,7 +27,7 @@ ROH Network of Ontology documentation
 =====================================================
 
 This section is going to break down from minor to major detail the
-design of the ROH ontology network. Starting in [section 1](#headSection1) with a high
+design of the ROH ontology network. Starting in [section 2](#headSection2) with a high
 level diagram, the most important entities will be shown. Then, the main
 entities modelled are broken down (sections 1.6 to 1.7). Before, the following table shows a summary of the
 reused ontologies together with their respective user licenses. All
@@ -52,7 +52,7 @@ import and extension.
 | vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vcard#> |
 | vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vivo#> |
 
-**Conceptual diagram of ontology ROH**
+**<a name="headSection2"></a>2. Conceptual diagram of ontology ROH**
 --------------------------------------
 
 Figura 1 shows the main entities modelled in the Hercules Ontology
