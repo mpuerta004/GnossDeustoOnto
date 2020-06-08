@@ -3,31 +3,31 @@
 ROH Network of Ontology documentation 
 =====================================
 
-[**Ontological design**](#ontological-design)
+[**1. Ontological design**](#1.-ontological-design)
 
-[**Conceptual diagram of ontology ROH**](#conceptual-diagram-of-ontology-roh)
+[**2. Conceptual diagram of ontology ROH**](#conceptual-diagram-of-ontology-roh)
 
-[**Entity Project**](#entity-project)
+[**3. Entity Project**](#entity-project)
 
-[**Entity Person**](#entity-person)
+[**4. Entity Person**](#entity-person)
 
-[**Organization entity**](#organization-entity)
+[**5. Organization entity**](#organization-entity)
 
-[**Funding entity**](#funding-entity)
+[**6. Funding entity**](#funding-entity)
 
-[**Research Object Entity**](#research-object-entity)
+[**7. Research Object Entity**](#research-object-entity)
 
-[**Research Activity entity**](#activity-entity)
+[**8. Research Activity entity**](#activity-entity)
 
-[**Other entities in ROH**](#other-entities-in-roh)
+[**9. Other entities in ROH**](#other-entities-in-roh)
 
 [**Bibliography**](#bibliography)
 
-**Ontological design**
-======================
+**<a name="headSection1"></a>1. Ontological design**
+=====================================================
 
 This section is going to break down from minor to major detail the
-design of the ROH ontology network. Starting in section 1 with a high
+design of the ROH ontology network. Starting in [section 1](#headSection1) with a high
 level diagram, the most important entities will be shown. Then, the main
 entities modelled are broken down (sections 1.6 to 1.7). Before, the following table shows a summary of the
 reused ontologies together with their respective user licenses. All
