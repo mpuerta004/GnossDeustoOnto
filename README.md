@@ -19,7 +19,7 @@ ROH stands for Red de Ontologías Hércules (Hercules Ontology Network).
 
 ## Documentation
 The ROH network of ontologies is divided into 3 main parts. 
-* The generic ontology, named ROH, contains the most important entities and properties to model information in the academic domain. It contains the most important part of the network of ontologies. It covers the academic domain, being agnostic to the country or the research organization whose information wants to be modelled with. 
+* The generic ontology, named ROH, contains the most important entities and properties to model information in the academic domain. It contains the most important part of the network of ontologies. It covers the academic domain, being agnostic to the country or the research organization whose information wants to be modelled with it. 
 * ROHES is a specialization of ROH for the Spanish science and research domain. It includes some additional entities which are only used in the Spanish science and research domain, e.g. rohes:Sexenio or rohes:ProfesorTitularDeEscuelaUniversitaria. 
 * Finally, ROHUM is a specialization to cater with the special modelling needs of University of Murcia. More concretely, a wide range of entities to support the accounting system and be able to model expense types are included, e.g. rohum:ArrendamientosYCanones or rohum:InversionNueva.
 
