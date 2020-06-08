@@ -3,7 +3,7 @@
 ROH Network of Ontology documentation 
 =====================================
 
-[**1. Ontological design**](#1.-ontological-design)
+[**1. Ontological design**](#headSection1)
 
 [**2. Conceptual diagram of ontology ROH**](#conceptual-diagram-of-ontology-roh)
 
