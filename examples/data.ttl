@@ -54,23 +54,23 @@
                              vivo:hasGoverningAuthority  <http://purl.org/roh/data#gobierno-vasco> ;
                              :title                  "Grupo reconocido por el Gobierno Vasco"
                            ] ;
-        :hasKnowledgeArea  uneskos:C00758 , uneskos:C00261 , uneskos:C00134 ;
-        gn:locatedIn <http://sws.geonames.org/3128026/> .
+        :hasKnowledgeArea  uneskos:120318 , uneskos:120304 , uneskos:120601 ;
+        gn:locatedIn <https://sws.geonames.org/3128026/> .
 
 
 
 <http://purl.org/roh/data#centro-investigacion-2>
         a                  :ResearchGroup ;
-        :hasKnowledgeArea  uneskos:C00758 , uneskos:C00261 , uneskos:C03604 .
+        :hasKnowledgeArea  uneskos:120318 , uneskos:120304 , uneskos:570508 .
 
 <http://purl.org/roh/data#centro-investigacion-3>
         a                  :ResearchGroup ;
-        :hasKnowledgeArea  uneskos:C00758 , uneskos:C03604 ;
-        gn:locatedIn <http://sws.geonames.org/3128026/> .
+        :hasKnowledgeArea  uneskos:120318 , uneskos:570508 ;
+        gn:locatedIn <https://sws.geonames.org/3128026/> .
 
 <http://purl.org/roh/data#investigador-1>
         a                  foaf:Person ;
-        :hasKnowledgeArea  uneskos:C00261 , uneskos:C00134 ;
+        :hasKnowledgeArea  uneskos:120304 , uneskos:120601 ;
         :hasPosition       [ a       :ResearcherPosition ;
                              vivo:dateTimeInterval
                                      [ a       vivo:DateTimeInterval ;
@@ -107,7 +107,7 @@
 
 <http://purl.org/roh/data#investigador-2>
         a                  foaf:Person ;
-        :hasKnowledgeArea  uneskos:C00261 , uneskos:C03604 ;
+        :hasKnowledgeArea  uneskos:120304 , uneskos:570508 ;
         :hasPosition       [ a       :ResearcherPosition ;
                              vivo:dateTimeInterval
                                      [ a       vivo:DateTimeInterval ;
@@ -133,7 +133,7 @@
 
 <http://purl.org/roh/data#investigador-3>
         a                  foaf:Person ;
-        :hasKnowledgeArea  uneskos:C00758 ;
+        :hasKnowledgeArea  uneskos:120318 ;
         :hasPosition       [ a       :ResearcherPosition ;
                              vivo:dateTimeInterval
                                      [ a       vivo:DateTimeInterval ;
@@ -225,11 +225,11 @@
 
 <http://purl.org/roh/data#another-project>
         a                     vivo:Project ;
-        :hasKnowledgeArea     uneskos:C00944 .
+        :hasKnowledgeArea     uneskos:120703 .
 
 <http://purl.org/roh/data#another-great-project>
         a                     vivo:Project ;
-        :hasKnowledgeArea     uneskos:C00261 .
+        :hasKnowledgeArea     uneskos:120304 .
 
 <http://purl.org/roh/data#a-project-in-negotiation>
         a                     vivo:Project ;
@@ -310,7 +310,7 @@
 
 <http://purl.org/roh/data#a-project>
         a                     vivo:Project ;
-        :hasKnowledgeArea     uneskos:C00750 ;
+        :hasKnowledgeArea     uneskos:1203 ;
         :isSupportedBy         [ a               :Funding ;
                                  ro:hasPart     [ a                :FundingAmount ;
                                                    :grants          <http://purl.org/roh/data#centro-investigacion-1> ;
@@ -341,7 +341,7 @@
                                  vivo:relatedBy  <http://purl.org/roh/data#a-project>
 
         ] ;
-        gn:locatedIn    <http://www.geonames.org/3336903/> ;
+        gn:locatedIn    <https://sws.geonames.org/3336903/> ;
         :spends      <http://purl.org/roh/data#an-intern-expense> ;
         :foreseenJustificationDate "2019-03-31T00:00:00"^^xsd:dateTime, "2020-03-31T00:00:00"^^xsd:dateTime .
 
@@ -382,7 +382,7 @@
         a                         iao:IAO_0000013 ;
         dc:title
                 "My great journal article" ;
-        :hasKnowledgeArea     uneskos:C00750 ;
+        :hasKnowledgeArea     uneskos:1203 ;
         :correspondingAuthor      <http://purl.org/roh/data#investigador-1> ;
         bibo:authorList           [ a       rdf:Seq ;
                                     rdf:_1  <http://purl.org/roh/data#investigador-1> ;
@@ -406,7 +406,7 @@
 <http://purl.org/roh/data#my-fabulous-patent>
         a       bibo:Patent ;
         vivo:identifier "my-fabulous-patent"^^xsd:string ;
-        :hasKnowledgeArea     uneskos:C00750 ;
+        :hasKnowledgeArea     uneskos:1203 ;
         :correspondingAuthor <http://purl.org/roh/data#investigador-1> ;
         :ownerOrganization  <http://purl.org/roh/data#centro-investigacion-1>;
         bibo:authorList           [ a       rdf:Seq ;
@@ -421,7 +421,7 @@
 <http://purl.org/roh/data#another-fabulous-patent>
         a       bibo:Patent ;
         vivo:identifier "another-fabulous-patent"^^xsd:string ;
-        :hasKnowledgeArea     uneskos:C00750 ;
+        :hasKnowledgeArea     uneskos:1203 ;
         :correspondingAuthor <http://purl.org/roh/data#investigador-3> ;
         :ownerOrganization  <http://purl.org/roh/data#centro-investigacion-1>;
         bibo:authorList           [ a       rdf:Seq ;
