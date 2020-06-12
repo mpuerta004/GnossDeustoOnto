@@ -3,33 +3,45 @@
 ROH Network of Ontology documentation 
 =====================================
 
-[**Ontological design**](#ontological-design)
+[**1. Ontological design**](#headSection1)
 
-[**Conceptual diagram of ontology ROH**](#conceptual-diagram-of-ontology-roh)
+[**2. Conceptual diagram of ontology ROH**](#headSection2)
 
-[**Entity Project**](#entity-project)
+[**3. Project entity**](#headSection3)
 
-[**Entity Person**](#entity-person)
+[**4. Person entity**](#headSection4)
 
-[**Organization entity**](#organization-entity)
+[**5. Organization entity**](#headSection5)
 
-[**Funding entity**](#funding-entity)
+[**6. Funding entity**](#headSection6)
 
-[**Research Object Entity**](#research-object-entity)
+[**7. Research Object entity**](#headSection7)
 
-[**Research Activity entity**](#activity-entity)
+[**8. Research Activity entity**](#headSection8)
 
-[**Other entities in ROH**](#other-entities-in-roh)
+[**9. Other entities in ROH**](#headSection9)
 
 [**Bibliography**](#bibliography)
 
-**Ontological design**
-======================
+**<a name="headSection1"></a>1. Ontological design**
+====================================================
 
 This section is going to break down from minor to major detail the
-design of the ROH ontology network. Starting in section 1 with a high
+design of the ROH ontology network. Starting in [section 2](#headSection2) with a high
 level diagram, the most important entities will be shown. Then, the main
-entities modelled are broken down (sections 1.6 to 1.7). Before, the following table shows a summary of the
+entities modelled are broken down (sections [section 3](#headSection3) to [section 9](#headSection9)). 
+
+Notice that ROH network of ontologies is divided into 3 main parts. 
+* The generic ontology, named ROH, contains the most important entities and properties to model information in the academic domain. It contains the most important part of the network of ontologies. It covers the academic domain, being agnostic to the country or the research organization whose information wants to be modelled with. 
+* ROHES is a specialization of ROH for the Spanish science and research domain. It includes some additional entities which are only used in the Spanish science and research domain, e.g. rohes:Sexenio or rohes:ProfesorTitularDeEscuelaUniversitaria. 
+* Finally, ROHUM is a specialization to cater with the special modelling needs of University of Murcia. More concretely, a wide range of entities to support the accounting system and be able to model expense types are included, e.g. rohum:ArrendamientosYCanones or rohum:InversionNueva.
+
+The automatically generated documentation, through the Widoco tool, for each ontological part is referenced below:
+- Widoco generated documentation for [ROH](https://deustohercules.github.io/roh/roh/index.html)
+- Widoco generated documentation for [ROHES](https://deustohercules.github.io/roh/rohes/index.html)
+- Widoco generated documentation for [ROHUM](https://deustohercules.github.io/roh/rohum/index.html)
+
+The following table shows a summary of the
 reused ontologies together with their respective user licenses. All
 reused ontologies have been evaluated for compatibility with their
 import and extension.
@@ -52,8 +64,8 @@ import and extension.
 | vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vcard#> |
 | vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vivo#> |
 
-**Conceptual diagram of ontology ROH**
---------------------------------------
+**<a name="headSection2"></a>2. Conceptual diagram of ontology ROH**
+====================================================================
 
 Figura 1 shows the main entities modelled in the Hercules Ontology
 Network (HON in English, ROH-Red de Ontologías Hércules in Spanish).
@@ -69,8 +81,8 @@ entities in ROH have geographic (class Geonames:Feature) and temporal
 **Figura** **1**. High level diagram of ROH --Red de Ontologías
 Hércules.
 
-**Entity Project**
-------------------
+**<a name="headSection3">3. Project entity**
+============================================
 
 The main ROH entity is vivo:Project (see Figura 2), a new entity defined
 within ROH. In ROH, a Project models a collaborative activity in
@@ -154,8 +166,8 @@ vivo:Project:
 
 **Figura** **2**. Ontological diagram for entity Project.
 
-**Entity Person**
------------------
+**<a name="headSection4">4. Person entity**
+===========================================
 
 In ROH, there is a foaf:Person entity (see Figura 3) that inherits from
 foaf:Agent. The specialization of this entity imported from the VIVO
@@ -241,8 +253,8 @@ defined within the foaf:Person entity in ROH.
 
 **Figura** **3**. Ontological Diagram for entity Person.
 
-**Organization entity**
------------------------
+**<a name="headSection5">5. Organization entity**
+=================================================
 
 An Organization in ROH (see Figura 4) is a foaf:Organization which
 carries out several vivo:Project. It is a child of foaf:Agent. Some
@@ -328,8 +340,8 @@ generated](.//media/3.roh-organization.png)
 
 **Figura** **4**. Ontological diagram for entity Organization.
 
-**Funding entity**
-------------------
+**<a name="headSection6">6. Funding entity**
+============================================
 
 The roh:Funding entity (see Figura 5), new in ROH, represents the
 funding associated with a project (vivo:Project) whose funding is
@@ -373,8 +385,8 @@ generated](.//media/4.roh-funding.png)
 
 **Figura** **5**. Ontological diagram for Funding.
 
-**Research Object Entity**
---------------------------
+**<a name="headSection7">7. Research Object entity**
+====================================================
 
 The research object entity (roh:ResearchObject) is a new entity defined
 in ROH (see Figura 6) that corresponds to a research result generated by
@@ -423,8 +435,8 @@ generated](.//media/5.roh-research-object.png)
 
 **Figura** **6**. Ontological diagram for ResearchObject.
 
-**Activity entity**
--------------------
+**<a name="headSection8">8. Activity entity**
+=============================================
 
 The entity research activity (roh:Activity), new in ROH and visualized
 in Figura 7, represents the activities in which People participate
@@ -457,13 +469,14 @@ generated](.//media/6.roh-activity.png)
 **Figura** **7**. Ontological diagram for entity Activity.
 
 
-**Other entities in ROH**
--------------------------
+**<a name="headSection9">9. Other entities in ROH**
+===================================================
 
 For more details on other entities in ROH check the tables detailing
 class hierarchies, object and data properties for all entities defined
 in ROH at the following PDF file:
-<https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/OntologyDocumentation.pdf>
+<https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/1-%20OntologyDocumentation.pdf>
+
 
 **Bibliography**
 ================
