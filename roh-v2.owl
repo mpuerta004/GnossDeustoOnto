@@ -497,7 +497,7 @@ by creating a research management system with semantic capacities based on seman
         <owl:inverseOf rdf:resource="http://purl.org/roh#hasCV"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#CurriculumVitae"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
-		<rdfs:comment xml:lang="en">An object property linking a CV to the person it belongs to.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object property linking a CV to the person it belongs to.</rdfs:comment>
         <rdfs:label xml:lang="es">CV de</rdfs:label>
         <rdfs:label xml:lang="en">CV of</rdfs:label>
     </owl:ObjectProperty>
@@ -510,9 +510,9 @@ by creating a research management system with semantic capacities based on seman
         <owl:inverseOf rdf:resource="http://purl.org/roh#hasAccreditation"/>
         <rdfs:domain rdf:resource="http://purl.org/roh#Accreditation"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/foaf#Agent"/>
-		<rdfs:comment xml:lang="en">An object property linking an Accreditation to the Agent is associated with.</rdfs:comment>
-        <rdfs:label xml:lang="es">acreditación de</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking an Accreditation to the Agent is associated with.</rdfs:comment>
         <rdfs:label xml:lang="en">accreditation of</rdfs:label>
+        <rdfs:label xml:lang="es">acreditación de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -534,9 +534,9 @@ by creating a research management system with semantic capacities based on seman
         <owl:inverseOf rdf:resource="http://purl.org/roh#awards"/>
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/vivo#AwardedDegree"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/vivo#University"/>
-		<rdfs:comment xml:lang="en">An object property linking an AwardedDegree to the University that awarded it.</rdfs:comment>
-        <rdfs:label xml:lang="es">concedido por</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking an AwardedDegree to the University that awarded it.</rdfs:comment>
         <rdfs:label xml:lang="en">awarded by</rdfs:label>
+        <rdfs:label xml:lang="es">concedido por</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -546,9 +546,9 @@ by creating a research management system with semantic capacities based on seman
     <owl:ObjectProperty rdf:about="http://purl.org/roh#awards">
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/vivo#University"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/vivo#AwardedDegree"/>
-		<rdfs:comment xml:lang="en">An object property linking the University awarding a degree to the AwardedDegree.</rdfs:comment>
-        <rdfs:label xml:lang="es">concede</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking the University awarding a degree to the AwardedDegree.</rdfs:comment>
         <rdfs:label xml:lang="en">awards</rdfs:label>
+        <rdfs:label xml:lang="es">concede</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -570,9 +570,9 @@ by creating a research management system with semantic capacities based on seman
     <owl:ObjectProperty rdf:about="http://purl.org/roh#contractOf">
         <owl:inverseOf rdf:resource="http://purl.org/roh#hasContract"/>
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/vivo#Contract"/>
-		<rdfs:comment xml:lang="en">An object property linking a Contract to an Entity.</rdfs:comment>
-        <rdfs:label xml:lang="es">contrato de</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking a Contract to an Entity.</rdfs:comment>
         <rdfs:label xml:lang="en">contract of</rdfs:label>
+        <rdfs:label xml:lang="es">contrato de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -583,9 +583,9 @@ by creating a research management system with semantic capacities based on seman
         <owl:inverseOf rdf:resource="http://purl.org/roh#contractSigningDateOf"/>
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/vivo#Contract"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeValue"/>
-		<rdfs:comment xml:lang="en">An object property linking a Contract with the date (DateTimeValue) when it was signed.</rdfs:comment>
-        <rdfs:label xml:lang="es">fecha de firma del contrato</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking a Contract with the date (DateTimeValue) when it was signed.</rdfs:comment>
         <rdfs:label xml:lang="en">contract signing date</rdfs:label>
+        <rdfs:label xml:lang="es">fecha de firma del contrato</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -595,9 +595,9 @@ by creating a research management system with semantic capacities based on seman
     <owl:ObjectProperty rdf:about="http://purl.org/roh#contractSigningDateOf">
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/vivo#DateTimeValue"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/vivo#Contract"/>
-		<rdfs:comment xml:lang="en">An object property linking a signing date (DateTimeValue) with a Contract.</rdfs:comment>
-        <rdfs:label xml:lang="es">fecha de firma asociada a contrato</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking a signing date (DateTimeValue) with a Contract.</rdfs:comment>
         <rdfs:label xml:lang="en">contract signing date of</rdfs:label>
+        <rdfs:label xml:lang="es">fecha de firma asociada a contrato</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -607,7 +607,7 @@ by creating a research management system with semantic capacities based on seman
     <owl:ObjectProperty rdf:about="http://purl.org/roh#correspondingAuthor">
         <owl:inverseOf rdf:resource="http://purl.org/roh#correspondingAuthorOf"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
-		<rdfs:comment xml:lang="en">An object property linking an Entity to a Person, considered the author of such Thing.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object property linking an Entity to a Person, considered the author of such Thing.</rdfs:comment>
         <rdfs:label xml:lang="es">autor de correspondencia</rdfs:label>
         <rdfs:label xml:lang="en">corresponding author</rdfs:label>
     </owl:ObjectProperty>
@@ -618,7 +618,7 @@ by creating a research management system with semantic capacities based on seman
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#correspondingAuthorOf">
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
-		<rdfs:comment xml:lang="en">An object property linking a Person with a Thing, such person is corresponding author for.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object property linking a Person with a Thing, such person is corresponding author for.</rdfs:comment>
         <rdfs:label xml:lang="es">autor de correspondencia de</rdfs:label>
         <rdfs:label xml:lang="en">corresponding author of</rdfs:label>
     </owl:ObjectProperty>
@@ -629,7 +629,7 @@ by creating a research management system with semantic capacities based on seman
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#fundedBy">
         <owl:inverseOf rdf:resource="http://purl.org/roh#funds"/>
-		<rdfs:comment xml:lang="en">An object property linking a Thing when is funded by another Thing.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object property linking a Thing when is funded by another Thing.</rdfs:comment>
         <rdfs:label xml:lang="es">financiado por</rdfs:label>
         <rdfs:label xml:lang="en">fundedBy</rdfs:label>
     </owl:ObjectProperty>
@@ -639,11 +639,10 @@ by creating a research management system with semantic capacities based on seman
     <!-- http://purl.org/roh#funds -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh#funds">
-		<rdfs:comment xml:lang="en">An object property linking a Thing when it funds another Thing.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object property linking a Thing when it funds another Thing.</rdfs:comment>
         <rdfs:label xml:lang="es">financia</rdfs:label>
         <rdfs:label xml:lang="en">funds</rdfs:label>
     </owl:ObjectProperty>
-	
     
 
 
@@ -653,7 +652,7 @@ by creating a research management system with semantic capacities based on seman
         <owl:inverseOf rdf:resource="http://purl.org/roh#grants"/>
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/foaf#Organization"/>
         <rdfs:range rdf:resource="http://purl.org/roh#FundingAmount"/>
-		<rdfs:comment xml:lang="en">An object property linking an Organization with a FundingAmount.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object property linking an Organization with a FundingAmount.</rdfs:comment>
         <rdfs:label xml:lang="es">concedido por</rdfs:label>
         <rdfs:label xml:lang="en">granted by</rdfs:label>
     </owl:ObjectProperty>
@@ -665,7 +664,7 @@ by creating a research management system with semantic capacities based on seman
     <owl:ObjectProperty rdf:about="http://purl.org/roh#grants">
         <rdfs:domain rdf:resource="http://purl.org/roh#FundingAmount"/>
         <rdfs:range rdf:resource="http://purl.org/roh/mirror/foaf#Organization"/>
-		<rdfs:comment xml:lang="en">An object property linking a FundingAmount with an Organization.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object property linking a FundingAmount with an Organization.</rdfs:comment>
         <rdfs:label xml:lang="es">concede a</rdfs:label>
         <rdfs:label xml:lang="en">grants</rdfs:label>
     </owl:ObjectProperty>
@@ -677,9 +676,9 @@ by creating a research management system with semantic capacities based on seman
     <owl:ObjectProperty rdf:about="http://purl.org/roh#hasAccreditation">
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/foaf#Agent"/>
         <rdfs:range rdf:resource="http://purl.org/roh#Accreditation"/>
-		<rdfs:comment xml:lang="en">An object property linking an Agent with an Accreditation it posseses.</rdfs:comment>
-        <rdfs:label xml:lang="es">tiene acreditación</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking an Agent with an Accreditation it posseses.</rdfs:comment>
         <rdfs:label xml:lang="en">has accreditation</rdfs:label>
+        <rdfs:label xml:lang="es">tiene acreditación</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -689,9 +688,9 @@ by creating a research management system with semantic capacities based on seman
     <owl:ObjectProperty rdf:about="http://purl.org/roh#hasCV">
         <rdfs:domain rdf:resource="http://purl.org/roh/mirror/foaf#Person"/>
         <rdfs:range rdf:resource="http://purl.org/roh#CurriculumVitae"/>
-		<rdfs:comment xml:lang="en">An object property linking a Person with her CV.</rdfs:comment>
-        <rdfs:label xml:lang="es">tiene CV</rdfs:label>
+        <rdfs:comment xml:lang="en">An object property linking a Person with her CV.</rdfs:comment>
         <rdfs:label xml:lang="en">has CV</rdfs:label>
+        <rdfs:label xml:lang="es">tiene CV</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1556,7 +1555,7 @@ by creating a research management system with semantic capacities based on seman
     <owl:DatatypeProperty rdf:about="http://purl.org/roh#cumLaude">
         <rdfs:domain rdf:resource="http://purl.org/roh#Thesis_Metric"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="en">Meaning &quot;with praise&quot;, used to indicate the level of distinction with which an academic degree has been earned.</rdfs:label>
+        <rdfs:comment xml:lang="en">Meaning &quot;with praise&quot;, used to indicate the level of distinction with which an academic degree has been earned.</rdfs:comment>
         <rdfs:label xml:lang="en">cum laude</rdfs:label>
         <rdfs:label xml:lang="es">cum laude</rdfs:label>
     </owl:DatatypeProperty>
