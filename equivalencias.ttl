@@ -1,0 +1,13 @@
+@prefix roh: <http://purl.org/roh#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vivo: <http://purl.org/roh/mirror/vivo#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+
+roh:DoctoralDegree  owl:equivalentClass bibo:ThesisDegree .
+
+roh:Award owl:equivalentClass vivo:Award .
+
+roh:Activity  owl:equivalentClass event:Event .
+
+roh:ResearchGroup owl:equivalentClass vivo:ResearchOrganization .
