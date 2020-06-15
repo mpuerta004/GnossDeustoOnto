@@ -4168,6 +4168,14 @@ The most important research result is represented by the concept publication and
     
 
 
+    <!-- http://purl.org/roh#TechnicalReport -->
+
+    <owl:Class rdf:about="http://purl.org/roh#TechnicalReport">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/bibo#Report"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#TechnicalSupportStaffGrant -->
 
     <owl:Class rdf:about="http://purl.org/roh#TechnicalSupportStaffGrant">
@@ -7466,8 +7474,8 @@ Notice that a roh:Project may also be part (vivo:hasPart) of another project, e.
      -->
 
     <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000004">
-        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
         <rdfs:label xml:lang="es">continuador independiente</rdfs:label>
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
     </rdf:Description>
     
 
