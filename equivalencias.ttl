@@ -11,3 +11,5 @@ roh:Award owl:equivalentClass vivo:Award .
 roh:Activity  owl:equivalentClass event:Event .
 
 roh:ResearchGroup owl:equivalentClass vivo:ResearchOrganization .
+
+roh:AcademicDegree owl:equivalentClass vivo:AcademicDegree .
