@@ -64,6 +64,16 @@ import and extension.
 | vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vcard#> |
 | vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vivo#> |
 
+
+When designing and developing the ontology, priority has been given to its flexibility to ensure easy extensibility. This has been achieved thanks to two factors: the categorization of concepts instead of the use of hierarchies and the modularity of the ontology. By avoiding hierarchies, the ontology can be much more flexible, since different institutions can use different hierarchies to classify their projects (for example, universities that classify their projects according to the geographical scope of the call, as opposed to other universities that classify them according to the public or private nature of the call). Against this, the use of categories has been prioritized, properties that allow the categorization of entities according to different criteria. However, thanks to its modular design (roh, rohes, roum), our ontology allows any European country, territorial administrative entity or university to develop its own sub-ontology (refinements and extensions) that adapts to its reality. This way, if an institution wants, for example, to create its own project hierarchy, it would only have to import the ontology of the immediately superior area and create its own hierarchy from the vivo:Project entity.
+
+In the same way, and to avoid explicit declaration of hierarchies, a series of Defined Classes have been defined. A Defined Class is a class that cannot be an instance directly, but rather, an instance will belong to it only if it complies with a series of restrictions. These classes have been used to define, for example, when an organization is a Funding Organization. Instead of having to explicitly define the organization as a Funding Organization, the organization will be defined with its corresponding class (University, Research Organization, Government Agency, etc.) and in the event that it meets a series of restrictions, in this case, being a funder of some call, the OWL reasoner will automatically classify it as a Funding Organization.
+
+When implementing this ontology, the reuse of ontologies has been prioritized, thus allowing the compatibility of the data represented through ROH with other data represented through other ontologies. 
+
+Another feature has been the extensive use of OWL constraints (owl:allValuesFrom, and owl:someValuesFrom properties). Through these properties it is possible to indicate, for a specific class of the ontology, which properties are optional for an entity to belong to this class, as well as the corresponding range. This makes the ontology itself serve as documentation when modelling data.
+
+
 **<a name="headSection2"></a>2. Conceptual diagram of ontology ROH**
 ====================================================================
 
