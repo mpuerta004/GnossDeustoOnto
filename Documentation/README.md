@@ -64,6 +64,8 @@ import and extension.
 | vcard   | vCard Ontology - for describing People and Organizations | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vcard#> |
 | vivo    | VIVO Ontology for Researcher Discovery | Creative Commons Attribution License 4.0 | <http://purl.org/roh/mirror/vivo#> |
 
+***1.1. Design rationale***
+===========================
 
 When designing and developing the ontology, priority has been given to its flexibility to ensure easy extensibility. This has been achieved thanks to two factors: the categorization of concepts instead of the use of hierarchies and the modularity of the ontology. By avoiding hierarchies, the ontology can be much more flexible, since different institutions can use different hierarchies to classify their projects (for example, universities that classify their projects according to the geographical scope of the call, as opposed to other universities that classify them according to the public or private nature of the call). Against this, the use of categories has been prioritized, properties that allow the categorization of entities according to different criteria. However, thanks to its modular design (roh, rohes, roum), our ontology allows any European country, territorial administrative entity or university to develop its own sub-ontology (refinements and extensions) that adapts to its reality. This way, if an institution wants, for example, to create its own project hierarchy, it would only have to import the ontology of the immediately superior area and create its own hierarchy from the vivo:Project entity.
 
