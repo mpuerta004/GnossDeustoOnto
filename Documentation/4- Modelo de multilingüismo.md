@@ -293,44 +293,44 @@ y, potencialmente, en otros idiomas.
 RESUMEN DE PATRONES DEL MODELO DE MULTILINGÜISMO EN ASIO
 ========================================================
 
-Por tanto, los patrones de multilingüismo que componen el modelo de ASIO
-son:
+Por tanto, estos son los patrones de multilingüismo que componen el modelo de ASIO
+y que se usarán tanto en el desarrollo de ROH como en el del propio backend:
 
 -   Nombrado (*naming*).
 
-    -   URIs opacos. Utilizar URIs no interpretables por humanos, pero
+    -   URIs opacos. ROH utilizará URIs no interpretables por humanos, aunque cuenten 
         con una parte descriptiva legible por humanos.
 
 -   Desreferenciado (*dereferencing*).
 
-    -   Datos independientes del idioma. Devolver los mismos triples con
-        independencia del idioma.
+    -   Datos independientes del idioma. El servidor Linked Data de ASIO devolverá 
+        los mismos triples con independencia del idioma en que se soliciten.
 
 -   Etiquetado (*labeling*).
 
-    -   Etiquetar todo. Definir etiquetas para todos los recursos.
+    -   Etiquetar todo. ROH definirá etiquetas para todos los recursos.
 
-    -   Etiquetas multilingües. Añadir *tags* de idiomas a las
-        etiquetas.
+    -   Etiquetas multilingües. Las etiquetas de los recursos definidas en ROH tendrán
+        *tags* de idiomas.
 
 -   Descripciones más largas (*longer description*).
 
-    -   Dividir descripciones largas. Sustituir descripciones largas por
-        recursos adicionales con etiquetas.
+    -   Dividir descripciones largas. En el diseño de ROH se sustituirán descripciones
+        largas por recursos adicionales con sus propias etiquetas.
 
-    -   Literales estructurados. Usar HTML/XML en los literales de
-        descripciones largas para entidades principales, conceptos y
+    -   Literales estructurados. En el diseño de ROH se usará HTML/XML en los literales
+        de descripciones largas para entidades principales, conceptos y 
         propiedades; pero no para individuos.
 
 -   Enlazado (*linking*). No aplicable.
 
 -   Reutilización (*reuse*).
 
-    -   Vocabularios multilingües. Preferir vocabularios multi-idioma,
-        con las etiquetas traducidas a diferentes idiomas.
+    -   Vocabularios multilingües. En el diseño de ROH se preferirán vocabularios 
+        multi-idioma, con las etiquetas traducidas a diferentes idiomas.
 
-    -   Traducir vocabularios existentes. Traducir etiquetas para
-        enriquecer vocabularios existentes.
+    -   Traducir vocabularios existentes. En el diseño de ROH se traducirán las 
+        etiquetas para enriquecer vocabularios existentes.
 
 
 APLICACIÓN DEL MODELO DE MULTILINGÜISMO EN ASIO
