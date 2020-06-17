@@ -444,7 +444,7 @@ needs of a project, correspond to the evaluation of the project, its
 proposal or the set of documents corresponding to its justification.
 
 On the other hand roh:Dossier represents a collection of reports related
-to a roh:Project, which may include all the types of reports above
+to a vivo:Project, which may include all the types of reports above
 mentioned.
 
 The below table shows the data and object properties, as well as
