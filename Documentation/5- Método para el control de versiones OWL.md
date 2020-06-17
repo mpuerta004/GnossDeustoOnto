@@ -6,13 +6,13 @@
 
 [Procedimiento](#procedimiento-de-desarrollo-ontológico)
 
-   [Pasos del procedimiento de gestión de cambios en ROH](pasos-del-procedimiento-de-gestión-de-cambios-en-roh)
+-   [Pasos del procedimiento de gestión de cambios en ROH](pasos-del-procedimiento-de-gestión-de-cambios-en-roh)
 
 [Herramientas de control de versiones](#herramientas-de-control-de-versiones)
 
-   [Edición y versionado en WebProtégé](#edición-y-versionado-en-webprotégé)
+-   [Edición y versionado en WebProtégé](#edición-y-versionado-en-webprotégé)
 
-   [Publicación en GitHub](#publicación-en-github)
+-   [Publicación en GitHub](#publicación-en-github)
 
 INTRODUCCIÓN
 ============
