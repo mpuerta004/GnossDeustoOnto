@@ -4,6 +4,7 @@ ROH Network of Ontology documentation
 =====================================
 
 [**1. Ontological design**](#headSection1)
+
 [***1.1. Design rationale***](#headSection1-1)
 
 [**2. Conceptual diagram of ontology ROH**](#headSection2)
