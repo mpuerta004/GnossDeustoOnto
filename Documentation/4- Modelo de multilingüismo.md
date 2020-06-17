@@ -18,7 +18,11 @@
 
 [2.6 Reutilización (reuse)](#reutilización-reuse)
 
-[3 RESUMEN DE PATRONES DEL MODELO](#resumen-de-patrones-del-modelo)
+[3 RESUMEN DE PATRONES DEL MODELO DE MULTILINGÜISMO EN ASIO](#resumen-de-patrones-del-modelo-de-multilinguismo-en-asio)
+
+[4 APLICACIÓN DEL MODELO DE MULTILINGÜISMO EN ASIO](#aplicacion-del-modelo-de-multilinguismo-en-asio)
+
+[4.1 Nota acerca de los sistemas de escritura](#nota-acerca-de-los-sistemas-de-escritura)
 
 INTRODUCCIÓN
 ============
@@ -172,9 +176,9 @@ Además, proponemos que las **etiquetas sean multilingües**, es decir,
 que tengan un tag asociado que permita identificar el idioma apropiado
 para cada aplicación. Por ejemplo:
 
-:maria :country \"Spain\"\@en .
+    :maria :country \"Spain\"\@en .
 
-:maria :country \"España\"\@es .
+    :maria :country \"España\"\@es .
 
 La definición de ROH incluirá etiquetas en castellano (es) e inglés
 (en). Inicialmente, las etiquetas de los individuos se generarán sólo en
@@ -207,24 +211,24 @@ En el desarrollo de ROH estamos evitando la existencia de descripciones
 que puedan expresarse mediante la **división de descripciones largas**.
 Es decir, no tenemos un triple que diga:
 
-:maria :address :"Calle Mayor 2. 26001 Logroño. España"\@es
+    :maria :address :"Calle Mayor 2. 26001 Logroño. España"\@es
 
 Este tipo de informaciones siempre se dividirían en ROH. Para el ejemplo
 anterior:
 
-:maria :street g:street1
+    :maria :street g:street1
 
-g:street1 rdfs:label :"Calle Mayor 2"\@es
+    g:street1 rdfs:label :"Calle Mayor 2"\@es
 
-:maria :postalcode :"26001"
+    :maria :postalcode :"26001"
 
-:maria :city g:city1
+    :maria :city g:city1
 
-g:city1 rdfs:label :"Logroño"\@es
+    g:city1 rdfs:label :"Logroño"\@es
 
-:maria :country g:country1
+    :maria :country g:country1
 
-g:country1 rdfs:label "España"\@es
+    g:country1 rdfs:label "España"\@es
 
 No proponemos la inclusión de información léxica.
 
@@ -255,8 +259,8 @@ Los patrones de enlazado para gestionar el multilingüismo son:
 3.  Metadatos lingüísticos. Añadir metadatos lingüísticos acerca de los
     términos del dataset.
 
-Proponemos no aplicar ninguno de estos patrones y usar el etiquetado
-multilingüe de todo (ver [Etiquetado](#etiquetado-labeling)).
+Proponemos **no aplicar ninguno de estos patrones y usar el etiquetado
+multilingüe de todo** (ver [Etiquetado](#etiquetado-labeling)).
 
 Reutilización (reuse)
 ---------------------
@@ -282,12 +286,12 @@ Los patrones de reutilización para el multilingüismo son:
     enlazarían con los existentes, mediante propiedades como owl:sameAs,
     owl:equivalentProperty o ow:equivalentClass.
 
-En proponemos usar **vocabularios multilingües** y **traducir
+Proponemos usar **vocabularios multilingües** y **traducir
 vocabularios existentes** (en inglés) añadiendo las etiquetas en español
 y, potencialmente, en otros idiomas.
 
-RESUMEN DE PATRONES DEL MODELO
-==============================
+RESUMEN DE PATRONES DEL MODELO DE MULTILINGÜISMO EN ASIO
+========================================================
 
 Por tanto, los patrones de multilingüismo que componen el modelo de ASIO
 son:
@@ -327,3 +331,55 @@ son:
 
     -   Traducir vocabularios existentes. Traducir etiquetas para
         enriquecer vocabularios existentes.
+
+
+APLICACIÓN DEL MODELO DE MULTILINGÜISMO EN ASIO
+===============================================
+
+En el desarrollo de ROH se han usado extensivamente las propiedades `rdfs:label` y `rdfs:comment`:
+
+-   `rdfs:label`: es una instancia de rdf:Property que puede utilizarse para proporcionar una versión legible para el ser humano del nombre de un recurso.
+-   `rdfs:comment`: es una instancia de rdf:Property que puede utilizarse para proporcionar una descripción legible para el ser humano de un recurso.
+
+Las etiquetas y la documentación multilingüe se apoyan en el sistema de etiquetado de idiomas de los literales del RDF. Por ejemplo, para la propiedad roh:attachment, el siguiente comentario explica en inglés el propósito de esta object property y las siguientes dos labels ofrecen su significado tanto en inglés como en castellano:
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#attachment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">A not machine-readable document attached to an entity offering more detailed information.</rdfs:comment>
+      <rdfs:label xml:lang="es">adjunto</rdfs:label>
+      <rdfs:label xml:lang="en">attachment</rdfs:label>
+    </owl:ObjectProperty> 
+
+Existen diferentes enfoques para representar información textual multilingüe. El patrón utilizado en ROH ha sido crear etiquetas multilingües. En un entorno multilingüe, es necesario adjuntar etiquetas de idioma a la información textual, a fin de identificar la etiqueta apropiada para las aplicaciones localizadas.  Las etiquetas multilingües forman parte de la norma RDF y están bien respaldadas por las herramientas de la web semántica. Realizar una consulta de SPARQL sobre un conjunto de datos con etiquetas multilingües es un poco más difícil que sin las etiquetas de idiomas. Por ejemplo, dado el siguiente ejemplo:
+
+    :juan :position "Professor"@en ; 
+        :position "Catedrático"@es .
+
+La siguiente consulta SPARQL no devolvería ningún resultado:
+
+    SELECT * WHERE {
+    ?x ex:position "Professor" .
+    }
+
+Es necesario especificar el idioma. Así que la consulta SPARQL que funciona es:
+
+    SELECT * WHERE {
+        ?x ex:position "Professor"@en .
+    }
+
+o si el lenguaje es desconocido, puede ser expresado como:
+
+    SELECT * WHERE {
+        ?x :position ?p .
+        FILTER ( str(?p)="Professor" )
+    }
+
+Una alternativa que se consideró fue adoptar información léxica en un lexicón externo, por ejemplo usando el [modelo LEMON](https://lemon-model.net/). Proporcionar metadatos a un recurso puede ayudar a aplicación de linked data a visualizar y gestionar información textual. Sin embargo, puede añadir complejidad y sobrecarga a los datasets generados. Esta es la razón por la que se decidió adoptar el enfoque más sencillo de labels.
+
+Nota acerca de los sistemas de escritura
+----------------------------------------
+
+El uso de un sistema de escritura u otro en los valores de las propiedades es independiente del diseño de la ontología. Esto depende de la codificación que se utilice para el fichero resultante. Al codificar el fichero en el formato UTF-8, estarían soportados la mayoría de los sistemas de escritura.
+
+En cuanto a los nombres de propiedades y entidades, cada nombre es único y usamos el inglés como lengua franca de definición.
+
