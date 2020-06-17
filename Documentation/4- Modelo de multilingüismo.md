@@ -374,7 +374,7 @@ o si el lenguaje es desconocido, puede ser expresado como:
         FILTER ( str(?p)="Professor" )
     }
 
-Una alternativa que se consideró fue adoptar información léxica en un lexicón externo, por ejemplo usando el [modelo LEMON](https://lemon-model.net/). Proporcionar metadatos a un recurso puede ayudar a aplicación de linked data a visualizar y gestionar información textual. Sin embargo, puede añadir complejidad y sobrecarga a los datasets generados. Esta es la razón por la que se decidió adoptar el enfoque más sencillo de labels.
+Una alternativa que se consideró fue adoptar información léxica en un lexicón externo, por ejemplo usando el [modelo LEMON](https://lemon-model.net/). Proporcionar metadatos a un recurso puede ayudar a aplicación de linked data a visualizar y gestionar información textual. Sin embargo, añade complejidad y sobrecarga a los datasets generados. Esta es la razón por la que se decidió adoptar el enfoque más sencillo de labels.
 
 Nota acerca de los sistemas de escritura
 ----------------------------------------
