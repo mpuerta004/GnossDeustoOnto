@@ -28,11 +28,11 @@ ROH Network of Ontology documentation
 This documentation area includes the following files:
 - `0 - OntologySpecification.pdf` - PDF corresponding to the specification of ROH network on ontologies. Section 2.1 includes the description of the main entities of ROH and the rationale behind their import or definition from scratch.
 - `1- OntologyDocumentation.pdf` - PDF describing in tabular form, every entity modelled in ROH
-- `2- CoberturaPreguntasCompetencia.pdf` - PDF with competence questions which has been assessed against ROH
+- `2- CoberturaPreguntasCompetencia.pdf` - PDF with competence questions which have been assessed against ROH
 - `3- Ejecución de preguntas de competencia.md`	- Markdown document describing how to execute the SPARQL validation questions against ROH
 - `4- Modelo de multilingüismo.md`	- Markdown document explaining how multilinguism is supported in ROH
 - `5- Método para el control de versiones OWL.md` - Markdown explaining how version control is carried out in ROH
-- `README.md` - This very file which included documentation in Markdown of ROH, describing with text and diagrams the relationships among the main entities in ROH
+- `README.md` - This very file which includes documentation in Markdown of ROH, describing with text and diagrams the relationships among the main entities in ROH
 
 **<a name="headSection1"></a>1. Ontological design**
 ====================================================
