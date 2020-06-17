@@ -106,10 +106,8 @@ Hércules.
 
 **<a name="headSection3">3. Project entity**
 ============================================
-
-The main ROH entity is vivo:Project (see Figura 2), a new entity defined
-within ROH. In ROH, a Project models a collaborative activity in
-business and science that often involves research or design and is
+    
+The main ROH entity is vivo:Project (see Figura 2), an entity imported from VIVO and extended according to CERIF specification. In ROH, a Project models a collaborative activity in business and science that often involves research or design and is
 carefully planned to achieve a particular goal. Its configuration is
 inspired by the swrc:Project and takes into account the data properties
 of the cerif:Project and vivo:Project. It comprises all those properties
@@ -127,6 +125,8 @@ instances of roh:UNESCOKnowledgeArea or rohes:FECYTKnowledgeArea concept
 hierarchies, but importantly allows a project also to be classified
 according the hierarchy defined under roh:ProjectClassification concept
 hierarchy, e.g. roh:Horizon2020.
+
+A project in ROH may require ethical validation which is expressed as roh:needsEthicalValidation set to true. A project might be correspond to a research project categorized through roh:ProjectClassification by means of object property roh:hasProjectCategorization or correspond to some grant associated to human resources (roh:HRClassification) associated through roh:hasHRClassification. Notice that a project is a proposal (PROPOSAL_SUBMITTED) until it passes to the OPEN or REJECTED status. When the project finishes it state passes to CLOSED.
 
 Besides, an instance of a vivo:Project is associated to the following
 entities through object properties:
