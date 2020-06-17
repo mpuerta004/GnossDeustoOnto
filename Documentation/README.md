@@ -25,6 +25,15 @@ ROH Network of Ontology documentation
 
 [**Bibliography**](#bibliography)
 
+This documentation area includes the following files:
+- `0 - OntologySpecification.pdf`, document including the specification of ROH network on ontologies
+1- OntologyDocumentation.pdf	changed colour codes of some entities that were not correct in ROH re…	2 days ago
+2- CoberturaPreguntasCompetencia.pdf	modified PDFs to include headers FEDER	9 days ago
+3- Ejecución de preguntas de competencia.md	Revisión evaluación	9 days ago
+4- Modelo de multilingüismo.md	Revisión evaluación	9 days ago
+5- Método para el control de versiones OWL.md	Revisión evaluación	9 days ago
+README.md
+
 **<a name="headSection1"></a>1. Ontological design**
 ====================================================
 
