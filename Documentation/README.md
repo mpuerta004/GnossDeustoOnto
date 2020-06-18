@@ -6,6 +6,7 @@ ROH Network of Ontology documentation
 [**1. Ontological design**](#headSection1)
 
 [***1.1. Design rationale***](#headSection1-1)
+[***1.2. Ontology design process***](#headSection1-2)
 
 [**2. Conceptual diagram of ontology ROH**](#headSection2)
 
@@ -90,6 +91,26 @@ When implementing this ontology, the reuse of ontologies has been prioritized, t
 
 Another feature has been the extensive use of OWL constraints (owl:allValuesFrom, and owl:someValuesFrom properties). Through these properties it is possible to indicate, for a specific class of the ontology, which properties are optional for an entity to belong to this class, as well as the corresponding range. This makes the ontology itself serve as documentation when modelling data.
 
+***<a name="headSection1-2"></a>1.1. Ontology design process***
+===========================
+
+The process followed to design an ontology that models a Research Management System (RMS) for Spanish universities and that is piloted and validated at the University of Murcia, has been the following: 
+1. Meet the requirements defined in "Annex I. Ontology requirements analysis" and "Annex II. Ontologies and other resources to be used". Delivered by GNOSS-DEUSTO as part of the feasibility study for "R&D service for the development of the ontological infrastructure and semantic architecture of the research management system (sgi) of the Hercules initiative", file number: 2018/88/OT-AM
+2. Selection and analysis of the main ontologies that model the academic environment. Including contrast with [CERIF - ERD](https://www.eurocris.org/Uploads/Web pages/CERIF-1.5/cerif.html) vocabulary, entity relationship diagram, since it is the standard information model for CRIS (Current Research Information System) systems.
+3.	Identification of the main entities and relationships to model the knowledge of the academic world. Fulfilling the requirements of of the ASIO project. 
+4.	Validation of the flexibility, completeness and integrity of the ROH ontology network through the following evaluations:
+- Review the [questions/competency queries](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/2- CoberturaPreguntasCompetencia.pdf) of the network listed by the University of Murcia (UM) and implement as a [suite of SPARQL queries](https://github.com/HerculesCRUE/GnossDeustoBackend/tree/master/validation-questions/sparql-query) to validate their compliance. As a result of this validation, some new data and object properties were added. 
+- Review datasets offered by the University of Murcia and check that their data can be modelled with the entities and properties defined within ROH. Extension and adaptation of ROH entities according to the determined needs. 
+- [Mapping of FECYT CVN format data to the ROH ontology](https://github.com/HerculesCRUE/GnossDeustoBackend/tree/master/cvn). Where there were unmodelled entities or relationships, they were included. Details of the mapping between CVN and ROH entities appear in the cvn/config folder.  
+5.	Continuous refinement validated by the automation of regression test battery. Such regression tests regulate that new changes introduced continue to guarantee the quality of ROH, its flexibility and extensibility to accommodate new requirements. 
+
+In the process of creating this ontology network, the principles of reusability and extensibility have prevailed:
+- *Reusability* - modelling of concepts again has been avoided if an ontology has been located that comprehensively models a given concept. For example, the concept of a *position held by a person in an academic organization*, which is extensively documented in the ontology VIVO Ontology for Research Discovery.
+- *Extensibility* - since, although academic information modelling shares many aspects universally, there are aspects that are specific to the country in question. For example, the six-year periods in Spain, or the University or research centre in question, for example, job positions contemplated at the University of Murcia. This explains why the fundamental ROH and country-specific agnostic concepts are modeled in the core ontology roh.owl, while those concepts specific to the Spanish university system have been modeled in rohes.owl.   
+
+The most commonly used ontological design patterns in ROH design have been the following: 
+- [*PartOf*](http://ontologydesignpatterns.org/wiki/Submissions:PartOf): allows the representation of entities and their corresponding parts. For example, in ROH, a `foaf:Organization` `obo-ro:hasPart` `foaf:Organization`, that is, an organization can be composed of sub-organizations, and this can be `obo-ro:partOf`, that is, be part of a parent organization. 
+- [*Participation*](http://ontologydesignpatterns.org/wiki/Submissions:Participation): allows you to represent the participation of an object in an activity or event. In ROH, we have used this design pattern to model, for example, the roles that a `foaf:Agent` through an `obo-bfo:Role` can play (`obo-bfo:realizedIn`) in a `roh:Activity`. 
 
 **<a name="headSection2"></a>2. Conceptual diagram of ontology ROH**
 ====================================================================
