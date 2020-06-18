@@ -92,7 +92,7 @@ When implementing this ontology, the reuse of ontologies has been prioritized, t
 
 Another feature has been the extensive use of OWL constraints (owl:allValuesFrom, and owl:someValuesFrom properties). Through these properties it is possible to indicate, for a specific class of the ontology, which properties are optional for an entity to belong to this class, as well as the corresponding range. This makes the ontology itself serve as documentation when modelling data.
 
-***<a name="headSection1-2"></a>1.1. Ontology design process***
+***<a name="headSection1-2"></a>1.2. Ontology design process***
 ===========================
 
 The process followed to design an ontology that models a Research Management System (RMS) for Spanish universities and that is piloted and validated at the University of Murcia, has been the following: 
