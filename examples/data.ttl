@@ -209,7 +209,7 @@
         :promotedBy  <http://purl.org/roh/data#gobierno-vasco> .
 
 <http://purl.org/roh/data#company-one>
-        a       vivo:PrivateCompany .
+        a       vivo:Company .
 
 <http://purl.org/roh/data#a-project-dossier>
         a       :Dossier ;
