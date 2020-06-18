@@ -159,5 +159,5 @@ mantiene un registro de las versiones consolidadas.
 
 El repositorio de código fuente GitHub para el desarrollo de la 
 infraestructura ontológica del proyecto Hércules está en
-<https://github.com/HerculesCRUE/GnossDeustoBackend>.
+<https://github.com/HerculesCRUE/GnossDeustoOnto/>.
 
