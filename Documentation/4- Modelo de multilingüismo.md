@@ -18,9 +18,9 @@
 
 [2.6 Reutilización (reuse)](#reutilización-reuse)
 
-[3 RESUMEN DE PATRONES DEL MODELO DE MULTILINGÜISMO EN ASIO](#resumen-de-patrones-del-modelo-de-multilinguismo-en-asio)
+[3 RESUMEN DE PATRONES DEL MODELO DE MULTILINGÜISMO EN ASIO](#resumen-de-patrones-del-modelo-de-multilingüismo-en-asio)
 
-[4 APLICACIÓN DEL MODELO DE MULTILINGÜISMO EN ASIO](#aplicacion-del-modelo-de-multilinguismo-en-asio)
+[4 APLICACIÓN DEL MODELO DE MULTILINGÜISMO EN ASIO](#aplicación-del-modelo-de-multilingüismo-en-asio)
 
 [4.1 Nota acerca de los sistemas de escritura](#nota-acerca-de-los-sistemas-de-escritura)
 
