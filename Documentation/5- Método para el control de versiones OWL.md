@@ -94,9 +94,9 @@ automatizados y la confirmación final del equipo mantenedor.
 
 | Acción  | Tratamiento manual          |      Tratamiento automático     |
 | --------| ----------------------------|---------------------------------|
-| Cambios en la documentación o etiquetas    |  | Cambios son aceptados si pasas tests de regresión |
-| Modificación incremental de entidades o propiedades    | Moderador comprueba en descripción de pull request que el cambio solo altera de modo incremental la ontología. Decide si lanzar actualización automática.               |Se lanza batería de tests de regresión. Si pasan, entonces se integran en rama principal    |
-| Creación o borrado de entidades o propiedades      | Moderador comprueba en detalle los cambios y decide si activar actualización automática de cambios        | Se lanza batería de tests de regresión. Si pasan, entonces se integran en rama principal |
+| Cambios en la documentación o etiquetas  (modificar la descripción de una clase - label, comment, etc-)  |  | Cambios son aceptados si pasan tests de regresión en proceso de integración continua (cuestiones de validación y verificaciones SHACL)  |
+| Modificación incremental de entidades o propiedades (creación de nueva entidad, crear una nueva propiedad, extensión de jerarquía de subclase a superclase)   | Moderador comprueba en descripción de pull request que el cambio solo altera de modo incremental la ontología. Decide si lanzar proceso de integración automática.               |Se lanza batería de tests de regresión. Si pasan, entonces se integran en rama principal    |
+| Creación o borrado de entidades o propiedades (eliminar propiedad, borrado de una entidad, introducir nueva superclase de clases existentes, añadir o modificar restricciones, cambiar propiedades entre subclasses y superclasses)     | Moderador comprueba en detalle los cambios y decide si activar actualización automática de cambios        | Se lanza batería de tests de regresión. Si pasan, entonces se integran en rama principal |
 
 
 Herramientas de control de versiones
