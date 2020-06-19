@@ -51,7 +51,7 @@ Sin embargo, el proceso de revisión de un cambio no tiene por qué ser
 totalmente manual. A través de la herramienta [Github Actions](https://github.com/features/actions) se pueden 
 definir unos flujos de ejecución que, por ejemplo, realicen una serie de
 tests para comprobar que a pesar de los cambios realizados en la ontología
-el resto de las herramientas dependientes siguen funcionando correctamente. 
+el resto de las herramientas dependientes siguen funcionando correctamente. De hecho un [workflow en Github Actions](https://github.com/HerculesCRUE/GnossDeustoBackend/blob/master/validation-questions/.github/workflows/maven.yml) ha sido creado para poner en marcha el conjunto de cuestiones de validación ([validation-questions](https://github.com/HerculesCRUE/GnossDeustoBackend/tree/master/validation-questions)) de ROH. 
 Una vez pasados estos tests (batería de tests de regresión), el pull-request
 se puede integrar en la rama principal del repositorio de la ontología. 
 Si se desease utilizar una solución independiente de la plataforma Github, 
