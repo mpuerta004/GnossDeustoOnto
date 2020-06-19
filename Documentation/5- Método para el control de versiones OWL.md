@@ -92,9 +92,9 @@ relaciones entre ellas, se propone un enfoque híbrido a través de tests
 automatizados y la confirmación final del equipo mantenedor.
 
 
-| Acción  | Tratamiento manual           |      Tratamiento automático     |
-| --------| -------------------------|-------------------------------------------------------|--------------------------------|
-| Cambios en la documentación o etiquetas    | Cambios son aceptados si pasas tests de regresión |<http://purl.org/roh/mirror/bibo#>|
+| Acción  | Tratamiento manual          |      Tratamiento automático     |
+| --------| ----------------------------|---------------------------------|
+| Cambios en la documentación o etiquetas    |  | Cambios son aceptados si pasas tests de regresión |
 | Modificación incremental de entidades o propiedades    | Moderador comprueba en descripción de pull request que el cambio solo altera de modo incremental la ontología. Decide si lanzar actualización automática.               |Se lanza batería de tests de regresión. Si pasan, entonces se integran en rama principal    |
 | Creación o borrado de entidades o propiedades      | Moderador comprueba en detalle los cambios y decide si activar actualización automática de cambios        | Se lanza batería de tests de regresión. Si pasan, entonces se integran en rama principal |
 
