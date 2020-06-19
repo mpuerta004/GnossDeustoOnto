@@ -112,7 +112,7 @@ The process followed to design an ontology that models a Research Management Sys
   - Review the [questions/competency queries](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/2- CoberturaPreguntasCompetencia.pdf) of the network listed by the University of Murcia (UM) and implement as a [suite of SPARQL queries](https://github.com/HerculesCRUE/GnossDeustoBackend/tree/master/validation-questions/sparql-query) to validate their compliance. As a result of this validation, some new data and object properties were added. 
   - Review datasets offered by the University of Murcia and check that their data can be modelled with the entities and properties defined within ROH. Extension and adaptation of ROH entities according to the determined needs. 
   - [Mapping of FECYT CVN format data to the ROH ontology](https://github.com/HerculesCRUE/GnossDeustoBackend/tree/master/cvn). Where there were unmodelled entities or relationships, they were included. Details of the mapping between CVN and ROH entities appear in the cvn/config folder.  
-5.	Continuous refinement validated by the automation of regression test battery. Such regression tests regulate that new changes introduced continue to guarantee the quality of ROH, its flexibility and extensibility to accommodate new requirements. 
+5.	Continuous refinement validated by a Continous Integration (CI) process. A battery of regression tests regulate that new changes introduced continue to guarantee the quality of ROH, its flexibility and extensibility to accommodate new requirements. 
 
 
 
