@@ -6,7 +6,7 @@
 
 [Procedimiento de desarrollo ontológico](#procedimiento-de-desarrollo-ontológico)
 
--   [Pasos del procedimiento de gestión de cambios en ROH](pasos-del-procedimiento-de-gestión-de-cambios-en-roh)
+-   [Pasos del procedimiento de gestión de cambios en ROH](#pasos-del-procedimiento-de-gestión-de-cambios-en-roh)
 
 [Herramientas de control de versiones](#herramientas-de-control-de-versiones)
 
