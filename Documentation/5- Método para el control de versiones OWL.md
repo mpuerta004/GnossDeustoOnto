@@ -72,23 +72,23 @@ Es decir, se van a ir desarrollado las integraciones de ASIO con otros sistemas 
 La respuesta del control de versiones OWL al aumento de complejidad creciente consistirá en: 
 1.  Mejorar y ampliar las preguntas de competencia ([validation-questions](https://github.com/HerculesCRUE/GnossDeustoBackend/tree/master/validation-questions)).
 2.  Modificar el flujo de GitHub actions que lanzan los tests de regresión, añadiéndole nuevos pasos:
-    1.  Creación de shapes SHACL temporales con las restricciones de la nueva ontología.
+    1.  Creación de *shapes* SHACL temporales con las restricciones de la nueva ontología.
     2.  Si la ontología debe acompañarse de un migrador de datos: 
         1.  Generación automática de una copia de los grafos del RDF Store.
         2.  Paso del migrador de datos sobre la copia de los grafos.
     3.  Ejecución de las cuestiones de validación. Si se necesita un migrador, contra un nuevo juego de datos de prueba.
-    4.  Validar los shapes temporales contra los datos ya cargados en los grafos del RDF Store, que se corresponderán con la anterior versión de la ontología, o contra los datos de los grafos copiados y migrados si se necesitase un migrador, que se corresponderían con la nueva versión de la ontología.
+    4.  Validar los *shapes* temporales contra los datos ya cargados en los grafos del RDF Store, que se corresponderán con la anterior versión de la ontología, o contra los datos de los grafos copiados y migrados si se necesitase un migrador, que se corresponderían con la nueva versión de la ontología.
 
 El control de versiones necesitará que el desarrollo del API e interfaz de Carga tenga preparadas las siguientes funcionalidades:
 -   Función en API Carga para publicación de la ontología en el repositorio RDF.
 -   Función en API Carga para creación de shapes temporales a partir de las restricciones de una ontología arbitraria (ROH en nuestro caso).
 -   Interfaz de Administración de Carga para la ejecución de las dos funciones anteriores.
 
-Si la nueva ontología supera los tests de regresión, podría publicarse en el grafo del RDF Store sin más comprobaciones. Sin embargo, podría suceder que los shapes temporales detectasen inconsistencias entre la nueva ontología y los datos publicados en el RDF, o que estas inconsistencias fueran esperadas durante el proceso de reingeniería, debido al tipo de acciones llevadas a cabo (ver en [Pasos del procedimiento de gestión de cambios en ROH la tabla de acciones](#pasos-del-procedimiento-de-gesti%C3%B3n-de-cambios-en-roh)).
+Si la nueva ontología supera los tests de regresión, podría publicarse en el grafo del RDF Store sin más comprobaciones. Sin embargo, podría suceder que los *shapes* temporales detectasen inconsistencias entre la nueva ontología y los datos publicados en el RDF, o que estas inconsistencias fueran esperadas durante el proceso de reingeniería, debido al tipo de acciones llevadas a cabo (ver en [Pasos del procedimiento de gestión de cambios en ROH la tabla de acciones](#pasos-del-procedimiento-de-gesti%C3%B3n-de-cambios-en-roh)).
 
 En cualquiera de los dos casos, la nueva versión tendrá que ir acompañada de un migrador de datos, desarrollado en paralelo al proceso de reingeniería ontológica, que se encargue de modificar los datos existentes en el grafo del RDF Store, para que cumplan con el diseño y restricciones de la nueva versión de la ontología. Además, tendrá que prepararse un nuevo juego de datos de prueba para las cuestiones de validación, correspondiente a la nueva ontología.
 
-En el caso de necesitar un migrador de datos, la publicación de una nueva versión de la ontología tendrá que acompañarse, además de por el documento changelog con los cambios de la ontología (generado automáticamente por WebProtégé) y del propio migrador, de aquellos componentes que se vayan a ver afectados por los cambios. Los componentes que deberían formar parte de la misma release son:
+En el caso de necesitar un migrador de datos, la publicación de una nueva versión de la ontología tendrá que acompañarse, además de por el documento *changelog* con los cambios de la ontología (generado automáticamente por WebProtégé) y del propio migrador, de aquellos componentes que se vayan a ver afectados por los cambios. Los componentes que deberían formar parte de la misma *release* son:
 -   Mapeo y API de integración con Hércules SGI.
 -   API de Carga de Unidata.
 -   Mapeo y API de integración con Hércules EDMA (probablemente ya en la fase de mantenimiento, posterior a la finalización de ASIO).
