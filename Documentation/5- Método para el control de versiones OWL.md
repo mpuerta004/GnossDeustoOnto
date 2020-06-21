@@ -62,7 +62,7 @@ Durante esta fase se han definido y preparado unos tests de regresión que ejecu
 Control de versiones en el refinamiento de ROH
 ----------------------------------------------
 
-Como se indica en el documento [Tareas pendientes en la definición de ROH](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/Pr%C3%B3ximos pasos.md), en esta fase, que va desde la finalización del Hito 1 hasta el final de la ejecución del proyecto ASIO, la infraestructura tecnológica será mejorada y ampliada con cambios que provendrán de:
+Como se indica en el documento [Tareas pendientes en la definición de ROH](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/Pr%C3%B3ximos%20pasos.md), en esta fase, que va desde la finalización del Hito 1 hasta el final de la ejecución del proyecto ASIO, la infraestructura tecnológica será mejorada y ampliada con cambios que provendrán de:
 -   Alineación con el modelo de datos del proyecto Hércules SGI, que constituye la fuente de datos fundamental de Hércules.
 -   Alineación con otras fuentes de datos (otros SGI) que van a ser mapeadas como parte del desarrollo de ASIO.
 -   Entidades y mejoras identificadas en la finalización del Hito 1 o que puedan surgir durante la ejecución del proyecto.
