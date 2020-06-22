@@ -34,6 +34,7 @@ This documentation area includes the following files:
 - `3- Ejecución de preguntas de competencia.md`	- Markdown document [linking to the SPARQL validation questions](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/3-%20Ejecuci%C3%B3n%20de%20preguntas%20de%20competencia.md) against ROH
 - `4- Modelo de multilingüismo.md`	- Markdown document explaining how multilinguism is supported in ROH
 - `5- Método para el control de versiones OWL.md` - Markdown explaining how version control is carried out in ROH
+- `Próximos pasos.md` - Markdown document explaining the next steps in the develepment of ROH, afer the ending of the first milestone of ASIO project.
 - `README.md` - This very file which includes documentation in Markdown of ROH, describing with text and diagrams the relationships among the main entities in ROH
 
 **<a name="headSection1"></a>1. Ontological design**
