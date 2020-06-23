@@ -52,7 +52,7 @@ DATOS MULTILINGÜES
 En el artículo "Multilingual Linked Data Patterns" se describen un
 conjunto de patrones y buenas prácticas para la definición y uso de una
 plataforma de datos enlazados. El Modelo de multilingüismo propone la
-aplicación de algunas de estos patrones en el desarrollo de la
+aplicación de algunos de estos patrones en el desarrollo de la
 Infraestructura Ontológica de Hércules ASIO y, particularmente, en la
 Red de Ontologías Hércules (ROH).
 
@@ -88,7 +88,7 @@ Nombrado (naming)
 En una plataforma de datos enlazados los URIs no deben cambiar y no
 deben depender de implementaciones técnicas o extensiones de ficheros.
 Contamos con un manual de buenas prácticas que, como veremos a
-continuación, tiene en cuenta alguno de los siguientes patrones patrones
+continuación, tiene en cuenta alguno de los siguientes patrones
 en cuanto al nombrado:
 
 1.  URIs descriptivos. Utilizar URIs descriptivos con caracteres ASCII
