@@ -77,7 +77,7 @@ es:
     reutilización de los datos, que están unidos a los vocabularios que
     los expresan. ¿Es mejor que sean multilingües o traducirlos?
 
-Indicamos a continuación que patrones de multilingüismo proponemos usar
+Indicamos a continuación qué patrones de multilingüismo proponemos usar
 en el desarrollo y posterior uso de la infraestructura ontológica de
 ASIO. No repetiremos la descripción y argumentos completos de cada
 patrón, que puede consultarse en el artículo de referencia.
@@ -107,7 +107,7 @@ Proponemos usar **URIs opacos** en cuanto a los identificadores de las
 entidades (este patrón entra en contradicción con 1, 3 y 4). Es decir,
 parte del URI describe la entidad que representa (un proyecto o un
 investigador), pero el dato que lo identifica es un código no
-interpretable por humanos, si bien podría el tipo de código puede ser
+interpretable por humanos, si bien el tipo de código podría ser
 reconocido por algunos (un ORCID o un DNI). En cuanto a la parte
 descriptiva del URI (http://data.um.es/res/**project**/{código}), el
 proyecto ASIO cuenta con unas buenas prácticas y un Esquema de URIs (ver
@@ -138,7 +138,7 @@ multilingüismo para el desreferenciado son:
 
 Las peticiones HTTP de datos enlazados podrían incluir una cabecera
 accept-language con las preferencias del agente que los solicita, lo que
-se podría usarse para devolver sólo los datos del idioma requerido.
+podría usarse para devolver sólo los datos del idioma requerido.
 
 Nuestra propuesta es la devolución de todos los **datos independientes
 del idioma**, sin tener en cuenta las preferencias del solicitante. Como
@@ -374,7 +374,7 @@ o si el lenguaje es desconocido, puede ser expresado como:
         FILTER ( str(?p)="Professor" )
     }
 
-Una alternativa que se consideró fue adoptar información léxica en un lexicón externo, por ejemplo usando el [modelo LEMON](https://lemon-model.net/). Proporcionar metadatos a un recurso puede ayudar a aplicación de linked data a visualizar y gestionar información textual. Sin embargo, añade complejidad y sobrecarga a los datasets generados. Esta es la razón por la que se decidió adoptar el enfoque más sencillo de labels.
+Una alternativa que se consideró fue adoptar información léxica en un lexicón externo, por ejemplo usando el [modelo LEMON](https://lemon-model.net/). Proporcionar metadatos a un recurso puede ayudar a una aplicación de linked data a visualizar y gestionar información textual. Sin embargo, añade complejidad y sobrecarga a los datasets generados. Esta es la razón por la que se decidió adoptar el enfoque más sencillo de labels.
 
 Nota acerca de los sistemas de escritura
 ----------------------------------------
