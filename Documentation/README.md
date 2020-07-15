@@ -509,7 +509,7 @@ properties that qualify it as (roh:monetaryAmount, roh:currency,
 roh:title or vivo:description. It should be extended with more types of
 expenses, such as personnel costs, subcontracting, travel, equipment,
 research infrastructure and other goods and services. Currently, a
-distinction is made between roh:PersonExpense and roh:ProjectExpense.
+distinction is made between roh:PersonExpense, roh:ResearchObjectExpense and roh:ProjectExpense.
 
 The following table illustrates the class hierarchy, object and data
 properties defined by roh:Activity.
