@@ -16,9 +16,8 @@ jobs:
             - name: Checkout validation-questions repo.
               uses: actions/checkout@v2
               with:
-                repository: deustohercules/validation-questions
+                repository: HerculesCRUE/GnossDeustoBackend
                 ref: 'staging'
-                token: ${{ secrets.GNOSS_SECRET }}
                 path: validation-questions
             - name: Checkout pellet repo.
               uses: actions/checkout@v2
@@ -34,6 +33,6 @@ jobs:
               working-directory: pellet
               run: mvn install
             - name: Launch tests
-              working-directory: validation-questions
-              run: mvn test -DontFile=/home/runner/work/roh/roh/roh-v2.owl -DdataFile=/home/runner/work/roh/roh/examples/data.ttl -Duneskos=/home/runner/work/roh/roh/unesco-individuals.rdf
+              working-directory: /home/runner/work/GnossDeustoOnto/GnossDeustoOnto/validation-questions/validation-questions
+              run: mvn test -DontFile=/home/runner/work/GnossDeustoOnto/GnossDeustoOnto/roh-v2.owl -DdataFile=/home/runner/work/GnossDeustoOnto/GnossDeustoOnto/examples/data.ttl -Duneskos=/home/runner/work/GnossDeustoOnto/GnossDeustoOnto/unesco-individuals.rdf
               
