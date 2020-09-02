@@ -33,6 +33,6 @@ jobs:
               working-directory: pellet
               run: mvn install
             - name: Launch tests
-              working-directory: /home/runner/work/GnossDeustoOnto/GnossDeustoOnto/validation-questions
+              working-directory: /home/runner/work/GnossDeustoOnto/GnossDeustoBackend/validation-questions
               run: mvn test -DontFile=/home/runner/work/GnossDeustoOnto/GnossDeustoOnto/roh-v2.owl -DdataFile=/home/runner/work/GnossDeustoOnto/GnossDeustoOnto/examples/data.ttl -Duneskos=/home/runner/work/GnossDeustoOnto/GnossDeustoOnto/unesco-individuals.rdf
               
