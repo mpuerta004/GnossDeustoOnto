@@ -45,10 +45,10 @@
     "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "117",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "117",
     "type" : "owl:Class"
   }, {
     "id" : "110",
@@ -186,10 +186,10 @@
     "id" : "464",
     "type" : "owl:Class"
   }, {
-    "id" : "427",
+    "id" : "468",
     "type" : "owl:Class"
   }, {
-    "id" : "469",
+    "id" : "427",
     "type" : "owl:Class"
   }, {
     "id" : "280",
@@ -258,10 +258,10 @@
     "id" : "49",
     "type" : "owl:Class"
   }, {
-    "id" : "611",
+    "id" : "568",
     "type" : "owl:Class"
   }, {
-    "id" : "568",
+    "id" : "611",
     "type" : "owl:Class"
   }, {
     "id" : "144",
@@ -372,7 +372,7 @@
     "id" : "475",
     "type" : "owl:Class"
   }, {
-    "id" : "731",
+    "id" : "730",
     "type" : "owl:Class"
   }, {
     "id" : "219",
@@ -495,10 +495,10 @@
     "id" : "363",
     "type" : "owl:Class"
   }, {
-    "id" : "544",
+    "id" : "755",
     "type" : "owl:Class"
   }, {
-    "id" : "755",
+    "id" : "544",
     "type" : "owl:Class"
   }, {
     "id" : "628",
@@ -600,7 +600,7 @@
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "468",
+    "id" : "469",
     "type" : "owl:Class"
   }, {
     "id" : "295",
@@ -636,10 +636,10 @@
     "id" : "190",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "746",
     "type" : "owl:Class"
   }, {
-    "id" : "746",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
     "id" : "328",
@@ -675,22 +675,22 @@
     "id" : "401",
     "type" : "owl:Class"
   }, {
-    "id" : "314",
+    "id" : "142",
     "type" : "owl:Class"
   }, {
-    "id" : "142",
+    "id" : "314",
     "type" : "owl:Class"
   }, {
     "id" : "287",
     "type" : "owl:Class"
   }, {
-    "id" : "228",
+    "id" : "380",
     "type" : "owl:Class"
   }, {
     "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "380",
+    "id" : "228",
     "type" : "owl:Class"
   }, {
     "id" : "105",
@@ -804,10 +804,10 @@
     "id" : "127",
     "type" : "owl:Class"
   }, {
-    "id" : "710",
+    "id" : "448",
     "type" : "owl:Class"
   }, {
-    "id" : "448",
+    "id" : "710",
     "type" : "owl:Class"
   }, {
     "id" : "524",
@@ -879,10 +879,10 @@
     "id" : "386",
     "type" : "owl:Class"
   }, {
-    "id" : "540",
+    "id" : "408",
     "type" : "owl:Class"
   }, {
-    "id" : "408",
+    "id" : "540",
     "type" : "owl:Class"
   }, {
     "id" : "151",
@@ -924,10 +924,10 @@
     "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "310",
+    "id" : "731",
     "type" : "owl:Class"
   }, {
-    "id" : "730",
+    "id" : "310",
     "type" : "owl:Class"
   }, {
     "id" : "113",
@@ -1085,15 +1085,6 @@
     "attributes" : [ "external" ],
     "id" : "109"
   }, {
-    "iri" : "http://purl.org/rohes#MaquinariaUtillaje",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MaquinariaUtillaje"
-    },
-    "attributes" : [ "external" ],
-    "id" : "117"
-  }, {
     "iri" : "http://purl.org/rohum#PrensaRevistasLibrosYOtrasPublicaciones",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -1103,6 +1094,15 @@
     },
     "id" : "43",
     "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://purl.org/rohes#MaquinariaUtillaje",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaquinariaUtillaje"
+    },
+    "attributes" : [ "external" ],
+    "id" : "117"
   }, {
     "iri" : "http://purl.org/rohum#ConstruccionesEdificios",
     "baseIri" : "http://purl.org/rohum",
@@ -1637,6 +1637,15 @@
     "attributes" : [ "external" ],
     "id" : "464"
   }, {
+    "iri" : "http://purl.org/rohes#PropiedadIndustrial",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropiedadIndustrial"
+    },
+    "attributes" : [ "external" ],
+    "id" : "468"
+  }, {
     "iri" : "http://purl.org/rohum#RepuestosMatElectronico",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -1645,16 +1654,7 @@
       "es" : "Repuestos de mat. electrónico, eléctrico y de comunic."
     },
     "id" : "427",
-    "superClasses" : [ "468" ]
-  }, {
-    "iri" : "http://purl.org/rohes#PropiedadIndustrial",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PropiedadIndustrial"
-    },
-    "attributes" : [ "external" ],
-    "id" : "469"
+    "superClasses" : [ "469" ]
   }, {
     "iri" : "http://purl.org/rohum#GastosDePublicacionesGasto",
     "baseIri" : "http://purl.org/rohum",
@@ -1883,6 +1883,17 @@
     "id" : "49",
     "superClasses" : [ "47" ]
   }, {
+    "iri" : "http://purl.org/rohum#ArrendamientoEquiposProcesosInformacion",
+    "baseIri" : "http://purl.org/rohum",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArrendamientoEquiposProcesosInformacion",
+      "es" : "ARRENDAMIENTOS DE EQUIPOS PARA PROCESOS DE INFORM."
+    },
+    "subClasses" : [ "521" ],
+    "id" : "568",
+    "superClasses" : [ "220" ]
+  }, {
     "iri" : "http://purl.org/rohum#MudanzasSub",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -1896,17 +1907,6 @@
     },
     "id" : "611",
     "superClasses" : [ "612" ]
-  }, {
-    "iri" : "http://purl.org/rohum#ArrendamientoEquiposProcesosInformacion",
-    "baseIri" : "http://purl.org/rohum",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ArrendamientoEquiposProcesosInformacion",
-      "es" : "ARRENDAMIENTOS DE EQUIPOS PARA PROCESOS DE INFORM."
-    },
-    "subClasses" : [ "521" ],
-    "id" : "568",
-    "superClasses" : [ "220" ]
   }, {
     "iri" : "http://purl.org/rohum#GastosCorrientesBienesYServicios",
     "baseIri" : "http://purl.org/rohum",
@@ -2220,7 +2220,7 @@
       "es" : "Otros servicios"
     },
     "id" : "376",
-    "superClasses" : [ "544", "729", "173", "170", "133", "375", "730", "731" ]
+    "superClasses" : [ "544", "170", "729", "173", "133", "375", "730", "731" ]
   }, {
     "iri" : "http://purl.org/rohum#GastosProtocolarios",
     "baseIri" : "http://purl.org/rohum",
@@ -2320,7 +2320,7 @@
     "comment" : {
       "es" : "Contempla los gastos de funcionamiento que ha de asumir la Universidad como consecuencia de la celebración de procesos electorales, incluidos los procesos electorales sindicales."
     },
-    "id" : "731",
+    "id" : "730",
     "superClasses" : [ "151" ]
   }, {
     "iri" : "http://purl.org/rohum#MaterialDeOficinaOrdinarioNoInventariable",
@@ -2759,20 +2759,6 @@
     "id" : "363",
     "superClasses" : [ "644" ]
   }, {
-    "iri" : "http://purl.org/rohum#CustodiaDepositoAlmacenaje",
-    "baseIri" : "http://purl.org/rohum",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CustodiaDepositoAlmacenaje",
-      "es" : "Custodia, depósito y almacenaje"
-    },
-    "subClasses" : [ "376" ],
-    "comment" : {
-      "es" : "Gastos de esta naturaleza"
-    },
-    "id" : "544",
-    "superClasses" : [ "151" ]
-  }, {
     "iri" : "http://purl.org/rohum#Otros",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -2786,6 +2772,20 @@
     },
     "id" : "755",
     "superClasses" : [ "612" ]
+  }, {
+    "iri" : "http://purl.org/rohum#CustodiaDepositoAlmacenaje",
+    "baseIri" : "http://purl.org/rohum",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CustodiaDepositoAlmacenaje",
+      "es" : "Custodia, depósito y almacenaje"
+    },
+    "subClasses" : [ "376" ],
+    "comment" : {
+      "es" : "Gastos de esta naturaleza"
+    },
+    "id" : "544",
+    "superClasses" : [ "151" ]
   }, {
     "iri" : "http://purl.org/rohum#Terrenos",
     "baseIri" : "http://purl.org/rohum",
@@ -2921,7 +2921,7 @@
       "IRI-based" : "Suministros",
       "undefined" : "SUMINISTROS"
     },
-    "subClasses" : [ "149", "636", "457", "740", "742", "33", "468", "657", "294", "502", "719", "487", "44", "161", "725" ],
+    "subClasses" : [ "149", "636", "457", "740", "742", "33", "469", "657", "294", "502", "719", "487", "44", "161", "725" ],
     "id" : "45",
     "superClasses" : [ "259" ]
   }, {
@@ -3173,7 +3173,7 @@
     "comment" : {
       "es" : "Adquisición de material electrónico, eléctrico y de comunicaciones. Ejemplo: regulador de voltaje."
     },
-    "id" : "468",
+    "id" : "469",
     "superClasses" : [ "45" ]
   }, {
     "iri" : "http://purl.org/rohum#GasesLaboratorio",
@@ -3299,6 +3299,16 @@
     "id" : "190",
     "superClasses" : [ "187" ]
   }, {
+    "iri" : "http://purl.org/rohum#ReparYConservDeOtroInmovilizadoMaterial",
+    "baseIri" : "http://purl.org/rohum",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReparYConservDeOtroInmovilizadoMaterial",
+      "es" : "Repar. y conserv de otro inmovilizado material"
+    },
+    "id" : "746",
+    "superClasses" : [ "500" ]
+  }, {
     "iri" : "http://purl.org/rohum#FondosBiblograficosElectronicos",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -3311,16 +3321,6 @@
     },
     "id" : "35",
     "superClasses" : [ "8" ]
-  }, {
-    "iri" : "http://purl.org/rohum#ReparYConservDeOtroInmovilizadoMaterial",
-    "baseIri" : "http://purl.org/rohum",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ReparYConservDeOtroInmovilizadoMaterial",
-      "es" : "Repar. y conserv de otro inmovilizado material"
-    },
-    "id" : "746",
-    "superClasses" : [ "500" ]
   }, {
     "iri" : "http://purl.org/rohum#Comunicaciones",
     "baseIri" : "http://purl.org/rohum",
@@ -3456,16 +3456,6 @@
     "id" : "401",
     "superClasses" : [ "42" ]
   }, {
-    "iri" : "http://purl.org/rohum#Revistas",
-    "baseIri" : "http://purl.org/rohum",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Revistas",
-      "es" : "Fondo Biblográfico. Revistas"
-    },
-    "id" : "314",
-    "superClasses" : [ "715" ]
-  }, {
     "iri" : "http://purl.org/rohum#CosteDeFotocopiasGasto",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -3475,6 +3465,16 @@
     },
     "id" : "142",
     "superClasses" : [ "413" ]
+  }, {
+    "iri" : "http://purl.org/rohum#Revistas",
+    "baseIri" : "http://purl.org/rohum",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Revistas",
+      "es" : "Fondo Biblográfico. Revistas"
+    },
+    "id" : "314",
+    "superClasses" : [ "715" ]
   }, {
     "iri" : "http://purl.org/rohum#GastosExtraordinarios",
     "baseIri" : "http://purl.org/rohum",
@@ -3486,14 +3486,15 @@
     "id" : "287",
     "superClasses" : [ "167" ]
   }, {
-    "iri" : "http://purl.org/rohes#InstalacionesTecnicasEnMontaje",
-    "baseIri" : "http://purl.org/rohes",
+    "iri" : "http://purl.org/rohum#TributosAutonomicos",
+    "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "InstalacionesTecnicasEnMontaje"
+      "IRI-based" : "TributosAutonomicos",
+      "es" : "TRIBUTOS DE CARÁCTER AUTONÓMICO"
     },
-    "attributes" : [ "external" ],
-    "id" : "228"
+    "id" : "380",
+    "superClasses" : [ "379" ]
   }, {
     "iri" : "http://purl.org/rohum#MaterialDeOficina",
     "baseIri" : "http://purl.org/rohum",
@@ -3506,15 +3507,14 @@
     "id" : "42",
     "superClasses" : [ "259" ]
   }, {
-    "iri" : "http://purl.org/rohum#TributosAutonomicos",
-    "baseIri" : "http://purl.org/rohum",
+    "iri" : "http://purl.org/rohes#InstalacionesTecnicasEnMontaje",
+    "baseIri" : "http://purl.org/rohes",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TributosAutonomicos",
-      "es" : "TRIBUTOS DE CARÁCTER AUTONÓMICO"
+      "IRI-based" : "InstalacionesTecnicasEnMontaje"
     },
-    "id" : "380",
-    "superClasses" : [ "379" ]
+    "attributes" : [ "external" ],
+    "id" : "228"
   }, {
     "iri" : "http://purl.org/rohes#OtrosSuministros",
     "baseIri" : "http://purl.org/rohes",
@@ -3943,16 +3943,6 @@
     "id" : "127",
     "superClasses" : [ "128" ]
   }, {
-    "iri" : "http://purl.org/rohum#PublicidadPropagandaRelacionesPublicas",
-    "baseIri" : "http://purl.org/rohum",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PublicidadPropagandaRelacionesPublicas",
-      "es" : "Publicidad, propaganda y relaciones públicas"
-    },
-    "id" : "710",
-    "superClasses" : [ "165" ]
-  }, {
     "iri" : "http://purl.org/rohum#TelexTelefax",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -3966,6 +3956,16 @@
     },
     "id" : "448",
     "superClasses" : [ "328" ]
+  }, {
+    "iri" : "http://purl.org/rohum#PublicidadPropagandaRelacionesPublicas",
+    "baseIri" : "http://purl.org/rohum",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicidadPropagandaRelacionesPublicas",
+      "es" : "Publicidad, propaganda y relaciones públicas"
+    },
+    "id" : "710",
+    "superClasses" : [ "165" ]
   }, {
     "iri" : "http://purl.org/rohum#PrimasSeguroEdificios",
     "baseIri" : "http://purl.org/rohum",
@@ -4212,6 +4212,16 @@
     "id" : "386",
     "superClasses" : [ "384" ]
   }, {
+    "iri" : "http://purl.org/rohum#ReparYConservInstalacionesTecnicas",
+    "baseIri" : "http://purl.org/rohum",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReparYConservInstalacionesTecnicas",
+      "es" : "Repar. y conserv de instalaciones técnicas"
+    },
+    "id" : "408",
+    "superClasses" : [ "673" ]
+  }, {
     "iri" : "http://purl.org/rohum#OtrasIndemnizacionesSub",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -4226,16 +4236,6 @@
     "id" : "540",
     "superClasses" : [ "747" ]
   }, {
-    "iri" : "http://purl.org/rohum#ReparYConservInstalacionesTecnicas",
-    "baseIri" : "http://purl.org/rohum",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ReparYConservInstalacionesTecnicas",
-      "es" : "Repar. y conserv de instalaciones técnicas"
-    },
-    "id" : "408",
-    "superClasses" : [ "673" ]
-  }, {
     "iri" : "http://purl.org/rohum#TrabajosRealizadosPorOtros",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -4243,7 +4243,7 @@
       "IRI-based" : "TrabajosRealizadosPorOtros",
       "es" : "TRABAJOS REALIZADOS POR OTRAS EMPRESAS Y PROFES."
     },
-    "subClasses" : [ "544", "150", "493", "729", "460", "375", "475", "730", "731", "476" ],
+    "subClasses" : [ "544", "150", "493", "729", "460", "375", "475", "731", "730", "476" ],
     "id" : "151",
     "superClasses" : [ "259" ]
   }, {
@@ -4386,16 +4386,6 @@
     "id" : "26",
     "superClasses" : [ "8" ]
   }, {
-    "iri" : "http://purl.org/rohum#OtroInmovilizadoMaterial",
-    "baseIri" : "http://purl.org/rohum",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "OtroInmovilizadoMaterial",
-      "es" : "Otro Inmovilizado Material"
-    },
-    "id" : "310",
-    "superClasses" : [ "715" ]
-  }, {
     "iri" : "http://purl.org/rohum#EliminacionResiduosToxicos",
     "baseIri" : "http://purl.org/rohum",
     "instances" : 0,
@@ -4407,8 +4397,18 @@
     "comment" : {
       "es" : "Gastos satisfechos a empresas y profesionales para la eliminación de residuos tóxicos."
     },
-    "id" : "730",
+    "id" : "731",
     "superClasses" : [ "151" ]
+  }, {
+    "iri" : "http://purl.org/rohum#OtroInmovilizadoMaterial",
+    "baseIri" : "http://purl.org/rohum",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtroInmovilizadoMaterial",
+      "es" : "Otro Inmovilizado Material"
+    },
+    "id" : "310",
+    "superClasses" : [ "715" ]
   }, {
     "iri" : "http://purl.org/rohum#AplicacionesInformaticas",
     "baseIri" : "http://purl.org/rohum",
@@ -4438,7 +4438,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "OposicionesPruebasSelectivas",
-      "es" : "Oposiciones y pruebas selectivas"
+      "es" : "Todo tipo de gastos derivados de la realización de pruebas selectivas, excepto las dietas y asistencias a tribunales, que se imputarán al artículo 23."
     },
     "subClasses" : [ "376" ],
     "id" : "170",
@@ -4745,13 +4745,13 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "96",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "99",
     "type" : "owl:disjointWith"
   }, {
     "id" : "100",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "101",
     "type" : "owl:disjointWith"
@@ -4847,25 +4847,25 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "174",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "177",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "180",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "181",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "183",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "185",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "188",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "189",
     "type" : "rdfs:SubClassOf"
@@ -4901,7 +4901,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "210",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "212",
     "type" : "rdfs:SubClassOf"
@@ -4910,13 +4910,13 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "215",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "217",
     "type" : "owl:disjointWith"
   }, {
     "id" : "218",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "221",
     "type" : "owl:disjointWith"
@@ -4925,28 +4925,28 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "227",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "229",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "231",
     "type" : "owl:disjointWith"
   }, {
     "id" : "232",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "233",
     "type" : "owl:disjointWith"
   }, {
     "id" : "234",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "236",
     "type" : "owl:disjointWith"
   }, {
     "id" : "237",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "238",
     "type" : "owl:disjointWith"
@@ -4964,25 +4964,25 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "247",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "248",
     "type" : "owl:disjointWith"
   }, {
     "id" : "249",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "251",
     "type" : "owl:disjointWith"
   }, {
     "id" : "252",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "253",
     "type" : "owl:disjointWith"
   }, {
     "id" : "254",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "255",
     "type" : "owl:disjointWith"
@@ -4991,10 +4991,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "260",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "263",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "264",
     "type" : "owl:disjointWith"
@@ -5018,13 +5018,13 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "275",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "276",
     "type" : "owl:disjointWith"
   }, {
     "id" : "277",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "278",
     "type" : "owl:disjointWith"
@@ -5042,13 +5042,13 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "286",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "288",
     "type" : "owl:disjointWith"
   }, {
     "id" : "289",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "290",
     "type" : "owl:disjointWith"
@@ -5057,10 +5057,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "296",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "297",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "298",
     "type" : "owl:disjointWith"
@@ -5162,13 +5162,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "349",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "350",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "351",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "352",
     "type" : "rdfs:SubClassOf"
@@ -5186,13 +5186,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "361",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "364",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "365",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "366",
     "type" : "rdfs:SubClassOf"
@@ -5207,7 +5207,7 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "377",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "381",
     "type" : "owl:disjointWith"
@@ -5246,7 +5246,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "402",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "405",
     "type" : "rdfs:SubClassOf"
@@ -5264,13 +5264,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "414",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "415",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "416",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "417",
     "type" : "rdfs:SubClassOf"
@@ -5459,7 +5459,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "514",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "517",
     "type" : "rdfs:SubClassOf"
@@ -5540,7 +5540,7 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "554",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "555",
     "type" : "owl:disjointWith"
@@ -5582,7 +5582,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "573",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "574",
     "type" : "rdfs:SubClassOf"
@@ -5594,7 +5594,7 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "579",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "580",
     "type" : "rdfs:SubClassOf"
@@ -5603,7 +5603,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "582",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "585",
     "type" : "rdfs:SubClassOf"
@@ -5612,7 +5612,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "587",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "589",
     "type" : "rdfs:SubClassOf"
@@ -5657,7 +5657,7 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "609",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "610",
     "type" : "owl:disjointWith"
@@ -5696,7 +5696,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "627",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "629",
     "type" : "rdfs:SubClassOf"
@@ -5705,7 +5705,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "631",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "632",
     "type" : "rdfs:SubClassOf"
@@ -5714,7 +5714,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "634",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "635",
     "type" : "rdfs:SubClassOf"
@@ -5795,7 +5795,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "671",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "672",
     "type" : "rdfs:SubClassOf"
@@ -5804,7 +5804,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "675",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "678",
     "type" : "rdfs:SubClassOf"
@@ -5813,19 +5813,19 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "681",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "682",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "684",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "685",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "687",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "688",
     "type" : "rdfs:SubClassOf"
@@ -5834,7 +5834,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "690",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "691",
     "type" : "rdfs:SubClassOf"
@@ -5843,22 +5843,22 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "694",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "695",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "697",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "698",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "699",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "700",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "704",
     "type" : "owl:disjointWith"
@@ -5960,16 +5960,16 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "760",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "761",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "762",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "763",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "764",
     "type" : "owl:someValuesFrom"
@@ -5978,7 +5978,7 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "767",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "768",
     "type" : "owl:allValuesFrom"
@@ -6005,7 +6005,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "776",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "777",
     "type" : "owl:datatypeProperty"
@@ -6077,22 +6077,22 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "806",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "807",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "808",
     "type" : "owl:disjointWith"
   }, {
     "id" : "809",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "810",
     "type" : "owl:disjointWith"
   }, {
     "id" : "811",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "812",
     "type" : "owl:disjointWith"
@@ -6104,13 +6104,13 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "815",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "816",
     "type" : "owl:disjointWith"
   }, {
     "id" : "817",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "818",
     "type" : "owl:disjointWith"
@@ -6404,19 +6404,19 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "917",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "918",
     "type" : "owl:disjointWith"
   }, {
     "id" : "919",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "920",
     "type" : "owl:disjointWith"
   }, {
     "id" : "921",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "922",
     "type" : "owl:disjointWith"
@@ -6431,13 +6431,13 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "926",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "927",
     "type" : "owl:disjointWith"
   }, {
     "id" : "928",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "929",
     "type" : "owl:disjointWith"
@@ -6494,10 +6494,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "948",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "949",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "950",
     "type" : "owl:disjointWith"
@@ -6740,22 +6740,22 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1030",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "1031",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1032",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "1033",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1034",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "1035",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "1036",
     "type" : "rdfs:SubClassOf"
@@ -6791,13 +6791,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1047",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "1049",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1050",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "1051",
     "type" : "rdfs:SubClassOf"
@@ -6830,7 +6830,7 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "1061",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "1062",
     "type" : "rdfs:SubClassOf"
@@ -7354,7 +7354,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "97",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "96"
   }, {
     "range" : "56",
@@ -7369,7 +7369,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "97",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "100"
   }, {
     "range" : "102",
@@ -7544,7 +7544,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "175",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "174"
   }, {
     "range" : "179",
@@ -7559,7 +7559,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "175",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "180"
   }, {
     "range" : "179",
@@ -7574,7 +7574,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "184",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "183"
   }, {
     "range" : "187",
@@ -7589,7 +7589,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "184",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "188"
   }, {
     "range" : "187",
@@ -7674,7 +7674,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "211",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "210"
   }, {
     "range" : "179",
@@ -7694,7 +7694,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "76",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "215"
   }, {
     "range" : "87",
@@ -7709,7 +7709,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "219",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "218"
   }, {
     "range" : "56",
@@ -7729,7 +7729,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "7",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "227"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -7739,7 +7739,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "89",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "229"
   }, {
     "range" : "30",
@@ -7754,7 +7754,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "89",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "232"
   }, {
     "range" : "35",
@@ -7769,7 +7769,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "152",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "234"
   }, {
     "range" : "37",
@@ -7784,7 +7784,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "152",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "237"
   }, {
     "range" : "78",
@@ -7829,7 +7829,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "76",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "247"
   }, {
     "range" : "60",
@@ -7844,7 +7844,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "78",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "249"
   }, {
     "range" : "68",
@@ -7859,7 +7859,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "78",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "252"
   }, {
     "range" : "2",
@@ -7874,7 +7874,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "7",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "254"
   }, {
     "range" : "10",
@@ -7894,7 +7894,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "261",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "260"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -7904,7 +7904,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "261",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "263"
   }, {
     "range" : "76",
@@ -7959,7 +7959,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "197",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "275"
   }, {
     "range" : "82",
@@ -7974,7 +7974,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "197",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "277"
   }, {
     "range" : "30",
@@ -8019,7 +8019,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "287",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "286"
   }, {
     "range" : "78",
@@ -8034,7 +8034,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "287",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "289"
   }, {
     "range" : "7",
@@ -8054,7 +8054,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "35",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "296"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -8064,7 +8064,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "35",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "297"
   }, {
     "range" : "2",
@@ -8284,7 +8284,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "2",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "349"
   }, {
     "range" : "105",
@@ -8299,7 +8299,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "2",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "351"
   }, {
     "range" : "105",
@@ -8344,7 +8344,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "362",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "361"
   }, {
     "range" : "105",
@@ -8359,7 +8359,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "362",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "365"
   }, {
     "range" : "367",
@@ -8399,7 +8399,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "378",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "377"
   }, {
     "range" : "344",
@@ -8469,7 +8469,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "403",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "402"
   }, {
     "range" : "42",
@@ -8514,7 +8514,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "270",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "414"
   }, {
     "range" : "42",
@@ -8529,7 +8529,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "270",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "416"
   }, {
     "range" : "42",
@@ -8797,7 +8797,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "489"
   }, {
-    "range" : "468",
+    "range" : "469",
     "domain" : "427",
     "attributes" : [ "anonymous", "object" ],
     "id" : "490"
@@ -8884,7 +8884,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "515",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "514"
   }, {
     "range" : "63",
@@ -9034,7 +9034,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "211",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "554"
   }, {
     "range" : "102",
@@ -9109,7 +9109,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "160",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "573"
   }, {
     "range" : "39",
@@ -9139,7 +9139,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "160",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "579"
   }, {
     "range" : "39",
@@ -9159,7 +9159,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "583",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "582"
   }, {
     "range" : "39",
@@ -9179,7 +9179,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "583",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "587"
   }, {
     "range" : "39",
@@ -9289,7 +9289,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "515",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "609"
   }, {
     "range" : "22",
@@ -9364,7 +9364,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "10",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "627"
   }, {
     "range" : "461",
@@ -9384,7 +9384,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "372",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "631"
   }, {
     "range" : "291",
@@ -9404,7 +9404,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "372",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "634"
   }, {
     "range" : "127",
@@ -9579,7 +9579,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "378",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "671"
   }, {
     "range" : "673",
@@ -9599,7 +9599,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "676",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "675"
   }, {
     "range" : "483",
@@ -9619,7 +9619,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "676",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "681"
   }, {
     "range" : "406",
@@ -9634,7 +9634,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "486",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "684"
   }, {
     "range" : "619",
@@ -9649,7 +9649,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "486",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "687"
   }, {
     "range" : "226",
@@ -9669,7 +9669,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "656",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "690"
   }, {
     "range" : "692",
@@ -9689,7 +9689,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "656",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "694"
   }, {
     "range" : "159",
@@ -9704,7 +9704,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "46",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "697"
   }, {
     "range" : "461",
@@ -9719,7 +9719,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "46",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "699"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -9729,7 +9729,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "10",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "700"
   }, {
     "range" : "26",
@@ -9868,7 +9868,7 @@
     "id" : "743"
   }, {
     "range" : "45",
-    "domain" : "468",
+    "domain" : "469",
     "attributes" : [ "anonymous", "object" ],
     "id" : "744"
   }, {
@@ -9924,7 +9924,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "257",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "760"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -9934,7 +9934,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "257",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "761"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -9944,7 +9944,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "501",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "762"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -9954,7 +9954,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "501",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "763"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -9984,7 +9984,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "15",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "767"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -10039,7 +10039,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "15",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "776"
   }, {
     "iri" : "http://purl.org/rohes#code",
@@ -10124,7 +10124,7 @@
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
     "baseIri" : "http://purl.org/rohes",
-    "range" : "469",
+    "range" : "468",
     "label" : {
       "IRI-based" : "chargedTo"
     },
@@ -10139,7 +10139,7 @@
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
     "baseIri" : "http://purl.org/rohes",
-    "range" : "469",
+    "range" : "468",
     "label" : {
       "IRI-based" : "chargedTo"
     },
@@ -10154,7 +10154,7 @@
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
     "baseIri" : "http://purl.org/rohes",
-    "range" : "469",
+    "range" : "468",
     "label" : {
       "IRI-based" : "chargedTo"
     },
@@ -10169,7 +10169,7 @@
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
     "baseIri" : "http://purl.org/rohes",
-    "range" : "469",
+    "range" : "468",
     "label" : {
       "IRI-based" : "chargedTo"
     },
@@ -10194,7 +10194,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "492",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "806"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -10204,7 +10204,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "492",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "807"
   }, {
     "range" : "17",
@@ -10219,7 +10219,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "456",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "809"
   }, {
     "range" : "76",
@@ -10234,7 +10234,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "456",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "811"
   }, {
     "range" : "87",
@@ -10264,7 +10264,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "524",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "815"
   }, {
     "range" : "56",
@@ -10279,7 +10279,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "524",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "817"
   }, {
     "range" : "102",
@@ -10412,8 +10412,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "836"
   }, {
-    "range" : "755",
-    "domain" : "781",
+    "range" : "544",
+    "domain" : "376",
     "attributes" : [ "anonymous", "object" ],
     "id" : "837"
   }, {
@@ -10557,8 +10557,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "863"
   }, {
-    "range" : "544",
-    "domain" : "376",
+    "range" : "755",
+    "domain" : "781",
     "attributes" : [ "anonymous", "object" ],
     "id" : "864"
   }, {
@@ -10824,7 +10824,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "753",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "917"
   }, {
     "range" : "10",
@@ -10839,7 +10839,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "753",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "919"
   }, {
     "range" : "17",
@@ -10854,7 +10854,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "403",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "921"
   }, {
     "range" : "102",
@@ -10897,7 +10897,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "679",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "926"
   }, {
     "range" : "56",
@@ -10912,7 +10912,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "679",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "928"
   }, {
     "range" : "102",
@@ -11052,7 +11052,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "710",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "948"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -11062,7 +11062,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "710",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "949"
   }, {
     "range" : "17",
@@ -11210,13 +11210,13 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "975"
   }, {
-    "range" : "611",
-    "domain" : "613",
+    "range" : "568",
+    "domain" : "521",
     "attributes" : [ "anonymous", "object" ],
     "id" : "976"
   }, {
-    "range" : "568",
-    "domain" : "521",
+    "range" : "611",
+    "domain" : "613",
     "attributes" : [ "anonymous", "object" ],
     "id" : "977"
   }, {
@@ -11517,7 +11517,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "805",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "1030"
   }, {
     "range" : "259",
@@ -11532,7 +11532,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "805",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "1032"
   }, {
     "range" : "259",
@@ -11547,7 +11547,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "376",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "1034"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
@@ -11557,7 +11557,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "376",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "1035"
   }, {
     "range" : "747",
@@ -11627,7 +11627,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "87",
-    "attributes" : [ "external", "allValues", "object" ],
+    "attributes" : [ "external", "someValues", "object" ],
     "id" : "1047"
   }, {
     "range" : "500",
@@ -11642,7 +11642,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "87",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "1050"
   }, {
     "range" : "519",
@@ -11675,7 +11675,7 @@
     "attributes" : [ "external", "allValues", "object" ],
     "id" : "1054"
   }, {
-    "range" : "731",
+    "range" : "730",
     "domain" : "376",
     "attributes" : [ "anonymous", "object" ],
     "id" : "1055"
@@ -11722,7 +11722,7 @@
       "IRI-based" : "chargedTo"
     },
     "domain" : "219",
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "external", "allValues", "object" ],
     "id" : "1061"
   }, {
     "range" : "284",
@@ -11865,7 +11865,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "1081"
   }, {
-    "range" : "730",
+    "range" : "731",
     "domain" : "376",
     "attributes" : [ "anonymous", "object" ],
     "id" : "1082"
@@ -11986,12 +11986,12 @@
     "id" : "1105"
   }, {
     "range" : "151",
-    "domain" : "730",
+    "domain" : "731",
     "attributes" : [ "anonymous", "object" ],
     "id" : "1106"
   }, {
     "range" : "151",
-    "domain" : "731",
+    "domain" : "730",
     "attributes" : [ "anonymous", "object" ],
     "id" : "1107"
   }, {
