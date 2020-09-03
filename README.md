@@ -37,7 +37,7 @@ This documentation area includes the following files:
 - `Próximos pasos.md` - [Markdown document](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/Pr%C3%B3ximos%20pasos.md) explaining the next steps in the develepment of ROH, afer the ending of the first milestone of ASIO project.
 - `README.md` - This very file which includes documentation in Markdown of ROH, describing with text and diagrams the relationships among the main entities in ROH
 
-**<a name="headSection1"></a>1. Ontological design**
+##<a name="headSection1"></a>1. Ontological design##
 ====================================================
 
 This section is going to break down from minor to major detail the
