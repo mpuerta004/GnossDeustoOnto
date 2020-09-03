@@ -33,8 +33,8 @@ This documentation area includes the following files:
 - `2- CoberturaPreguntasCompetencia.pdf` - [PDF](https://herculescrue.github.io/GnossDeustoOnto/2-%20CoberturaPreguntasCompetencia.pdf) with [competence questions which have been assessed against ROH](https://herculescrue.github.io/GnossDeustoOnto/2-%20CoberturaPreguntasCompetencia.pdf).
 - `3- Ejecución de preguntas de competencia.md`	- [Link](https://github.com/HerculesCRUE/GnossDeustoBackend/tree/master/validation-questions) to page to execute competency questions against ROH
 - `4- Modelo de multilingüismo.md`	- [Markdown document](4-%20Modelo%20de%20multiling%C3%BCismo) explaining how multilinguism is supported in ROH
-- `5- Método para el control de versiones OWL.md` - [Markdown document](./5-%20M%C3%A9todo%20para%20el%20control%20de%20versiones%20OWL.md) explaining how version control is carried out in ROH
-- `Próximos pasos.md` - [Markdown document](./Pr%C3%B3ximos%20pasos.md) explaining the next steps in the develepment of ROH, afer the ending of the first milestone of ASIO project.
+- `5- Método para el control de versiones OWL.md` - [Markdown document](5-%20M%C3%A9todo%20para%20el%20control%20de%20versiones%20OWL) explaining how version control is carried out in ROH
+- `Próximos pasos.md` - [Markdown document](Pr%C3%B3ximos%20pasos) explaining the next steps in the develepment of ROH, afer the ending of the first milestone of ASIO project.
 - `README.md` - This very file which includes documentation in Markdown of ROH, describing with text and diagrams the relationships among the main entities in ROH
 
 **<a name="headSection1"></a>1. Ontological design**
