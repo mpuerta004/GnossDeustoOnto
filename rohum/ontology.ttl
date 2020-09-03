@@ -1,0 +1,3235 @@
+@prefix : <http://purl.org/rohum#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/rohum> .
+
+<http://purl.org/rohum> rdf:type owl:Ontology ;
+                         owl:versionIRI <http://purl.org/rohum/1.0> ;
+                         owl:imports <http://purl.org/rohes/2.0.0> ;
+                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                         rdfs:comment """The University of Murcia signed on November 29, 2017, a Covenant with the Ministry of Economy, Industry and Competitiveness backing the “HÉRCULES: Semantic University Research Data” Project with a budget of FIVE MILLION FOUR HUNDRED AND SIXTY-TWO THOUSAND SIX HUNDRED euros with an 80% of co-financiering from the European Regional Development Fund program (ERDF) within the 2014-2020 period. 
+
+The project arose as a CRUE initiative, to create the basis for a new collaboration model between universities, to develop the information management systems and with the main objective of encouraging this type of collaboration.
+
+Therefore, the purpose of this agreement was to contribute to the improvement of public services and business innovation and research through the improvement of:
+
+    efficiency in public investment by decreasing the duplication of investment in R&D.
+    efficiency of research in universities.
+    scientific dissemination of research results.
+    detection of synergies in R&D between universities.
+    transfer of R&D results to companies.
+    efficiency in the management of research. 
+
+by creating a research management system with semantic capacities based on semantic open data and that will provide a global view of the research data contained in the Spanish University System."""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/rohes#chargedTo
+<http://purl.org/rohes#chargedTo> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/rohes#code
+<http://purl.org/rohes#code> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rohes#finalist
+<http://purl.org/rohes#finalist> rdf:type owl:DatatypeProperty ;
+                                 rdfs:range [ rdf:type rdfs:Datatype ;
+                                              owl:oneOf [ rdf:type rdf:List ;
+                                                          rdf:first "F" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "N" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "P" ;
+                                                                                rdf:rest rdf:nil
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                            ] ;
+                                 rdfs:comment "For finalist projects they may have one of the following three possible values: Finalist (F), Non finalist (N) y Partially Finalist (P)" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/rohes#AdaptacionDeTerrenosInmovilizadoMaterial
+<http://purl.org/rohes#AdaptacionDeTerrenosInmovilizadoMaterial> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Agua
+<http://purl.org/rohes#Agua> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#AplicacionesInformaticas
+<http://purl.org/rohes#AplicacionesInformaticas> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#BienesDelPatrimonioHistorico
+<http://purl.org/rohes#BienesDelPatrimonioHistorico> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Canones
+<http://purl.org/rohes#Canones> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Combustibles
+<http://purl.org/rohes#Combustibles> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ComunicacionesTelefonicas
+<http://purl.org/rohes#ComunicacionesTelefonicas> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Construcciones
+<http://purl.org/rohes#Construcciones> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ConstruccionesCompras
+<http://purl.org/rohes#ConstruccionesCompras> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ConstruccionesEnCursoInmovilizadoMaterial
+<http://purl.org/rohes#ConstruccionesEnCursoInmovilizadoMaterial> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Dietas
+<http://purl.org/rohes#Dietas> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ElementosDeTransporte
+<http://purl.org/rohes#ElementosDeTransporte> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#EnergiaElectrica
+<http://purl.org/rohes#EnergiaElectrica> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#EquiposParaProcesosDeInformacion
+<http://purl.org/rohes#EquiposParaProcesosDeInformacion> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#EquiposParaProcesosDeInformacionCompras
+<http://purl.org/rohes#EquiposParaProcesosDeInformacionCompras> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Gas
+<http://purl.org/rohes#Gas> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#GastosExcepcionales
+<http://purl.org/rohes#GastosExcepcionales> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#InstalacionesTecnicasEnMontaje
+<http://purl.org/rohes#InstalacionesTecnicasEnMontaje> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#LimpiezaYAseo
+<http://purl.org/rohes#LimpiezaYAseo> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Locomocion
+<http://purl.org/rohes#Locomocion> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#MaquinariaUtillaje
+<http://purl.org/rohes#MaquinariaUtillaje> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#MaquinariaYUtillaje
+<http://purl.org/rohes#MaquinariaYUtillaje> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#MaterialDeOficina
+<http://purl.org/rohes#MaterialDeOficina> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Mobiliario
+<http://purl.org/rohes#Mobiliario> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#MobiliarioCompras
+<http://purl.org/rohes#MobiliarioCompras> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#OtrasComunicaciones
+<http://purl.org/rohes#OtrasComunicaciones> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#OtroInmovilizadoMaterial
+<http://purl.org/rohes#OtroInmovilizadoMaterial> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#OtroInmovilizadoMaterialCompras
+<http://purl.org/rohes#OtroInmovilizadoMaterialCompras> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#OtrosServicios
+<http://purl.org/rohes#OtrosServicios> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#OtrosSuministros
+<http://purl.org/rohes#OtrosSuministros> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Prensa
+<http://purl.org/rohes#Prensa> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#PrimasDeSeguros
+<http://purl.org/rohes#PrimasDeSeguros> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#PropiedadIndustrial
+<http://purl.org/rohes#PropiedadIndustrial> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Publicidad
+<http://purl.org/rohes#Publicidad> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ReparacionEquiposParaProcesosDeInformacion
+<http://purl.org/rohes#ReparacionEquiposParaProcesosDeInformacion> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ReparacionInstalacionesTecnicas
+<http://purl.org/rohes#ReparacionInstalacionesTecnicas> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ReparacionMaquinariaUtillaje
+<http://purl.org/rohes#ReparacionMaquinariaUtillaje> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ReparacionMobiliario
+<http://purl.org/rohes#ReparacionMobiliario> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial
+<http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Seguridad
+<http://purl.org/rohes#Seguridad> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ServiciosBancariosYSimilares
+<http://purl.org/rohes#ServiciosBancariosYSimilares> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#ServiciosDeProfesionalesIndependientes
+<http://purl.org/rohes#ServiciosDeProfesionalesIndependientes> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Suministros
+<http://purl.org/rohes#Suministros> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#TerrenosYBienesNaturales
+<http://purl.org/rohes#TerrenosYBienesNaturales> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#TerrenosYBienesNaturalesCompras
+<http://purl.org/rohes#TerrenosYBienesNaturalesCompras> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#Transportes
+<http://purl.org/rohes#Transportes> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#TributosAutonomicos
+<http://purl.org/rohes#TributosAutonomicos> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#TributosEstatales
+<http://purl.org/rohes#TributosEstatales> rdf:type owl:Class .
+
+
+###  http://purl.org/rohes#TributosLocales
+<http://purl.org/rohes#TributosLocales> rdf:type owl:Class .
+
+
+###  http://purl.org/rohum#AdquisicionDeLibrosElectronicos
+:AdquisicionDeLibrosElectronicos rdf:type owl:Class ;
+                                 rdfs:subClassOf :MaterialDeOficina ;
+                                 rdfs:comment "Adquisición de libros electrónicos por un periodo inferor o igual a 1 año."@es ;
+                                 rdfs:label "Adquisición de libros electrónicos por un periodo inferior o igual a 1 año"@es .
+
+
+###  http://purl.org/rohum#AdquisicionDeLibrosElectronicosPorUnPeriodoInferiorOIgualA1Anyo
+:AdquisicionDeLibrosElectronicosPorUnPeriodoInferiorOIgualA1Anyo rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :AdquisicionDeLibrosElectronicos ;
+                                                                 rdfs:label "Adquisición de libros electrónicos por un periodo inferior o igual a 1 año"@es .
+
+
+###  http://purl.org/rohum#AdquisicionLibrosElectronicos
+:AdquisicionLibrosElectronicos rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.org/rohes#Prensa> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/rohes#code> ;
+                                                 owl:hasValue "62912"^^xsd:int
+                                               ] ;
+                               rdfs:label """ADQUISICIÓN LIBROS ELECTRÓNICOS POR PERIODO INFERIOR O IGUAL A 1
+AÑO"""@es .
+
+
+###  http://purl.org/rohum#AnimalesExperimentación
+:AnimalesExperimentación rdf:type owl:Class ;
+                         rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom :OtroInmovilizadoMaterial
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom :OtroInmovilizadoMaterial
+                                         ] ;
+                         rdfs:comment "Ganado afecto a actividades de investigación. Animales de laboratorio (AN)."@es ;
+                         rdfs:label "Animales experimentación"@es .
+
+
+###  http://purl.org/rohum#AparcamientosEnTerrenos
+:AparcamientosEnTerrenos rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.org/rohes#TerrenosYBienesNaturales> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#code> ;
+                                           owl:hasValue "2101"^^xsd:int
+                                         ] ;
+                         owl:disjointWith :Terrenos ;
+                         rdfs:label "Aparcamientos en terrenos"@es .
+
+
+###  http://purl.org/rohum#AparcamientosEnTerrenosEnCurso
+:AparcamientosEnTerrenosEnCurso rdf:type owl:Class ;
+                                rdfs:subClassOf :EdificiosYOtrasConstruccionesConcepto ,
+                                                :GastosInversionCentrosYDepartamentos ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                  owl:someValuesFrom <http://purl.org/rohes#AdaptacionDeTerrenosInmovilizadoMaterial>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                  owl:allValuesFrom <http://purl.org/rohes#AdaptacionDeTerrenosInmovilizadoMaterial>
+                                                ] ;
+                                rdfs:comment "Reformas en curso en aparcamientos y terrenos"@es ;
+                                rdfs:label "Aparcamientos en terrenos en curso"@es .
+
+
+###  http://purl.org/rohum#AplicacionesInformaticas
+:AplicacionesInformaticas rdf:type owl:Class ;
+                          rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:someValuesFrom <http://purl.org/rohes#AplicacionesInformaticas>
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:allValuesFrom <http://purl.org/rohes#AplicacionesInformaticas>
+                                          ] ;
+                          rdfs:comment "Importe de la propiedad o derecho al uso de programas informáticos. Costes de producción de los programas informáticos de fabricación propia."@es ;
+                          rdfs:label "Aplicaciones informáticas"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoDeConstrucciones
+:ArrendamientoDeConstrucciones rdf:type owl:Class ;
+                               rdfs:subClassOf :ArrendamientosEdificiosYOtrasConstrucciones ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                 owl:someValuesFrom <http://purl.org/rohes#ConstruccionesCompras>
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                 owl:allValuesFrom <http://purl.org/rohes#ConstruccionesCompras>
+                                               ] ;
+                               rdfs:label "Arrendamiento de construcciones"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoDeMobiliario
+:ArrendamientoDeMobiliario rdf:type owl:Class ;
+                           rdfs:subClassOf :ArrendamientosMobiliario ;
+                           rdfs:comment """Gastos de alquiler de mobiliario, equipos de oficina, material, etcétera.
+Se incluyen las cuotas fijas por arrendamiento de fotocopiadoras"""@es ;
+                           rdfs:label "Arrendamiento de mobiliario y enseres"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoDeUtillaje
+:ArrendamientoDeUtillaje rdf:type owl:Class ;
+                         rdfs:subClassOf :ArrendamientoUtillaje ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom <http://purl.org/rohes#MaquinariaUtillaje>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom <http://purl.org/rohes#MaquinariaUtillaje>
+                                         ] ;
+                         rdfs:label "Arrendamiento de utillaje"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoElementosTransporte
+:ArrendamientoElementosTransporte rdf:type owl:Class ;
+                                  rdfs:subClassOf :ArrendamientoMaterialTransporte ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:someValuesFrom <http://purl.org/rohes#OtroInmovilizadoMaterialCompras>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:allValuesFrom <http://purl.org/rohes#OtroInmovilizadoMaterialCompras>
+                                                  ] ;
+                                  rdfs:label "Arrendamiento de elementos de transporte"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoEquiposProcesosDeInformacion
+:ArrendamientoEquiposProcesosDeInformacion rdf:type owl:Class ;
+                                           rdfs:subClassOf :ArrendamientoEquiposProcesosInform ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                             owl:someValuesFrom <http://purl.org/rohes#EquiposParaProcesosDeInformacionCompras>
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                             owl:allValuesFrom <http://purl.org/rohes#EquiposParaProcesosDeInformacionCompras>
+                                                           ] ;
+                                           rdfs:label "Arrendamiento de equipos para procesos de información"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoEquiposProcesosInform
+:ArrendamientoEquiposProcesosInform rdf:type owl:Class ;
+                                    rdfs:subClassOf :ArrendamientoEquiposProcesosInformacion ;
+                                    rdfs:comment """Gastos de alquiler de equipos informáticos, ofimáticos, de transmisiones de datos y otros especiales, sistemas operativos, aplicaciones de gestión de base de datos y cualquier otra clase de equipos informáticos y de ‘software’.
+
+Se incluyen las cuotas fijas por arrendamiento de impresoras y fotocopiadoras-impresoras
+No se incluyen las cuotas fijas por arrendamiento de fotocopiadoras."""@es ;
+                                    rdfs:label "Arrendamiento de equipos para procesos de información"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoEquiposProcesosInformacion
+:ArrendamientoEquiposProcesosInformacion rdf:type owl:Class ;
+                                         rdfs:subClassOf :ArrendamientosYCanones ;
+                                         rdfs:label "ARRENDAMIENTOS DE EQUIPOS PARA PROCESOS DE INFORM."@es .
+
+
+###  http://purl.org/rohum#ArrendamientoInstalaciones
+:ArrendamientoInstalaciones rdf:type owl:Class ;
+                            rdfs:subClassOf :Instalaciones ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:someValuesFrom <http://purl.org/rohes#MaquinariaUtillaje>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:allValuesFrom <http://purl.org/rohes#MaquinariaUtillaje>
+                                            ] ;
+                            rdfs:label "Arrendamiento de instalaciones"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoMaquinaria
+:ArrendamientoMaquinaria rdf:type owl:Class ;
+                         rdfs:subClassOf :Maquinaria ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom <http://purl.org/rohes#MaquinariaUtillaje>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom <http://purl.org/rohes#MaquinariaUtillaje>
+                                         ] ;
+                         rdfs:label "Arrendamiento de maquinaria"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoMaterialTransporte
+:ArrendamientoMaterialTransporte rdf:type owl:Class ;
+                                 rdfs:subClassOf :ArrendamientosMaterialTransporte ;
+                                 rdfs:label "Arrendamiento de material de transporte"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoMobiliario
+:ArrendamientoMobiliario rdf:type owl:Class ;
+                         rdfs:subClassOf :ArrendamientoDeMobiliario ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom <http://purl.org/rohes#MobiliarioCompras>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom <http://purl.org/rohes#MobiliarioCompras>
+                                         ] .
+
+
+###  http://purl.org/rohum#ArrendamientoOtroInmovilizadoMat
+:ArrendamientoOtroInmovilizadoMat rdf:type owl:Class ;
+                                  rdfs:subClassOf :ArrendamientoOtroInmovilizadoMaterial ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:someValuesFrom <http://purl.org/rohes#OtroInmovilizadoMaterialCompras>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:allValuesFrom <http://purl.org/rohes#OtroInmovilizadoMaterialCompras>
+                                                  ] ;
+                                  rdfs:label "Arrendamiento de otro inmovilizado material"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoOtroInmovilizadoMaterial
+:ArrendamientoOtroInmovilizadoMaterial rdf:type owl:Class ;
+                                       rdfs:subClassOf :ArrendamientosOtroInmovilizadoMaterial ;
+                                       rdfs:comment "Gastos de alquiler de inmovilizado diverso no incluido en los conceptos precedentes. Ejemplo: Fuentes de agua que están en renting."@es ;
+                                       rdfs:label "Arrendamiento de otro inmovilizado material"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoTerrenosYBienes
+:ArrendamientoTerrenosYBienes rdf:type owl:Class ;
+                              rdfs:subClassOf :ArrendamientosYCanones ;
+                              rdfs:label "ARRENDAMIENTOS DE TERRENOS Y BIENES NATURALES"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoTerrenosYBienesNaturales
+:ArrendamientoTerrenosYBienesNaturales rdf:type owl:Class ;
+                                       rdfs:subClassOf :ArrendamientosTerrenosYBienes ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                         owl:someValuesFrom <http://purl.org/rohes#TerrenosYBienesNaturalesCompras>
+                                                       ] ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                         owl:allValuesFrom <http://purl.org/rohes#TerrenosYBienesNaturalesCompras>
+                                                       ] ;
+                                       rdfs:label "Arrendamiento de terrenos y bienes naturales"@es .
+
+
+###  http://purl.org/rohum#ArrendamientoUtillaje
+:ArrendamientoUtillaje rdf:type owl:Class ;
+                       rdfs:subClassOf :ArrendamientosMaquinaria ;
+                       rdfs:comment "Gastos de alquiler de utensilios o herramientas que se puedan utilizar autónomamente o conjuntamente con la maquinaria, incluidos los moldes o plantillas. Se incluye el gasto del alquiler de las botellas de gases vacias, sin gas en el interior."@es ;
+                       rdfs:label "Utillaje"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosDeEdificios
+:ArrendamientosDeEdificios rdf:type owl:Class ;
+                           rdfs:subClassOf :ArrendamientosYCanones ;
+                           rdfs:label "ARRENDAMIENTOS DE EDIFICIOS Y OTRAS CONSTRUCCIONES"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosEdificiosYOtrasConstrucciones
+:ArrendamientosEdificiosYOtrasConstrucciones rdf:type owl:Class ;
+                                             rdfs:subClassOf :ArrendamientosDeEdificios ;
+                                             rdfs:comment "Gastos de alquiler de edificios en general, incluidos los gastos de comunidad, cualquiera que sea su destino. Se incluyen los edificios para la docencia, administrativos, residencias, refugios, viveros, establos, cuadras, locales, deportivos (piscinas, pistas, etc.), salas de espectáculos, museos, almacenes y otros comerciales, aunque en dicha rúbrica vayan incluidos servicios relacionados tales como calefacción, refrigeración, agua, alumbrado, seguros, limpieza, etc. Asimismo, se incluye en este concepto el arrendamiento de plazas de garaje que atenderán igualmente los servicios relacionados, siempre que su importe se contenga en el recibo de alquiler presentado por el propietario del inmueble."@es ;
+                                             rdfs:label "Edificios y Otras Construcciones"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosMaquinaria
+:ArrendamientosMaquinaria rdf:type owl:Class ;
+                          rdfs:subClassOf :ArrendamientosYCanones ;
+                          rdfs:label "ARRENDAMIENTOS DE MAQUINARIA, INSTALAC.Y UTILLAJE"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosMaterialTransporte
+:ArrendamientosMaterialTransporte rdf:type owl:Class ;
+                                  rdfs:subClassOf :ArrendamientosYCanones ;
+                                  rdfs:label "ARRENDAMIENTOS DE MATERIAL DE TRANSPORTE"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosMobiliario
+:ArrendamientosMobiliario rdf:type owl:Class ;
+                          rdfs:subClassOf :ArrendamientosYCanones ;
+                          rdfs:label "ARRENDAMIENTOS DE MOBILIARIO Y ENSERES"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosOtroInmovilizadoMaterial
+:ArrendamientosOtroInmovilizadoMaterial rdf:type owl:Class ;
+                                        rdfs:subClassOf :ArrendamientosYCanones ;
+                                        rdfs:label "ARRENDAMIENTOS DE OTRO INMOVILIZADO MATERIAL"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosTerrenosYBienes
+:ArrendamientosTerrenosYBienes rdf:type owl:Class ;
+                               rdfs:subClassOf :ArrendamientoTerrenosYBienes ;
+                               rdfs:comment """Gastos derivados del arrendamiento de solares, fincas rústicas
+y otros terrenos."""@es ;
+                               rdfs:label "Arrendamientos de terrenos y bienes"@es .
+
+
+###  http://purl.org/rohum#ArrendamientosYCanones
+:ArrendamientosYCanones rdf:type owl:Class ;
+                        rdfs:subClassOf :GastosCorrientesBienesYServicios ;
+                        rdfs:label "ARRENDAMIENTOS Y CÁNONES"@es .
+
+
+###  http://purl.org/rohum#AtencionesProtocolariasRepresentativas
+:AtencionesProtocolariasRepresentativas rdf:type owl:Class ;
+                                        rdfs:subClassOf :GastosDiversos ;
+                                        rdfs:comment """Se imputarán a este subconcepto los gastos que se produzcan como consecuencia de los actos de protocolo y representación que las autoridades de la Universidad tengan necesidad de realizar en el desempeño de sus funciones, tanto en territorio nacional como en el extranjero, siempre que los mismos redunden en beneficio o utilidad de la Universidad. Ejemplo: Comidas del rector.
+
+Incluye los trajes académicos y complementos (birrete, muceta, medallas, bastón, puñetas, guantes, cordones, etc.) regalados a los Doctores Honoris Causa. Se excluyen el resto de trajes académicos que están en subconcepto 22104, tipo de gasto \"VE\", VESTUARIO.
+
+No podrá considerarse dentro de este concepto ningún tipo de retribución, en metálico o en especie, al personal dependiente o no de la Universidad, cualquiera que sea la forma de esa dependencia o relación.
+Se incluyen las coronas y cojines de flores de defunción..."""@es ;
+                                        rdfs:label "Atenciones protocolarias y representativas"@es .
+
+
+###  http://purl.org/rohum#Autonomicos
+:Autonomicos rdf:type owl:Class ;
+             rdfs:subClassOf :Tributos ;
+             rdfs:comment "Gastos destinados a la cobertura de tasas, contribuciones e impuestos autonómicos."@es ;
+             rdfs:label "Autonómicos"@es .
+
+
+###  http://purl.org/rohum#Canones
+:Canones rdf:type owl:Class ;
+         rdfs:subClassOf :ArrendamientosYCanones ;
+         rdfs:label "CANONES"@es .
+
+
+###  http://purl.org/rohum#CanonesGasto
+:CanonesGasto rdf:type owl:Class ;
+              rdfs:subClassOf :CanonesSubconcepto ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                owl:someValuesFrom <http://purl.org/rohes#Canones>
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                owl:allValuesFrom <http://purl.org/rohes#Canones>
+                              ] ;
+              rdfs:label "Cánones"@es .
+
+
+###  http://purl.org/rohum#CanonesSubconcepto
+:CanonesSubconcepto rdf:type owl:Class ;
+                    rdfs:subClassOf :Canones ;
+                    rdfs:comment "Cantidades satisfechas periódicamente por la cesión de un bien, el uso de la propiedad industrial, y la utilización de otros bienes de naturaleza material o inmaterial."@es ;
+                    rdfs:label "Cánones"@es .
+
+
+###  http://purl.org/rohum#Comunicaciones
+:Comunicaciones rdf:type owl:Class ;
+                rdfs:subClassOf :MaterialSuministrosYOtros ;
+                rdfs:label "COMUNICACIONES"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesDeVozYDatos
+:ComunicacionesDeVozYDatos rdf:type owl:Class ;
+                           rdfs:subClassOf <http://purl.org/rohes#OtrasComunicaciones> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://purl.org/rohes#code> ;
+                                             owl:hasValue "62983"^^xsd:int
+                                           ] ;
+                           rdfs:label "COMUNICACIONES DE VOZ Y DATOS"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesInformaticas
+:ComunicacionesInformaticas rdf:type owl:Class ;
+                            rdfs:subClassOf :InformaticasSub ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:someValuesFrom :Informaticas
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:allValuesFrom :Informaticas
+                                            ] ;
+                            rdfs:label "Comunicaciones informáticas"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesPostales
+:ComunicacionesPostales rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/rohes#OtrasComunicaciones> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#code> ;
+                                          owl:hasValue "62981"^^xsd:int
+                                        ] ;
+                        rdfs:label "COMUNICACIONES POSTALES"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesPostalesGasto
+:ComunicacionesPostalesGasto rdf:type owl:Class ;
+                             rdfs:subClassOf :ComunicacionesPostalesSub ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:someValuesFrom :ComunicacionesPostales
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:allValuesFrom :ComunicacionesPostales
+                                             ] ;
+                             rdfs:label "Comunicaciones postales"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesPostalesSub
+:ComunicacionesPostalesSub rdf:type owl:Class ;
+                           rdfs:subClassOf :Comunicaciones ;
+                           rdfs:comment "Gastos correspondientes a sellos, franqueos, apartados de correos, paquetería, mensajería, etc., salvo que corresponda a la prestación de servicios contratados con carácter general a una empresa, en cuyo caso se imputarán al concepto trabajos realizados por otras empresas y profesionales. Ejemplo: Servicio de correos"@es ;
+                           rdfs:label "Comunicaciones Postales"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesTelefonicas
+:ComunicacionesTelefonicas rdf:type owl:Class ;
+                           rdfs:subClassOf :Comunicaciones ;
+                           rdfs:comment "Gastos de telefonía fija, así como los de alta o conexión al servicio"@es ;
+                           rdfs:label "Comunicaciones Telefónicas"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesTelefonicasGasto
+:ComunicacionesTelefonicasGasto rdf:type owl:Class ;
+                                rdfs:subClassOf :ComunicacionesTelefonicas ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                  owl:someValuesFrom <http://purl.org/rohes#ComunicacionesTelefonicas>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                  owl:allValuesFrom <http://purl.org/rohes#ComunicacionesTelefonicas>
+                                                ] ;
+                                rdfs:label "Comunicaciones telefónicas"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesTelegraficas
+:ComunicacionesTelegraficas rdf:type owl:Class ;
+                            rdfs:subClassOf :Comunicaciones ;
+                            rdfs:comment "Gastos por servicios telegráficos"@es ;
+                            rdfs:label "Comunicaciones Telegráficas"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesVozDatos
+:ComunicacionesVozDatos rdf:type owl:Class ;
+                        rdfs:subClassOf :Comunicaciones ;
+                        rdfs:comment "Comunicaciones que incorporen voz y datos tales como cuotas dispositivos Smartphone (teléfonos inteligentes) y en general toda facturación de dispositivos cuyo consumo integren voz y datos. Gastos de telefonía móvil."@es ;
+                        rdfs:label "Comunicaciones de voz y datos"@es .
+
+
+###  http://purl.org/rohum#ComunicacionesVozDatosGasto
+:ComunicacionesVozDatosGasto rdf:type owl:Class ;
+                             rdfs:subClassOf :ComunicacionesVozDatos ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:someValuesFrom :ComunicacionesDeVozYDatos
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:allValuesFrom :ComunicacionesDeVozYDatos
+                                             ] ;
+                             rdfs:label "Comunicaciones de voz y datos"@es .
+
+
+###  http://purl.org/rohum#ConstruccionesEdificios
+:ConstruccionesEdificios rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.org/rohes#Construcciones> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#code> ;
+                                           owl:hasValue "2111"^^xsd:int
+                                         ] ;
+                         owl:disjointWith :ReformasYModificacionesMenores ;
+                         rdfs:label "Construcciones. Edificios"@es .
+
+
+###  http://purl.org/rohum#ConstruccionesEnCurso
+:ConstruccionesEnCurso rdf:type owl:Class ;
+                       rdfs:subClassOf :EdificiosYOtrasConstruccionesConcepto ,
+                                       :GastosInversionCentrosYDepartamentos ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom <http://purl.org/rohes#ConstruccionesEnCursoInmovilizadoMaterial>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom <http://purl.org/rohes#ConstruccionesEnCursoInmovilizadoMaterial>
+                                       ] ;
+                       rdfs:comment "Edificaciones en general, tanto la obra nueva como la rehabilitación sustancial de la existente en curso."@es ;
+                       rdfs:label "Construcciones en curso"@es .
+
+
+###  http://purl.org/rohum#ConstruccionesGastos
+:ConstruccionesGastos rdf:type owl:Class ;
+                      rdfs:subClassOf :EdificiosYOtrasConstruccionesConcepto ,
+                                      :GastosInversionCentrosYDepartamentos ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                        owl:someValuesFrom :ConstruccionesEdificios
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                        owl:allValuesFrom :ConstruccionesEdificios
+                                      ] ;
+                      rdfs:comment "Edificaciones en general, tanto la obra nueva como la rehabilitación sustancial de la existente en curso."@es ;
+                      rdfs:label "Construcciones"@es .
+
+
+###  http://purl.org/rohum#CosteDeFotocopias
+:CosteDeFotocopias rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/rohes#MaterialDeOficina> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#code> ;
+                                     owl:hasValue "62903"^^xsd:int
+                                   ] ;
+                   rdfs:label """COSTE DE FOTOCOPIAS (MATERIAL DE OFICINA ORDINARIO NO
+INVENTARIABLE)"""@es .
+
+
+###  http://purl.org/rohum#CosteDeFotocopiasGasto
+:CosteDeFotocopiasGasto rdf:type owl:Class ;
+                        rdfs:subClassOf :CosteDeFotocopiasSub ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                          owl:someValuesFrom :CosteDeFotocopias
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                          owl:allValuesFrom :CosteDeFotocopias
+                                        ] ;
+                        rdfs:label "Coste de fotocopias"@es .
+
+
+###  http://purl.org/rohum#CosteDeFotocopiasSub
+:CosteDeFotocopiasSub rdf:type owl:Class ;
+                      rdfs:subClassOf :MaterialDeOficina ;
+                      rdfs:comment "Gastos correspondientes a la lectura de las copias de la fotocopiadora, ya sean propiedad de la UMU o arrendadas."@es ;
+                      rdfs:label "Coste de fotocopias"@es .
+
+
+###  http://purl.org/rohum#CuotasAsociaciones
+:CuotasAsociaciones rdf:type owl:Class ;
+                    rdfs:subClassOf :OtrosGastosDiversos ;
+                    rdfs:comment "Cuotas de asociaciones"@es ;
+                    rdfs:label "Cuotas asociaciones"@es .
+
+
+###  http://purl.org/rohum#Cursos
+:Cursos rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/rohes#OtrosServicios> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/rohes#code> ;
+                          owl:hasValue "62995"^^xsd:int
+                        ] ;
+        rdfs:label "OTROS SERVICIOS. CURSOS"@es .
+
+
+###  http://purl.org/rohum#CursosConferenciasSeminarios
+:CursosConferenciasSeminarios rdf:type owl:Class ;
+                              rdfs:subClassOf :ReunionesConferenciasCursos ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                owl:someValuesFrom :Cursos
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                owl:allValuesFrom :Cursos
+                                              ] ;
+                              rdfs:label "Cursos, Conferencias y Seminarios"@es .
+
+
+###  http://purl.org/rohum#CustodiaDepositoAlmacenaje
+:CustodiaDepositoAlmacenaje rdf:type owl:Class ;
+                            rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+                            rdfs:comment "Gastos de esta naturaleza"@es ;
+                            rdfs:label "Custodia, depósito y almacenaje"@es .
+
+
+###  http://purl.org/rohum#Dietas
+:Dietas rdf:type owl:Class ;
+        rdfs:subClassOf :IndemnizacionesServicio ;
+        rdfs:label "DIETAS"@es .
+
+
+###  http://purl.org/rohum#DietasGasto
+:DietasGasto rdf:type owl:Class ;
+             rdfs:subClassOf :DietasSub ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                               owl:someValuesFrom <http://purl.org/rohes#Dietas>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                               owl:allValuesFrom <http://purl.org/rohes#Dietas>
+                             ] ;
+             rdfs:label "Dietas"@es .
+
+
+###  http://purl.org/rohum#DietasSub
+:DietasSub rdf:type owl:Class ;
+           rdfs:subClassOf :Dietas ;
+           rdfs:comment "Obligaciones contraídas por el personal por razón del servicio en concepto de gastos de manutención y alojamiento (comisiones de servicio)"@es ;
+           rdfs:label "Dietas"@es .
+
+
+###  http://purl.org/rohum#Docencia
+:Docencia rdf:type owl:Class ;
+          rdfs:subClassOf :InversionNueva .
+
+
+###  http://purl.org/rohum#EdificiosYOtrasConstrucciones
+:EdificiosYOtrasConstrucciones rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.org/rohes#PrimasDeSeguros> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/rohes#code> ;
+                                                 owl:hasValue "6251"^^xsd:int
+                                               ] ;
+                               rdfs:label "EDIFICIOS Y OTRAS CONSTRUCCIONES (PRIMAS DE SEGURO)"@es .
+
+
+###  http://purl.org/rohum#EdificiosYOtrasConstruccionesConcepto
+:EdificiosYOtrasConstruccionesConcepto rdf:type owl:Class ;
+                                       rdfs:subClassOf :EstudiosPropios ;
+                                       rdfs:comment """Edificaciones en general, tanto la obra nueva como la rehabilitación
+sustancial de la existente en curso (2310).
+Edificaciones en general, tanto la obra nueva como la rehabilitación
+sustancial de la existente (2211).
+Reformas y modificaciones menores (2119)."""@es ;
+                                       rdfs:label "Edificios y otras construcciones"@es .
+
+
+###  http://purl.org/rohum#EdificiosYOtrasConstruccionesRepConcepto
+:EdificiosYOtrasConstruccionesRepConcepto rdf:type owl:Class ;
+                                          rdfs:subClassOf :ReparacionesMantenimientoConservacion ;
+                                          rdfs:label "EDIFICIOS Y OTRAS CONSTRUCCIONES"@es .
+
+
+###  http://purl.org/rohum#EdificiosYOtrasConstruccionesSeguros
+:EdificiosYOtrasConstruccionesSeguros rdf:type owl:Class ;
+                                      rdfs:subClassOf :PrimasSeguros ;
+                                      rdfs:comment "Gastos por seguros de edificios y otras construcciones."@es ;
+                                      rdfs:label "Edificios y otras construcciones"@es .
+
+
+###  http://purl.org/rohum#EdificiosYOtrasConstruccionesSub
+:EdificiosYOtrasConstruccionesSub rdf:type owl:Class ;
+                                  rdfs:subClassOf :EdificiosYOtrasConstruccionesRepConcepto ;
+                                  rdfs:comment "Gastos de reparación, mantenimiento y conservación de edificios en general, cualquiera que sea su destino, edificios para la enseñanza, administrativos, residencias, refugios, viveros, establos, cuadras y otras construcciones (piscinas, pistas deportivas...). Incluye el arreglo de griferías, puertas, cristales de ventanas, gastos de desinfección, de fumigación, grupo electrógeno, etc. Asimismo, se incluye el mantenimiento de la central de incendios."@es ;
+                                  rdfs:label "Edificios y otras construcciones"@es .
+
+
+###  http://purl.org/rohum#ElementosDeTransporte
+:ElementosDeTransporte rdf:type owl:Class ;
+                       rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom <http://purl.org/rohes#ElementosDeTransporte>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom <http://purl.org/rohes#ElementosDeTransporte>
+                                       ] ;
+                       rdfs:comment "Vehículos para el transporte terrestre de personas, animales o mercancías"@es ;
+                       rdfs:label "Elementos de transporte"@es .
+
+
+###  http://purl.org/rohum#ElementosDeTransporteRep
+:ElementosDeTransporteRep rdf:type owl:Class ;
+                          rdfs:subClassOf :ReparacionesMantenimientoConservacion ;
+                          rdfs:label "ELEMENTOS DE TRANSPORTE"@es .
+
+
+###  http://purl.org/rohum#EliminacionResiduosToxicos
+:EliminacionResiduosToxicos rdf:type owl:Class ;
+                            rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+                            rdfs:comment "Gastos satisfechos a empresas y profesionales para la eliminación de residuos tóxicos."@es ;
+                            rdfs:label "Eliminación de residuos tóxicos."@es .
+
+
+###  http://purl.org/rohum#EquiposParaProcesosDeInformacion
+:EquiposParaProcesosDeInformacion rdf:type owl:Class ;
+                                  rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:someValuesFrom <http://purl.org/rohes#EquiposParaProcesosDeInformacion>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:allValuesFrom <http://purl.org/rohes#EquiposParaProcesosDeInformacion>
+                                                  ] ;
+                                  rdfs:comment "Ordenadores y demás equipos de proceso de datos, monitores, impresoras, etc."@es ;
+                                  rdfs:label "Equipos para procesos de información"@es .
+
+
+###  http://purl.org/rohum#EquiposParaProcesosDeInformacionSub
+:EquiposParaProcesosDeInformacionSub rdf:type owl:Class ;
+                                     rdfs:subClassOf :EquiposParaProcesosDeLaInformacion ;
+                                     rdfs:comment """Gastos ocasionados por la reparación, mantenimiento, revisión y conservación de ordenadores y demás conjuntos electrónicos, así como la actualización o adaptación de programas informáticos. Incluye el gasto de mantenimiento de los equipos de procesos de información del SAI. Ejemplo: Cambio de un proyector y cambio de clavija del portátil.
+
+Se incluyen los gastos de reparación de impresoras y fotocopiadoras-impresoras propiedad de la UMU."""@es ;
+                                     rdfs:label "Equipos para procesos de información"@es .
+
+
+###  http://purl.org/rohum#EquiposParaProcesosDeLaInformacion
+:EquiposParaProcesosDeLaInformacion rdf:type owl:Class ;
+                                    rdfs:subClassOf :ReparacionesMantenimientoConservacion ;
+                                    rdfs:label "EQUIPOS PARA PROCESOS DE LA INFORMACION"@es .
+
+
+###  http://purl.org/rohum#Estatales
+:Estatales rdf:type owl:Class ;
+           rdfs:subClassOf :Tributos ;
+           rdfs:comment "Gastos destinados a la cobertura de tasas, contribuciones e impuestos estatales."@es ;
+           rdfs:label "Estatales"@es .
+
+
+###  http://purl.org/rohum#EstudiosPropios
+:EstudiosPropios rdf:type owl:Class ;
+                 rdfs:subClassOf :InversionNueva ;
+                 rdfs:comment "Con carácter general, este concepto comprenderá todos los gastos derivados de la creación o adquisición de los bienes que formen parte del inmovilizado material que se atiendan mediante los créditos asignados a las Unidades Orgánicas de ESTUDIOS PROPIOS"@es ;
+                 rdfs:label "ESTUDIOS PROPIOS. INFRAESTRUCTURA GENERAL"@es .
+
+
+###  http://purl.org/rohum#EstudiosTrabajosTecnicos
+:EstudiosTrabajosTecnicos rdf:type owl:Class ;
+                          rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+                          rdfs:comment """Gastos de estudio, trabajos técnicos y de laboratorio, de informes y trabajos estadísticos o de otro carácter que se deriven de trabajos encomendados a empresas especializadas, profesionales independientes o expertos, que no deban considerarse una inversión, ya que en caso contrario figurarán en el capítulo 6 de “Inversiones reales”. Incluye el gasto ocasionado por el mantenimiento de páginas web y Dspace. 
+Ejemplo: Diseño de logo."""@es ;
+                          rdfs:label "Estudios y trabajos técnicos"@es .
+
+
+###  http://purl.org/rohum#FondoArtistico
+:FondoArtistico rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/rohes#BienesDelPatrimonioHistorico> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/rohes#code> ;
+                                  owl:hasValue "2131"^^xsd:int
+                                ] ;
+                rdfs:label "Fondo Artístico"@es .
+
+
+###  http://purl.org/rohum#FondoArtisticoYCultural
+:FondoArtisticoYCultural rdf:type owl:Class ;
+                         rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom :FondoArtistico
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom :FondoArtistico
+                                         ] ;
+                         rdfs:comment "Fondo artístico y cultural"@es ;
+                         rdfs:label "Fondo artístico y cultural"@es .
+
+
+###  http://purl.org/rohum#FondoBibliografico
+:FondoBibliografico rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/rohes#OtroInmovilizadoMaterial> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/rohes#code> ;
+                                      owl:hasValue "2191"^^xsd:int
+                                    ] ;
+                    rdfs:label "Fondo Bibliográfico"@es .
+
+
+###  http://purl.org/rohum#FondosBiblograficosElectronicos
+:FondosBiblograficosElectronicos rdf:type owl:Class ;
+                                 rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                   owl:someValuesFrom :FondoBibliografico
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                   owl:allValuesFrom :FondoBibliografico
+                                                 ] ;
+                                 rdfs:comment "Libros que se integran en los fondos bibliográficos de la Universidad en formato electrónico (LE). Se exceptúan las Revistas, que tienen tipo de gasto “RV”."@es ;
+                                 rdfs:label "Fondos bibliográficos electrónicos"@es .
+
+
+###  http://purl.org/rohum#FondosParaMultidispositivo
+:FondosParaMultidispositivo rdf:type owl:Class ;
+                            rdfs:subClassOf <http://purl.org/rohes#OtroInmovilizadoMaterial> ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#code> ;
+                                              owl:hasValue "2193"^^xsd:int
+                                            ] ;
+                            rdfs:label "Fondo Bibliográfico. Fondos para multidispositivo"@es .
+
+
+###  http://purl.org/rohum#FondosParaMultidispositivoGasto
+:FondosParaMultidispositivoGasto rdf:type owl:Class ;
+                                 rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                   owl:someValuesFrom :FondosParaMultidispositivo
+                                                 ] ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                   owl:allValuesFrom :FondosParaMultidispositivo
+                                                 ] ;
+                                 rdfs:comment """Libros electrónicos que no permiten su difusión a través del Catálogo o la página web de la Biblioteca.
+Este tipo de libros electrónicos permiten ser transferidos a uno o varios dispositivos de lectura distintos."""@es ;
+                                 rdfs:label "Fondos bibliográficos. Fondos para Multidispositivo"@es .
+
+
+###  http://purl.org/rohum#GasesLaboratorio
+:GasesLaboratorio rdf:type owl:Class ;
+                  rdfs:subClassOf :SuministroGasesLaboratorio ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:someValuesFrom :SuministrosGases
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:allValuesFrom :SuministrosGases
+                                  ] ;
+                  rdfs:label "Gases de Laboratorio"@es .
+
+
+###  http://purl.org/rohum#GastosCorrientesBienesYServicios
+:GastosCorrientesBienesYServicios rdf:type owl:Class ;
+                                  rdfs:subClassOf <http:/purl.org/roh#Expense> ;
+                                  rdfs:label "GASTOS CORRIENTES EN BIENES Y SERVICIOS"@es .
+
+
+###  http://purl.org/rohum#GastosDePublicaciones
+:GastosDePublicaciones rdf:type owl:Class ;
+                       rdfs:subClassOf :MaterialDeOficina ;
+                       rdfs:comment """Gastos ocasionados por la edición, impresión y distribución de
+publicaciones. Gastos por edición de libros."""@es ;
+                       rdfs:label "Gastos de Publicaciones"@es .
+
+
+###  http://purl.org/rohum#GastosDePublicacionesGasto
+:GastosDePublicacionesGasto rdf:type owl:Class ;
+                            rdfs:subClassOf :GastosDePublicaciones ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:someValuesFrom :OtroMaterial
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:allValuesFrom :OtroMaterial
+                                            ] ;
+                            rdfs:label "Gastos de Publicaciones"@es .
+
+
+###  http://purl.org/rohum#GastosDerechosAutor
+:GastosDerechosAutor rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.org/rohes#Prensa> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#code> ;
+                                       owl:hasValue "62913"^^xsd:int
+                                     ] ;
+                     rdfs:label "GASTOS POR DERECHOS DE AUTOR"@es .
+
+
+###  http://purl.org/rohum#GastosDerechosDeAutor
+:GastosDerechosDeAutor rdf:type owl:Class ;
+                       rdfs:subClassOf :MaterialDeOficina ;
+                       rdfs:comment "Cantidades satisfechas por el Servicio de Publicaciones en concepto de derechos de autor a personal ajeno a la Universidad."@es ;
+                       rdfs:label "Gastos por Derechos de autor"@es .
+
+
+###  http://purl.org/rohum#GastosDiversos
+:GastosDiversos rdf:type owl:Class ;
+                rdfs:subClassOf :MaterialSuministrosYOtros ;
+                rdfs:label "GASTOS DIVERSOS"@es .
+
+
+###  http://purl.org/rohum#GastosExtraordinarios
+:GastosExtraordinarios rdf:type owl:Class ;
+                       rdfs:subClassOf :JuridicosContenciosos ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom :GastosExtraordinariosOtrosGastos
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom :GastosExtraordinariosOtrosGastos
+                                       ] ;
+                       rdfs:label "Gastos extraordinarios"@es .
+
+
+###  http://purl.org/rohum#GastosExtraordinariosIndeminzaciones
+:GastosExtraordinariosIndeminzaciones rdf:type owl:Class ;
+                                      rdfs:subClassOf :JuridicosContenciosos ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                        owl:someValuesFrom :GastosExtraordinariosIndemnizaciones
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                        owl:allValuesFrom :GastosExtraordinariosIndemnizaciones
+                                                      ] ;
+                                      rdfs:label "Gastos extraordinarios. Indemnizaciones"@es .
+
+
+###  http://purl.org/rohum#GastosExtraordinariosIndemnizaciones
+:GastosExtraordinariosIndemnizaciones rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/rohes#GastosExcepcionales> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/rohes#code> ;
+                                                        owl:hasValue "6782"^^xsd:int
+                                                      ] ;
+                                      owl:disjointWith :GastosExtraordinariosOtrosGastos ;
+                                      rdfs:label "GASTOS EXTRAORDINARIOS. INDEMNIZACIONES"@es .
+
+
+###  http://purl.org/rohum#GastosExtraordinariosOtrosGastos
+:GastosExtraordinariosOtrosGastos rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://purl.org/rohes#GastosExcepcionales> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#code> ;
+                                                    owl:hasValue "6781"^^xsd:int
+                                                  ] ;
+                                  rdfs:label "GASTOS EXTRAORDINARIOS. OTROS GASTOS"@es .
+
+
+###  http://purl.org/rohum#GastosInversionCentrosYDepartamentos
+:GastosInversionCentrosYDepartamentos rdf:type owl:Class ;
+                                      rdfs:subClassOf :Docencia ;
+                                      rdfs:label "Gastos de inversión Centros y Departamentos"@es .
+
+
+###  http://purl.org/rohum#GastosPorDerechosDeAutor
+:GastosPorDerechosDeAutor rdf:type owl:Class ;
+                          rdfs:subClassOf :GastosDerechosDeAutor ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:someValuesFrom :GastosDerechosAutor
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:allValuesFrom :GastosDerechosAutor
+                                          ] ;
+                          rdfs:label "Gastos por Derechos de autor"@es .
+
+
+###  http://purl.org/rohum#GastosProtocolarios
+:GastosProtocolarios rdf:type owl:Class ;
+                     rdfs:subClassOf :AtencionesProtocolariasRepresentativas ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:someValuesFrom :RelacionesPublicas
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:allValuesFrom :RelacionesPublicas
+                                     ] ;
+                     rdfs:label "Gastos protocolarios"@es .
+
+
+###  http://purl.org/rohum#IndemnizacionesServicio
+:IndemnizacionesServicio rdf:type owl:Class ;
+                         rdfs:subClassOf :GastosCorrientesBienesYServicios ;
+                         rdfs:label "INDEMNIZACIONES POR RAZON DEL SERVICIO"@es .
+
+
+###  http://purl.org/rohum#Informaticas
+:Informaticas rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/rohes#OtrasComunicaciones> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/rohes#code> ;
+                                owl:hasValue "62982"^^xsd:int
+                              ] ;
+              rdfs:label "INFORMÁTICAS"@es .
+
+
+###  http://purl.org/rohum#InformaticasSub
+:InformaticasSub rdf:type owl:Class ;
+                 rdfs:subClassOf :Comunicaciones ;
+                 rdfs:comment """Gastos por servicios de comunicaciones informáticas.
+Asimismo acceso a Dropbox, Red Sara, a la nube…"""@es ;
+                 rdfs:label "Informáticas"@es .
+
+
+###  http://purl.org/rohum#InfraestructuraYBienesMateriales
+:InfraestructuraYBienesMateriales rdf:type owl:Class ;
+                                  rdfs:subClassOf :ReparacionesMantenimientoConservacion ;
+                                  rdfs:label "INFRAESTRUCTURA Y BIENES NATURALES"@es .
+
+
+###  http://purl.org/rohum#InfraestructuraYBienesMaterialesSub
+:InfraestructuraYBienesMaterialesSub rdf:type owl:Class ;
+                                     rdfs:subClassOf :InfraestructuraYBienesMateriales ;
+                                     rdfs:comment "Gastos derivados de actuaciones de mantenimiento o conservación en infraestructura o bienes naturales."@es ;
+                                     rdfs:label "Infraestructura y bienes naturales"@es .
+
+
+###  http://purl.org/rohum#Instalaciones
+:Instalaciones rdf:type owl:Class ;
+               rdfs:subClassOf :ArrendamientosMaquinaria ;
+               rdfs:comment "Gastos de alquiler del conjunto de elementos necesarios para hacer que los bienes sean aptos para el uso a que se le destina."@es ;
+               rdfs:label "Instalaciones"@es .
+
+
+###  http://purl.org/rohum#InstalacionesSub
+:InstalacionesSub rdf:type owl:Class ;
+                  rdfs:subClassOf :MaquinariaInstalacionesUtillaje ;
+                  rdfs:comment "Gastos ocasionados por la reparación, mantenimiento, revisión y conservación del conjunto de elementos necesarios para hacer que los bienes sean aptos para el uso a que se le destina. Incluye el traslado de puntos de red (teléfono e internet) y el cambio de puntos de luz. Asimismo, incluye la reposición de las tarjetas de acceso del Colegio Mayor Azarbe. Así como el traslado del detector de incendios."@es ;
+                  rdfs:label "Instalaciones"@es .
+
+
+###  http://purl.org/rohum#InstalacionesTecnicas
+:InstalacionesTecnicas rdf:type owl:Class ;
+                       rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom <http://purl.org/rohes#ReparacionInstalacionesTecnicas>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom <http://purl.org/rohes#ReparacionInstalacionesTecnicas>
+                                       ] ;
+                       rdfs:comment "Unidades complejas de uso especializado que comprenden: edificaciones, maquinaria, material, piezas o elementos, incluidos los sistemas informáticos que, aún siendo separables por naturaleza, están ligados de forma definitiva para su funcionamiento y sometidos al mismo ritmo de amortización; se incluirán asimismo, los repuestos o recambios válidos exclusivamente para este tipo de instalaciones."@es ;
+                       rdfs:label "Instalaciones técnicas"@es .
+
+
+###  http://purl.org/rohum#InstalacionesTecnicasEnCurso
+:InstalacionesTecnicasEnCurso rdf:type owl:Class ;
+                              rdfs:subClassOf :EdificiosYOtrasConstruccionesConcepto ,
+                                              :GastosInversionCentrosYDepartamentos ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                owl:someValuesFrom <http://purl.org/rohes#InstalacionesTecnicasEnMontaje>
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                owl:allValuesFrom <http://purl.org/rohes#InstalacionesTecnicasEnMontaje>
+                                              ] ;
+                              rdfs:comment "Instalaciones técnicas en curso"@es ;
+                              rdfs:label "Instalaciones técnicas en curso"@es .
+
+
+###  http://purl.org/rohum#InversionNueva
+:InversionNueva rdf:type owl:Class ;
+                rdfs:subClassOf :InversionesReales ;
+                rdfs:label "INVERSION NUEVA ASOCIADA FUNCIONAM. OPER. SERVIC."@es .
+
+
+###  http://purl.org/rohum#InversionesReales
+:InversionesReales rdf:type owl:Class ;
+                   rdfs:subClassOf <http:/purl.org/roh#Expense> ;
+                   rdfs:label "INVERSIONES REALES"@es .
+
+
+###  http://purl.org/rohum#JuridicosContenciosos
+:JuridicosContenciosos rdf:type owl:Class ;
+                       rdfs:subClassOf :GastosDiversos ;
+                       rdfs:comment """Gastos producidos por litigios, actuaciones o procedimientos en que sea parte la Universidad. Se incluyen recargos Seguridad Social por pago fuera de plazo (TIPO DE GASTO GE)
+
+Gastos por prestaciones de profesionales independientes. Importe que se satisface a los profesionales por los servicios prestados a la entidad, comprende los honorarios de economistas, abogados, auditores, notarios, etc. Así como, las comisiones de agentes mediadores independientes.(TIPO DE GASTO JS)
+Cantidades que se entregan a un tercero para resarcirle por un daño o perjuicio (TIPO DE GASTO GI). Se excluyen las indemnizaciones otorgadas al personal de la Universidad."""@es ;
+                       rdfs:label "Jurídicos, contenciosos"@es .
+
+
+###  http://purl.org/rohum#Libros
+:Libros rdf:type owl:Class ;
+        rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                          owl:someValuesFrom :FondoBibliografico
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                          owl:allValuesFrom :FondoBibliografico
+                        ] ;
+        rdfs:comment "Libros que se integran en los fondos bibliográficos de la Universidad."@es ;
+        rdfs:label "Fondos bibliográficos y documentales. Libros"@es .
+
+
+###  http://purl.org/rohum#LimpiezaAseo
+:LimpiezaAseo rdf:type owl:Class ;
+              rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+              rdfs:comment "Gastos de esta naturaleza, incluidos los de recogida de basuras."@es ;
+              rdfs:label "Limpieza y aseo"@es .
+
+
+###  http://purl.org/rohum#LimpiezaAseoGasto
+:LimpiezaAseoGasto rdf:type owl:Class ;
+                   rdfs:subClassOf :LimpiezaAseo ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                     owl:someValuesFrom <http://purl.org/rohes#LimpiezaYAseo>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                     owl:allValuesFrom <http://purl.org/rohes#LimpiezaYAseo>
+                                   ] ;
+                   rdfs:label "Limpieza y aseo"@es .
+
+
+###  http://purl.org/rohum#Locales
+:Locales rdf:type owl:Class ;
+         rdfs:subClassOf :Tributos ;
+         rdfs:comment "Gastos destinados a la cobertura de tasas, contribuciones e impuestos locales."@es ;
+         rdfs:label "Locales"@es .
+
+
+###  http://purl.org/rohum#Locomocion
+:Locomocion rdf:type owl:Class ;
+            rdfs:subClassOf :LocomocionConcepto ;
+            rdfs:comment """Obligaciones contraídas por el personal por razón del servicio en concepto de gastos por desplazamiento y locomoción (comisiones de servicio)
+
+INCLUYE LOS GASTOS DE SEGUROS DE CANCELACIÓN DE BILLETES,
+ETC."""@es ;
+            rdfs:label "Locomoción"@es .
+
+
+###  http://purl.org/rohum#LocomocionConcepto
+:LocomocionConcepto rdf:type owl:Class ;
+                    rdfs:subClassOf :IndemnizacionesServicio ;
+                    rdfs:label "LOCOMOCION"@es .
+
+
+###  http://purl.org/rohum#LocomocionGasto
+:LocomocionGasto rdf:type owl:Class ;
+                 rdfs:subClassOf :Locomocion ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:someValuesFrom <http://purl.org/rohes#Locomocion>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:allValuesFrom <http://purl.org/rohes#Locomocion>
+                                 ] ;
+                 rdfs:label "Locomoción"@es .
+
+
+###  http://purl.org/rohum#Maquinaria
+:Maquinaria rdf:type owl:Class ;
+            rdfs:subClassOf :ArrendamientosMaquinaria ;
+            rdfs:comment """Gastos de alquiler de máquinas con las que se realiza la extracción, elaboración o tratamiento de los productos que se utilizan para la prestación de servicios que son necesarios para el desarrollo de actividades productivas propias de la Universidad. Se incluirán aquellos elementos de transporte interno que se destinan al traslado de personal, materiales o mercancías dentro de la propia Universidad, talleres, etc., sin salir al exterior.
+
+No incluir las impresoras ni las impresoras- fotocopiadoras que están en subconcepto 20600, cuenta contable 6216.
+Tampoco incluir las fotocopiadoras que están en el subconcepto 20500, cuenta contable 6215."""@es ;
+            rdfs:label "Maquinaria"@es .
+
+
+###  http://purl.org/rohum#MaquinariaInstalacionesUtillaje
+:MaquinariaInstalacionesUtillaje rdf:type owl:Class ;
+                                 rdfs:subClassOf :ReparacionesMantenimientoConservacion ;
+                                 rdfs:label "MAQUINARIA, INSTALACIONES Y UTILLAJE"@es .
+
+
+###  http://purl.org/rohum#MaquinariaSub
+:MaquinariaSub rdf:type owl:Class ;
+               rdfs:subClassOf :MaquinariaInstalacionesUtillaje ;
+               rdfs:comment """Gastos ocasionados por la reparación, mantenimiento, revisión y conservación de máquinas con las que se realiza la extracción, elaboración o tratamiento de los productos que se utilizan para la prestación de servicios que son necesarios para el desarrollo de actividades productivas propias de la Universidad.
+
+Se incluirán aquellos elementos de transporte interno que se destinan al traslado de personal, materiales o mercancías dentro de la propia Universidad, talleres, etc. sin salir al exterior."""@es ;
+               rdfs:label "Maquinaria"@es .
+
+
+###  http://purl.org/rohum#MaquinariaYEquipamientoCientifico
+:MaquinariaYEquipamientoCientifico rdf:type owl:Class ;
+                                   rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                     owl:someValuesFrom <http://purl.org/rohes#MaquinariaYUtillaje>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                     owl:allValuesFrom <http://purl.org/rohes#MaquinariaYUtillaje>
+                                                   ] ;
+                                   rdfs:comment "Equipamiento para investigación, máquinas utilizadas para la prestación de algunos servicios, etc."@es ;
+                                   rdfs:label "Maquinaria y equipamiento científico"@es .
+
+
+###  http://purl.org/rohum#MaterialDeOficina
+:MaterialDeOficina rdf:type owl:Class ;
+                   rdfs:subClassOf :MaterialSuministrosYOtros ;
+                   rdfs:label "MATERIAL DE OFICINA"@es .
+
+
+###  http://purl.org/rohum#MaterialDeOficinaOrdinarioNoInventariable
+:MaterialDeOficinaOrdinarioNoInventariable rdf:type owl:Class ;
+                                           rdfs:subClassOf :OrdinarioNoInventariableSub ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                             owl:someValuesFrom :OrdinarioNoInventariable
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                             owl:allValuesFrom :OrdinarioNoInventariable
+                                                           ] ;
+                                           rdfs:label "Material de oficina ordinario no inventariable"@es .
+
+
+###  http://purl.org/rohum#MaterialDeTransporte
+:MaterialDeTransporte rdf:type owl:Class ;
+                      rdfs:subClassOf :ElementosDeTransporteRep ;
+                      rdfs:comment """Gastos ocasionados por la reparación, mantenimiento, revisión y conservación de vehículos de todas las clases utilizables para el transporte de personas o mercancías, que se utilicen en el exterior de la Universidad. Incluye costes
+ocasionados por la reparación e inspección de vehículos, lavado de coches, etc."""@es ;
+                      rdfs:label "Material de transporte"@es .
+
+
+###  http://purl.org/rohum#MaterialDeportivoDidacticoYCultural
+:MaterialDeportivoDidacticoYCultural rdf:type owl:Class ;
+                                     rdfs:subClassOf :SuministrosMaterialDeportivoDidacticoCultural ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                       owl:someValuesFrom :SuministrosDeportivos
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                       owl:allValuesFrom :SuministrosDeportivos
+                                                     ] ;
+                                     rdfs:label "Material deportivo, didáctico y cultural"@es .
+
+
+###  http://purl.org/rohum#MaterialDocente
+:MaterialDocente rdf:type owl:Class ;
+                 rdfs:subClassOf :SuministroMaterialDocencia ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:someValuesFrom :SuministrosDocencia
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:allValuesFrom :SuministrosDocencia
+                                 ] ;
+                 rdfs:label "Material docente"@es .
+
+
+###  http://purl.org/rohum#MaterialInformNoInventariable
+:MaterialInformNoInventariable rdf:type owl:Class ;
+                               rdfs:subClassOf <http://purl.org/rohes#MaterialDeOficina> ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.org/rohes#code> ;
+                                                 owl:hasValue "62902"^^xsd:int
+                                               ] ;
+                               owl:disjointWith :OrdinarioNoInventariable ;
+                               rdfs:label "MATERIAL INFORM NO INVENTARIABLE (MAT. OFICINA ORDINARIO NO INV)"@es .
+
+
+###  http://purl.org/rohum#MaterialInformaticoNoInventariable
+:MaterialInformaticoNoInventariable rdf:type owl:Class ;
+                                    rdfs:subClassOf :MaterialDeOficina ;
+                                    rdfs:comment """Gastos de materiales diversos utilizados para el normal funcionamiento de equipos, informáticos, ofimáticos, transmisión y otros, tales como CD-ROM, memorias USB, tóner para impresoras, paquetes estándar de ‘software’,
+cargador de PC, batería, cargador de móvil, etc. Se incluye el pago de las cuotas de los programas/aplicaciones informáticos."""@es ;
+                                    rdfs:label "Material informático no inventariable"@es .
+
+
+###  http://purl.org/rohum#MaterialInformaticoNoInventariableGasto
+:MaterialInformaticoNoInventariableGasto rdf:type owl:Class ;
+                                         rdfs:subClassOf :MaterialInformaticoNoInventariable ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:someValuesFrom :MaterialInformNoInventariable
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:allValuesFrom :MaterialInformNoInventariable
+                                                         ] ;
+                                         rdfs:label "Material informático no inventariable"@es .
+
+
+###  http://purl.org/rohum#MaterialLaboratorio
+:MaterialLaboratorio rdf:type owl:Class ;
+                     rdfs:subClassOf :SuministroMaterialLaboratorio ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:someValuesFrom :SuministrosLaboratorio
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:allValuesFrom :SuministrosLaboratorio
+                                     ] ;
+                     rdfs:label "Material e instrum. de laboratorio y experimentación"@es .
+
+
+###  http://purl.org/rohum#MaterialReprografia
+:MaterialReprografia rdf:type owl:Class ;
+                     rdfs:subClassOf :SuministrosMaterialReprografia ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:someValuesFrom :SuministrosReprografia
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:allValuesFrom :SuministrosReprografia
+                                     ] ;
+                     rdfs:label "Material de reprografía"@es .
+
+
+###  http://purl.org/rohum#MaterialSuministrosYOtros
+:MaterialSuministrosYOtros rdf:type owl:Class ;
+                           rdfs:subClassOf :GastosCorrientesBienesYServicios ;
+                           rdfs:label "MATERIAL, SUMINISTROS Y OTROS"@es .
+
+
+###  http://purl.org/rohum#Mensajeria
+:Mensajeria rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/rohes#Transportes> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://purl.org/rohes#code> ;
+                              owl:hasValue "6242"^^xsd:int
+                            ] ;
+            rdfs:label "MENSAJERÍA"@es .
+
+
+###  http://purl.org/rohum#MobiliarioGastos
+:MobiliarioGastos rdf:type owl:Class ;
+                  rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:someValuesFrom <http://purl.org/rohes#Mobiliario>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:allValuesFrom <http://purl.org/rohes#Mobiliario>
+                                  ] ;
+                  rdfs:comment "Mobiliario, material y equipos de oficina (se excluyen los ordenadores). Se incluyen las máquinas destructuras de papel/documentos."@es ;
+                  rdfs:label "Mobiliario"@es .
+
+
+###  http://purl.org/rohum#MobiliarioYEnseres
+:MobiliarioYEnseres rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/rohes#PrimasDeSeguros> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/rohes#code> ;
+                                      owl:hasValue "6253"^^xsd:int
+                                    ] ;
+                    rdfs:label "MOBILIARIO Y ENSERES (PRIMAS DE SEGURO)"@es .
+
+
+###  http://purl.org/rohum#MobiliarioYEnseresRep
+:MobiliarioYEnseresRep rdf:type owl:Class ;
+                       rdfs:subClassOf :ReparacionesMantenimientoConservacion ;
+                       rdfs:label "MOBILIARIO Y ENSERES"@es .
+
+
+###  http://purl.org/rohum#MobiliarioYEnseresSeguros
+:MobiliarioYEnseresSeguros rdf:type owl:Class ;
+                           rdfs:subClassOf :PrimasSeguros ;
+                           rdfs:comment "Gastos por seguros de mobiliario y enseres."@es ;
+                           rdfs:label "Mobiliario y enseres"@es .
+
+
+###  http://purl.org/rohum#MobiliarioYEnseresSub
+:MobiliarioYEnseresSub rdf:type owl:Class ;
+                       rdfs:subClassOf :MobiliarioYEnseresRep ;
+                       rdfs:comment """Gastos ocasionados por la reparación de mobiliario, equipos
+de oficina y material de oficina.
+
+Se incluyen los gastos de reparación de fotocopiadoras propiedad de la UMU"""@es ;
+                       rdfs:label "Mobiliario y enseres"@es .
+
+
+###  http://purl.org/rohum#Mudanzas
+:Mudanzas rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/rohes#Transportes> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/rohes#code> ;
+                            owl:hasValue "6241"^^xsd:int
+                          ] ;
+          rdfs:label "MUDANZAS"@es .
+
+
+###  http://purl.org/rohum#MudanzasGasto
+:MudanzasGasto rdf:type owl:Class ;
+               rdfs:subClassOf :MudanzasSub ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                 owl:someValuesFrom :Mudanzas
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                 owl:allValuesFrom :Mudanzas
+                               ] ;
+               rdfs:label "Mudanzas"@es .
+
+
+###  http://purl.org/rohum#MudanzasSub
+:MudanzasSub rdf:type owl:Class ;
+             rdfs:subClassOf :Transportes ;
+             rdfs:comment """Gastos por mudanzas, que deban abonarse al parque móvil o a cualquier otra entidad pública o privada por los servicios de transporte prestados, excepto los que, por tener la naturaleza de gasto social, deban imputarse al capítulo 1, subconcepto 162.02 «Transporte de personal».
+
+Se excluyen los transportes complementarios ligados a comisiones de servicios que originen desplazamientos, que se abonarán con cargo al concepto 231 «Locomoción»."""@es ;
+             rdfs:label "Mudanzas"@es .
+
+
+###  http://purl.org/rohum#OposicionesPruebasSelectivas
+:OposicionesPruebasSelectivas rdf:type owl:Class ;
+                              rdfs:subClassOf :GastosDiversos ;
+                              rdfs:label "Oposiciones y pruebas selectivas"@es ,
+                                         "Todo tipo de gastos derivados de la realización de pruebas selectivas, excepto las dietas y asistencias a tribunales, que se imputarán al artículo 23."@es .
+
+
+###  http://purl.org/rohum#OrdinarioNoInventariable
+:OrdinarioNoInventariable rdf:type owl:Class ;
+                          rdfs:subClassOf <http://purl.org/rohes#MaterialDeOficina> ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#code> ;
+                                            owl:hasValue "62901"^^xsd:int
+                                          ] ;
+                          rdfs:label """ORDINARIO NO INVENTARIABLE (MATERIAL DE OFICINA ORDINARIO NO
+INVENT)"""@es .
+
+
+###  http://purl.org/rohum#OrdinarioNoInventariableSub
+:OrdinarioNoInventariableSub rdf:type owl:Class ;
+                             rdfs:subClassOf :MaterialDeOficina ;
+                             rdfs:comment """Gasto de material diverso necesario para la actividad de la UMU en todas sus actividades, docentes, investigadoras y administrativas. Se incluyen las tarjetas de identificación, acreditaciones, repuestos y accesorios de máquinas de oficina ( folios, bolígrafos, grapas, clips, marcapáginas,...), efectos timbrados, material para expedición de títulos, impresos de matrícula, impresos en general, etc. Asimismo, incluye los gastos de impresión y encuadernación (incluidas las tesis doctorales), y los derivados de la impresión de diplomas de
+cursos efectuada por el Servicio de Publicaciones. También están incluidas las fotocopias DIN A4 B/N, excepto que sean de material docente."""@es ;
+                             rdfs:label "Ordinario no inventariable"@es .
+
+
+###  http://purl.org/rohum#Otras
+:Otras rdf:type owl:Class ;
+       rdfs:subClassOf :Comunicaciones ;
+       rdfs:label "Otras"@es .
+
+
+###  http://purl.org/rohum#OtrasComunicaciones
+:OtrasComunicaciones rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.org/rohes#OtrasComunicaciones> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#code> ;
+                                       owl:hasValue "62989"^^xsd:int
+                                     ] ;
+                     rdfs:label "OTRAS COMUNICACIONES"@es .
+
+
+###  http://purl.org/rohum#OtrasComunicacionesGasto
+:OtrasComunicacionesGasto rdf:type owl:Class ;
+                          rdfs:subClassOf :ComunicacionesTelegraficas ,
+                                          :Otras ,
+                                          :TelexTelefax ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:someValuesFrom :OtrasComunicaciones
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:allValuesFrom :OtrasComunicaciones
+                                          ] ;
+                          rdfs:label "Otras comunicaciones"@es .
+
+
+###  http://purl.org/rohum#OtrasIndemnizaciones
+:OtrasIndemnizaciones rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.org/rohes#OtrosServicios> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/rohes#code> ;
+                                        owl:hasValue "62993"^^xsd:int
+                                      ] ;
+                      rdfs:label "OTRAS INDEMNIZACIONES"@es .
+
+
+###  http://purl.org/rohum#OtrasIndemnizacionesConcepto
+:OtrasIndemnizacionesConcepto rdf:type owl:Class ;
+                              rdfs:subClassOf :IndemnizacionesServicio ;
+                              rdfs:label "OTRAS INDEMNIZACIONES"@es .
+
+
+###  http://purl.org/rohum#OtrasIndemnizacionesGasto
+:OtrasIndemnizacionesGasto rdf:type owl:Class ;
+                           rdfs:subClassOf :OtrasIndemnizacionesSub ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                             owl:someValuesFrom :OtrasIndemnizaciones
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                             owl:allValuesFrom :OtrasIndemnizaciones
+                                           ] ;
+                           rdfs:label "Otras indemnizaciones"@es .
+
+
+###  http://purl.org/rohum#OtrasIndemnizacionesSub
+:OtrasIndemnizacionesSub rdf:type owl:Class ;
+                         rdfs:subClassOf :OtrasIndemnizacionesConcepto ;
+                         rdfs:comment "Se incluyen, entre otros gastos, las asistencias a Tribunales de oposiciones y pruebas de habilitación nacional."@es ;
+                         rdfs:label "Otras indemnizaciones"@es .
+
+
+###  http://purl.org/rohum#OtrasRiesgos
+:OtrasRiesgos rdf:type owl:Class ;
+              rdfs:subClassOf :OtrosRiesgosSeguros ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                owl:someValuesFrom :OtrosRiesgos
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                owl:allValuesFrom :OtrosRiesgos
+                              ] ;
+              rdfs:label "Otras riesgos"@es .
+
+
+###  http://purl.org/rohum#OtroInmovilizadoMaterial
+:OtroInmovilizadoMaterial rdf:type owl:Class ;
+                          rdfs:subClassOf <http://purl.org/rohes#OtroInmovilizadoMaterial> ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#code> ;
+                                            owl:hasValue "2199"^^xsd:int
+                                          ] ;
+                          rdfs:label "Otro Inmovilizado Material"@es .
+
+
+###  http://purl.org/rohum#OtroInmovilizadoMaterialGastos
+:OtroInmovilizadoMaterialGastos rdf:type owl:Class ;
+                                rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                  owl:someValuesFrom :OtroInmovilizadoMaterial
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                  owl:allValuesFrom :OtroInmovilizadoMaterial
+                                                ] ;
+                                rdfs:comment """Gastos que debiendo aplicarse a ete subconcepto, no tengan encaje específico en las cuentas contables anteriores.
+Por ejemplo, se incluyen:
+Cámaras de video, cámaras fotográficas, altavoces, etc.
+Envases y embalajes que por sus características deban considerarse como inmovilizado y los repuestos para inmovilizado cuyo ciclo de almacenamiento sea superior a un año."""@es ;
+                                rdfs:label "Otro inmovilizado material"@es .
+
+
+###  http://purl.org/rohum#OtroInmovilizadoMaterialRep
+:OtroInmovilizadoMaterialRep rdf:type owl:Class ;
+                             rdfs:subClassOf :ReparacionesMantenimientoConservacion ;
+                             rdfs:label "OTRO INMOVILIZADO MATERIAL"@es .
+
+
+###  http://purl.org/rohum#OtroInmovilizadoMaterialSub
+:OtroInmovilizadoMaterialSub rdf:type owl:Class ;
+                             rdfs:subClassOf :OtroInmovilizadoMaterialRep ;
+                             rdfs:comment "Aquellos otros que no se hayan incluido en los conceptos anteriores. Incluye el mantenimiento y adecuación del acuario."@es ;
+                             rdfs:label "Otro inmovilizado material"@es .
+
+
+###  http://purl.org/rohum#OtroMaterial
+:OtroMaterial rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/rohes#MaterialDeOficina> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/rohes#code> ;
+                                owl:hasValue "62909"^^xsd:int
+                              ] ;
+              rdfs:label "OTRO MATERIAL (MATERIAL DE OFICINA ORDINARIO NO INVENTARIABLE)"@es .
+
+
+###  http://purl.org/rohum#OtroMaterialGasto
+:OtroMaterialGasto rdf:type owl:Class ;
+                   rdfs:subClassOf :OtroMaterialSub ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                     owl:someValuesFrom :OtroMaterial
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                     owl:allValuesFrom :OtroMaterial
+                                   ] ;
+                   rdfs:label "Otro material"@es .
+
+
+###  http://purl.org/rohum#OtroMaterialSub
+:OtroMaterialSub rdf:type owl:Class ;
+                 rdfs:subClassOf :MaterialDeOficina ;
+                 rdfs:comment """Aquellos otros que no se hayan incluido en los conceptos anteriores. Por ejemplo, en este concepto se incluyen las lámparas de sobremesa y los percheros de escasa cuantía, siempre que no tengan la consideración de mobiliario, así como los marcos de los cuadros, el cojín lumbar, bombillas, y
+las máquinas de destrucción de papel."""@es ;
+                 rdfs:label "Otro material"@es .
+
+
+###  http://purl.org/rohum#Otros
+:Otros rdf:type owl:Class ;
+       rdfs:subClassOf :Transportes ;
+       rdfs:comment """Otros gastos de transporte, que deban abonarse al parque móvil o a cualquier otra entidad pública o privada por los servicios de transporte prestados, excepto los que, por tener la naturaleza de gasto social, deban imputarse al capítulo 1, subconcepto 162.02 «Transporte de personal».
+
+Se incluyen los gastos ocasionados por el transporte de alumnos para prácticas. Ejemplo: Traslado de tableros con caballetes.
+Se incluyen los gastos ocasionados por el transporte de personas siempre y cuando no estén ligados a comisiones de servicios (Ejemplo: gastos de desplazamiento en taxi a aeropuertos no ligados a comisiones de servicios).
+
+Se excluyen los transportes complementarios ligados a comisiones de servicios que originen desplazamientos, que se abonarán con cargo al concepto 231 «Locomoción»."""@es ;
+       rdfs:label "Otros"@es .
+
+
+###  http://purl.org/rohum#OtrosGastosDiversos
+:OtrosGastosDiversos rdf:type owl:Class ;
+                     rdfs:subClassOf :GastosDiversos ;
+                     rdfs:comment """Gastos que debiendo aplicarse a este concepto, no tengan encaje específico en los subconceptos anteriores.
+
+Gastos de comunidad de edificios propiedad de la Universidad así como las cuotas de participación en edificios de servicios múltiples.
+Por ejemplo, se incluyen: Botellas/botellines de agua y dispensadores.
+Gastos por la inserción o publicación de artículos en revistas o congresos.
+Gastos ocasionados por la copia de llaves.
+Adquisición de becas (bandas) para los alumnos del Colegio Mayor Azarbe o de las facultades.
+Tintorería/lavandería de material de los laboratorios para prácticas docentes sanitarias.
+Tintorería/lavandería de trajes académicos.
+Gastos de adquisición de textos digitalizados.
+Gastos de visados y aduanas.
+Reportajes fotográficos Edición y maquetación de fotografías, excepto cuando se destinen a reuniones, conferencias y cursos que se incluyen en el subconcepto 22606, cuenta contable 62991.
+
+Visitas guiadas a museos y otros Incluye tickets de aparcamiento no incluidos en comisiones de servicio 
+Imagen digital.
+Esquelas en el periodico por fallecimiento"""@es ;
+                     rdfs:label "Otros"@es .
+
+
+###  http://purl.org/rohum#OtrosRiesgos
+:OtrosRiesgos rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/rohes#PrimasDeSeguros> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/rohes#code> ;
+                                owl:hasValue "6259"^^xsd:int
+                              ] ;
+              rdfs:label "OTROS RIESGOS"@es .
+
+
+###  http://purl.org/rohum#OtrosRiesgosSeguros
+:OtrosRiesgosSeguros rdf:type owl:Class ;
+                     rdfs:subClassOf :PrimasSeguros ;
+                     rdfs:comment """Otros riesgos, excepto los seguros de vida o accidente u otros a favor del personal que se incluirán en el Capítulo 1. Ejemplo: Helvetia Seguros.
+
+SE INCLUYEN LOS SEGUROS DE ALUMNOS ERASMUS, ETC.
+SE INCLUYEN LOS SEGUROS DE VIAJE PARA EL PERSONAL UMU."""@es ;
+                     rdfs:label "Otros riesgos"@es .
+
+
+###  http://purl.org/rohum#OtrosServicios
+:OtrosServicios rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/rohes#OtrosServicios> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/rohes#code> ;
+                                  owl:hasValue "62991"^^xsd:int
+                                ] ;
+                rdfs:label "OTROS SERVICIOS"@es .
+
+
+###  http://purl.org/rohum#OtrosServiciosGasto
+:OtrosServiciosGasto rdf:type owl:Class ;
+                     rdfs:subClassOf :CustodiaDepositoAlmacenaje ,
+                                     :EliminacionResiduosToxicos ,
+                                     :OposicionesPruebasSelectivas ,
+                                     :OtrosGastosDiversos ,
+                                     :OtrosTrabajosRealizadosPorOtros ,
+                                     :Postales ,
+                                     :PremiosConcursosCertamenes ,
+                                     :ProcesosElectorales ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:someValuesFrom :OtrosServicios
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:allValuesFrom :OtrosServicios
+                                     ] ;
+                     rdfs:label "Otros servicios"@es .
+
+
+###  http://purl.org/rohum#OtrosSuministros
+:OtrosSuministros rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#code> ;
+                                    owl:hasValue "62899"^^xsd:int
+                                  ] ;
+                  rdfs:label "OTROS SUMINISTROS"@es .
+
+
+###  http://purl.org/rohum#OtrosSuministrosGasto
+:OtrosSuministrosGasto rdf:type owl:Class ;
+                       rdfs:subClassOf :OtrosSuministrosSub ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom :OtrosSuministros
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom :OtrosSuministros
+                                       ] ;
+                       rdfs:label "Otros suministros"@es .
+
+
+###  http://purl.org/rohum#OtrosSuministrosSub
+:OtrosSuministrosSub rdf:type owl:Class ;
+                     rdfs:subClassOf :Suministros ;
+                     rdfs:comment "Adquisición de material fotográfico, rótulos y escudos, banderas institucionales, artículos de limpieza, artículos de tintorería, insecticidas y raticidas, suministros de material audiovisual sin finalidad docente, recarga de extintores, material diverso de consumo y reposición de carácter periódico, no incluido en los conceptos anteriores. Asimismo, se incluye la arena absorvente (animales), plantas para el hall, marcador de caminos, cortinas y estores."@es ;
+                     rdfs:label "Otros suministros"@es .
+
+
+###  http://purl.org/rohum#OtrosTrabajosRealizadosPorOtros
+:OtrosTrabajosRealizadosPorOtros rdf:type owl:Class ;
+                                 rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+                                 rdfs:comment """Gastos de naturaleza corriente que no tienen cabida en los conceptos anteriores.
+SE INCLUYEN:
+PAGO A EMPRESAS POR TRAMITACIÓN DE PATENTES
+GASTOS OCASIONADOS POR LAS ANALÍTICAS REALIZADAS POR EL SAI.
+ADQUISICÓN DE PRÓTESIS DENTALES"""@es ;
+                                 rdfs:label "Otros"@es .
+
+
+###  http://purl.org/rohum#OtrosTransportes
+:OtrosTransportes rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/rohes#Transportes> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#code> ;
+                                    owl:hasValue "6243"^^xsd:int
+                                  ] ;
+                  rdfs:label "OTROS TRANSPORTES"@es .
+
+
+###  http://purl.org/rohum#OtrosTransportesGasto
+:OtrosTransportesGasto rdf:type owl:Class ;
+                       rdfs:subClassOf :Otros ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom :OtrosTransportes
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom :OtrosTransportes
+                                       ] ;
+                       rdfs:label "Otros transportes"@es .
+
+
+###  http://purl.org/rohum#Postales
+:Postales rdf:type owl:Class ;
+          rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+          rdfs:comment "Servicios contratados por la Universidad para envío de correspondencia, paquetería, mensajes, etc."@es ;
+          rdfs:label "Postales"@es .
+
+
+###  http://purl.org/rohum#PremiosConcursosCertamenes
+:PremiosConcursosCertamenes rdf:type owl:Class ;
+                            rdfs:subClassOf :GastosDiversos ;
+                            rdfs:comment "Dotación de premios literarios, de investigación y estudio, que no tengan carácter de transferencias (PREMIOS EN ESPECIE). Si lleva retención, se clasificaría como una transferencia corriente en el subconcepto 48005."@es ;
+                            rdfs:label "Premios, concursos y certámenes"@es .
+
+
+###  http://purl.org/rohum#Prensa
+:Prensa rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.org/rohes#Prensa> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://purl.org/rohes#code> ;
+                          owl:hasValue "62911"^^xsd:int
+                        ] ;
+        rdfs:label "PRENSA, REVISTAS, LIBROS Y OTRAS PUBLIC."@es .
+
+
+###  http://purl.org/rohum#PrensaRevistasLibrosYOtrasPublicaciones
+:PrensaRevistasLibrosYOtrasPublicaciones rdf:type owl:Class ;
+                                         rdfs:subClassOf :PrensaSub ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:someValuesFrom :Prensa
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:allValuesFrom :Prensa
+                                                         ] ;
+                                         rdfs:label "Prensa, revistas, libros y otras publicaciones"@es .
+
+
+###  http://purl.org/rohum#PrensaSub
+:PrensaSub rdf:type owl:Class ;
+           rdfs:subClassOf :MaterialDeOficina ;
+           rdfs:comment """Adquisición de libros manuales, publicaciones, revistas y documentos (incluso fotocopias de éstos), excepto los que sean adquiridos para formar parte de fondos de bibliotecas, que se aplican al Capítulo 6. Asimismo, se excluyen los libros electrónicos adquiridos por un periodo inferor o igual a 1 año que se están en el subconcepto \"22005 Adquisición de libros electrónicos por un periodo inferior o igual a 1 año\", tipo de gasto LA.
+
+Gastos o cuotas originados por consultas a bases de datos documentales.
+Suscripciones a revistas y a Boletines Oficiales. Acceso abierto a manuscritos determinados. Ejemplo: un artículo concreto"""@es ;
+           rdfs:label "Prensa, revistas, libros y otras publicaciones"@es .
+
+
+###  http://purl.org/rohum#PrimasSeguroEdificios
+:PrimasSeguroEdificios rdf:type owl:Class ;
+                       rdfs:subClassOf :EdificiosYOtrasConstruccionesSeguros ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom :EdificiosYOtrasConstrucciones
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom :EdificiosYOtrasConstrucciones
+                                       ] ;
+                       rdfs:label "Primas de seguro de edificios y otras construcc."@es .
+
+
+###  http://purl.org/rohum#PrimasSeguroMobiliario
+:PrimasSeguroMobiliario rdf:type owl:Class ;
+                        rdfs:subClassOf :MobiliarioYEnseresSeguros ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                          owl:someValuesFrom :MobiliarioYEnseres
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                          owl:allValuesFrom :MobiliarioYEnseres
+                                        ] ;
+                        rdfs:label "Primas de seguro de mobiliario y enseres"@es .
+
+
+###  http://purl.org/rohum#PrimasSeguroVehiculos
+:PrimasSeguroVehiculos rdf:type owl:Class ;
+                       rdfs:subClassOf :VehiculosSeguros ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom :Vehiculos
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom :Vehiculos
+                                       ] ;
+                       rdfs:label "Primas de seguro de vehículos"@es .
+
+
+###  http://purl.org/rohum#PrimasSeguros
+:PrimasSeguros rdf:type owl:Class ;
+               rdfs:subClassOf :MaterialSuministrosYOtros ;
+               rdfs:label "PRIMAS DE SEGUROS"@es .
+
+
+###  http://purl.org/rohum#ProcesoDatos
+:ProcesoDatos rdf:type owl:Class ;
+              rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+              rdfs:comment "Cantidades satisfechas en concepto de proceso de datos a empresas y profesionales. Incluye el gasto derivado del alojamiento web (hosting)."@es ;
+              rdfs:label "Procesos de datos"@es .
+
+
+###  http://purl.org/rohum#ProcesoDatosGasto
+:ProcesoDatosGasto rdf:type owl:Class ;
+                   rdfs:subClassOf :ProcesoDatos ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                     owl:someValuesFrom :ProcesosDeDatos
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                     owl:allValuesFrom :ProcesosDeDatos
+                                   ] ;
+                   rdfs:label "Procesos de datos"@es .
+
+
+###  http://purl.org/rohum#ProcesosDeDatos
+:ProcesosDeDatos rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/rohes#OtrosServicios> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#code> ;
+                                   owl:hasValue "62992"^^xsd:int
+                                 ] ;
+                 rdfs:label "PROCESOS DE DATOS"@es .
+
+
+###  http://purl.org/rohum#ProcesosElectorales
+:ProcesosElectorales rdf:type owl:Class ;
+                     rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+                     rdfs:comment "Contempla los gastos de funcionamiento que ha de asumir la Universidad como consecuencia de la celebración de procesos electorales, incluidos los procesos electorales sindicales."@es ;
+                     rdfs:label "Procesos electorales"@es .
+
+
+###  http://purl.org/rohum#ProductosAlimenticios
+:ProductosAlimenticios rdf:type owl:Class ;
+                       rdfs:subClassOf <http://purl.org/rohes#Suministros> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#code> ;
+                                         owl:hasValue "6285"^^xsd:int
+                                       ] ;
+                       rdfs:label "Productos Alimenticios"@es .
+
+
+###  http://purl.org/rohum#ProductosAlimenticiosGasto
+:ProductosAlimenticiosGasto rdf:type owl:Class ;
+                            rdfs:subClassOf :SuministroProductosAlimenticios ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:someValuesFrom :ProductosAlimenticios
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                              owl:allValuesFrom :ProductosAlimenticios
+                                            ] ;
+                            rdfs:label "Productos alimenticios"@es .
+
+
+###  http://purl.org/rohum#ProductosFarmaceuticos
+:ProductosFarmaceuticos rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/rohes#Suministros> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#code> ;
+                                          owl:hasValue "6286"^^xsd:int
+                                        ] ;
+                        rdfs:label "Productos Farmaceuticos"@es .
+
+
+###  http://purl.org/rohum#ProductosFarmaceuticosYMatSanitario
+:ProductosFarmaceuticosYMatSanitario rdf:type owl:Class ;
+                                     rdfs:subClassOf :SuministroProductosFarmaceuticos ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                       owl:someValuesFrom :ProductosFarmaceuticos
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                       owl:allValuesFrom :ProductosFarmaceuticos
+                                                     ] ;
+                                     rdfs:label "Productos farmacéuticos y mat. sanitario"@es .
+
+
+###  http://purl.org/rohum#PropiedadIndustrial
+:PropiedadIndustrial rdf:type owl:Class ;
+                     rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:someValuesFrom <http://purl.org/rohes#PropiedadIndustrial>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:allValuesFrom <http://purl.org/rohes#PropiedadIndustrial>
+                                     ] ;
+                     rdfs:comment "Importe satisfecho por la propiedad o por el derecho al uso o a la concesión del uso de las distintas manifestaciones de la propiedad industrial."@es ;
+                     rdfs:label "Propiedad industrial"@es .
+
+
+###  http://purl.org/rohum#PropiedadIntelectual
+:PropiedadIntelectual rdf:type owl:Class ;
+                      rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                        owl:someValuesFrom <http://purl.org/rohes#PropiedadIndustrial>
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                        owl:allValuesFrom <http://purl.org/rohes#PropiedadIndustrial>
+                                      ] ;
+                      rdfs:comment "Importe satisfecho por la propiedad o por el derecho al uso o a la concesión del uso de las distintas manifestaciones de la propiedad intelectual."@es ;
+                      rdfs:label "Propiedad intelectual"@es .
+
+
+###  http://purl.org/rohum#PublicidadPropaganda
+:PublicidadPropaganda rdf:type owl:Class ;
+                      rdfs:subClassOf :GastosDiversos ;
+                      rdfs:comment """Gastos de divulgación, y cualquier otro de propaganda y publicidad conducente a informar a la comunidad de la actividad de la Universidad. Se incluyen en este epígrafe los gastos que ocasione la inserción de publicidad en Boletines
+oficiales."""@es ;
+                      rdfs:label "Publicidad y propaganda"@es .
+
+
+###  http://purl.org/rohum#PublicidadPropagandaRelacionesPublicas
+:PublicidadPropagandaRelacionesPublicas rdf:type owl:Class ;
+                                        rdfs:subClassOf :PublicidadPropaganda ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                          owl:someValuesFrom :PublicidadYPropaganda
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                          owl:allValuesFrom :PublicidadYPropaganda
+                                                        ] ;
+                                        rdfs:label "Publicidad, propaganda y relaciones públicas"@es .
+
+
+###  http://purl.org/rohum#PublicidadYPropaganda
+:PublicidadYPropaganda rdf:type owl:Class ;
+                       rdfs:subClassOf <http://purl.org/rohes#Publicidad> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#code> ;
+                                         owl:hasValue "6271"^^xsd:int
+                                       ] ;
+                       owl:disjointWith :RelacionesPublicas ;
+                       rdfs:label "PUBLICIDAD Y PROPAGANDA"@es .
+
+
+###  http://purl.org/rohum#ReformasEnAparcamientosYTerrenos
+:ReformasEnAparcamientosYTerrenos rdf:type owl:Class ;
+                                  rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                                  :TerrenosYBienesNaturalesConcepto ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:someValuesFrom :AparcamientosEnTerrenos
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                    owl:allValuesFrom :AparcamientosEnTerrenos
+                                                  ] ;
+                                  rdfs:comment "Incluye las reformas en aparcamientos y terrenos."@es ;
+                                  rdfs:label "Reformas en aparcamientos y terrenos"@es .
+
+
+###  http://purl.org/rohum#ReformasYModifiacionesMenoresGasto
+:ReformasYModifiacionesMenoresGasto rdf:type owl:Class ;
+                                    rdfs:subClassOf :EdificiosYOtrasConstruccionesConcepto ,
+                                                    :GastosInversionCentrosYDepartamentos ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                      owl:someValuesFrom :ReformasYModificacionesMenores
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                      owl:allValuesFrom :ReformasYModificacionesMenores
+                                                    ] ;
+                                    rdfs:comment "Reformas y modificaciones menores."@es ;
+                                    rdfs:label "Reformas y modificaciones menores"@es .
+
+
+###  http://purl.org/rohum#ReformasYModificacionesMenores
+:ReformasYModificacionesMenores rdf:type owl:Class ;
+                                rdfs:subClassOf <http://purl.org/rohes#Construcciones> ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.org/rohes#code> ;
+                                                  owl:hasValue "2119"^^xsd:int
+                                                ] ;
+                                rdfs:label "Reformas y modificaciones menores"@es .
+
+
+###  http://purl.org/rohum#RelacionesPublicas
+:RelacionesPublicas rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/rohes#Publicidad> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/rohes#code> ;
+                                      owl:hasValue "6272"^^xsd:int
+                                    ] ;
+                    rdfs:label "RELACIONES PÚBLICAS"@es .
+
+
+###  http://purl.org/rohum#RepYConservDeConstrucciones
+:RepYConservDeConstrucciones rdf:type owl:Class ;
+                             rdfs:subClassOf :EdificiosYOtrasConstruccionesSub ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:someValuesFrom <http://purl.org/rohes#ConstruccionesCompras>
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:allValuesFrom <http://purl.org/rohes#ConstruccionesCompras>
+                                             ] ;
+                             rdfs:label "Repar. y conserv de construcciones"@es .
+
+
+###  http://purl.org/rohum#ReparYConservDeElementosDeTransporte
+:ReparYConservDeElementosDeTransporte rdf:type owl:Class ;
+                                      rdfs:subClassOf :MaterialDeTransporte ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                        owl:someValuesFrom <http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                        owl:allValuesFrom <http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial>
+                                                      ] ;
+                                      rdfs:label "Repar. y conserv de elementos de transporte"@es .
+
+
+###  http://purl.org/rohum#ReparYConservDeEquiposParaProcesosInform
+:ReparYConservDeEquiposParaProcesosInform rdf:type owl:Class ;
+                                          rdfs:subClassOf :EquiposParaProcesosDeInformacionSub ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                            owl:someValuesFrom <http://purl.org/rohes#ReparacionEquiposParaProcesosDeInformacion>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                            owl:allValuesFrom <http://purl.org/rohes#ReparacionEquiposParaProcesosDeInformacion>
+                                                          ] ;
+                                          rdfs:label "Repar. y conserv de equipos para procesos inform"@es .
+
+
+###  http://purl.org/rohum#ReparYConservDeMobiliario
+:ReparYConservDeMobiliario rdf:type owl:Class ;
+                           rdfs:subClassOf :MobiliarioYEnseresSub ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                             owl:someValuesFrom <http://purl.org/rohes#ReparacionMobiliario>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                             owl:allValuesFrom <http://purl.org/rohes#ReparacionMobiliario>
+                                           ] ;
+                           rdfs:label "Repar. y conserv de mobiliario"@es .
+
+
+###  http://purl.org/rohum#ReparYConservDeOtroInmovilizadoMaterial
+:ReparYConservDeOtroInmovilizadoMaterial rdf:type owl:Class ;
+                                         rdfs:subClassOf :OtroInmovilizadoMaterialSub ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:someValuesFrom <http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial>
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:allValuesFrom <http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial>
+                                                         ] ;
+                                         rdfs:label "Repar. y conserv de otro inmovilizado material"@es .
+
+
+###  http://purl.org/rohum#ReparYConservDeTerrenosYBienesNaturales
+:ReparYConservDeTerrenosYBienesNaturales rdf:type owl:Class ;
+                                         rdfs:subClassOf :InfraestructuraYBienesMaterialesSub ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:someValuesFrom <http://purl.org/rohes#TerrenosYBienesNaturalesCompras>
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                           owl:allValuesFrom <http://purl.org/rohes#TerrenosYBienesNaturalesCompras>
+                                                         ] ;
+                                         rdfs:label "Repar. y conserv. de terrenos y bienes naturales"@es .
+
+
+###  http://purl.org/rohum#ReparYConservDeUtillaje
+:ReparYConservDeUtillaje rdf:type owl:Class ;
+                         rdfs:subClassOf :UtillajeSub ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom <http://purl.org/rohes#ReparacionMaquinariaUtillaje>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom <http://purl.org/rohes#ReparacionMaquinariaUtillaje>
+                                         ] ;
+                         rdfs:label "Repar. y conserv de utillaje"@es .
+
+
+###  http://purl.org/rohum#ReparYConservInstalacionesTecnicas
+:ReparYConservInstalacionesTecnicas rdf:type owl:Class ;
+                                    rdfs:subClassOf :InstalacionesSub ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                      owl:someValuesFrom <http://purl.org/rohes#ReparacionInstalacionesTecnicas>
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                      owl:allValuesFrom <http://purl.org/rohes#ReparacionInstalacionesTecnicas>
+                                                    ] ;
+                                    rdfs:label "Repar. y conserv de instalaciones técnicas"@es .
+
+
+###  http://purl.org/rohum#ReparYConservMaquinaria
+:ReparYConservMaquinaria rdf:type owl:Class ;
+                         rdfs:subClassOf :MaquinariaSub ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom <http://purl.org/rohes#ReparacionMaquinariaUtillaje>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom <http://purl.org/rohes#ReparacionMaquinariaUtillaje>
+                                         ] ;
+                         rdfs:label "Repar. y conserv de maquinaria"@es .
+
+
+###  http://purl.org/rohum#ReparacionesMantenimientoConservacion
+:ReparacionesMantenimientoConservacion rdf:type owl:Class ;
+                                       rdfs:subClassOf :GastosCorrientesBienesYServicios ;
+                                       rdfs:label "REPARACIONES, MANTENIMIENTO Y CONSERVACION"@es .
+
+
+###  http://purl.org/rohum#RepuestosMaquinaria
+:RepuestosMaquinaria rdf:type owl:Class ;
+                     rdfs:subClassOf :SuministrosRepuestosMaquinaria ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:someValuesFrom :SuministrosRepuestosMaquinas
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                       owl:allValuesFrom :SuministrosRepuestosMaquinas
+                                     ] ;
+                     rdfs:label "Repuestos de maquinaria, utillaje y elem. transporte"@es .
+
+
+###  http://purl.org/rohum#RepuestosMatElectronico
+:RepuestosMatElectronico rdf:type owl:Class ;
+                         rdfs:subClassOf :SuministrosMaterialElectronico ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom :SuministrosRepuestosMaterialElectrico
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom :SuministrosRepuestosMaterialElectrico
+                                         ] ;
+                         rdfs:label "Repuestos de mat. electrónico, eléctrico y de comunic."@es .
+
+
+###  http://purl.org/rohum#ReunionesConferencias
+:ReunionesConferencias rdf:type owl:Class ;
+                       rdfs:subClassOf :ReunionesConferenciasCursos ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:someValuesFrom :ReunionesYConferencias
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                         owl:allValuesFrom :ReunionesYConferencias
+                                       ] ;
+                       rdfs:label "Reuniones y Conferencias"@es .
+
+
+###  http://purl.org/rohum#ReunionesConferenciasCursos
+:ReunionesConferenciasCursos rdf:type owl:Class ;
+                             rdfs:subClassOf :GastosDiversos ;
+                             rdfs:comment """Gastos de organización y celebración de festivales, conferencias, asambleas, congresos, simposios, seminarios, convenciones y reuniones análogas, así como los derivados de las reuniones o grupos de trabajo, necesarios para el normal funcionamiento de la Universidad. Incluye los gastos ocasionados por las inscripciones en congresos. Asimismo, se incluyen los gastos originados por la realización de cursos y seminarios, tales como los relativos a material y unidades didácticas. (TIPO DE GASTO \"RE\")
+
+Se incluyen en este apartado el gasto relativo a conferenciantes y las remuneraciones al personal ajeno a la universidad. (TIPO DE GASTO \"CU\")"""@es ;
+                             rdfs:label "Reuniones, conferencias y cursos"@es .
+
+
+###  http://purl.org/rohum#ReunionesYConferencias
+:ReunionesYConferencias rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/rohes#OtrosServicios> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#code> ;
+                                          owl:hasValue "62994"^^xsd:int
+                                        ] ;
+                        rdfs:label "OTROS SERVICIOS. REUNIONES Y CONFERENCIAS"@es .
+
+
+###  http://purl.org/rohum#Revistas
+:Revistas rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/rohes#OtroInmovilizadoMaterial> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/rohes#code> ;
+                            owl:hasValue "2192"^^xsd:int
+                          ] ;
+          rdfs:label "Fondo Biblográfico. Revistas"@es .
+
+
+###  http://purl.org/rohum#RevistasGasto
+:RevistasGasto rdf:type owl:Class ;
+               rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                 owl:someValuesFrom :Revistas
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                 owl:allValuesFrom :Revistas
+                               ] ;
+               rdfs:comment "Revistas que se integran en los fondos bibliográficos de la Universidad."@es ;
+               rdfs:label "Fondos bibliográficos y documentales. Revistas"@es .
+
+
+###  http://purl.org/rohum#Seguridad
+:Seguridad rdf:type owl:Class ;
+           rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+           rdfs:comment "Los relacionados con la vigilancia y el mantenimiento de la seguridad en la Universidad"@es ;
+           rdfs:label "Seguridad"@es .
+
+
+###  http://purl.org/rohum#SeguridadGasto
+:SeguridadGasto rdf:type owl:Class ;
+                rdfs:subClassOf :Seguridad ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                  owl:someValuesFrom <http://purl.org/rohes#Seguridad>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                  owl:allValuesFrom <http://purl.org/rohes#Seguridad>
+                                ] ;
+                rdfs:label "Seguridad"@es .
+
+
+###  http://purl.org/rohum#ServiciosBancarios
+:ServiciosBancarios rdf:type owl:Class ;
+                    rdfs:subClassOf :GastosDiversos ;
+                    rdfs:comment "Cantidades satisfechas en concepto de servicios bancarios y similares, que no tengan la consideración de gastos financieros, tales como comisiones bancarias por TPV/TPVV, comisiones de mantenimiento de cuentas corrientes, gastos de transferencias bancarias, gastos de expedición de certificados bancarios, gastos por administración y custodia de valores y otras comisiones bancarias."@es ;
+                    rdfs:label "Servicios bancarios y similares"@es .
+
+
+###  http://purl.org/rohum#ServiciosBancariosSimilares
+:ServiciosBancariosSimilares rdf:type owl:Class ;
+                             rdfs:subClassOf :ServiciosBancarios ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:someValuesFrom :ServiciosBancariosYSimilares
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                               owl:allValuesFrom :ServiciosBancariosYSimilares
+                                             ] ;
+                             rdfs:label "Servicios bancarios y similares"@es .
+
+
+###  http://purl.org/rohum#ServiciosBancariosYSimilares
+:ServiciosBancariosYSimilares rdf:type owl:Class ;
+                              rdfs:subClassOf <http://purl.org/rohes#ServiciosBancariosYSimilares> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#code> ;
+                                                owl:hasValue "6260"^^xsd:int
+                                              ] ;
+                              rdfs:label "SERVICIOS BANCARIOS Y SIMILARES"@es .
+
+
+###  http://purl.org/rohum#ServiciosDeProfesionalesIndependientes
+:ServiciosDeProfesionalesIndependientes rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/rohes#ServiciosDeProfesionalesIndependientes> ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.org/rohes#code> ;
+                                                          owl:hasValue "6230"^^xsd:int
+                                                        ] ;
+                                        rdfs:label "SERVICIOS DE PROFESIONALES INDEPENDIENTES"@es .
+
+
+###  http://purl.org/rohum#ServiciosJuridicos
+:ServiciosJuridicos rdf:type owl:Class ;
+                    rdfs:subClassOf :JuridicosContenciosos ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                      owl:someValuesFrom :ServiciosDeProfesionalesIndependientes
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                      owl:allValuesFrom :ServiciosDeProfesionalesIndependientes
+                                    ] ;
+                    rdfs:label "Servicios jurídicos"@es .
+
+
+###  http://purl.org/rohum#ServiciosProfesionalesIndependientes
+:ServiciosProfesionalesIndependientes rdf:type owl:Class ;
+                                      rdfs:subClassOf :EstudiosTrabajosTecnicos ,
+                                                      :ReunionesConferenciasCursos ,
+                                                      :ValoracionesPeritajes ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                        owl:someValuesFrom :ServiciosDeProfesionalesIndependientes
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                        owl:allValuesFrom :ServiciosDeProfesionalesIndependientes
+                                                      ] ;
+                                      rdfs:label "Servicios profesionales independientes"@es .
+
+
+###  http://purl.org/rohum#SuministroAgua
+:SuministroAgua rdf:type owl:Class ;
+                rdfs:subClassOf :Suministros ;
+                rdfs:comment """Gastos de agua
+NO SE INCLUYEN DISPENSADORES NI BOTELLAS/BOTELLINES DE AGUA""" ;
+                rdfs:label "Suministro Agua" .
+
+
+###  http://purl.org/rohum#SuministroCombustible
+:SuministroCombustible rdf:type owl:Class ;
+                       rdfs:subClassOf :Suministros ;
+                       rdfs:comment """Gastos de combustibles
+SE INCLUYE EL GASTO EN CARBURANTES"""@es ;
+                       rdfs:label "Suministro Combustible"@es .
+
+
+###  http://purl.org/rohum#SuministroDeAgua
+:SuministroDeAgua rdf:type owl:Class ;
+                  rdfs:subClassOf :SuministroAgua ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:someValuesFrom <http://purl.org/rohes#Agua>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:allValuesFrom <http://purl.org/rohes#Agua>
+                                  ] ;
+                  rdfs:label "Suministro de agua" .
+
+
+###  http://purl.org/rohum#SuministroDeCombustible
+:SuministroDeCombustible rdf:type owl:Class ;
+                         rdfs:subClassOf :SuministroCombustible ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:someValuesFrom <http://purl.org/rohes#Combustibles>
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                           owl:allValuesFrom <http://purl.org/rohes#Combustibles>
+                                         ] ;
+                         rdfs:label "Suministro de combustible"@es .
+
+
+###  http://purl.org/rohum#SuministroDeEnergiaElectrica
+:SuministroDeEnergiaElectrica rdf:type owl:Class ;
+                              rdfs:subClassOf :SuministroEnergiaElectrica ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                owl:someValuesFrom <http://purl.org/rohes#EnergiaElectrica>
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                                owl:allValuesFrom <http://purl.org/rohes#EnergiaElectrica>
+                                              ] ;
+                              rdfs:label "Suministro de energía eléctrica" .
+
+
+###  http://purl.org/rohum#SuministroDeGas
+:SuministroDeGas rdf:type owl:Class ;
+                 rdfs:subClassOf :SuministroGas ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:someValuesFrom <http://purl.org/rohes#Gas>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:allValuesFrom <http://purl.org/rohes#Gas>
+                                 ] ;
+                 rdfs:label "Suministro de gas" .
+
+
+###  http://purl.org/rohum#SuministroEnergiaElectrica
+:SuministroEnergiaElectrica rdf:type owl:Class ;
+                            rdfs:subClassOf :Suministros ;
+                            rdfs:comment "Gastos de electricidad" ;
+                            rdfs:label "Suministro Energía eléctrica" .
+
+
+###  http://purl.org/rohum#SuministroGas
+:SuministroGas rdf:type owl:Class ;
+               rdfs:subClassOf :Suministros ;
+               rdfs:comment "Gastos de gas" ;
+               rdfs:label "Suministro Gas" .
+
+
+###  http://purl.org/rohum#SuministroGasesLaboratorio
+:SuministroGasesLaboratorio rdf:type owl:Class ;
+                            rdfs:subClassOf :Suministros ;
+                            rdfs:comment """Adquisición de los distintos tipos de gases para su uso en laboratorios. Se incluye las botellas de gas cuando la botella en sí tiene contenido. Ejemplo: Nitrógeno, argón…
+
+Se excluyen los gastos de alquiler de botellas de gases que están en el subconcepto 20302, tipo de gasto AU (Arrendamiento de utillaje)."""@es ;
+                            rdfs:label "Suministro de gases de laboratorio"@es .
+
+
+###  http://purl.org/rohum#SuministroMaterialDocencia
+:SuministroMaterialDocencia rdf:type owl:Class ;
+                            rdfs:subClassOf :Suministros ;
+                            rdfs:comment "Adquisición de materiales destinados a la docencia, tales como transparencias, fotocopias, tizas, borradores, papel de examen, libros en pdf, etc. Asimismo, incluye el material deportivo destinado a la docencia."@es ;
+                            rdfs:label "Suministro de material para la docencia"@es .
+
+
+###  http://purl.org/rohum#SuministroMaterialLaboratorio
+:SuministroMaterialLaboratorio rdf:type owl:Class ;
+                               rdfs:subClassOf :Suministros ;
+                               rdfs:comment """Adquisición de materiales fungibles de carácter técnico utilizados para prácticas de laboratorio, tales como reactivos, probetas, muestras, etc.
+
+SE INCLUYEN:
+ADQUISICIÓN DE ANIMALES CON FINES DE EXPERIMENTACIÓN QUE
+NO SEAN INVENTARIABLES (por ejemplo, ratas de laboratorio, peces, etc.)
+MATERIAL ESPECÍFICO DE PRÁCTICAS DE BELLAS ARTES (por ejemplo, pinturas, pinceles y óleos).
+SE INCLUYEN LOS ALIMENTOS DESTINADOS A LA EXPERIMENTACIÓN Y DEGUSTACIÓN.
+MATERIAL DE LABORATORIO FOTOGRÁFICO PARA LA EXPERIMENTACIÓN."""@es ;
+                               rdfs:label "Suministro de material e instrumental de laboratorio y experimentación"@es .
+
+
+###  http://purl.org/rohum#SuministroProductosAlimenticios
+:SuministroProductosAlimenticios rdf:type owl:Class ;
+                                 rdfs:subClassOf :Suministros ;
+                                 rdfs:comment """Adquisición de todo tipo de productos alimenticios, destinados a la alimentación en general. No se incluyen los destinados a la experimentación ni a la degustación. Incluye los gastos de alimentación (servicio de catering) del Colegio Mayor Azarbe.
+Incluye los gastos de alimentación de animales."""@es ;
+                                 rdfs:label "Suministro Productos alimenticios"@es .
+
+
+###  http://purl.org/rohum#SuministroProductosFarmaceuticos
+:SuministroProductosFarmaceuticos rdf:type owl:Class ;
+                                  rdfs:subClassOf :Suministros ;
+                                  rdfs:comment "Gastos de medicinas y productos de asistencia sanitaria, así como el material fungible sanitario, guantes desechables, botiquines y bolsas de socorro, etc., siempre que no sean utilizados para prácticas docentes."@es ;
+                                  rdfs:label "Suministro productos farmacéuticos y material sanitario"@es .
+
+
+###  http://purl.org/rohum#SuministroVestuario
+:SuministroVestuario rdf:type owl:Class ;
+                     rdfs:subClassOf :Suministros ;
+                     rdfs:comment """Vestuario y otras prendas de dotación obligada por imposición legal, reglamentaria, por convenio, acuerdo o contrato para personal funcionario, laboral y otro personal al servicio de la Universidad.
+
+Incluye los trajes académicos y sus complementos (birrete, muceta, medallas, bastón, puñetas, guantes, cordones, etc.) de actos académicos propiedad de la UMU, exceptuando aquellas prendas que superen los 60 euros en cuyo caso serán inventariables . Se exluyen los trajes académicos y complementos regalados a los Doctores Honoris Causa que están en subconcepto 22601 , tipo de gasto \"PR\"."""@es ;
+                     rdfs:label "Suministro Vestuario"@es .
+
+
+###  http://purl.org/rohum#Suministros
+:Suministros rdf:type owl:Class ;
+             rdfs:subClassOf :MaterialSuministrosYOtros ;
+             rdfs:label "SUMINISTROS" .
+
+
+###  http://purl.org/rohum#SuministrosDeportivos
+:SuministrosDeportivos rdf:type owl:Class ;
+                       rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.org/rohes#code> ;
+                                         owl:hasValue "62892"^^xsd:int
+                                       ] ;
+                       rdfs:label "SUMINISTROS DE MATERIAL DEPORTIVO, DIDAC. Y CULTURAL"@es .
+
+
+###  http://purl.org/rohum#SuministrosDocencia
+:SuministrosDocencia rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#code> ;
+                                       owl:hasValue "62891"^^xsd:int
+                                     ] ;
+                     rdfs:label "SUMINISTROS DE MATERIAL PARA LA DOCENCIA"@es .
+
+
+###  http://purl.org/rohum#SuministrosGases
+:SuministrosGases rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#code> ;
+                                    owl:hasValue "62897"^^xsd:int
+                                  ] ;
+                  rdfs:label "SUMINISTRO DE GASES DE LABORATORIO"@es .
+
+
+###  http://purl.org/rohum#SuministrosLaboratorio
+:SuministrosLaboratorio rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#code> ;
+                                          owl:hasValue "62894"^^xsd:int
+                                        ] ;
+                        rdfs:label "SUMINISTROS DE MATERIAL E INSTRUMENTAL DE LABORATORIO"@es .
+
+
+###  http://purl.org/rohum#SuministrosMaterialDeportivoDidacticoCultural
+:SuministrosMaterialDeportivoDidacticoCultural rdf:type owl:Class ;
+                                               rdfs:subClassOf :Suministros ;
+                                               rdfs:comment "Adquisición de ropa deportiva, botas, arcillas, colas y otros materiales y suministros que no sean imputables al concepto de acción social del personal al servicio de la Universidad, así como instrumentos musicales, diapositivas, etc. que no tengan la consideración de material docente."@es ;
+                                               rdfs:label "Suministros de material deportivo, didáctico y cultural"@es .
+
+
+###  http://purl.org/rohum#SuministrosMaterialElectronico
+:SuministrosMaterialElectronico rdf:type owl:Class ;
+                                rdfs:subClassOf :Suministros ;
+                                rdfs:comment "Adquisición de material electrónico, eléctrico y de comunicaciones. Ejemplo: regulador de voltaje."@es ;
+                                rdfs:label "Suministros de material electrónico, eléctrico y de comunicaciones"@es .
+
+
+###  http://purl.org/rohum#SuministrosMaterialReprografia
+:SuministrosMaterialReprografia rdf:type owl:Class ;
+                                rdfs:subClassOf :Suministros ;
+                                rdfs:comment "Recoge los consumos de productos tales como tinta, papel, etc., con destino a los servicios de imprenta y fotocopiadoras ya sean éstas propias o arrendadas. Solo se incluyen los productos de este tipo consumidos en el Servicio de Publicaciones."@es ;
+                                rdfs:label "Suministros de material de reprografía y similares"@es .
+
+
+###  http://purl.org/rohum#SuministrosReprografia
+:SuministrosReprografia rdf:type owl:Class ;
+                        rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#code> ;
+                                          owl:hasValue "62893"^^xsd:int
+                                        ] ;
+                        rdfs:label "SUMINSTROS DE MATERIAL DE REPROGRAFÍA Y SIMILARES"@es .
+
+
+###  http://purl.org/rohum#SuministrosRepuestosMaquinaria
+:SuministrosRepuestosMaquinaria rdf:type owl:Class ;
+                                rdfs:subClassOf :Suministros ;
+                                rdfs:comment "Adquisición de repuestos de maquinaria, utillaje y elementos de transporte"@es ;
+                                rdfs:label "Suministros de repuestos de maquinaria, utillaje y elementos de transporte"@es .
+
+
+###  http://purl.org/rohum#SuministrosRepuestosMaquinas
+:SuministrosRepuestosMaquinas rdf:type owl:Class ;
+                              rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://purl.org/rohes#code> ;
+                                                owl:hasValue "62895"^^xsd:int
+                                              ] ;
+                              rdfs:label "SUMINISTROS. REPUES. MAQ., UTILL. Y ELEM. TRANSPORTE (OTROS SUMINIS.)"@es .
+
+
+###  http://purl.org/rohum#SuministrosRepuestosMaterialElectrico
+:SuministrosRepuestosMaterialElectrico rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.org/rohes#OtrosSuministros> ,
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.org/rohes#code> ;
+                                                         owl:hasValue "62896"^^xsd:int
+                                                       ] ;
+                                       rdfs:label "SUMINIST. REPUES. MATERIAL ELÉCTRICO Y DE COMUNICACIONES (OTROS)"@es .
+
+
+###  http://purl.org/rohum#TelexTelefax
+:TelexTelefax rdf:type owl:Class ;
+              rdfs:subClassOf :Comunicaciones ;
+              rdfs:comment "Gastos por servicios de télex y telefax."@es ;
+              rdfs:label "Télex y telefax"@es .
+
+
+###  http://purl.org/rohum#Terrenos
+:Terrenos rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/rohes#TerrenosYBienesNaturales> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/rohes#code> ;
+                            owl:hasValue "2100"^^xsd:int
+                          ] ;
+          rdfs:label "Terrenos"@es .
+
+
+###  http://purl.org/rohum#TerrenosYBienesNaturales
+:TerrenosYBienesNaturales rdf:type owl:Class ;
+                          rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                                          :TerrenosYBienesNaturalesConcepto ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:someValuesFrom :Terrenos
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:allValuesFrom :Terrenos
+                                          ] ;
+                          rdfs:comment "Comprende la adquisición de terrenos y bienes naturales."@es ;
+                          rdfs:label "Terrenos y bienes naturales"@es .
+
+
+###  http://purl.org/rohum#TerrenosYBienesNaturalesConcepto
+:TerrenosYBienesNaturalesConcepto rdf:type owl:Class ;
+                                  rdfs:subClassOf :EstudiosPropios ;
+                                  rdfs:comment """Comprende la adquisición de terrenos y bienes naturales (2200).
+Asimismo, incluye las reformas en aparcamientos y terrenos (2101)."""@es ;
+                                  rdfs:label "Terrenos y bienes naturales"@es .
+
+
+###  http://purl.org/rohum#TrabajosRealizadosPorOtros
+:TrabajosRealizadosPorOtros rdf:type owl:Class ;
+                            rdfs:subClassOf :MaterialSuministrosYOtros ;
+                            rdfs:label "TRABAJOS REALIZADOS POR OTRAS EMPRESAS Y PROFES."@es .
+
+
+###  http://purl.org/rohum#Transportes
+:Transportes rdf:type owl:Class ;
+             rdfs:subClassOf :MaterialSuministrosYOtros ;
+             rdfs:label "TRANSPORTES"@es .
+
+
+###  http://purl.org/rohum#TransportesGasto
+:TransportesGasto rdf:type owl:Class ;
+                  rdfs:subClassOf :TransportesMensajeria ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:someValuesFrom :Mensajeria
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                    owl:allValuesFrom :Mensajeria
+                                  ] ;
+                  rdfs:label "Transportes"@es .
+
+
+###  http://purl.org/rohum#TransportesMensajeria
+:TransportesMensajeria rdf:type owl:Class ;
+                       rdfs:subClassOf :Transportes ;
+                       rdfs:comment """Gastos de transporte de mensajería, que deban abonarse al parque móvil o a cualquier otra entidad pública o privada por los servicios de transporte prestados, excepto los que, por tener la naturaleza de gasto social, deban imputarse al capítulo 1, subconcepto 162.02 «Transporte de personal». Se incluyen, por tanto, los gastos que deban abonarse a empresas de mensajería.
+
+Se excluyen los transportes complementarios ligados a comisiones de servicios que originen desplazamientos, que se abonarán con cargo al concepto 231 «Locomoción»."""@es ;
+                       rdfs:label "Transportes de mensajería"@es .
+
+
+###  http://purl.org/rohum#Tributos
+:Tributos rdf:type owl:Class ;
+          rdfs:subClassOf :MaterialSuministrosYOtros ;
+          rdfs:label "TRIBUTOS"@es .
+
+
+###  http://purl.org/rohum#TributosAutonomicos
+:TributosAutonomicos rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.org/rohes#TributosAutonomicos> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://purl.org/rohes#code> ;
+                                       owl:hasValue "6310"^^xsd:int
+                                     ] ;
+                     rdfs:label "TRIBUTOS DE CARÁCTER AUTONÓMICO"@es .
+
+
+###  http://purl.org/rohum#TributosAutonomicosGasto
+:TributosAutonomicosGasto rdf:type owl:Class ;
+                          rdfs:subClassOf :Autonomicos ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:someValuesFrom :TributosAutonomicos
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                            owl:allValuesFrom :TributosAutonomicos
+                                          ] ;
+                          rdfs:label "Tributos autonómicos"@es .
+
+
+###  http://purl.org/rohum#TributosEstatales
+:TributosEstatales rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/rohes#TributosEstatales> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/rohes#code> ;
+                                     owl:hasValue "6320"^^xsd:int
+                                   ] ;
+                   rdfs:label "TRIBUTOS DE CARÁCTER ESTATAL"@es .
+
+
+###  http://purl.org/rohum#TributosEstatalesGasto
+:TributosEstatalesGasto rdf:type owl:Class ;
+                        rdfs:subClassOf :Estatales ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                          owl:someValuesFrom :TributosEstatales
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                          owl:allValuesFrom :TributosEstatales
+                                        ] ;
+                        rdfs:label "Tributos estatales"@es .
+
+
+###  http://purl.org/rohum#TributosLocales
+:TributosLocales rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.org/rohes#TributosLocales> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#code> ;
+                                   owl:hasValue "6300"^^xsd:int
+                                 ] ;
+                 rdfs:label "TRIBUTOS DE CARÁCTER LOCAL"@es .
+
+
+###  http://purl.org/rohum#TributosLocalesGasto
+:TributosLocalesGasto rdf:type owl:Class ;
+                      rdfs:subClassOf :Locales ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                        owl:someValuesFrom :TributosLocales
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                        owl:allValuesFrom :TributosLocales
+                                      ] ;
+                      rdfs:label "Tributos Locales"@es .
+
+
+###  http://purl.org/rohum#Utillaje
+:Utillaje rdf:type owl:Class ;
+          rdfs:subClassOf :GastosInversionCentrosYDepartamentos ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                            owl:someValuesFrom <http://purl.org/rohes#MaquinariaYUtillaje>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                            owl:allValuesFrom <http://purl.org/rohes#MaquinariaYUtillaje>
+                          ] ;
+          rdfs:comment "Conjunto de utensilios o herramientas que se pueden utilizar autónomamente o conjuntamente con la maquinaria, incluidos los moldes y las plantillas."@es ;
+          rdfs:label "Utillaje"@es .
+
+
+###  http://purl.org/rohum#UtillajeSub
+:UtillajeSub rdf:type owl:Class ;
+             rdfs:subClassOf :MaquinariaInstalacionesUtillaje ;
+             rdfs:comment "Gastos ocasionados por la reparación, mantenimiento, revisión y conservación de utensilios o herramientas que se puedan utilizar autónomamente o conjuntamente con la maquinaria, incluidos los moldes o plantillas."@es ;
+             rdfs:label "Utillaje"@es .
+
+
+###  http://purl.org/rohum#ValoracionesPeritajes
+:ValoracionesPeritajes rdf:type owl:Class ;
+                       rdfs:subClassOf :TrabajosRealizadosPorOtros ;
+                       rdfs:comment "Gastos de esta naturaleza"@es ;
+                       rdfs:label "Valoraciones y peritajes"@es .
+
+
+###  http://purl.org/rohum#Vehiculos
+:Vehiculos rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/rohes#PrimasDeSeguros> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/rohes#code> ;
+                             owl:hasValue "6252"^^xsd:int
+                           ] ;
+           rdfs:label "VEHÍCULOS (PRIMAS DE SEGURO)"@es .
+
+
+###  http://purl.org/rohum#VehiculosSeguros
+:VehiculosSeguros rdf:type owl:Class ;
+                  rdfs:subClassOf :PrimasSeguros ;
+                  rdfs:comment "Gastos por seguros de vehículos."@es ;
+                  rdfs:label "Vehículos"@es .
+
+
+###  http://purl.org/rohum#Vestuarios
+:Vestuarios rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/rohes#Suministros> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://purl.org/rohes#code> ;
+                              owl:hasValue "6284"^^xsd:int
+                            ] ;
+            rdfs:label "Vestuarios"@es .
+
+
+###  http://purl.org/rohum#VestuariosGasto
+:VestuariosGasto rdf:type owl:Class ;
+                 rdfs:subClassOf :SuministroVestuario ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:someValuesFrom :Vestuarios
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.org/rohes#chargedTo> ;
+                                   owl:allValuesFrom :Vestuarios
+                                 ] ;
+                 rdfs:label "Vestuario"@es .
+
+
+###  http:/purl.org/roh#Expense
+<http:/purl.org/roh#Expense> rdf:type owl:Class .
+
+
+###  http:/purl.org/roh#FundingSource
+<http:/purl.org/roh#FundingSource> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/rohum#ComunidadAutonomaRegionDeMurcia
+:ComunidadAutonomaRegionDeMurcia rdf:type owl:NamedIndividual ,
+                                          <http:/purl.org/roh#FundingSource> ;
+                                 rdfs:comment "Comunidad autónoma uniprovincial española, situada en el sudeste de la península ibérica, entre Andalucía (Granada y Almería) y la Comunidad Valenciana (Alicante), y entre la costa mediterránea y Castilla-La Mancha (Albacete). Su capital es la ciudad de Murcia, que es sede de los órganos institucionales regionales, con excepción de la Asamblea Regional, que tiene su sede en Cartagena,1​ razón por la que es denominada como «capital legislativa» en el preámbulo de la ley 5/2005,2​ aunque esta denominación no aparece recogida en el estatuto de autonomía."@es ;
+                                 rdfs:label "Comunidad Autónoma. Región de Murcia"@es .
+
+
+###  http://purl.org/rohum#ConcesionDirectaRegional
+:ConcesionDirectaRegional rdf:type owl:NamedIndividual ,
+                                   <http:/purl.org/roh#FundingSource> ;
+                          rdfs:label "Concesión directa regional"@es .
+
+
+###  http://purl.org/rohum#FinanciadoPorElCoordinador
+:FinanciadoPorElCoordinador rdf:type owl:NamedIndividual ,
+                                     <http:/purl.org/roh#FundingSource> ;
+                            rdfs:label "Financiado por el coordinador"@es .
+
+
+###  http://purl.org/rohum#FondosEuropeosGenericos
+:FondosEuropeosGenericos rdf:type owl:NamedIndividual ;
+                         rdfs:label "Fondos europeos genéricos"@es .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/rohes#InstrumentoFinancieroDeOrientacionDeLaPesca> rdfs:comment """El IFOP es uno de los cuatro Fondos Estructurales de la Unión Europea y existe desde 1993, año en el que sustituyó a los distintos instrumentos estructurales ya existentes.
+
+El IFOP contribuye en primer lugar a la consecución de los objetivos de la política pesquera común al acompañar la reestructuración del sector, y, por otro, a la consolidación de la cohesión económica y social de la Unión, al fomentar el desarrollo de las zonas litorales en las que la pesca ocupa un lugar preponderante dentro de la actividad económica."""@es .
+
+
+<http://purl.org/rohes#PlanE> rdfs:comment "El Plan Español para el Estímulo de la Economía y el Empleo o, en su forma abreviada, Plan E fue un conjunto de más de un centenar de medidas de política económica planteadas por el Gobierno de José Luis Rodríguez Zapatero en noviembre de 2008 y desarrolladas a lo largo de la IX legislatura. Su objetivo fue el de impulsar la actividad económica del país, movilizando grandes cantidades de dinero público, para hacer frente a la crisis económica originada tras el pinchazo de la burbuja inmobiliaria y financiera global en 2007."@es .
+
+
+<http://purl.org/rohes#PresupuestosGeneralesDelEstado> rdfs:comment "Los Presupuestos Generales del Estado (PGE) es el nombre que recibe el presupuesto público en España. Son considerados la ley más importante que un gobierno promulga en un año y determinan su política en la mayor parte de los ámbitos, además de ser la base sobre la que se moverá la economía del Estado en ese año."@es .
+
+
+<http://purl.org/rohes#ReparacionesYConservacion> rdfs:label "Reparaciones y conservación"@es .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://purl.org/rohes#Agua>
+                <http://purl.org/rohes#Combustibles>
+                <http://purl.org/rohes#EnergiaElectrica>
+                <http://purl.org/rohes#Gas>
+                <http://purl.org/rohes#OtrosSuministros>
+                :ProductosAlimenticios
+                :ProductosFarmaceuticos
+                :Vestuarios
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AdquisicionLibrosElectronicos
+                :GastosDerechosAutor
+                :Prensa
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AnimalesExperimentación
+                :AparcamientosEnTerrenosEnCurso
+                :AplicacionesInformaticas
+                :ConstruccionesEnCurso
+                :ConstruccionesGastos
+                :ElementosDeTransporte
+                :EquiposParaProcesosDeInformacion
+                :FondoArtisticoYCultural
+                :FondosBiblograficosElectronicos
+                :FondosParaMultidispositivoGasto
+                :InstalacionesTecnicas
+                :InstalacionesTecnicasEnCurso
+                :Libros
+                :MaquinariaYEquipamientoCientifico
+                :MobiliarioGastos
+                :OtroInmovilizadoMaterialGastos
+                :PropiedadIndustrial
+                :PropiedadIntelectual
+                :ReformasEnAparcamientosYTerrenos
+                :ReformasYModifiacionesMenoresGasto
+                :RevistasGasto
+                :TerrenosYBienesNaturales
+                :Utillaje
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ComunicacionesDeVozYDatos
+                :ComunicacionesPostales
+                :Informaticas
+                :OtrasComunicaciones
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CosteDeFotocopias
+                :MaterialInformNoInventariable
+                :OrdinarioNoInventariable
+                :OtroMaterial
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cursos
+                :OtrasIndemnizaciones
+                :OtrosServicios
+                :ProcesosDeDatos
+                :ReunionesYConferencias
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :EdificiosYOtrasConstrucciones
+                :MobiliarioYEnseres
+                :OtrosRiesgos
+                :Vehiculos
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FondoBibliografico
+                :FondosParaMultidispositivo
+                :OtroInmovilizadoMaterial
+                :Revistas
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Mensajeria
+                :Mudanzas
+                :OtrosTransportes
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :OtrosSuministros
+                :SuministrosDeportivos
+                :SuministrosDocencia
+                :SuministrosGases
+                :SuministrosLaboratorio
+                :SuministrosReprografia
+                :SuministrosRepuestosMaquinas
+                :SuministrosRepuestosMaterialElectrico
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
