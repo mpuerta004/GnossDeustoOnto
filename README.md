@@ -37,7 +37,7 @@ This documentation area includes the following files:
 - `Próximos pasos.md` - [Markdown document](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/Pr%C3%B3ximos%20pasos.md) explaining the next steps in the develepment of ROH, afer the ending of the first milestone of ASIO project.
 - `README.md` - This very file which includes documentation in Markdown of ROH, describing with text and diagrams the relationships among the main entities in ROH
 
-##<a name="headSection1"></a>1. Ontological design##
+**<a name="headSection1"></a>1. Ontological design**
 ====================================================
 
 This section is going to break down from minor to major detail the
@@ -224,7 +224,7 @@ vivo:Project:
 
 
 
-**<a name="headSection4">4. Person entity**
+**<a name="headSection4"></a>4. Person entity**
 ===========================================
 
 In ROH, there is a foaf:Person entity (see Figura 3) that inherits from
@@ -313,7 +313,7 @@ defined within the foaf:Person entity in ROH.
 
 
 
-**<a name="headSection5">5. Organization entity**
+**<a name="headSection5"></a>5. Organization entity**
 =================================================
 
 An Organization in ROH (see Figura 4) is a foaf:Organization which
@@ -402,7 +402,7 @@ generated](.//media/3.roh-organization.png)
 
 
 
-**<a name="headSection6">6. Funding entity**
+**<a name="headSection6"></a>6. Funding entity**
 ============================================
 
 The roh:Funding entity (see Figura 5), new in ROH, represents the
@@ -449,7 +449,7 @@ generated](.//media/4.roh-funding.png)
 
 
 
-**<a name="headSection7">7. Research Object entity**
+**<a name="headSection7"></a>7. Research Object entity**
 ====================================================
 
 The research object entity (roh:ResearchObject) is a new entity defined
@@ -501,7 +501,7 @@ generated](.//media/5.roh-research-object.png)
 
 
 
-**<a name="headSection8">8. Activity entity**
+**<a name="headSection8"></a>8. Activity entity**
 =============================================
 
 The entity research activity (roh:Activity), new in ROH and visualized
@@ -536,7 +536,7 @@ generated](.//media/6.roh-activity.png)
 
 
 
-**<a name="headSection9">9. Other entities in ROH**
+**<a name="headSection9"></a>9. Other entities in ROH**
 ===================================================
 
 For more details on other entities in ROH check the tables detailing
