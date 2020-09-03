@@ -103,7 +103,7 @@ The most commonly used ontological design patterns in ROH design have been the f
 - [*Participation*](http://ontologydesignpatterns.org/wiki/Submissions:Participation): allows you to represent the participation of an object in an activity or event. In ROH, we have used this design pattern to model, for example, the roles that a `foaf:Agent` through an `obo-bfo:Role` can play (`obo-bfo:realizedIn`) in a `roh:Activity`. 
 
 ***<a name="headSection1-2"></a>1.2. Ontology design process***
-===========================
+===============================================================
 
 The process followed to design an ontology that models a Research Management System (RMS) for Spanish universities and that is piloted and validated at the University of Murcia, has been the following: 
 1. Meet the requirements defined in "Annex I. Ontology requirements analysis" and "Annex II. Ontologies and other resources to be used". Delivered by GNOSS-DEUSTO as part of the feasibility study for "R&D service for the development of the ontological infrastructure and semantic architecture of the research management system (sgi) of the Hercules initiative", file number: 2018/88/OT-AM
