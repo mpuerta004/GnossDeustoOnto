@@ -222,6 +222,7 @@ vivo:Project:
 
 **Figura** **2**. Ontological diagram for entity Project.
 
+
 **<a name="headSection4">4. Person entity**
 ===========================================
 
@@ -308,6 +309,7 @@ defined within the foaf:Person entity in ROH.
 ![](.//media/2.roh-person.png)
 
 **Figura** **3**. Ontological Diagram for entity Person.
+
 
 **<a name="headSection5">5. Organization entity**
 =================================================
@@ -441,6 +443,7 @@ generated](.//media/4.roh-funding.png)
 
 **Figura** **5**. Ontological diagram for Funding.
 
+
 **<a name="headSection7">7. Research Object entity**
 ====================================================
 
@@ -491,6 +494,7 @@ generated](.//media/5.roh-research-object.png)
 
 **Figura** **6**. Ontological diagram for ResearchObject.
 
+
 **<a name="headSection8">8. Activity entity**
 =============================================
 
@@ -523,6 +527,7 @@ properties defined by roh:Activity.
 generated](.//media/6.roh-activity.png)
 
 **Figura** **7**. Ontological diagram for entity Activity.
+
 
 
 **<a name="headSection9">9. Other entities in ROH**
