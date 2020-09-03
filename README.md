@@ -28,13 +28,13 @@ ROH Network of Ontology documentation
 [**Bibliography**](#bibliography)
 
 This documentation area includes the following files:
-- `0 - OntologySpecification.pdf` (https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/0%20-%20OntologySpecification.pdf) - PDF corresponding to the specification of ROH network on ontologies. Section 2.1 includes the description of the main entities of ROH and the rationale behind their import or definition from scratch.
-- `1- OntologyDocumentation.pdf` - PDF describing in tabular form, every entity modelled in ROH.
-- `2- CoberturaPreguntasCompetencia.pdf` - PDF with [competence questions which have been assessed against ROH](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/2-%20CoberturaPreguntasCompetencia.pdf).
-- `3- Ejecución de preguntas de competencia.md`	- Markdown document [linking to the SPARQL validation questions](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/3-%20Ejecuci%C3%B3n%20de%20preguntas%20de%20competencia.md) against ROH
-- `4- Modelo de multilingüismo.md`	- Markdown document explaining how multilinguism is supported in ROH
-- `5- Método para el control de versiones OWL.md` - Markdown explaining how version control is carried out in ROH
-- `Próximos pasos.md` - Markdown document explaining the next steps in the develepment of ROH, afer the ending of the first milestone of ASIO project.
+- `0 - OntologySpecification.pdf` - [PDF] (https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/0%20-%20OntologySpecification.pdf) corresponding to the specification of ROH network on ontologies. Section 2.1 includes the description of the main entities of ROH and the rationale behind their import or definition from scratch.
+- `1- OntologyDocumentation.pdf` - [PDF] (https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/1-%20OntologyDocumentation.pdf) describing in tabular form, every entity modelled in ROH.
+- `2- CoberturaPreguntasCompetencia.pdf` - [PDF] (https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/2-%20CoberturaPreguntasCompetencia.pdf) with [competence questions which have been assessed against ROH](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/2-%20CoberturaPreguntasCompetencia.pdf).
+- `3- Ejecución de preguntas de competencia.md`	- [Markdown document](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/3-%20Ejecuci%C3%B3n%20de%20preguntas%20de%20competencia.md) [linking to the SPARQL validation questions](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/3-%20Ejecuci%C3%B3n%20de%20preguntas%20de%20competencia.md) against ROH
+- `4- Modelo de multilingüismo.md`	- [Markdown document] (https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/4-%20Modelo%20de%20multiling%C3%BCismo.md) explaining how multilinguism is supported in ROH
+- `5- Método para el control de versiones OWL.md` - [Markdown document] (https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/5-%20M%C3%A9todo%20para%20el%20control%20de%20versiones%20OWL.md) explaining how version control is carried out in ROH
+- `Próximos pasos.md` - [Markdown document] (https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/Pr%C3%B3ximos%20pasos.md) explaining the next steps in the develepment of ROH, afer the ending of the first milestone of ASIO project.
 - `README.md` - This very file which includes documentation in Markdown of ROH, describing with text and diagrams the relationships among the main entities in ROH
 
 **<a name="headSection1"></a>1. Ontological design**
