@@ -136,8 +136,9 @@ Hércules.
 
 Notice that section 2 of the [ROH Ontology Specification document](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/0%20-%20OntologySpecification.pdf) includes a detailed discussion on how entities modelled in ROH have been imported and aligned with other existing entities in widely adopted ontologies that have successfully modelled parts of the Academic domain. 
 
-**<a name="headSection3">3. Project entity**
-============================================
+
+**<a name="headSection3"></a>3. Project entity**
+================================================
     
 The main ROH entity is vivo:Project (see Figura 2), an entity imported from VIVO and extended according to CERIF specification. In ROH, a Project models a collaborative activity in business and science that often involves research or design and is
 carefully planned to achieve a particular goal. Its configuration is
