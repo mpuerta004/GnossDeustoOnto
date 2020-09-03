@@ -28,7 +28,7 @@ ROH Network of Ontology documentation
 [**Bibliography**](#bibliography)
 
 This documentation area includes the following files:
-- `0 - OntologySpecification.pdf` - [PDF](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/0%20-%20OntologySpecification.pdf) corresponding to the specification of ROH network on ontologies. Section 2.1 includes the description of the main entities of ROH and the rationale behind their import or definition from scratch.
+- `0 - OntologySpecification.pdf` - [PDF](https://herculescrue.github.io/GnossDeustoOnto/0%20-%20OntologySpecification.pdf) corresponding to the specification of ROH network on ontologies. Section 2.1 includes the description of the main entities of ROH and the rationale behind their import or definition from scratch.
 - `1- OntologyDocumentation.pdf` - [PDF](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/1-%20OntologyDocumentation.pdf) describing in tabular form, every entity modelled in ROH.
 - `2- CoberturaPreguntasCompetencia.pdf` - [PDF](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/2-%20CoberturaPreguntasCompetencia.pdf) with [competence questions which have been assessed against ROH](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/2-%20CoberturaPreguntasCompetencia.pdf).
 - `3- Ejecución de preguntas de competencia.md`	- [Markdown document](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/3-%20Ejecuci%C3%B3n%20de%20preguntas%20de%20competencia.md) [linking to the SPARQL validation questions](https://github.com/HerculesCRUE/GnossDeustoOnto/blob/master/Documentation/3-%20Ejecuci%C3%B3n%20de%20preguntas%20de%20competencia.md) against ROH
