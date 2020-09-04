@@ -1022,6 +1022,51 @@ xsd:date rdf:type rdfs:Datatype .
                                                           "ubicado en"@es .
 
 
+###  http://purl.org/roh/mirror/vcard#adr
+<http://purl.org/roh/mirror/vcard#adr> rdf:type owl:ObjectProperty ;
+                                       owl:equivalentProperty <http://purl.org/roh/mirror/vcard#hasAddress> ;
+                                       rdfs:comment "This object property has been mapped"@en ;
+                                       rdfs:label "address"@en .
+
+
+###  http://purl.org/roh/mirror/vcard#email
+<http://purl.org/roh/mirror/vcard#email> rdf:type owl:ObjectProperty ;
+                                         owl:equivalentProperty <http://purl.org/roh/mirror/vcard#hasEmail> ;
+                                         rdfs:comment "This object property has been mapped"@en ;
+                                         rdfs:label "email"@en .
+
+
+###  http://purl.org/roh/mirror/vcard#hasAddress
+<http://purl.org/roh/mirror/vcard#hasAddress> rdf:type owl:ObjectProperty ;
+                                              rdfs:range <http://purl.org/roh/mirror/vcard#Address> ;
+                                              rdfs:comment "To specify the components of the delivery address for the object"@en ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns> ;
+                                              rdfs:label "has address"@en .
+
+
+###  http://purl.org/roh/mirror/vcard#hasEmail
+<http://purl.org/roh/mirror/vcard#hasEmail> rdf:type owl:ObjectProperty ;
+                                            rdfs:range <http://purl.org/roh/mirror/vcard#Email> ;
+                                            rdfs:comment "To specify the electronic mail address for communication with the object"@en ;
+                                            rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns> ;
+                                            rdfs:label "has email"@en .
+
+
+###  http://purl.org/roh/mirror/vcard#hasName
+<http://purl.org/roh/mirror/vcard#hasName> rdf:type owl:ObjectProperty ;
+                                           owl:equivalentProperty <http://purl.org/roh/mirror/vcard#n> ;
+                                           rdfs:range <http://purl.org/roh/mirror/vcard#Name> ;
+                                           rdfs:comment "To specify the components of the name of the object"@en ;
+                                           rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns> ;
+                                           rdfs:label "has name"@en .
+
+
+###  http://purl.org/roh/mirror/vcard#n
+<http://purl.org/roh/mirror/vcard#n> rdf:type owl:ObjectProperty ;
+                                     rdfs:comment "This object property has been mapped"@en ;
+                                     rdfs:label "name"@en .
+
+
 ###  http://purl.org/roh/mirror/vivo#affiliatedOrganization
 <http://purl.org/roh/mirror/vivo#affiliatedOrganization> rdf:type owl:ObjectProperty ,
                                                                   owl:SymmetricProperty ;
@@ -1929,6 +1974,14 @@ xsd:date rdf:type rdfs:Datatype .
                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 
 
+###  http://purl.org/roh/mirror/vcard#locality
+<http://purl.org/roh/mirror/vcard#locality> rdf:type owl:DatatypeProperty ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "The locality (e.g. city or town) associated with the address of the object"@en ;
+                                            rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns> ;
+                                            rdfs:label "locality"@en .
+
+
 ###  http://purl.org/roh/mirror/vivo#abbreviation
 <http://purl.org/roh/mirror/vivo#abbreviation> rdf:type owl:DatatypeProperty ;
                                                rdfs:comment "A short form for an longer title or name."@en ;
@@ -2153,6 +2206,10 @@ Definition source: http://isiwebofknowledge.com/researcherid/""" ;
                             owl:allValuesFrom xsd:string
                           ] ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/roh/mirror/vcard#locality> ;
+                            owl:allValuesFrom xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty <http://purl.org/roh/mirror/vivo#contactInformation> ;
                             owl:allValuesFrom rdfs:Literal
                           ] ,
@@ -2167,6 +2224,11 @@ Definition source: http://isiwebofknowledge.com/researcherid/""" ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty <http://purl.org/roh/mirror/vivo#identifier> ;
                             owl:allValuesFrom xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://purl.org/roh/mirror/vcard#locality> ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
                           ] ;
           <http://purl.obolibrary.org/obo/IAO_0000112> "Only use if no specific subclasses of event:Event are appropriate." ,
                                                        """This class will also display instances of subclasses under Event, e.g. Philosophy Department Discussion Club; 2009 Racker Lecture; screening of a documentary. In addition to a location in space and time, an event may have any or all the following qualities: actively participating agents, passive factors, work products. Also, it may be in a virtual space or part of a series such as a lecture series.
@@ -4592,6 +4654,14 @@ Based on obo-bfo:Role also used in VIVO, it defines roles. The object property r
                                                             "Information Content Entity"@en .
 
 
+###  http://purl.org/roh/mirror/vcard#Address
+<http://purl.org/roh/mirror/vcard#Address> rdf:type owl:Class .
+
+
+###  http://purl.org/roh/mirror/vcard#Email
+<http://purl.org/roh/mirror/vcard#Email> rdf:type owl:Class .
+
+
 ###  http://purl.org/roh/mirror/vcard#Group
 <http://purl.org/roh/mirror/vcard#Group> rdf:type owl:Class ;
                                          rdfs:subClassOf <http://purl.org/roh/mirror/vcard#Kind> ;
@@ -4625,6 +4695,10 @@ Based on obo-bfo:Role also used in VIVO, it defines roles. The object property r
                                             rdfs:isDefinedBy <http://purl.org/roh/mirror/vcard> ;
                                             rdfs:label "Localización"@es ,
                                                        "Location"@en .
+
+
+###  http://purl.org/roh/mirror/vcard#Name
+<http://purl.org/roh/mirror/vcard#Name> rdf:type owl:Class .
 
 
 ###  http://purl.org/roh/mirror/vcard#Organization

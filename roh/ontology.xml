@@ -1580,6 +1580,75 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh/mirror/vcard#adr -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#adr">
+        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#hasAddress"/>
+        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#email -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#email">
+        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#hasEmail"/>
+        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
+        <rdfs:label xml:lang="en">email</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#hasAddress -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasAddress">
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Address"/>
+        <rdfs:comment xml:lang="en">To specify the components of the delivery address for the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#hasEmail -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasEmail">
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Email"/>
+        <rdfs:comment xml:lang="en">To specify the electronic mail address for communication with the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has email</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#hasName -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasName">
+        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#n"/>
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Name"/>
+        <rdfs:comment xml:lang="en">To specify the components of the name of the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#n -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#n">
+        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/roh/mirror/vivo#affiliatedOrganization -->
 
 
@@ -3011,6 +3080,18 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh/mirror/vcard#locality -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh/mirror/vcard#locality">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The locality (e.g. city or town) associated with the address of the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">locality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh/mirror/vivo#abbreviation -->
 
 
@@ -3354,6 +3435,12 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vcard#locality"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#contactInformation"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
@@ -3374,6 +3461,13 @@ Definition source: http://isiwebofknowledge.com/researcherid/</obo:IAO_0000112>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#identifier"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vcard#locality"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>Only use if no specific subclasses of event:Event are appropriate.</obo:IAO_0000112>
@@ -6901,6 +6995,20 @@ Based on obo-bfo:Role also used in VIVO, it defines roles. The object property r
     
 
 
+    <!-- http://purl.org/roh/mirror/vcard#Address -->
+
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/vcard#Address"/>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#Email -->
+
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/vcard#Email"/>
+    
+
+
     <!-- http://purl.org/roh/mirror/vcard#Group -->
 
 
@@ -6949,6 +7057,13 @@ Based on obo-bfo:Role also used in VIVO, it defines roles. The object property r
         <rdfs:label xml:lang="es">Localización</rdfs:label>
         <rdfs:label xml:lang="en">Location</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#Name -->
+
+
+    <owl:Class rdf:about="http://purl.org/roh/mirror/vcard#Name"/>
     
 
 
