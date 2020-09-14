@@ -1434,6 +1434,69 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh/mirror/vcard#adr -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#adr">
+        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#hasAddress"/>
+        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#email -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#email">
+        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#hasEmail"/>
+        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
+        <rdfs:label xml:lang="en">email</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasAddress">
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Address"/>
+        <rdfs:comment xml:lang="en">To specify the components of the delivery address for the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#hasEmail -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasEmail">
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Email"/>
+        <rdfs:comment xml:lang="en">To specify the electronic mail address for communication with the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has email</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasName">
+        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#n"/>
+        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Name"/>
+        <rdfs:comment xml:lang="en">To specify the components of the name of the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/roh/mirror/vcard#n -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#n">
+        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/roh/mirror/vivo#affiliatedOrganization -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vivo#affiliatedOrganization">
@@ -1682,69 +1745,6 @@ by creating a research management system with semantic capacities based on seman
         <rdfs:comment xml:lang="en">The cited entity is cited as a data source by the citing entity.</rdfs:comment>
         <rdfs:label xml:lang="es">citado como fuente de datos por</rdfs:label>
         <rdfs:label xml:lang="en">is cited as data source by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh/mirror/vcard#adr -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#adr">
-        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#hasAddress"/>
-        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
-        <rdfs:label xml:lang="en">address</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh/mirror/vcard#email -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#email">
-        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#hasEmail"/>
-        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
-        <rdfs:label xml:lang="en">email</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh/mirror/vcard#hasAddress -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasAddress">
-        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Address"/>
-        <rdfs:comment xml:lang="en">To specify the components of the delivery address for the object</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
-        <rdfs:label xml:lang="en">has address</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh/mirror/vcard#hasEmail -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasEmail">
-        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Email"/>
-        <rdfs:comment xml:lang="en">To specify the electronic mail address for communication with the object</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
-        <rdfs:label xml:lang="en">has email</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh/mirror/vcard#hasName -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#hasName">
-        <owl:equivalentProperty rdf:resource="http://purl.org/roh/mirror/vcard#n"/>
-        <rdfs:range rdf:resource="http://purl.org/roh/mirror/vcard#Name"/>
-        <rdfs:comment xml:lang="en">To specify the components of the name of the object</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
-        <rdfs:label xml:lang="en">has name</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/roh/mirror/vcard#n -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/roh/mirror/vcard#n">
-        <rdfs:comment xml:lang="en">This object property has been mapped</rdfs:comment>
-        <rdfs:label xml:lang="en">name</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3803,6 +3803,12 @@ The previous short definition was: &quot;An arbitrary classification of a space/
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#relatedBy"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#Dossier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#identifier"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -4051,6 +4057,14 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
         <rdfs:comment xml:lang="en">An amount of money that is borrowed, often from a bank or a funding organization, and has to be paid back, usually together with an extra amount of money that you have to pay as a charge for borrowing.</rdfs:comment>
         <rdfs:label xml:lang="en">Loan</rdfs:label>
         <rdfs:label xml:lang="es">Préstamo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#ManagementUnit -->
+
+    <owl:Class rdf:about="http://purl.org/roh#ManagementUnit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/foaf#Organization"/>
     </owl:Class>
     
 
@@ -7655,6 +7669,12 @@ Contents
     <owl:Class rdf:about="http://purl.org/roh/mirror/vivo#Project">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#fundedBy"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#FundingProgram"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#hasContract"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh#ProjectContract"/>
             </owl:Restriction>
@@ -7675,6 +7695,12 @@ Contents
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#hasProjectCategorization"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh#ProjectClassification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#isSupportedBy"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#Funding"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8517,3 +8543,4 @@ Contents
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

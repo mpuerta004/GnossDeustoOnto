@@ -2633,6 +2633,10 @@ The previous short definition was: \"An arbitrary classification of a space/time
                                   owl:allValuesFrom <http://purl.org/roh/mirror/vivo#DateTimeInterval>
                                 ] ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.org/roh/mirror/vivo#relatedBy> ;
+                                  owl:allValuesFrom :Dossier
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.org/roh/mirror/vivo#identifier> ;
                                   owl:someValuesFrom xsd:string
                                 ] ,
@@ -2804,6 +2808,11 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
       rdfs:comment "An amount of money that is borrowed, often from a bank or a funding organization, and has to be paid back, usually together with an extra amount of money that you have to pay as a charge for borrowing."@en ;
       rdfs:label "Loan"@en ,
                  "Préstamo"@es .
+
+
+###  http://purl.org/roh#ManagementUnit
+:ManagementUnit rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/roh/mirror/foaf#Organization> .
 
 
 ###  http://purl.org/roh#MasterDegree
@@ -5437,6 +5446,10 @@ Contents
 ###  http://purl.org/roh/mirror/vivo#Project
 <http://purl.org/roh/mirror/vivo#Project> rdf:type owl:Class ;
                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :fundedBy ;
+                                                            owl:allValuesFrom :FundingProgram
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
                                                             owl:onProperty :hasContract ;
                                                             owl:allValuesFrom :ProjectContract
                                                           ] ,
@@ -5451,6 +5464,10 @@ Contents
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty :hasProjectCategorization ;
                                                             owl:allValuesFrom :ProjectClassification
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :isSupportedBy ;
+                                                            owl:allValuesFrom :Funding
                                                           ] ,
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty :participates ;
