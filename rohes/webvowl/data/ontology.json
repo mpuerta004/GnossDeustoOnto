@@ -30,10 +30,10 @@
     "id" : "122",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "124",
@@ -60,16 +60,16 @@
     "id" : "128",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
     "id" : "160",
     "type" : "owl:Class"
   }, {
-    "id" : "118",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "156",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
     "type" : "owl:Class"
   }, {
     "id" : "144",
@@ -189,31 +189,31 @@
     "id" : "320",
     "type" : "owl:Class"
   }, {
+    "id" : "338",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "123",
     "type" : "owl:Class"
   }, {
-    "id" : "340",
-    "type" : "rdfs:Literal"
-  }, {
     "id" : "342",
-    "type" : "rdfs:Datatype"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "167",
     "type" : "owl:Class"
   }, {
-    "id" : "344",
+    "id" : "345",
     "type" : "owl:Class"
   }, {
-    "id" : "347",
+    "id" : "348",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "346",
+    "id" : "347",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "75",
     "type" : "owl:Class"
   }, {
-    "id" : "338",
+    "id" : "339",
     "type" : "owl:Class"
   }, {
     "id" : "209",
@@ -255,16 +255,16 @@
     "id" : "62",
     "type" : "owl:Class"
   }, {
-    "id" : "381",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "120",
     "type" : "owl:Class"
   }, {
-    "id" : "207",
-    "type" : "owl:Class"
+    "id" : "382",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
     "type" : "owl:Class"
   }, {
     "id" : "396",
@@ -411,10 +411,10 @@
     "id" : "185",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "182",
     "type" : "owl:Class"
   }, {
-    "id" : "182",
+    "id" : "41",
     "type" : "owl:Class"
   }, {
     "id" : "142",
@@ -444,10 +444,10 @@
     "id" : "230",
     "type" : "owl:Class"
   }, {
-    "id" : "385",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "378",
     "type" : "owl:Class"
   }, {
     "id" : "95",
@@ -513,7 +513,7 @@
     "id" : "530",
     "type" : "owl:Class"
   }, {
-    "id" : "534",
+    "id" : "535",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "537",
@@ -580,7 +580,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "AcademicAccreditation",
-      "en" : "Acreditación Académica"
+      "en" : "Academic Accreditation"
     },
     "subClasses" : [ "92", "121", "77", "78", "85" ],
     "comment" : {
@@ -601,6 +601,17 @@
     "id" : "122",
     "superClasses" : [ "71" ]
   }, {
+    "iri" : "http://purl.org/rohes#Construcciones",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Construcciones",
+      "en" : "Construction",
+      "es" : "Construcciones"
+    },
+    "id" : "17",
+    "superClasses" : [ "123" ]
+  }, {
     "iri" : "http://purl.org/roh#PhDThesisMetric",
     "baseIri" : "http://purl.org/roh",
     "instances" : 0,
@@ -612,17 +623,6 @@
     "attributes" : [ "external" ],
     "id" : "24",
     "superClasses" : [ "89" ]
-  }, {
-    "iri" : "http://purl.org/rohes#Construcciones",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Construcciones",
-      "en" : "Construction",
-      "es" : "Construcciones"
-    },
-    "id" : "17",
-    "superClasses" : [ "123" ]
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -712,6 +712,17 @@
     "id" : "128",
     "superClasses" : [ "71" ]
   }, {
+    "iri" : "http://purl.org/rohes#Locomocion",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Locomocion",
+      "en" : "Locomotion",
+      "es" : "Locomoción"
+    },
+    "id" : "160",
+    "superClasses" : [ "139" ]
+  }, {
     "iri" : "http:/purl.org/roh#KnowledgeArea",
     "baseIri" : "http:/purl.org/roh",
     "instances" : 0,
@@ -728,16 +739,19 @@
     "id" : "22",
     "superClasses" : [ "15" ]
   }, {
-    "iri" : "http://purl.org/rohes#Locomocion",
-    "baseIri" : "http://purl.org/rohes",
+    "iri" : "http://purl.org/roh#Funding",
+    "baseIri" : "http://purl.org/roh",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Locomocion",
-      "en" : "Locomotion",
-      "es" : "Locomoción"
+      "IRI-based" : "Funding",
+      "en" : "Funding",
+      "es" : "Financiación"
     },
-    "id" : "160",
-    "superClasses" : [ "139" ]
+    "comment" : {
+      "undefined" : "The roh:Funding entity, new in ROH, represents the funding associated with a project (roh:Project) whose funding is associated with a funding program (roh:FundingProgram) and comes from a (roh:FundingSource), which in turn is associated with a funding organization (vivo:FundingOrganization). A funding is divided into several amounts (roh:FundingAmount), associated with the different entities that participate in a project and the annuities in which they do so.  Funding gathers information about the total funding received for a project and its currency through the roh:monetaryAmount and roh:currency properties.\n\nThe funding organization (vivo:FundingOrganization), imported from VIVO, inherits from foaf:Organization, finances (roh:funds) through different funding aids (roh:Funding) to projects (roh:Project) through the roh:supports relationship and through the roh:FundingAmounts into which a roh:Funding is divided. A funding organization in turn divides a roh:Funding into several roh:FundingAmounts associated with different foaf:Organizations through the roh:grants relationship.\n\nThe Funding Program entity (roh:FundingProgram), new in ROH, defines the funding initiatives promoted (roh:promotedBy) by a Funding Organization (vivo:FundingOrganization) and is in operation during a time interval (vivo:dateTimeInterval) and is usually linked to a geographical scope (geonames:Feature)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "156"
   }, {
     "iri" : "http://purl.org/roh#Activity",
     "baseIri" : "http://purl.org/roh",
@@ -771,20 +785,6 @@
     },
     "attributes" : [ "external" ],
     "id" : "118"
-  }, {
-    "iri" : "http://purl.org/roh#Funding",
-    "baseIri" : "http://purl.org/roh",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Funding",
-      "en" : "Funding",
-      "es" : "Financiación"
-    },
-    "comment" : {
-      "undefined" : "The roh:Funding entity, new in ROH, represents the funding associated with a project (roh:Project) whose funding is associated with a funding program (roh:FundingProgram) and comes from a (roh:FundingSource), which in turn is associated with a funding organization (vivo:FundingOrganization). A funding is divided into several amounts (roh:FundingAmount), associated with the different entities that participate in a project and the annuities in which they do so.  Funding gathers information about the total funding received for a project and its currency through the roh:monetaryAmount and roh:currency properties.\n\nThe funding organization (vivo:FundingOrganization), imported from VIVO, inherits from foaf:Organization, finances (roh:funds) through different funding aids (roh:Funding) to projects (roh:Project) through the roh:supports relationship and through the roh:FundingAmounts into which a roh:Funding is divided. A funding organization in turn divides a roh:Funding into several roh:FundingAmounts associated with different foaf:Organizations through the roh:grants relationship.\n\nThe Funding Program entity (roh:FundingProgram), new in ROH, defines the funding initiatives promoted (roh:promotedBy) by a Funding Organization (vivo:FundingOrganization) and is in operation during a time interval (vivo:dateTimeInterval) and is usually linked to a geographical scope (geonames:Feature)."
-    },
-    "attributes" : [ "external" ],
-    "id" : "156"
   }, {
     "iri" : "http://purl.org/rohes#OtrasComunicaciones",
     "baseIri" : "http://purl.org/rohes",
@@ -999,12 +999,12 @@
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
         "language" : "undefined",
-        "value" : "An organization that provides financial support to individuals or organizations to carry out specified activities.",
+        "value" : "A defined class of organizations that fund Grants",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000115",
         "language" : "undefined",
-        "value" : "A defined class of organizations that fund Grants",
+        "value" : "An organization that provides financial support to individuals or organizations to carry out specified activities.",
         "type" : "label"
       } ],
       "IAO_0000412" : [ {
@@ -1046,12 +1046,6 @@
         "value" : "organization",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/roh/mirror/foaf#",
-        "type" : "iri"
-      } ],
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "undefined",
@@ -1063,21 +1057,27 @@
         "value" : "This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn't a specific class available.",
         "type" : "label"
       } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
+        "value" : "http://purl.org/roh/mirror/foaf#",
+        "type" : "iri"
       } ],
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
         "language" : "undefined",
-        "value" : "A generic class encompassing several types of organizations.",
+        "value" : "A kind of Agent corresponding to social instititutions such as companies, societies etc.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000115",
         "language" : "undefined",
-        "value" : "A kind of Agent corresponding to social instititutions such as companies, societies etc.",
+        "value" : "A generic class encompassing several types of organizations.",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
         "type" : "label"
       } ],
       "IAO_0000117" : [ {
@@ -1105,7 +1105,7 @@
       "es" : "Organización"
     },
     "comment" : {
-      "undefined" : "An organization"
+      "undefined" : "An Organization in ROH is a foaf:Organization which carries out several roh:Project. It is a child of foaf:Agent. Some organization can emit roh:Acreditation (e.g. ANECA or CENAI in Spain), those belonging to subclass roh:AccreditationIssuer, or award degrees (vivo:AwardedDegree), those of subclass vivo:University. An Organization may receive several roh:FundingAmount, corresponding to a roh:Funding, obtained through a roh:FundingProgram provided by a vivo:FundingOrganization through a roh:FundingSource. As a foaf:Agent an Organization may be involved in several roh:Actitity, has several instances of attribute roh:researchLine, is associated through roh:hasKnowledgeArea with roh:KnowledgeArea and bound to a geographical scope through gn:locatedIn with gn:Feature, it may also have a time span through vivo:dateTimeInterval linking it with an instance of vivo:DateTimeInterval.\n\nBased on FOAF, the foaf:Organization entity takes into account the object properties (attributes: roh:acronym, headcount, turnover, foaf:homepage) and data properties (links) defined by the Organization Unit in CERIF. It also takes into account and supports the relationships of CERIF Equipment (via roh:Equipment and roh:hasInfrastructure), ElectronicAddress (obo:hasContactInfo), Event (roh:Activity), Expertise and Skill (via vivo:keywords and roh:hasKnowledgeArea), Facility (roh:Facility and roh:hasInfrastructure), Funding (roh:Funding), Organization Unit (kinship relationships between organizations can be established with vivo:hasPart and vivo:partOf), Prize Award (through roh:Accreditation), Result Patent, Result Product, Result Publication and Service - all of them through roh:ResearchObject which can be obtained through the roh:produces relationship from the Projects in which an organization participates by playing a declared role through roh:hasRole, Person (through roh:hasPosition). Therefore, the CERIF data model for Organization is covered.\n\nAn exhaustive hierarchy of organizations is includes, e.g. roh:AccreditationIssuer, vivo:Company or vivo:University, among many others. \n\nBesides, an instance of a foaf:Organization is associated to the following entities through object properties:\n- roh:Accreditation, where an organization of type roh:AccrediationIssuer issues (roh:issues) accreditations, e.g. roh:ResearchAccreditation or roh:AcademicAccreditation.  \n- roh:Activity, where an organization may play vivo:OrganizerRole through roh:hasRole in an activity or may through its participation role in a project participate (roh:participates) in an activity. \n- vivo:AwardedDegree, where and organization may roh:awards degrees which are related to both a concrete vivo:AcademicDegree and an instance of foaf:Person. \n- skos:Concept, where an organization through roh:hasKnowledgeArea may be associated to several knowledge areas, defined as instance data of thesaurus created with SKOS ontology. \n- vivo:DateTimeInterval, where an organization may exist during a given time interval\n- gn:Feature through relationship gn:locatedIn, where an organization may be associated a geographical scope.  \n- roh:FundingAmount where an organization may receive several funding amounts part of a roh:Funding through roh:grants object property. \n- vcard:Individual, where an organization obo:hasContactInfo described through ontology vcard. \n- roh:Infrastructure, where an organization may roh:hasInfrastructure, belonging to any of its subclasses, e.g. roh:Equipment or roh:Facility. \n- foaf:Organization, where a foaf:Organization may be linked through vivo:hasSucessorOrganization or vivo:hasPredecessorOrganization with another foaf:Organization or may be part of (vivo:partOf) or include (vivo:hasPart) other several foaf:Organization."
     },
     "attributes" : [ "external" ],
     "id" : "288"
@@ -1295,12 +1295,12 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "undefined",
-        "value" : "Professor; Associate Professor; Assistant Professor",
+        "value" : "Professor, associate professor and assistant professor are common positions for academic faculty.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "undefined",
-        "value" : "Professor, associate professor and assistant professor are common positions for academic faculty.",
+        "value" : "Professor; Associate Professor; Assistant Professor",
         "type" : "label"
       } ],
       "IAO_0000115" : [ {
@@ -1342,6 +1342,13 @@
     "id" : "320",
     "superClasses" : [ "150" ]
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "338",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
     "iri" : "http://purl.org/rohes#InmovilizacionesMateriales",
     "baseIri" : "http://purl.org/rohes",
     "instances" : 0,
@@ -1352,21 +1359,14 @@
     },
     "subClasses" : [ "1", "18", "39", "10", "33", "17", "2", "27", "46" ],
     "id" : "123",
-    "superClasses" : [ "338" ]
+    "superClasses" : [ "339" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "340",
+    "id" : "342",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "342",
-    "label" : {
-      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://purl.org/rohes#ReparacionesYConservacion",
@@ -1388,18 +1388,18 @@
       "es" : "Documento"
     },
     "attributes" : [ "external" ],
-    "id" : "344"
+    "id" : "345"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "347",
+    "id" : "348",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "346",
+    "id" : "347",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1423,7 +1423,7 @@
       "es" : "Activo no corriente"
     },
     "subClasses" : [ "96", "123", "105" ],
-    "id" : "338",
+    "id" : "339",
     "superClasses" : [ "50" ]
   }, {
     "iri" : "http://purl.org/rohes#FormacionTalento",
@@ -1436,11 +1436,11 @@
     "id" : "209",
     "superClasses" : [ "75" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "352",
     "label" : {
-      "IRI-based" : "boolean"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://purl.org/roh#Thesis_Metric",
@@ -1468,11 +1468,11 @@
       "IRI-based" : "boolean"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "359",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -1490,7 +1490,7 @@
       "en" : "Account",
       "es" : "Cuenta"
     },
-    "subClasses" : [ "338", "196" ],
+    "subClasses" : [ "339", "196" ],
     "comment" : {
       "es" : "Cuenta del Plan General Contable en la que se imputan unos gastos determinados."
     },
@@ -1555,13 +1555,6 @@
     "id" : "62",
     "superClasses" : [ "167" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "381",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
     "iri" : "http://pur.org/roh#Accreditation",
     "baseIri" : "http://pur.org/roh",
     "instances" : 0,
@@ -1588,6 +1581,24 @@
     "attributes" : [ "external" ],
     "id" : "120"
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "382",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/rohes#OtrosServicios",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtrosServicios",
+      "en" : "Other Services",
+      "es" : "Otros Servicios"
+    },
+    "id" : "138",
+    "superClasses" : [ "139" ]
+  }, {
     "iri" : "http://purl.org/roh#ResearchAccreditation",
     "baseIri" : "http://purl.org/roh",
     "instances" : 0,
@@ -1603,17 +1614,6 @@
     "attributes" : [ "external" ],
     "id" : "207",
     "superClasses" : [ "120" ]
-  }, {
-    "iri" : "http://purl.org/rohes#OtrosServicios",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "OtrosServicios",
-      "en" : "Other Services",
-      "es" : "Otros Servicios"
-    },
-    "id" : "138",
-    "superClasses" : [ "139" ]
   }, {
     "iri" : "http://purl.org/roh#FundingAmount",
     "baseIri" : "http://purl.org/roh",
@@ -1889,7 +1889,7 @@
     },
     "subClasses" : [ "95", "100" ],
     "id" : "96",
-    "superClasses" : [ "338" ]
+    "superClasses" : [ "339" ]
   }, {
     "iri" : "http://purl.org/roh/mirror/vivo#Project",
     "baseIri" : "http://purl.org/roh/mirror/vivo",
@@ -1982,7 +1982,7 @@
     },
     "subClasses" : [ "104", "109", "60" ],
     "id" : "105",
-    "superClasses" : [ "338" ]
+    "superClasses" : [ "339" ]
   }, {
     "iri" : "http://purl.org/rohes#AdaptacionDeTerrenos",
     "baseIri" : "http://purl.org/rohes",
@@ -2196,20 +2196,6 @@
     "id" : "185",
     "superClasses" : [ "178" ]
   }, {
-    "iri" : "http://purl.org/rohes#Sexenio",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Sexenio",
-      "en" : "Sexennial",
-      "es" : "Sexenio"
-    },
-    "comment" : {
-      "es" : "Tramo de investigación reconocido al profesorado universitario por los méritos de su actividad investigadora, labor realizada a través de un programa de ANECA. Se denomina así porque los solicitantes han de someter a evaluación una selección de los trabajos científicos publicados durante un período de seis años. La finalidad es el fomento, mediante la asignación de un complemento económico, del trabajo investigador de los docentes de las universidades españolas."
-    },
-    "id" : "41",
-    "superClasses" : [ "207" ]
-  }, {
     "iri" : "http://purl.org/rohes#ProfesorContratadoDoctor",
     "baseIri" : "http://purl.org/rohes",
     "instances" : 0,
@@ -2223,6 +2209,20 @@
     },
     "id" : "182",
     "superClasses" : [ "178" ]
+  }, {
+    "iri" : "http://purl.org/rohes#Sexenio",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sexenio",
+      "en" : "Sexennial",
+      "es" : "Sexenio"
+    },
+    "comment" : {
+      "es" : "Tramo de investigación reconocido al profesorado universitario por los méritos de su actividad investigadora, labor realizada a través de un programa de ANECA. Se denomina así porque los solicitantes han de someter a evaluación una selección de los trabajos científicos publicados durante un período de seis años. La finalidad es el fomento, mediante la asignación de un complemento económico, del trabajo investigador de los docentes de las universidades españolas."
+    },
+    "id" : "41",
+    "superClasses" : [ "207" ]
   }, {
     "iri" : "http://purl.org/rohes#FormacionI+D+i",
     "baseIri" : "http://purl.org/rohes",
@@ -2282,7 +2282,7 @@
     },
     "subClasses" : [ "14", "22" ],
     "comment" : {
-      "undefined" : "Base on skos:Concept (https://www.w3.org/TR/skos-reference/). It has three subclasses, namely KnowledgeArea, ResearchLine and Tab. Keywords are extensively used as attributes related to the following entities in CERIF: Equipment, Event, Expertise and Skills, Funding, Geographic Bounding Box, Indicator, Measurement, Medium, Metrics, Organisation Unit, Person, Prize Awards, Project, Qualification, Result Patent, Result Product, Result Publication, Service."
+      "undefined" : "Using SKOS, concepts can be identified using URIs, labeled with lexical strings in one or more natural languages, assigned notations (lexical codes), documented with various types of note, linked to other concepts and organized into informal hierarchies and association networks, aggregated into concept schemes, grouped into labeled and/or ordered collections, and mapped to concepts in other schemes."
     },
     "attributes" : [ "external" ],
     "id" : "15"
@@ -2349,6 +2349,15 @@
     "id" : "230",
     "superClasses" : [ "198" ]
   }, {
+    "iri" : "http://purl.org/rohes#SubprogramaEstatalFormacion",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubprogramaEstatalFormacion"
+    },
+    "id" : "64",
+    "superClasses" : [ "65" ]
+  }, {
     "iri" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000023",
     "baseIri" : "http://purl.org/roh/mirror/obo/bfo",
     "instances" : 0,
@@ -2361,16 +2370,7 @@
       "undefined" : "Based on VIVO defined roles, however in ROH, roles might be specific to a country or a university in a country. Therefore, their types have to refined per country and university case."
     },
     "attributes" : [ "external" ],
-    "id" : "385"
-  }, {
-    "iri" : "http://purl.org/rohes#SubprogramaEstatalFormacion",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SubprogramaEstatalFormacion"
-    },
-    "id" : "64",
-    "superClasses" : [ "65" ]
+    "id" : "378"
   }, {
     "iri" : "http://purl.org/rohes#AplicacionesInformaticas",
     "baseIri" : "http://purl.org/rohes",
@@ -2606,7 +2606,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "534",
+    "id" : "535",
     "label" : {
       "IRI-based" : "string"
     }
@@ -3261,47 +3261,47 @@
     "id" : "335",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "336",
+    "id" : "337",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "337",
-    "type" : "owl:allValuesFrom"
-  }, {
-    "id" : "339",
+    "id" : "340",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "341",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "343",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
-    "id" : "345",
-    "type" : "owl:someValuesFrom"
+    "id" : "344",
+    "type" : "owl:allValuesFrom"
   }, {
-    "id" : "348",
+    "id" : "346",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "349",
-    "type" : "owl:objectProperty"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "350",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "351",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "353",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "354",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "356",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "358",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "361",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "362",
     "type" : "owl:disjointWith"
@@ -3357,8 +3357,8 @@
     "id" : "380",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "382",
-    "type" : "owl:allValuesFrom"
+    "id" : "381",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "383",
     "type" : "owl:allValuesFrom"
@@ -3576,7 +3576,7 @@
     "id" : "461",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "351",
+    "id" : "336",
     "type" : "owl:objectProperty"
   }, {
     "id" : "463",
@@ -3780,7 +3780,7 @@
     "id" : "533",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "535",
+    "id" : "534",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "536",
@@ -3792,10 +3792,10 @@
     "id" : "539",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "540",
+    "id" : "541",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "378",
+    "id" : "385",
     "type" : "owl:objectProperty"
   }, {
     "id" : "542",
@@ -3852,7 +3852,7 @@
     "range" : "25",
     "label" : {
       "IRI-based" : "premioExtraordinarioDoctorado",
-      "es" : "Premio extraordinario del doctorado"
+      "es" : "PhD extraordinary award"
     },
     "domain" : "24",
     "comment" : {
@@ -4549,7 +4549,7 @@
     "range" : "262",
     "label" : {
       "IRI-based" : "doctoradoInternacional",
-      "es" : "International PhD"
+      "es" : "Doctorado Internacional"
     },
     "domain" : "55",
     "attributes" : [ "datatype" ],
@@ -4829,12 +4829,12 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "334"
   }, {
-    "iri" : "http:/purl.org/roh#hasKnowledgeArea",
-    "inverse" : "244",
+    "iri" : "http:/purl.org/roh#fundedBy",
+    "inverse" : "336",
     "baseIri" : "http:/purl.org/roh",
-    "range" : "15",
+    "range" : "156",
     "label" : {
-      "IRI-based" : "hasKnowledgeArea"
+      "IRI-based" : "fundedBy"
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
@@ -4849,57 +4849,28 @@
     },
     "domain" : "51",
     "attributes" : [ "object" ],
-    "id" : "336"
-  }, {
-    "iri" : "http:/purl.org/roh#participates",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "118",
-    "label" : {
-      "IRI-based" : "participates"
-    },
-    "domain" : "287",
-    "attributes" : [ "object", "allValues", "external" ],
     "id" : "337"
   }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#dateTimeInterval",
+    "iri" : "http://purl.org/roh/mirror/vivo#identifier",
     "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "42",
+    "range" : "338",
     "label" : {
-      "IRI-based" : "dateTimeInterval"
-    },
-    "domain" : "287",
-    "attributes" : [ "object", "allValues", "external" ],
-    "id" : "339"
-  }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#description",
-    "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "340",
-    "label" : {
-      "IRI-based" : "description"
+      "IRI-based" : "identifier"
     },
     "domain" : "287",
     "attributes" : [ "datatype", "allValues", "external" ],
-    "id" : "341"
+    "id" : "340"
   }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#freetextKeyword",
-    "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "342",
+    "iri" : "http:/purl.org/roh#hasKnowledgeArea",
+    "inverse" : "244",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "15",
     "label" : {
-      "IRI-based" : "freetextKeyword"
+      "IRI-based" : "hasKnowledgeArea"
     },
     "domain" : "287",
-    "attributes" : [ "datatype", "someValues", "external" ],
-    "id" : "343"
-  }, {
-    "iri" : "http://purl.org/roh#mark",
-    "baseIri" : "http://purl.org/roh",
-    "range" : "346",
-    "label" : {
-      "IRI-based" : "mark"
-    },
-    "domain" : "24",
-    "attributes" : [ "datatype", "someValues", "external" ],
-    "id" : "345"
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "341"
   }, {
     "iri" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000051",
     "baseIri" : "http://purl.org/roh/mirror/obo/bfo",
@@ -4909,7 +4880,37 @@
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
-    "id" : "348"
+    "id" : "343"
+  }, {
+    "iri" : "http:/purl.org/roh#participates",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "participates"
+    },
+    "domain" : "287",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "344"
+  }, {
+    "iri" : "http://purl.org/roh#mark",
+    "baseIri" : "http://purl.org/roh",
+    "range" : "347",
+    "label" : {
+      "IRI-based" : "mark"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "346"
+  }, {
+    "iri" : "http://purl.org/roh/mirror/vivo#description",
+    "baseIri" : "http://purl.org/roh/mirror/vivo",
+    "range" : "342",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "287",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "349"
   }, {
     "iri" : "http:/purl.org/roh#hasKnowledgeArea",
     "inverse" : "244",
@@ -4920,10 +4921,10 @@
     },
     "domain" : "245",
     "attributes" : [ "object", "external" ],
-    "id" : "349"
+    "id" : "350"
   }, {
     "iri" : "http:/purl.org/roh#fundedBy",
-    "inverse" : "351",
+    "inverse" : "336",
     "baseIri" : "http:/purl.org/roh",
     "range" : "283",
     "label" : {
@@ -4931,22 +4932,21 @@
     },
     "domain" : "156",
     "attributes" : [ "object", "external" ],
-    "id" : "350"
+    "id" : "351"
   }, {
-    "iri" : "http://purl.org/rohes#doctoradoInternacional",
-    "baseIri" : "http://purl.org/rohes",
+    "iri" : "http://purl.org/roh#mark",
+    "baseIri" : "http://purl.org/roh",
     "range" : "352",
     "label" : {
-      "IRI-based" : "doctoradoInternacional",
-      "es" : "International PhD"
+      "IRI-based" : "mark"
     },
     "domain" : "24",
-    "attributes" : [ "datatype", "allValues" ],
+    "attributes" : [ "datatype", "someValues", "external" ],
     "id" : "353"
   }, {
     "iri" : "http://purl.org/roh#cumLaude",
     "baseIri" : "http://purl.org/roh",
-    "range" : "347",
+    "range" : "348",
     "label" : {
       "IRI-based" : "cumLaude"
     },
@@ -4954,43 +4954,40 @@
     "attributes" : [ "datatype", "allValues", "external" ],
     "id" : "354"
   }, {
-    "iri" : "http://purl.org/rohes#premioExtraordinarioDoctorado",
-    "baseIri" : "http://purl.org/rohes",
-    "range" : "355",
-    "label" : {
-      "IRI-based" : "premioExtraordinarioDoctorado",
-      "es" : "Premio extraordinario del doctorado"
-    },
-    "domain" : "24",
-    "comment" : {
-      "es" : "El premio extraordinario de doctorado se concede a aquellos Doctores que, habiendo obtenido la mención \"cum laude\", sean beneficiarios asimismo de dicho premio."
-    },
-    "attributes" : [ "datatype", "allValues" ],
-    "id" : "356"
-  }, {
-    "iri" : "http://purl.org/rohes#doctoradoEuropeo",
-    "baseIri" : "http://purl.org/rohes",
-    "range" : "357",
-    "label" : {
-      "IRI-based" : "doctoradoEuropeo",
-      "en" : "European PhD",
-      "es" : "Doctorado Europeo"
-    },
-    "domain" : "24",
-    "comment" : {
-      "es" : "La mención europea en el título de Doctor está regulada en el artículo 14 del Real Decreto 56/2005, de 21 de enero, sobre estudios universitarios oficiales de posgrado y en el artículo 22 del Real Decreto 1393/2007, de 29 de octubre, por el que se establece la ordenación de las enseñanzas universitarias oficiales. Los doctorandos que hayan comenzado sus estudios de doctorado con posterioridad al 11 de febrero de 2011 podrán obtener la mención internacional pero no la mención europea en el título de Doctor, ya que ésta ha sido derogada por el RD 99/2011. Los doctorandos que comenzaron sus estudios antes del 11 de febrero de 2011 y que hayan leído o lean sus tesis con posterioridad a dicha fecha, podrán obtener la mención europea, de acuerdo con la anterior normativa, o la mención internacional."
-    },
-    "attributes" : [ "datatype", "allValues" ],
-    "id" : "358"
-  }, {
     "iri" : "http://purl.org/roh#cumLaude",
     "baseIri" : "http://purl.org/roh",
-    "range" : "360",
+    "range" : "355",
     "label" : {
       "IRI-based" : "cumLaude"
     },
     "domain" : "24",
     "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "356"
+  }, {
+    "iri" : "http://purl.org/rohes#mencionCalidad",
+    "baseIri" : "http://purl.org/rohes",
+    "range" : "357",
+    "label" : {
+      "IRI-based" : "mencionCalidad",
+      "en" : "Quality mention",
+      "es" : "Mención de Calidad"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "La mención de calidad es una expresión de reconocimiento a la solvencia científico/técnica y formadora otorgada al programa de doctorado en su conjunto y a los grupos de investigación y departamentos que intervienen en el mismo. La mención de calidad ha sido sustituida por la mención hacia la excelencia, distinción con la que el Ministerio de Educación reconoce la calidad de los mejores programas oficiales de Doctorado, y supone un proceso previo de acreditación de los méritos y la trayectoria del programa ante la ANECA (artículo 16.1 del Real Decreto 99/2011, de 28 de enero, por el que se regulan las enseñanzas oficiales de doctorado: http://www.boe.es/boe/dias/2011/02/10/pdfs/BOE-A-2011-2541.pdf)"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "358"
+  }, {
+    "iri" : "http://purl.org/rohes#doctoradoInternacional",
+    "baseIri" : "http://purl.org/rohes",
+    "range" : "360",
+    "label" : {
+      "IRI-based" : "doctoradoInternacional",
+      "es" : "Doctorado Internacional"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype", "allValues" ],
     "id" : "361"
   }, {
     "range" : "100",
@@ -5064,16 +5061,15 @@
     "id" : "375"
   }, {
     "range" : "196",
-    "domain" : "338",
+    "domain" : "339",
     "attributes" : [ "object", "anonymous" ],
     "id" : "376"
   }, {
-    "iri" : "http:/purl.org/roh#spends",
-    "inverse" : "378",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "266",
+    "iri" : "http://purl.org/roh/mirror/vivo#relates",
+    "baseIri" : "http://purl.org/roh/mirror/vivo",
+    "range" : "378",
     "label" : {
-      "IRI-based" : "spends"
+      "IRI-based" : "relates"
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
@@ -5089,32 +5085,32 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "380"
   }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#identifier",
+    "iri" : "http://purl.org/roh/mirror/vivo#freetextKeyword",
     "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "381",
+    "range" : "382",
     "label" : {
-      "IRI-based" : "identifier"
+      "IRI-based" : "freetextKeyword"
     },
     "domain" : "287",
-    "attributes" : [ "datatype", "allValues", "external" ],
-    "id" : "382"
+    "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "381"
   }, {
-    "iri" : "http:/purl.org/roh#fundedBy",
-    "inverse" : "351",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "156",
+    "iri" : "http://purl.org/roh/mirror/vivo#dateTimeInterval",
+    "baseIri" : "http://purl.org/roh/mirror/vivo",
+    "range" : "42",
     "label" : {
-      "IRI-based" : "fundedBy"
+      "IRI-based" : "dateTimeInterval"
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
     "id" : "383"
   }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#relates",
-    "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "385",
+    "iri" : "http:/purl.org/roh#spends",
+    "inverse" : "385",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "266",
     "label" : {
-      "IRI-based" : "relates"
+      "IRI-based" : "spends"
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
@@ -5155,17 +5151,17 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "392"
   }, {
-    "range" : "338",
+    "range" : "339",
     "domain" : "96",
     "attributes" : [ "object", "anonymous" ],
     "id" : "393"
   }, {
-    "range" : "338",
+    "range" : "339",
     "domain" : "123",
     "attributes" : [ "object", "anonymous" ],
     "id" : "394"
   }, {
-    "range" : "338",
+    "range" : "339",
     "domain" : "105",
     "attributes" : [ "object", "anonymous" ],
     "id" : "395"
@@ -5191,7 +5187,7 @@
     "id" : "400"
   }, {
     "range" : "50",
-    "domain" : "338",
+    "domain" : "339",
     "attributes" : [ "object", "anonymous" ],
     "id" : "401"
   }, {
@@ -5466,7 +5462,7 @@
     "id" : "456"
   }, {
     "iri" : "http:/purl.org/roh#spends",
-    "inverse" : "378",
+    "inverse" : "385",
     "baseIri" : "http:/purl.org/roh",
     "range" : "51",
     "label" : {
@@ -5499,7 +5495,7 @@
     },
     "domain" : "283",
     "attributes" : [ "object", "external" ],
-    "id" : "351"
+    "id" : "336"
   }, {
     "iri" : "http:/purl.org/roh#participatedBy",
     "inverse" : "116",
@@ -5855,16 +5851,6 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "532"
   }, {
-    "iri" : "http://purl.org/roh#metricName",
-    "baseIri" : "http://purl.org/roh",
-    "range" : "534",
-    "label" : {
-      "IRI-based" : "metricName"
-    },
-    "domain" : "314",
-    "attributes" : [ "datatype", "allValues", "external" ],
-    "id" : "533"
-  }, {
     "iri" : "http://purl.org/roh#metricOf",
     "baseIri" : "http://purl.org/roh",
     "range" : "530",
@@ -5873,31 +5859,45 @@
     },
     "domain" : "314",
     "attributes" : [ "object", "allValues", "external" ],
-    "id" : "535"
+    "id" : "533"
   }, {
-    "iri" : "http://purl.org/rohes#mencionCalidad",
+    "iri" : "http://purl.org/roh#metricName",
+    "baseIri" : "http://purl.org/roh",
+    "range" : "535",
+    "label" : {
+      "IRI-based" : "metricName"
+    },
+    "domain" : "314",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "534"
+  }, {
+    "iri" : "http://purl.org/rohes#premioExtraordinarioDoctorado",
     "baseIri" : "http://purl.org/rohes",
     "range" : "537",
     "label" : {
-      "IRI-based" : "mencionCalidad",
-      "en" : "Quality mention",
-      "es" : "Mención de Calidad"
+      "IRI-based" : "premioExtraordinarioDoctorado",
+      "es" : "PhD extraordinary award"
     },
     "domain" : "24",
     "comment" : {
-      "es" : "La mención de calidad es una expresión de reconocimiento a la solvencia científico/técnica y formadora otorgada al programa de doctorado en su conjunto y a los grupos de investigación y departamentos que intervienen en el mismo. La mención de calidad ha sido sustituida por la mención hacia la excelencia, distinción con la que el Ministerio de Educación reconoce la calidad de los mejores programas oficiales de Doctorado, y supone un proceso previo de acreditación de los méritos y la trayectoria del programa ante la ANECA (artículo 16.1 del Real Decreto 99/2011, de 28 de enero, por el que se regulan las enseñanzas oficiales de doctorado: http://www.boe.es/boe/dias/2011/02/10/pdfs/BOE-A-2011-2541.pdf)"
+      "es" : "El premio extraordinario de doctorado se concede a aquellos Doctores que, habiendo obtenido la mención \"cum laude\", sean beneficiarios asimismo de dicho premio."
     },
     "attributes" : [ "datatype", "allValues" ],
     "id" : "536"
   }, {
-    "iri" : "http://purl.org/roh#mark",
-    "baseIri" : "http://purl.org/roh",
+    "iri" : "http://purl.org/rohes#doctoradoEuropeo",
+    "baseIri" : "http://purl.org/rohes",
     "range" : "359",
     "label" : {
-      "IRI-based" : "mark"
+      "IRI-based" : "doctoradoEuropeo",
+      "en" : "European PhD",
+      "es" : "Doctorado Europeo"
     },
     "domain" : "24",
-    "attributes" : [ "datatype", "allValues", "external" ],
+    "comment" : {
+      "es" : "La mención europea en el título de Doctor está regulada en el artículo 14 del Real Decreto 56/2005, de 21 de enero, sobre estudios universitarios oficiales de posgrado y en el artículo 22 del Real Decreto 1393/2007, de 29 de octubre, por el que se establece la ordenación de las enseñanzas universitarias oficiales. Los doctorandos que hayan comenzado sus estudios de doctorado con posterioridad al 11 de febrero de 2011 podrán obtener la mención internacional pero no la mención europea en el título de Doctor, ya que ésta ha sido derogada por el RD 99/2011. Los doctorandos que comenzaron sus estudios antes del 11 de febrero de 2011 y que hayan leído o lean sus tesis con posterioridad a dicha fecha, podrán obtener la mención europea, de acuerdo con la anterior normativa, o la mención internacional."
+    },
+    "attributes" : [ "datatype", "allValues" ],
     "id" : "538"
   }, {
     "iri" : "http://purl.org/roh/mirror/vivo#validIn",
@@ -5918,7 +5918,7 @@
     },
     "domain" : "120",
     "attributes" : [ "object", "allValues", "external" ],
-    "id" : "540"
+    "id" : "541"
   }, {
     "iri" : "http:/purl.org/roh#spentBy",
     "baseIri" : "http:/purl.org/roh",
@@ -5928,7 +5928,7 @@
     },
     "domain" : "51",
     "attributes" : [ "object", "external" ],
-    "id" : "378"
+    "id" : "385"
   }, {
     "iri" : "http://purl.org/rohes#mencionCalidad",
     "baseIri" : "http://purl.org/rohes",
