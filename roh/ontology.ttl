@@ -3321,10 +3321,10 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                     rdfs:subClassOf :Horizon2020 .
 
 
-###  http://purl.org/roh#Staff
-:Staff rdf:type owl:Class ;
-       rdfs:subClassOf :ExpenseClassification ;
-       rdfs:label "Staff"@en .
+###  http://purl.org/roh#StaffCosts
+:StaffCosts rdf:type owl:Class ;
+            rdfs:subClassOf :ExpenseClassification ;
+            rdfs:label "Staff Costs"@en .
 
 
 ###  http://purl.org/roh#Sudoe
@@ -6107,7 +6107,7 @@ rdf:Seq rdf:type owl:Class .
                 :OtherCosts
                 :PublicationCosts
                 :RepresentationCosts
-                :Staff
+                :StaffCosts
                 <http://purl.org/roh#Congress/networkExpenses>
                 <http://purl.org/roh#Investment/inventoryCosts>
               )

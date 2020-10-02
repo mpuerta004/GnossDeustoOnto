@@ -3029,10 +3029,10 @@ _:genid233 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002
 <http://purl.org/roh#SocietalChallenges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/roh#SocietalChallenges> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/roh#Horizon2020> .
 # 
-# http://purl.org/roh#Staff
-<http://purl.org/roh#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/roh#Staff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/roh#ExpenseClassification> .
-<http://purl.org/roh#Staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff"@en .
+# http://purl.org/roh#StaffCosts
+<http://purl.org/roh#StaffCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/roh#StaffCosts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/roh#ExpenseClassification> .
+<http://purl.org/roh#StaffCosts> <http://www.w3.org/2000/01/rdf-schema#label> "Staff Costs"@en .
 # 
 # http://purl.org/roh#Sudoe
 <http://purl.org/roh#Sudoe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -5850,7 +5850,7 @@ _:genid592 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid592 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/roh#RepresentationCosts> .
 _:genid592 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid591 .
 _:genid591 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid591 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/roh#Staff> .
+_:genid591 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/roh#StaffCosts> .
 _:genid591 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid590 .
 _:genid590 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid590 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/roh#Congress/networkExpenses> .

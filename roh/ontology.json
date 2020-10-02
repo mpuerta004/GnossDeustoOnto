@@ -3494,7 +3494,7 @@
     }, {
       "@id" : "http://purl.org/roh#RepresentationCosts"
     }, {
-      "@id" : "http://purl.org/roh#Staff"
+      "@id" : "http://purl.org/roh#StaffCosts"
     }, {
       "@id" : "http://purl.org/roh#Congress/networkExpenses"
     }, {
@@ -5767,11 +5767,11 @@
     "@id" : "http://purl.org/roh#Horizon2020"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#Staff",
+  "@id" : "http://purl.org/roh#StaffCosts",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Staff"
+    "@value" : "Staff Costs"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh#ExpenseClassification"
