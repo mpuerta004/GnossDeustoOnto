@@ -488,6 +488,18 @@ xsd:date rdf:type rdfs:Datatype .
                         "tiene contrato"@es .
 
 
+###  http://purl.org/roh#hasExpenseClassification
+:hasExpenseClassification rdf:type owl:ObjectProperty ;
+                          rdfs:label "has Expense Classification"@en .
+
+
+###  http://purl.org/roh#hasFundingProgramClassification
+:hasFundingProgramClassification rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :FundingProgram ;
+                                 rdfs:range :FundingProgramClassification ;
+                                 rdfs:label "has Funding Program Classification" .
+
+
 ###  http://purl.org/roh#hasHRClassification
 :hasHRClassification rdf:type owl:ObjectProperty ;
                      owl:inverseOf :hrClassificationOf ;
@@ -2484,6 +2496,10 @@ The previous short definition was: \"An arbitrary classification of a space/time
 ###  http://purl.org/roh#Expense
 :Expense rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasExpenseClassification ;
+                           owl:allValuesFrom :ExpenseClassification
+                         ] ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty <http://purl.org/roh/mirror/vivo#dateTimeValue> ;
                            owl:allValuesFrom <http://purl.org/roh/mirror/vivo#DateTimeValue>
                          ] ,
@@ -2512,12 +2528,24 @@ The previous short definition was: \"An arbitrary classification of a space/time
                     "Gasto"@es .
 
 
+###  http://purl.org/roh#ExpenseClassification
+:ExpenseClassification rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                       rdfs:label "Expense Classification"@en .
+
+
 ###  http://purl.org/roh#ExternalMemberRole
 :ExternalMemberRole rdf:type owl:Class ;
                     rdfs:subClassOf <http://purl.org/roh/mirror/obo/bfo#BFO_0000023> ;
                     rdfs:comment "A member who works in a Project or participates in an Activity but do not belong to the main Organization."@en ;
                     rdfs:label "External Member Role"@en ,
                                "Rol de Miembro Externo"@es .
+
+
+###  http://purl.org/roh#ExternalRecruitmentExpenses
+:ExternalRecruitmentExpenses rdf:type owl:Class ;
+                             rdfs:subClassOf :ExpenseClassification ;
+                             rdfs:label "External Recruitment Expenses"@en .
 
 
 ###  http://purl.org/roh#FacultyPositionEmeritus
@@ -2617,6 +2645,10 @@ The previous short definition was: \"An arbitrary classification of a space/time
                                   owl:someValuesFrom <http://purl.org/roh/mirror/vivo#FundingOrganization>
                                 ] ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasFundingProgramClassification ;
+                                  owl:allValuesFrom :FundingProgramClassification
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty :promotedBy ;
                                   owl:allValuesFrom <http://purl.org/roh/mirror/vivo#FundingOrganization>
                                 ] ,
@@ -2657,6 +2689,12 @@ The previous short definition was: \"An arbitrary classification of a space/time
                            "Programa de Financiación"@es .
 
 
+###  http://purl.org/roh#FundingProgramClassification
+:FundingProgramClassification rdf:type owl:Class ;
+                              rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                              rdfs:label "Funding Program Classification"@en .
+
+
 ###  http://purl.org/roh#FundingSource
 :FundingSource rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -2688,6 +2726,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 :Horizon2020 rdf:type owl:Class ;
              rdfs:subClassOf :European ;
              owl:disjointWith :Interreg .
+
+
+###  http://purl.org/roh#HumanResourceFundingProgram
+:HumanResourceFundingProgram rdf:type owl:Class ;
+                             rdfs:subClassOf :FundingProgramClassification ;
+                             rdfs:label "Human Resource Funding Program"@en .
 
 
 ###  http://purl.org/roh#ITN-ETN
@@ -2882,6 +2926,18 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                      "National"@en .
 
 
+###  http://purl.org/roh#OfficeExpenses
+:OfficeExpenses rdf:type owl:Class ;
+                rdfs:subClassOf :ExpenseClassification ;
+                rdfs:label "Office Expenses"@en .
+
+
+###  http://purl.org/roh#OtherCosts
+:OtherCosts rdf:type owl:Class ;
+            rdfs:subClassOf :ExpenseClassification ;
+            rdfs:label "Other Costs"@en .
+
+
 ###  http://purl.org/roh#Outsourcing
 :Outsourcing rdf:type owl:Class ;
              rdfs:subClassOf :Funding ;
@@ -3025,6 +3081,18 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                            "Project Expense"@en .
 
 
+###  http://purl.org/roh#ProjectFundingProgram
+:ProjectFundingProgram rdf:type owl:Class ;
+                       rdfs:subClassOf :FundingProgramClassification ;
+                       rdfs:label "Project Funding Program"@en .
+
+
+###  http://purl.org/roh#PublicationCosts
+:PublicationCosts rdf:type owl:Class ;
+                  rdfs:subClassOf :ExpenseClassification ;
+                  rdfs:label "Publication Costs"@en .
+
+
 ###  http://purl.org/roh#PublicationMetric
 :PublicationMetric rdf:type owl:Class ;
                    rdfs:subClassOf :Metric ,
@@ -3062,6 +3130,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                  owl:disjointWith :Sudoe .
 
 
+###  http://purl.org/roh#RepresentationCosts
+:RepresentationCosts rdf:type owl:Class ;
+                     rdfs:subClassOf :ExpenseClassification ;
+                     rdfs:label "Representation Costs"@en .
+
+
 ###  http://purl.org/roh#ResearchAccreditation
 :ResearchAccreditation rdf:type owl:Class ;
                        rdfs:subClassOf :Accreditation ;
@@ -3079,6 +3153,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                                ] ;
                rdfs:label "Grupo de Investigación"@es ,
                           "Research Group"@en .
+
+
+###  http://purl.org/roh#ResearchGroupFundingProgram
+:ResearchGroupFundingProgram rdf:type owl:Class ;
+                             rdfs:subClassOf :FundingProgramClassification ;
+                             rdfs:label "Research Group Funding Program"@en .
 
 
 ###  http://purl.org/roh#ResearchObject
@@ -3145,7 +3225,7 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 ###  http://purl.org/roh#Reservable
 :Reservable rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://purl.org/roh/mirror/vivo#dateTimeValue> ;
+                              owl:onProperty <http://purl.org/roh/mirror/vivo#dateTimeInterval> ;
                               owl:someValuesFrom <http://purl.org/roh/mirror/vivo#DateTimeInterval>
                             ] ,
                             [ rdf:type owl:Restriction ;
@@ -3153,7 +3233,7 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                               owl:allValuesFrom <http://purl.org/roh/mirror/foaf#Agent>
                             ] ,
                             [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://purl.org/roh/mirror/vivo#dateTimeValue> ;
+                              owl:onProperty <http://purl.org/roh/mirror/vivo#dateTimeInterval> ;
                               owl:allValuesFrom <http://purl.org/roh/mirror/vivo#DateTimeInterval>
                             ] ,
                             [ rdf:type owl:Restriction ;
@@ -3239,6 +3319,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 ###  http://purl.org/roh#SocietalChallenges
 :SocietalChallenges rdf:type owl:Class ;
                     rdfs:subClassOf :Horizon2020 .
+
+
+###  http://purl.org/roh#Staff
+:Staff rdf:type owl:Class ;
+       rdfs:subClassOf :ExpenseClassification ;
+       rdfs:label "Staff"@en .
 
 
 ###  http://purl.org/roh#Sudoe
@@ -3357,6 +3443,18 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                rdfs:comment "A paper published on a conference workshop."@en ;
                rdfs:label "Artículo de Seminario"@es ,
                           "Workshop Paper"@en .
+
+
+###  http://purl.org/roh#Congress/networkExpenses
+<http://purl.org/roh#Congress/networkExpenses> rdf:type owl:Class ;
+                                               rdfs:subClassOf :ExpenseClassification ;
+                                               rdfs:label "Congress/network Expenses"@en .
+
+
+###  http://purl.org/roh#Investment/inventoryCosts
+<http://purl.org/roh#Investment/inventoryCosts> rdf:type owl:Class ;
+                                                rdfs:subClassOf :ExpenseClassification ;
+                                                rdfs:label "Investment/inventory Costs"@en .
 
 
 ###  http://purl.org/roh/mirror/bibo#AcademicArticle
@@ -5994,6 +6092,38 @@ rdf:Seq rdf:type owl:Class .
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ExpenseClassification
+                :FundingProgramClassification
+                :HRClassification
+                :KnowledgeArea
+                :ProjectClassification
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ExternalRecruitmentExpenses
+                :OfficeExpenses
+                :OtherCosts
+                :PublicationCosts
+                :RepresentationCosts
+                :Staff
+                <http://purl.org/roh#Congress/networkExpenses>
+                <http://purl.org/roh#Investment/inventoryCosts>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FundingProgramClassification
+                :HRClassification
+                :KnowledgeArea
+                :ProjectClassification
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Grant
                 :Loan
                 :Outsourcing
@@ -6006,6 +6136,14 @@ rdf:Seq rdf:type owl:Class .
   owl:members ( :HRClassification
                 :KnowledgeArea
                 :ProjectClassification
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HumanResourceFundingProgram
+                :ProjectFundingProgram
+                :ResearchGroupFundingProgram
               )
 ] .
 
