@@ -4284,6 +4284,17 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
     
 
 
+    <!-- http://purl.org/roh#Invoice -->
+
+
+    <owl:Class rdf:about="http://purl.org/roh#Invoice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/bibo#Document"/>
+        <rdfs:label xml:lang="es">Factura</rdfs:label>
+        <rdfs:label xml:lang="en">Invoice</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#Justification -->
 
 
@@ -5155,12 +5166,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
     
 
 
-    <!-- http://purl.org/roh#StaffCosts -->
+    <!-- http://purl.org/roh#Staff -->
 
 
-    <owl:Class rdf:about="http://purl.org/roh#StaffCosts">
+    <owl:Class rdf:about="http://purl.org/roh#Staff">
         <rdfs:subClassOf rdf:resource="http://purl.org/roh#ExpenseClassification"/>
-        <rdfs:label xml:lang="en">Staff Costs</rdfs:label>
+        <rdfs:label xml:lang="en">Staff</rdfs:label>
     </owl:Class>
     
 
@@ -9109,7 +9120,7 @@ Contents
             <rdf:Description rdf:about="http://purl.org/roh#OtherCosts"/>
             <rdf:Description rdf:about="http://purl.org/roh#PublicationCosts"/>
             <rdf:Description rdf:about="http://purl.org/roh#RepresentationCosts"/>
-            <rdf:Description rdf:about="http://purl.org/roh#StaffCosts"/>
+            <rdf:Description rdf:about="http://purl.org/roh#Staff"/>
             <rdf:Description rdf:about="http://purl.org/roh#Congress/networkExpenses"/>
             <rdf:Description rdf:about="http://purl.org/roh#Investment/inventoryCosts"/>
         </owl:members>
@@ -9146,6 +9157,23 @@ Contents
             <rdf:Description rdf:about="http://purl.org/roh#HumanResourceFundingProgram"/>
             <rdf:Description rdf:about="http://purl.org/roh#ProjectFundingProgram"/>
             <rdf:Description rdf:about="http://purl.org/roh#ResearchGroupFundingProgram"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/roh#Invoice"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Article"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Book"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#CollectedDocument"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#DocumentPart"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Patent"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Report"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Thesis"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Webpage"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Abstract"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#ConferencePoster"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Dataset"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

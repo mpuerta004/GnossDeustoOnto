@@ -3494,7 +3494,7 @@
     }, {
       "@id" : "http://purl.org/roh#RepresentationCosts"
     }, {
-      "@id" : "http://purl.org/roh#StaffCosts"
+      "@id" : "http://purl.org/roh#Staff"
     }, {
       "@id" : "http://purl.org/roh#Congress/networkExpenses"
     }, {
@@ -3576,6 +3576,36 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
+      "@id" : "http://purl.org/roh#Invoice"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#Article"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#Book"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#CollectedDocument"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#DocumentPart"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#Patent"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#Report"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#Thesis"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#Webpage"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vivo#Abstract"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vivo#ConferencePoster"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vivo#Dataset"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid628",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
       "@id" : "http://purl.org/roh#LargeEnterprise"
     }, {
       "@id" : "http://purl.org/roh#MediumEnterprise"
@@ -3586,7 +3616,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid620",
+  "@id" : "_:genid633",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3612,7 +3642,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid631",
+  "@id" : "_:genid644",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3632,7 +3662,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid639",
+  "@id" : "_:genid652",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3662,7 +3692,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid652",
+  "@id" : "_:genid665",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3674,7 +3704,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid656",
+  "@id" : "_:genid669",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3702,7 +3732,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid668",
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ACCEPTED"
+    }, {
+      "@value" : "REJECTED"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid681",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3714,17 +3754,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid67",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "ACCEPTED"
-    }, {
-      "@value" : "REJECTED"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid672",
+  "@id" : "_:genid685",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3746,7 +3776,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid681",
+  "@id" : "_:genid694",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3760,7 +3790,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid686",
+  "@id" : "_:genid699",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -4977,6 +5007,19 @@
     "@id" : "http://purl.org/roh#ExpenseClassification"
   } ]
 }, {
+  "@id" : "http://purl.org/roh#Invoice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Factura"
+  }, {
+    "@language" : "en",
+    "@value" : "Invoice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh/mirror/bibo#Document"
+  } ]
+}, {
   "@id" : "http://purl.org/roh#Justification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5767,11 +5810,11 @@
     "@id" : "http://purl.org/roh#Horizon2020"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#StaffCosts",
+  "@id" : "http://purl.org/roh#Staff",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Staff Costs"
+    "@value" : "Staff"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh#ExpenseClassification"

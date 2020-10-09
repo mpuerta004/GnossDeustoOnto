@@ -2757,6 +2757,13 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
           rdfs:subClassOf :European .
 
 
+###  http://purl.org/roh#Invoice
+:Invoice rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/roh/mirror/bibo#Document> ;
+         rdfs:label "Factura"@es ,
+                    "Invoice"@en .
+
+
 ###  http://purl.org/roh#Justification
 :Justification rdf:type owl:Class ;
                rdfs:subClassOf <http://purl.org/roh/mirror/bibo#Report> ,
@@ -3321,10 +3328,10 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                     rdfs:subClassOf :Horizon2020 .
 
 
-###  http://purl.org/roh#StaffCosts
-:StaffCosts rdf:type owl:Class ;
-            rdfs:subClassOf :ExpenseClassification ;
-            rdfs:label "Staff Costs"@en .
+###  http://purl.org/roh#Staff
+:Staff rdf:type owl:Class ;
+       rdfs:subClassOf :ExpenseClassification ;
+       rdfs:label "Staff"@en .
 
 
 ###  http://purl.org/roh#Sudoe
@@ -6107,7 +6114,7 @@ rdf:Seq rdf:type owl:Class .
                 :OtherCosts
                 :PublicationCosts
                 :RepresentationCosts
-                :StaffCosts
+                :Staff
                 <http://purl.org/roh#Congress/networkExpenses>
                 <http://purl.org/roh#Investment/inventoryCosts>
               )
@@ -6144,6 +6151,23 @@ rdf:Seq rdf:type owl:Class .
   owl:members ( :HumanResourceFundingProgram
                 :ProjectFundingProgram
                 :ResearchGroupFundingProgram
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Invoice
+                <http://purl.org/roh/mirror/bibo#Article>
+                <http://purl.org/roh/mirror/bibo#Book>
+                <http://purl.org/roh/mirror/bibo#CollectedDocument>
+                <http://purl.org/roh/mirror/bibo#DocumentPart>
+                <http://purl.org/roh/mirror/bibo#Patent>
+                <http://purl.org/roh/mirror/bibo#Report>
+                <http://purl.org/roh/mirror/bibo#Thesis>
+                <http://purl.org/roh/mirror/bibo#Webpage>
+                <http://purl.org/roh/mirror/vivo#Abstract>
+                <http://purl.org/roh/mirror/vivo#ConferencePoster>
+                <http://purl.org/roh/mirror/vivo#Dataset>
               )
 ] .
 
