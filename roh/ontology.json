@@ -3440,22 +3440,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/roh#European"
-    }, {
-      "@id" : "http://purl.org/roh#International"
-    }, {
-      "@id" : "http://purl.org/roh#National"
-    }, {
-      "@id" : "http://purl.org/roh#Own"
-    }, {
-      "@id" : "http://purl.org/roh#Regional"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid578",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
       "@id" : "http://purl.org/roh#EvaluationSummary"
     }, {
       "@id" : "http://purl.org/roh#Justification"
@@ -3464,7 +3448,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid582",
+  "@id" : "_:genid576",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3480,29 +3464,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid588",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh#ExternalRecruitmentExpenses"
-    }, {
-      "@id" : "http://purl.org/roh#OfficeExpenses"
-    }, {
-      "@id" : "http://purl.org/roh#OtherCosts"
-    }, {
-      "@id" : "http://purl.org/roh#PublicationCosts"
-    }, {
-      "@id" : "http://purl.org/roh#RepresentationCosts"
-    }, {
-      "@id" : "http://purl.org/roh#Staff"
-    }, {
-      "@id" : "http://purl.org/roh#Congress/networkExpenses"
-    }, {
-      "@id" : "http://purl.org/roh#Investment/inventoryCosts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid597",
+  "@id" : "_:genid582",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3516,25 +3478,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid60",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "A1"
-    }, {
-      "@value" : "A2"
-    }, {
-      "@value" : "B1"
-    }, {
-      "@value" : "B2"
-    }, {
-      "@value" : "C1"
-    }, {
-      "@value" : "C2"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid602",
+  "@id" : "_:genid587",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3548,7 +3492,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid607",
+  "@id" : "_:genid592",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3560,19 +3504,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid611",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh#HumanResourceFundingProgram"
-    }, {
-      "@id" : "http://purl.org/roh#ProjectFundingProgram"
-    }, {
-      "@id" : "http://purl.org/roh#ResearchGroupFundingProgram"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid615",
+  "@id" : "_:genid596",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3602,7 +3534,25 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid628",
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "A1"
+    }, {
+      "@value" : "A2"
+    }, {
+      "@value" : "B1"
+    }, {
+      "@value" : "B2"
+    }, {
+      "@value" : "C1"
+    }, {
+      "@value" : "C2"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid609",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3616,33 +3566,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid633",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh#Mobility"
-    }, {
-      "@id" : "http://purl.org/roh#PostDocContinuityGrant"
-    }, {
-      "@id" : "http://purl.org/roh#PostDocContract"
-    }, {
-      "@id" : "http://purl.org/roh#PostDocGrant"
-    }, {
-      "@id" : "http://purl.org/roh#PreDocContract"
-    }, {
-      "@id" : "http://purl.org/roh#PreDocGrant"
-    }, {
-      "@id" : "http://purl.org/roh#PreDocGrantContract"
-    }, {
-      "@id" : "http://purl.org/roh#ResearchStartGrant"
-    }, {
-      "@id" : "http://purl.org/roh#TechnicalSupportStaffGrant"
-    }, {
-      "@id" : "http://purl.org/roh#TrainingStaffPlacement"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid644",
+  "@id" : "_:genid614",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3662,7 +3586,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid652",
+  "@id" : "_:genid622",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3692,7 +3616,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid665",
+  "@id" : "_:genid635",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3704,7 +3628,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid669",
+  "@id" : "_:genid639",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3732,17 +3656,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid67",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "ACCEPTED"
-    }, {
-      "@value" : "REJECTED"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid681",
+  "@id" : "_:genid651",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3754,7 +3668,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid685",
+  "@id" : "_:genid655",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3776,7 +3690,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid694",
+  "@id" : "_:genid664",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3790,7 +3704,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid699",
+  "@id" : "_:genid669",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3801,6 +3715,16 @@
       "@id" : "http://purl.org/roh/mirror/vivo#PostdocOrFellowAdvisingRelationship"
     }, {
       "@id" : "http://purl.org/roh/mirror/vivo#UndergraduateAdvisingRelationship"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ACCEPTED"
+    }, {
+      "@value" : "REJECTED"
     } ]
   } ]
 }, {
@@ -4415,16 +4339,6 @@
     "@id" : "http://purl.org/roh#hasCV"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#Congress/networkExpenses",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Congress/network Expenses"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#CourseCertificate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -4616,19 +4530,6 @@
     "@id" : "_:genid141"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#European",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "European"
-  }, {
-    "@language" : "es",
-    "@value" : "Europeo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ProjectClassification"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#EuropeanAgriculturalGuaranteeFund",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/roh#FundingSource" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4702,15 +4603,6 @@
     "@id" : "http://purl.org/roh/mirror/bibo#Report"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#ExcellentScience",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#Horizon2020"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/roh#SocietalChallenges"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#Expense",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4764,16 +4656,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000023"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#ExternalRecruitmentExpenses",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "External Recruitment Expenses"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#FacultyPositionEmeritus",
@@ -4942,69 +4824,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#Horizon2020",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#European"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/roh#Interreg"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#HumanResourceFundingProgram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Human Resource Funding Program"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#FundingProgramClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#ITN-ETN",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExcellentScience"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/roh#IndividualFellowships"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#IndividualFellowships",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExcellentScience"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#International",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Internacional"
-  }, {
-    "@language" : "en",
-    "@value" : "International"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ProjectClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#Interreg",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#European"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#Investment/inventoryCosts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Investment/inventory Costs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#Invoice",
@@ -5229,29 +5048,6 @@
     "@id" : "http://purl.org/roh/mirror/vivo#Company"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#Mobility",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Mobility"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#National",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Nacional"
-  }, {
-    "@language" : "en",
-    "@value" : "National"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ProjectClassification"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#ORCID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -5259,26 +5055,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/roh/mirror/vivo#identifier"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#OfficeExpenses",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Office Expenses"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#OtherCosts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Other Costs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#Outsourcing",
@@ -5296,19 +5072,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh#Funding"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#Own",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Own"
-  }, {
-    "@language" : "es",
-    "@value" : "Propio"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ProjectClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#PanelTalk",
@@ -5424,66 +5187,6 @@
     "@id" : "_:genid200"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#PostDocContinuityGrant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Postdoctoral Research Continuity Grant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#PostDocContract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Postdoctoral Contract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#PostDocGrant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Postdoctoral Grant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#PreDocContract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Predoctoral Contract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#PreDocGrant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Predoctoral Grant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#PreDocGrantContract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Predoctoral Grant/Contract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#ProjectClassification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -5531,26 +5234,6 @@
     "@id" : "http://purl.org/roh#Expense"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#ProjectFundingProgram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Project Funding Program"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#FundingProgramClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#PublicationCosts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Publication Costs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#PublicationMetric",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -5574,38 +5257,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh#Funding"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#Regional",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Regional"
-  }, {
-    "@language" : "es",
-    "@value" : "Regional"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ProjectClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#RegionsofEurope",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#Interreg"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/roh#Sudoe"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#RepresentationCosts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Representation Costs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#ResearchAccreditation",
@@ -5640,16 +5291,6 @@
     "@id" : "_:genid204"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#ResearchGroupFundingProgram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Research Group Funding Program"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#FundingProgramClassification"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#ResearchObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5680,16 +5321,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh#Expense"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#ResearchStartGrant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Starting Research Grant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#ResearcherPosition",
@@ -5775,21 +5406,6 @@
     "@id" : "_:genid233"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#SC1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#SocietalChallenges"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://purl.org/roh#SC4"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#SC4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#SocietalChallenges"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#SmallEnterprise",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5802,28 +5418,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh/mirror/vivo#Company"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#SocietalChallenges",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#Horizon2020"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#Staff",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Staff"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#ExpenseClassification"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#Sudoe",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#Interreg"
   } ]
 }, {
   "@id" : "http://purl.org/roh#SuperviseeRole",
@@ -5881,16 +5475,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000023"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#TechnicalSupportStaffGrant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Grant for Hiring Technical Support Staff"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#TestAnotherGovernmentAgency",
@@ -6082,16 +5666,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000023"
-  } ]
-}, {
-  "@id" : "http://purl.org/roh#TrainingStaffPlacement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Brief Placement for Training Staff"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/roh#HRClassification"
   } ]
 }, {
   "@id" : "http://purl.org/roh#UNESCOKnowledgeArea",
