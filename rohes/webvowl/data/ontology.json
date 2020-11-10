@@ -30,10 +30,10 @@
     "id" : "122",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
     "id" : "124",
@@ -60,10 +60,10 @@
     "id" : "128",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "160",
     "type" : "owl:Class"
   }, {
-    "id" : "160",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
     "id" : "118",
@@ -87,7 +87,7 @@
     "id" : "82",
     "type" : "owl:Class"
   }, {
-    "id" : "244",
+    "id" : "246",
     "type" : "owl:Class"
   }, {
     "id" : "188",
@@ -105,7 +105,7 @@
     "id" : "220",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "246",
+    "id" : "245",
     "type" : "owl:Thing"
   }, {
     "id" : "278",
@@ -180,9 +180,6 @@
     "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "335",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "126",
     "type" : "owl:Class"
   }, {
@@ -195,49 +192,49 @@
     "id" : "123",
     "type" : "owl:Class"
   }, {
-    "id" : "339",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "341",
+    "id" : "345",
     "type" : "rdfs:Literal"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "167",
     "type" : "owl:Class"
   }, {
-    "id" : "344",
+    "id" : "347",
     "type" : "owl:Class"
   }, {
-    "id" : "347",
+    "id" : "350",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "346",
+    "id" : "349",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "75",
     "type" : "owl:Class"
   }, {
-    "id" : "338",
+    "id" : "340",
     "type" : "owl:Class"
   }, {
     "id" : "209",
     "type" : "owl:Class"
   }, {
-    "id" : "353",
+    "id" : "354",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "89",
     "type" : "owl:Class"
   }, {
-    "id" : "356",
+    "id" : "357",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "358",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "360",
+    "id" : "359",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "361",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "362",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "50",
@@ -257,6 +254,9 @@
   }, {
     "id" : "62",
     "type" : "owl:Class"
+  }, {
+    "id" : "336",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "120",
     "type" : "owl:Class"
@@ -384,10 +384,10 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "464",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "464",
     "type" : "owl:Class"
   }, {
     "id" : "199",
@@ -411,10 +411,10 @@
     "id" : "185",
     "type" : "owl:Class"
   }, {
-    "id" : "182",
+    "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "182",
     "type" : "owl:Class"
   }, {
     "id" : "142",
@@ -447,7 +447,7 @@
     "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "384",
+    "id" : "380",
     "type" : "owl:Class"
   }, {
     "id" : "95",
@@ -513,7 +513,7 @@
     "id" : "530",
     "type" : "owl:Class"
   }, {
-    "id" : "535",
+    "id" : "534",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "537",
@@ -580,7 +580,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "AcademicAccreditation",
-      "en" : "Academic Accreditation"
+      "en" : "Acreditación Académica"
     },
     "subClasses" : [ "92", "121", "77", "78", "85" ],
     "comment" : {
@@ -601,17 +601,6 @@
     "id" : "122",
     "superClasses" : [ "71" ]
   }, {
-    "iri" : "http://purl.org/rohes#Construcciones",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Construcciones",
-      "en" : "Construction",
-      "es" : "Construcciones"
-    },
-    "id" : "17",
-    "superClasses" : [ "123" ]
-  }, {
     "iri" : "http://purl.org/roh#PhDThesisMetric",
     "baseIri" : "http://purl.org/roh",
     "instances" : 0,
@@ -623,6 +612,17 @@
     "attributes" : [ "external" ],
     "id" : "24",
     "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://purl.org/rohes#Construcciones",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Construcciones",
+      "en" : "Construction",
+      "es" : "Construcciones"
+    },
+    "id" : "17",
+    "superClasses" : [ "123" ]
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -712,6 +712,17 @@
     "id" : "128",
     "superClasses" : [ "71" ]
   }, {
+    "iri" : "http://purl.org/rohes#Locomocion",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Locomocion",
+      "en" : "Locomotion",
+      "es" : "Locomoción"
+    },
+    "id" : "160",
+    "superClasses" : [ "139" ]
+  }, {
     "iri" : "http:/purl.org/roh#KnowledgeArea",
     "baseIri" : "http:/purl.org/roh",
     "instances" : 0,
@@ -727,17 +738,6 @@
     "attributes" : [ "external" ],
     "id" : "22",
     "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://purl.org/rohes#Locomocion",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Locomocion",
-      "en" : "Locomotion",
-      "es" : "Locomoción"
-    },
-    "id" : "160",
-    "superClasses" : [ "139" ]
   }, {
     "iri" : "http://purl.org/roh#Activity",
     "baseIri" : "http://purl.org/roh",
@@ -854,16 +854,16 @@
       "es" : "Impuesto sobre el Valor Añadido"
     },
     "individuals" : [ {
-      "iri" : "http://purl.org/rohes#Reducido",
-      "baseIri" : "http://purl.org/rohes",
-      "labels" : {
-        "IRI-based" : "Reducido"
-      }
-    }, {
       "iri" : "http://purl.org/rohes#SuperReducido",
       "baseIri" : "http://purl.org/rohes",
       "labels" : {
         "IRI-based" : "SuperReducido"
+      }
+    }, {
+      "iri" : "http://purl.org/rohes#Reducido",
+      "baseIri" : "http://purl.org/rohes",
+      "labels" : {
+        "IRI-based" : "Reducido"
       }
     }, {
       "iri" : "http://purl.org/rohes#General",
@@ -905,7 +905,7 @@
       "IRI-based" : "Seq"
     },
     "attributes" : [ "external" ],
-    "id" : "244"
+    "id" : "246"
   }, {
     "iri" : "http://purl.org/rohes#ProfesorAyudanteDoctor",
     "baseIri" : "http://purl.org/rohes",
@@ -967,7 +967,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "246",
+    "id" : "245",
     "label" : {
       "undefined" : "Thing"
     }
@@ -1063,21 +1063,21 @@
         "value" : "http://purl.org/roh/mirror/foaf#",
         "type" : "iri"
       } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
       "IAO_0000115" : [ {
         "identifier" : "IAO_0000115",
         "language" : "undefined",
-        "value" : "A generic class encompassing several types of organizations.",
+        "value" : "A kind of Agent corresponding to social instititutions such as companies, societies etc.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000115",
         "language" : "undefined",
-        "value" : "A kind of Agent corresponding to social instititutions such as companies, societies etc.",
+        "value" : "A generic class encompassing several types of organizations.",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
         "type" : "label"
       } ],
       "IAO_0000117" : [ {
@@ -1105,7 +1105,7 @@
       "es" : "Organización"
     },
     "comment" : {
-      "undefined" : "An organization."
+      "undefined" : "An Organization in ROH is a foaf:Organization which carries out several roh:Project. It is a child of foaf:Agent. Some organization can emit roh:Acreditation (e.g. ANECA or CENAI in Spain), those belonging to subclass roh:AccreditationIssuer, or award degrees (vivo:AwardedDegree), those of subclass vivo:University. An Organization may receive several roh:FundingAmount, corresponding to a roh:Funding, obtained through a roh:FundingProgram provided by a vivo:FundingOrganization through a roh:FundingSource. As a foaf:Agent an Organization may be involved in several roh:Actitity, has several instances of attribute roh:researchLine, is associated through roh:hasKnowledgeArea with roh:KnowledgeArea and bound to a geographical scope through gn:locatedIn with gn:Feature, it may also have a time span through vivo:dateTimeInterval linking it with an instance of vivo:DateTimeInterval.\n\nBased on FOAF, the foaf:Organization entity takes into account the object properties (attributes: roh:acronym, headcount, turnover, foaf:homepage) and data properties (links) defined by the Organization Unit in CERIF. It also takes into account and supports the relationships of CERIF Equipment (via roh:Equipment and roh:hasInfrastructure), ElectronicAddress (obo:hasContactInfo), Event (roh:Activity), Expertise and Skill (via vivo:keywords and roh:hasKnowledgeArea), Facility (roh:Facility and roh:hasInfrastructure), Funding (roh:Funding), Organization Unit (kinship relationships between organizations can be established with vivo:hasPart and vivo:partOf), Prize Award (through roh:Accreditation), Result Patent, Result Product, Result Publication and Service - all of them through roh:ResearchObject which can be obtained through the roh:produces relationship from the Projects in which an organization participates by playing a declared role through roh:hasRole, Person (through roh:hasPosition). Therefore, the CERIF data model for Organization is covered.\n\nAn exhaustive hierarchy of organizations is includes, e.g. roh:AccreditationIssuer, vivo:Company or vivo:University, among many others. \n\nBesides, an instance of a foaf:Organization is associated to the following entities through object properties:\n- roh:Accreditation, where an organization of type roh:AccrediationIssuer issues (roh:issues) accreditations, e.g. roh:ResearchAccreditation or roh:AcademicAccreditation.  \n- roh:Activity, where an organization may play vivo:OrganizerRole through roh:hasRole in an activity or may through its participation role in a project participate (roh:participates) in an activity. \n- vivo:AwardedDegree, where and organization may roh:awards degrees which are related to both a concrete vivo:AcademicDegree and an instance of foaf:Person. \n- skos:Concept, where an organization through roh:hasKnowledgeArea may be associated to several knowledge areas, defined as instance data of thesaurus created with SKOS ontology. \n- vivo:DateTimeInterval, where an organization may exist during a given time interval\n- gn:Feature through relationship gn:locatedIn, where an organization may be associated a geographical scope.  \n- roh:FundingAmount where an organization may receive several funding amounts part of a roh:Funding through roh:grants object property. \n- vcard:Individual, where an organization obo:hasContactInfo described through ontology vcard. \n- roh:Infrastructure, where an organization may roh:hasInfrastructure, belonging to any of its subclasses, e.g. roh:Equipment or roh:Facility. \n- foaf:Organization, where a foaf:Organization may be linked through vivo:hasSucessorOrganization or vivo:hasPredecessorOrganization with another foaf:Organization or may be part of (vivo:partOf) or include (vivo:hasPart) other several foaf:Organization."
     },
     "attributes" : [ "external" ],
     "id" : "288"
@@ -1288,13 +1288,6 @@
     "id" : "69",
     "superClasses" : [ "65" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "335",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
     "iri" : "http://purl.org/roh/mirror/vivo#FacultyPosition",
     "baseIri" : "http://purl.org/roh/mirror/vivo",
     "instances" : 0,
@@ -1302,12 +1295,12 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "undefined",
-        "value" : "Professor; Associate Professor; Assistant Professor",
+        "value" : "Professor, associate professor and assistant professor are common positions for academic faculty.",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "undefined",
-        "value" : "Professor, associate professor and assistant professor are common positions for academic faculty.",
+        "value" : "Professor; Associate Professor; Assistant Professor",
         "type" : "label"
       } ],
       "IAO_0000115" : [ {
@@ -1359,21 +1352,21 @@
     },
     "subClasses" : [ "1", "18", "39", "10", "33", "17", "2", "27", "46" ],
     "id" : "123",
-    "superClasses" : [ "338" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "339",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "superClasses" : [ "340" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "341",
+    "id" : "345",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "344",
+    "label" : {
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://purl.org/rohes#ReparacionesYConservacion",
@@ -1395,20 +1388,20 @@
       "es" : "Documento"
     },
     "attributes" : [ "external" ],
-    "id" : "344"
+    "id" : "347"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "347",
+    "id" : "350",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "346",
+    "id" : "349",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://purl.org/rohes#PlanEstatal2017-2020",
@@ -1430,7 +1423,7 @@
       "es" : "Activo no corriente"
     },
     "subClasses" : [ "96", "123", "105" ],
-    "id" : "338",
+    "id" : "340",
     "superClasses" : [ "50" ]
   }, {
     "iri" : "http://purl.org/rohes#FormacionTalento",
@@ -1445,7 +1438,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "353",
+    "id" : "354",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1463,28 +1456,28 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "356",
+    "id" : "357",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "358",
+    "id" : "359",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "360",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "361",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "362",
     "label" : {
       "IRI-based" : "boolean"
     }
@@ -1497,7 +1490,7 @@
       "en" : "Account",
       "es" : "Cuenta"
     },
-    "subClasses" : [ "338", "196" ],
+    "subClasses" : [ "340", "196" ],
     "comment" : {
       "es" : "Cuenta del Plan General Contable en la que se imputan unos gastos determinados."
     },
@@ -1561,6 +1554,13 @@
     },
     "id" : "62",
     "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "336",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://pur.org/roh#Accreditation",
     "baseIri" : "http://pur.org/roh",
@@ -1737,12 +1737,12 @@
       "IAO_0000112" : [ {
         "identifier" : "IAO_0000112",
         "language" : "undefined",
-        "value" : "An employment activity, whether compensated or not. Short definition comes from http://en.wikipedia.org/wiki/Position, and has been modified.",
+        "value" : "Director of Admissions and Placement; Associate University Librarian",
         "type" : "label"
       }, {
         "identifier" : "IAO_0000112",
         "language" : "undefined",
-        "value" : "Director of Admissions and Placement; Associate University Librarian",
+        "value" : "An employment activity, whether compensated or not. Short definition comes from http://en.wikipedia.org/wiki/Position, and has been modified.",
         "type" : "label"
       } ],
       "IAO_0000115" : [ {
@@ -1889,7 +1889,7 @@
     },
     "subClasses" : [ "95", "100" ],
     "id" : "96",
-    "superClasses" : [ "338" ]
+    "superClasses" : [ "340" ]
   }, {
     "iri" : "http://purl.org/roh/mirror/vivo#Project",
     "baseIri" : "http://purl.org/roh/mirror/vivo",
@@ -1982,7 +1982,7 @@
     },
     "subClasses" : [ "104", "109", "60" ],
     "id" : "105",
-    "superClasses" : [ "338" ]
+    "superClasses" : [ "340" ]
   }, {
     "iri" : "http://purl.org/rohes#AdaptacionDeTerrenos",
     "baseIri" : "http://purl.org/rohes",
@@ -2096,15 +2096,6 @@
     "id" : "8",
     "superClasses" : [ "14" ]
   }, {
-    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
-    "baseIri" : "http://www.w3.org/2004/02/skos/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ConceptScheme"
-    },
-    "attributes" : [ "external" ],
-    "id" : "464"
-  }, {
     "iri" : "http://purl.org/rohes#ReparacionOtroInmovilizadoMaterial",
     "baseIri" : "http://purl.org/rohes",
     "instances" : 0,
@@ -2115,6 +2106,15 @@
     },
     "id" : "5",
     "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "464"
   }, {
     "iri" : "http://purl.org/rohes#ServiciosBancariosYSimilares",
     "baseIri" : "http://purl.org/rohes",
@@ -2196,20 +2196,6 @@
     "id" : "185",
     "superClasses" : [ "178" ]
   }, {
-    "iri" : "http://purl.org/rohes#ProfesorContratadoDoctor",
-    "baseIri" : "http://purl.org/rohes",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ProfesorContratadoDoctor",
-      "en" : "Hired Professor Doctorr",
-      "es" : "Profesor Contratado Doctor"
-    },
-    "comment" : {
-      "es" : "La contratación de Profesoras y Profesores Contratados Doctores se ajustará a las siguientes reglas:\na) El contrato se celebrará con doctores que reciban la evaluación positiva por parte de la Agencia Nacional de Evaluación de la Calidad y Acreditación o del órgano de evaluación externo que la ley de la Comunidad Autónoma determine.\nb) La finalidad del contrato será la de desarrollar, con plena capacidad docente e investigadora, tareas de docencia y de investigación, o prioritariamente de investigación.\nc) El contrato será de carácter indefinido y con dedicación a tiempo completo."
-    },
-    "id" : "182",
-    "superClasses" : [ "178" ]
-  }, {
     "iri" : "http://purl.org/rohes#Sexenio",
     "baseIri" : "http://purl.org/rohes",
     "instances" : 0,
@@ -2223,6 +2209,20 @@
     },
     "id" : "41",
     "superClasses" : [ "207" ]
+  }, {
+    "iri" : "http://purl.org/rohes#ProfesorContratadoDoctor",
+    "baseIri" : "http://purl.org/rohes",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProfesorContratadoDoctor",
+      "en" : "Hired Professor Doctorr",
+      "es" : "Profesor Contratado Doctor"
+    },
+    "comment" : {
+      "es" : "La contratación de Profesoras y Profesores Contratados Doctores se ajustará a las siguientes reglas:\na) El contrato se celebrará con doctores que reciban la evaluación positiva por parte de la Agencia Nacional de Evaluación de la Calidad y Acreditación o del órgano de evaluación externo que la ley de la Comunidad Autónoma determine.\nb) La finalidad del contrato será la de desarrollar, con plena capacidad docente e investigadora, tareas de docencia y de investigación, o prioritariamente de investigación.\nc) El contrato será de carácter indefinido y con dedicación a tiempo completo."
+    },
+    "id" : "182",
+    "superClasses" : [ "178" ]
   }, {
     "iri" : "http://purl.org/rohes#FormacionI+D+i",
     "baseIri" : "http://purl.org/rohes",
@@ -2370,7 +2370,7 @@
       "undefined" : "Based on VIVO defined roles, however in ROH, roles might be specific to a country or a university in a country. Therefore, their types have to refined per country and university case."
     },
     "attributes" : [ "external" ],
-    "id" : "384"
+    "id" : "380"
   }, {
     "iri" : "http://purl.org/rohes#AplicacionesInformaticas",
     "baseIri" : "http://purl.org/rohes",
@@ -2606,7 +2606,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "535",
+    "id" : "534",
     "label" : {
       "IRI-based" : "string"
     }
@@ -2743,7 +2743,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "40",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "43",
     "type" : "rdfs:SubClassOf"
@@ -2752,7 +2752,7 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "47",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "48",
     "type" : "owl:disjointWith"
@@ -3060,7 +3060,7 @@
     "id" : "243",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "245",
+    "id" : "244",
     "type" : "owl:objectProperty"
   }, {
     "id" : "247",
@@ -3258,50 +3258,50 @@
     "id" : "334",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "336",
-    "type" : "owl:objectProperty"
+    "id" : "335",
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "337",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "338",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "340",
-    "type" : "owl:allValuesFrom"
-  }, {
-    "id" : "342",
+    "id" : "341",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "343",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "345",
+    "id" : "346",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "348",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "350",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "351",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "352",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "354",
-    "type" : "owl:someValuesFrom"
+    "id" : "353",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "355",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "356",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "358",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "357",
-    "type" : "owl:allValuesFrom"
-  }, {
-    "id" : "359",
-    "type" : "owl:allValuesFrom"
-  }, {
-    "id" : "362",
+    "id" : "360",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "363",
-    "type" : "owl:disjointWith"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "364",
     "type" : "owl:disjointWith"
@@ -3346,21 +3346,21 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "378",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "379",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "380",
-    "type" : "owl:disjointWith"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "381",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "382",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "383",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "384",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "385",
@@ -3576,7 +3576,7 @@
     "id" : "461",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "352",
+    "id" : "339",
     "type" : "owl:objectProperty"
   }, {
     "id" : "463",
@@ -3780,14 +3780,14 @@
     "id" : "533",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "534",
+    "id" : "535",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "536",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "538",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "539",
     "type" : "owl:objectProperty"
@@ -3795,7 +3795,7 @@
     "id" : "540",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "349",
+    "id" : "342",
     "type" : "owl:objectProperty"
   }, {
     "id" : "542",
@@ -3804,47 +3804,47 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "6"
   }, {
     "range" : "10",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "9"
   }, {
     "range" : "12",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "11"
   }, {
     "range" : "15",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "13"
   }, {
     "range" : "18",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "16"
   }, {
     "range" : "5",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
     "range" : "15",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "21"
   }, {
     "iri" : "http://purl.org/rohes#premioExtraordinarioDoctorado",
@@ -3852,7 +3852,7 @@
     "range" : "25",
     "label" : {
       "IRI-based" : "premioExtraordinarioDoctorado",
-      "es" : "PhD extraordinary award"
+      "es" : "Premio extraordinario del doctorado"
     },
     "domain" : "24",
     "comment" : {
@@ -3863,37 +3863,37 @@
   }, {
     "range" : "27",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "26"
   }, {
     "range" : "12",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "28"
   }, {
     "range" : "31",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
     "range" : "33",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "32"
   }, {
     "range" : "12",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
     "range" : "37",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
     "range" : "39",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "38"
   }, {
     "iri" : "http://purl.org/roh/mirror/vivo#dateTimeInterval",
@@ -3903,17 +3903,17 @@
       "IRI-based" : "dateTimeInterval"
     },
     "domain" : "41",
-    "attributes" : [ "object", "allValues", "external" ],
+    "attributes" : [ "object", "someValues", "external" ],
     "id" : "40"
   }, {
     "range" : "37",
     "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "43"
   }, {
     "range" : "46",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "45"
   }, {
     "iri" : "http://purl.org/roh/mirror/vivo#dateTimeInterval",
@@ -3923,12 +3923,12 @@
       "IRI-based" : "dateTimeInterval"
     },
     "domain" : "41",
-    "attributes" : [ "someValues", "object", "external" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "47"
   }, {
     "range" : "2",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "48"
   }, {
     "iri" : "http://purl.org/rohes#charges",
@@ -3954,167 +3954,167 @@
   }, {
     "range" : "60",
     "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
     "range" : "5",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
     "range" : "65",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "63"
   }, {
     "range" : "39",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
     "range" : "12",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "67"
   }, {
     "range" : "65",
     "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "68"
   }, {
     "range" : "46",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "72"
   }, {
     "range" : "20",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
     "range" : "8",
     "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "74"
   }, {
     "range" : "78",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "76"
   }, {
     "range" : "12",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "79"
   }, {
     "range" : "83",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "81"
   }, {
     "range" : "85",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
     "range" : "62",
     "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "86"
   }, {
     "range" : "90",
     "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "88"
   }, {
     "range" : "78",
     "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "91"
   }, {
     "range" : "4",
     "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "93"
   }, {
     "range" : "96",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "94"
   }, {
     "range" : "85",
     "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "97"
   }, {
     "range" : "20",
     "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
     "range" : "96",
     "domain" : "100",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "99"
   }, {
     "range" : "85",
     "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
     "range" : "5",
     "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "102"
   }, {
     "range" : "105",
     "domain" : "104",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "103"
   }, {
     "range" : "17",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
     "range" : "12",
     "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "107"
   }, {
     "range" : "105",
     "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "108"
   }, {
     "range" : "18",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "110"
   }, {
     "range" : "4",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "111"
   }, {
     "range" : "105",
     "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "112"
   }, {
     "range" : "27",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "113"
   }, {
     "range" : "20",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
     "range" : "33",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "115"
   }, {
     "iri" : "http:/purl.org/roh#participates",
@@ -4129,82 +4129,82 @@
   }, {
     "range" : "53",
     "domain" : "126",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
     "range" : "20",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "129"
   }, {
     "range" : "83",
     "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "130"
   }, {
     "range" : "92",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "132"
   }, {
     "range" : "5",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "133"
   }, {
     "range" : "83",
     "domain" : "135",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "134"
   }, {
     "range" : "105",
     "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "136"
   }, {
     "range" : "139",
     "domain" : "138",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "range" : "142",
     "domain" : "141",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "140"
   }, {
     "range" : "139",
     "domain" : "144",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "143"
   }, {
     "range" : "71",
     "domain" : "146",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "145"
   }, {
     "range" : "139",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "147"
   }, {
     "range" : "150",
     "domain" : "146",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "149"
   }, {
     "range" : "139",
     "domain" : "152",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "151"
   }, {
     "range" : "150",
     "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "153"
   }, {
     "range" : "139",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "154"
   }, {
     "iri" : "http:/purl.org/roh#fundingSource",
@@ -4221,147 +4221,147 @@
   }, {
     "range" : "75",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "158"
   }, {
     "range" : "139",
     "domain" : "160",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "159"
   }, {
     "range" : "87",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "161"
   }, {
     "range" : "139",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "162"
   }, {
     "range" : "62",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "164"
   }, {
     "range" : "146",
     "domain" : "166",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "165"
   }, {
     "range" : "4",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "168"
   }, {
     "range" : "139",
     "domain" : "171",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "170"
   }, {
     "range" : "105",
     "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "172"
   }, {
     "range" : "139",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "173"
   }, {
     "range" : "163",
     "domain" : "144",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "175"
   }, {
     "range" : "178",
     "domain" : "177",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "176"
   }, {
     "range" : "171",
     "domain" : "144",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "180"
   }, {
     "range" : "178",
     "domain" : "182",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "181"
   }, {
     "range" : "163",
     "domain" : "138",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "183"
   }, {
     "range" : "178",
     "domain" : "185",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "184"
   }, {
     "range" : "171",
     "domain" : "138",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "186"
   }, {
     "range" : "178",
     "domain" : "188",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "187"
   }, {
     "range" : "171",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "189"
   }, {
     "range" : "178",
     "domain" : "191",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "190"
   }, {
     "range" : "193",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "192"
   }, {
     "range" : "178",
     "domain" : "195",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "194"
   }, {
     "range" : "178",
     "domain" : "37",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "202"
   }, {
     "range" : "120",
     "domain" : "119",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "203"
   }, {
     "range" : "65",
     "domain" : "205",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "204"
   }, {
     "range" : "120",
     "domain" : "207",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "206"
   }, {
     "range" : "31",
     "domain" : "209",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "208"
   }, {
     "range" : "207",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "210"
   }, {
     "range" : "123",
     "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "211"
   }, {
     "iri" : "http://purl.org/rohes#rate",
@@ -4386,162 +4386,162 @@
   }, {
     "range" : "50",
     "domain" : "196",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "222"
   }, {
     "range" : "193",
     "domain" : "214",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "223"
   }, {
     "range" : "128",
     "domain" : "214",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "224"
   }, {
     "range" : "213",
     "domain" : "127",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "225"
   }, {
     "range" : "128",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "226"
   }, {
     "range" : "212",
     "domain" : "127",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "227"
   }, {
     "range" : "128",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "228"
   }, {
     "range" : "193",
     "domain" : "127",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "229"
   }, {
     "range" : "71",
     "domain" : "199",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "235"
   }, {
     "range" : "213",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "236"
   }, {
     "range" : "71",
     "domain" : "200",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "237"
   }, {
     "range" : "212",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "238"
   }, {
     "range" : "71",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "239"
   }, {
     "range" : "193",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "240"
   }, {
     "range" : "71",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "241"
   }, {
     "range" : "127",
     "domain" : "214",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "242"
   }, {
     "range" : "71",
     "domain" : "70",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "243"
   }, {
     "iri" : "http:/purl.org/roh#knowledgeAreaOf",
     "baseIri" : "http:/purl.org/roh",
-    "range" : "246",
+    "range" : "245",
     "label" : {
       "IRI-based" : "knowledgeAreaOf"
     },
     "domain" : "15",
     "attributes" : [ "object", "external" ],
-    "id" : "245"
+    "id" : "244"
   }, {
     "range" : "213",
     "domain" : "214",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "247"
   }, {
     "range" : "128",
     "domain" : "212",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "248"
   }, {
     "range" : "212",
     "domain" : "214",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "249"
   }, {
     "range" : "128",
     "domain" : "213",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "250"
   }, {
     "range" : "213",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "251"
   }, {
     "range" : "71",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "252"
   }, {
     "range" : "212",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "253"
   }, {
     "range" : "71",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "254"
   }, {
     "range" : "193",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "255"
   }, {
     "range" : "71",
     "domain" : "198",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "256"
   }, {
     "range" : "214",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "257"
   }, {
     "range" : "71",
     "domain" : "167",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "258"
   }, {
     "range" : "127",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "259"
   }, {
     "iri" : "http://purl.org/rohes#doctoradoInternacional",
@@ -4557,92 +4557,92 @@
   }, {
     "range" : "119",
     "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "263"
   }, {
     "range" : "10",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "264"
   }, {
     "range" : "119",
     "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "265"
   }, {
     "range" : "10",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "267"
   }, {
     "range" : "119",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "268"
   }, {
     "range" : "215",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "269"
   }, {
     "range" : "119",
     "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "270"
   }, {
     "range" : "214",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "271"
   }, {
     "range" : "119",
     "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "272"
   }, {
     "range" : "127",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "273"
   }, {
     "range" : "71",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "274"
   }, {
     "range" : "2",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "275"
   }, {
     "range" : "10",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "276"
   }, {
     "range" : "46",
     "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "277"
   }, {
     "range" : "2",
     "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "279"
   }, {
     "range" : "10",
     "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "281"
   }, {
     "range" : "52",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "282"
   }, {
     "range" : "2",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "285"
   }, {
     "iri" : "http://purl.org/rohes#finalist",
@@ -4681,153 +4681,163 @@
   }, {
     "range" : "7",
     "domain" : "205",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "292"
   }, {
     "range" : "2",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "294"
   }, {
     "range" : "10",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "296"
   }, {
     "range" : "39",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "297"
   }, {
     "range" : "46",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "298"
   }, {
     "range" : "39",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "300"
   }, {
     "range" : "303",
     "domain" : "302",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "301"
   }, {
     "range" : "205",
     "domain" : "305",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "304"
   }, {
     "range" : "46",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "306"
   }, {
     "range" : "205",
     "domain" : "309",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "308"
   }, {
     "range" : "2",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "310"
   }, {
     "range" : "14",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "311"
   }, {
     "range" : "10",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "312"
   }, {
     "range" : "314",
     "domain" : "90",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "313"
   }, {
     "range" : "33",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "315"
   }, {
     "range" : "7",
     "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "317"
   }, {
     "range" : "39",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "318"
   }, {
     "range" : "46",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "319"
   }, {
     "range" : "37",
     "domain" : "322",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "321"
   }, {
     "range" : "69",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "323"
   }, {
     "range" : "37",
     "domain" : "325",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "324"
   }, {
     "range" : "10",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "326"
   }, {
     "range" : "305",
     "domain" : "309",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "327"
   }, {
     "range" : "196",
     "domain" : "150",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "328"
   }, {
     "range" : "27",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "329"
   }, {
     "range" : "302",
     "domain" : "320",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "330"
   }, {
     "range" : "196",
     "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "331"
   }, {
     "range" : "33",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "332"
   }, {
     "range" : "303",
     "domain" : "320",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "333"
   }, {
     "range" : "196",
     "domain" : "146",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "334"
+  }, {
+    "iri" : "http://purl.org/roh/mirror/vivo#identifier",
+    "baseIri" : "http://purl.org/roh/mirror/vivo",
+    "range" : "336",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "287",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "335"
   }, {
     "iri" : "http://purl.org/rohes#chargedTo",
     "inverse" : "49",
@@ -4838,259 +4848,10 @@
     },
     "domain" : "51",
     "attributes" : [ "object" ],
-    "id" : "336"
-  }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#identifier",
-    "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "335",
-    "label" : {
-      "IRI-based" : "identifier"
-    },
-    "domain" : "287",
-    "attributes" : [ "allValues", "datatype", "external" ],
     "id" : "337"
   }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#description",
-    "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "341",
-    "label" : {
-      "IRI-based" : "description"
-    },
-    "domain" : "287",
-    "attributes" : [ "allValues", "datatype", "external" ],
-    "id" : "340"
-  }, {
-    "iri" : "http:/purl.org/roh#participates",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "118",
-    "label" : {
-      "IRI-based" : "participates"
-    },
-    "domain" : "287",
-    "attributes" : [ "object", "allValues", "external" ],
-    "id" : "342"
-  }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#freetextKeyword",
-    "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "339",
-    "label" : {
-      "IRI-based" : "freetextKeyword"
-    },
-    "domain" : "287",
-    "attributes" : [ "someValues", "datatype", "external" ],
-    "id" : "343"
-  }, {
-    "iri" : "http://purl.org/roh#mark",
-    "baseIri" : "http://purl.org/roh",
-    "range" : "346",
-    "label" : {
-      "IRI-based" : "mark"
-    },
-    "domain" : "24",
-    "attributes" : [ "allValues", "datatype", "external" ],
-    "id" : "345"
-  }, {
-    "iri" : "http:/purl.org/roh#spends",
-    "inverse" : "349",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "266",
-    "label" : {
-      "IRI-based" : "spends"
-    },
-    "domain" : "287",
-    "attributes" : [ "object", "allValues", "external" ],
-    "id" : "348"
-  }, {
-    "iri" : "http:/purl.org/roh#hasKnowledgeArea",
-    "inverse" : "245",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "hasKnowledgeArea"
-    },
-    "domain" : "246",
-    "attributes" : [ "object", "external" ],
-    "id" : "350"
-  }, {
     "iri" : "http:/purl.org/roh#fundedBy",
-    "inverse" : "352",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "283",
-    "label" : {
-      "IRI-based" : "fundedBy"
-    },
-    "domain" : "156",
-    "attributes" : [ "object", "external" ],
-    "id" : "351"
-  }, {
-    "iri" : "http://purl.org/roh#mark",
-    "baseIri" : "http://purl.org/roh",
-    "range" : "353",
-    "label" : {
-      "IRI-based" : "mark"
-    },
-    "domain" : "24",
-    "attributes" : [ "someValues", "datatype", "external" ],
-    "id" : "354"
-  }, {
-    "iri" : "http://purl.org/rohes#doctoradoInternacional",
-    "baseIri" : "http://purl.org/rohes",
-    "range" : "347",
-    "label" : {
-      "IRI-based" : "doctoradoInternacional",
-      "es" : "Doctorado Internacional"
-    },
-    "domain" : "24",
-    "attributes" : [ "allValues", "datatype" ],
-    "id" : "355"
-  }, {
-    "iri" : "http://purl.org/rohes#doctoradoEuropeo",
-    "baseIri" : "http://purl.org/rohes",
-    "range" : "356",
-    "label" : {
-      "IRI-based" : "doctoradoEuropeo",
-      "en" : "European PhD",
-      "es" : "Doctorado Europeo"
-    },
-    "domain" : "24",
-    "comment" : {
-      "es" : "La mención europea en el título de Doctor está regulada en el artículo 14 del Real Decreto 56/2005, de 21 de enero, sobre estudios universitarios oficiales de posgrado y en el artículo 22 del Real Decreto 1393/2007, de 29 de octubre, por el que se establece la ordenación de las enseñanzas universitarias oficiales. Los doctorandos que hayan comenzado sus estudios de doctorado con posterioridad al 11 de febrero de 2011 podrán obtener la mención internacional pero no la mención europea en el título de Doctor, ya que ésta ha sido derogada por el RD 99/2011. Los doctorandos que comenzaron sus estudios antes del 11 de febrero de 2011 y que hayan leído o lean sus tesis con posterioridad a dicha fecha, podrán obtener la mención europea, de acuerdo con la anterior normativa, o la mención internacional."
-    },
-    "attributes" : [ "allValues", "datatype" ],
-    "id" : "357"
-  }, {
-    "iri" : "http://purl.org/rohes#premioExtraordinarioDoctorado",
-    "baseIri" : "http://purl.org/rohes",
-    "range" : "358",
-    "label" : {
-      "IRI-based" : "premioExtraordinarioDoctorado",
-      "es" : "PhD extraordinary award"
-    },
-    "domain" : "24",
-    "comment" : {
-      "es" : "El premio extraordinario de doctorado se concede a aquellos Doctores que, habiendo obtenido la mención \"cum laude\", sean beneficiarios asimismo de dicho premio."
-    },
-    "attributes" : [ "allValues", "datatype" ],
-    "id" : "359"
-  }, {
-    "iri" : "http://purl.org/roh#cumLaude",
-    "baseIri" : "http://purl.org/roh",
-    "range" : "361",
-    "label" : {
-      "IRI-based" : "cumLaude"
-    },
-    "domain" : "24",
-    "attributes" : [ "allValues", "datatype", "external" ],
-    "id" : "362"
-  }, {
-    "range" : "100",
-    "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "363"
-  }, {
-    "range" : "201",
-    "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "364"
-  }, {
-    "range" : "139",
-    "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "365"
-  }, {
-    "range" : "231",
-    "domain" : "232",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "366"
-  }, {
-    "range" : "233",
-    "domain" : "230",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "367"
-  }, {
-    "range" : "233",
-    "domain" : "231",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "368"
-  }, {
-    "range" : "233",
-    "domain" : "232",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "369"
-  }, {
-    "range" : "233",
-    "domain" : "234",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "370"
-  }, {
-    "range" : "231",
-    "domain" : "234",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "371"
-  }, {
-    "range" : "231",
-    "domain" : "230",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "372"
-  }, {
-    "range" : "232",
-    "domain" : "230",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "373"
-  }, {
-    "range" : "232",
-    "domain" : "234",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "374"
-  }, {
-    "range" : "230",
-    "domain" : "234",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "375"
-  }, {
-    "range" : "104",
-    "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "376"
-  }, {
-    "range" : "196",
-    "domain" : "338",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "377"
-  }, {
-    "iri" : "http:/purl.org/roh#hasKnowledgeArea",
-    "inverse" : "245",
-    "baseIri" : "http:/purl.org/roh",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "hasKnowledgeArea"
-    },
-    "domain" : "287",
-    "attributes" : [ "object", "allValues", "external" ],
-    "id" : "378"
-  }, {
-    "range" : "104",
-    "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "379"
-  }, {
-    "range" : "109",
-    "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "380"
-  }, {
-    "iri" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000051",
-    "baseIri" : "http://purl.org/roh/mirror/obo/bfo",
-    "range" : "287",
-    "label" : {
-      "IRI-based" : "BFO_0000051"
-    },
-    "domain" : "287",
-    "attributes" : [ "object", "allValues", "external" ],
-    "id" : "381"
-  }, {
-    "iri" : "http:/purl.org/roh#fundedBy",
-    "inverse" : "352",
+    "inverse" : "339",
     "baseIri" : "http:/purl.org/roh",
     "range" : "156",
     "label" : {
@@ -5098,17 +4859,28 @@
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
-    "id" : "382"
+    "id" : "338"
   }, {
-    "iri" : "http://purl.org/roh/mirror/vivo#relates",
-    "baseIri" : "http://purl.org/roh/mirror/vivo",
-    "range" : "384",
+    "iri" : "http:/purl.org/roh#spends",
+    "inverse" : "342",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "266",
     "label" : {
-      "IRI-based" : "relates"
+      "IRI-based" : "spends"
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
-    "id" : "383"
+    "id" : "341"
+  }, {
+    "iri" : "http://purl.org/roh/mirror/vivo#freetextKeyword",
+    "baseIri" : "http://purl.org/roh/mirror/vivo",
+    "range" : "344",
+    "label" : {
+      "IRI-based" : "freetextKeyword"
+    },
+    "domain" : "287",
+    "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "343"
   }, {
     "iri" : "http://purl.org/roh/mirror/vivo#dateTimeInterval",
     "baseIri" : "http://purl.org/roh/mirror/vivo",
@@ -5118,316 +4890,548 @@
     },
     "domain" : "287",
     "attributes" : [ "object", "allValues", "external" ],
+    "id" : "346"
+  }, {
+    "iri" : "http://purl.org/roh#cumLaude",
+    "baseIri" : "http://purl.org/roh",
+    "range" : "349",
+    "label" : {
+      "IRI-based" : "cumLaude"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "348"
+  }, {
+    "iri" : "http://purl.org/roh/mirror/vivo#description",
+    "baseIri" : "http://purl.org/roh/mirror/vivo",
+    "range" : "345",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "287",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "351"
+  }, {
+    "iri" : "http:/purl.org/roh#hasKnowledgeArea",
+    "inverse" : "244",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasKnowledgeArea"
+    },
+    "domain" : "245",
+    "attributes" : [ "object", "external" ],
+    "id" : "352"
+  }, {
+    "iri" : "http:/purl.org/roh#fundedBy",
+    "inverse" : "339",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "283",
+    "label" : {
+      "IRI-based" : "fundedBy"
+    },
+    "domain" : "156",
+    "attributes" : [ "object", "external" ],
+    "id" : "353"
+  }, {
+    "iri" : "http://purl.org/roh#mark",
+    "baseIri" : "http://purl.org/roh",
+    "range" : "354",
+    "label" : {
+      "IRI-based" : "mark"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "355"
+  }, {
+    "iri" : "http://purl.org/roh#cumLaude",
+    "baseIri" : "http://purl.org/roh",
+    "range" : "350",
+    "label" : {
+      "IRI-based" : "cumLaude"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "356"
+  }, {
+    "iri" : "http://purl.org/rohes#mencionCalidad",
+    "baseIri" : "http://purl.org/rohes",
+    "range" : "357",
+    "label" : {
+      "IRI-based" : "mencionCalidad",
+      "en" : "Quality mention",
+      "es" : "Mención de Calidad"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "La mención de calidad es una expresión de reconocimiento a la solvencia científico/técnica y formadora otorgada al programa de doctorado en su conjunto y a los grupos de investigación y departamentos que intervienen en el mismo. La mención de calidad ha sido sustituida por la mención hacia la excelencia, distinción con la que el Ministerio de Educación reconoce la calidad de los mejores programas oficiales de Doctorado, y supone un proceso previo de acreditación de los méritos y la trayectoria del programa ante la ANECA (artículo 16.1 del Real Decreto 99/2011, de 28 de enero, por el que se regulan las enseñanzas oficiales de doctorado: http://www.boe.es/boe/dias/2011/02/10/pdfs/BOE-A-2011-2541.pdf)"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "358"
+  }, {
+    "iri" : "http://purl.org/rohes#premioExtraordinarioDoctorado",
+    "baseIri" : "http://purl.org/rohes",
+    "range" : "359",
+    "label" : {
+      "IRI-based" : "premioExtraordinarioDoctorado",
+      "es" : "Premio extraordinario del doctorado"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "El premio extraordinario de doctorado se concede a aquellos Doctores que, habiendo obtenido la mención \"cum laude\", sean beneficiarios asimismo de dicho premio."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "360"
+  }, {
+    "iri" : "http://purl.org/rohes#doctoradoEuropeo",
+    "baseIri" : "http://purl.org/rohes",
+    "range" : "362",
+    "label" : {
+      "IRI-based" : "doctoradoEuropeo",
+      "en" : "European PhD",
+      "es" : "Doctorado Europeo"
+    },
+    "domain" : "24",
+    "comment" : {
+      "es" : "La mención europea en el título de Doctor está regulada en el artículo 14 del Real Decreto 56/2005, de 21 de enero, sobre estudios universitarios oficiales de posgrado y en el artículo 22 del Real Decreto 1393/2007, de 29 de octubre, por el que se establece la ordenación de las enseñanzas universitarias oficiales. Los doctorandos que hayan comenzado sus estudios de doctorado con posterioridad al 11 de febrero de 2011 podrán obtener la mención internacional pero no la mención europea en el título de Doctor, ya que ésta ha sido derogada por el RD 99/2011. Los doctorandos que comenzaron sus estudios antes del 11 de febrero de 2011 y que hayan leído o lean sus tesis con posterioridad a dicha fecha, podrán obtener la mención europea, de acuerdo con la anterior normativa, o la mención internacional."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "363"
+  }, {
+    "range" : "100",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "364"
+  }, {
+    "range" : "201",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "365"
+  }, {
+    "range" : "139",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "366"
+  }, {
+    "range" : "231",
+    "domain" : "232",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "367"
+  }, {
+    "range" : "233",
+    "domain" : "230",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "368"
+  }, {
+    "range" : "233",
+    "domain" : "231",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "369"
+  }, {
+    "range" : "233",
+    "domain" : "232",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "370"
+  }, {
+    "range" : "233",
+    "domain" : "234",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "371"
+  }, {
+    "range" : "231",
+    "domain" : "234",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "372"
+  }, {
+    "range" : "231",
+    "domain" : "230",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "373"
+  }, {
+    "range" : "232",
+    "domain" : "230",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "374"
+  }, {
+    "range" : "232",
+    "domain" : "234",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "375"
+  }, {
+    "range" : "230",
+    "domain" : "234",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "376"
+  }, {
+    "range" : "104",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "377"
+  }, {
+    "range" : "196",
+    "domain" : "340",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "378"
+  }, {
+    "iri" : "http://purl.org/roh/mirror/vivo#relates",
+    "baseIri" : "http://purl.org/roh/mirror/vivo",
+    "range" : "380",
+    "label" : {
+      "IRI-based" : "relates"
+    },
+    "domain" : "287",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "379"
+  }, {
+    "range" : "104",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "381"
+  }, {
+    "range" : "109",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "382"
+  }, {
+    "iri" : "http:/purl.org/roh#participates",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "participates"
+    },
+    "domain" : "287",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "383"
+  }, {
+    "iri" : "http:/purl.org/roh#hasKnowledgeArea",
+    "inverse" : "244",
+    "baseIri" : "http:/purl.org/roh",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasKnowledgeArea"
+    },
+    "domain" : "287",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "384"
+  }, {
+    "iri" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000051",
+    "baseIri" : "http://purl.org/roh/mirror/obo/bfo",
+    "range" : "287",
+    "label" : {
+      "IRI-based" : "BFO_0000051"
+    },
+    "domain" : "287",
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "385"
   }, {
     "range" : "200",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "386"
   }, {
     "range" : "167",
     "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "387"
   }, {
     "range" : "199",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "388"
   }, {
     "range" : "75",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "389"
   }, {
     "range" : "70",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "390"
   }, {
     "range" : "75",
     "domain" : "209",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "391"
   }, {
     "range" : "198",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "392"
   }, {
-    "range" : "338",
+    "range" : "340",
     "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "393"
   }, {
-    "range" : "338",
+    "range" : "340",
     "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "394"
   }, {
-    "range" : "338",
+    "range" : "340",
     "domain" : "105",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "395"
   }, {
     "range" : "167",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "397"
   }, {
     "range" : "209",
     "domain" : "141",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "398"
   }, {
     "range" : "209",
     "domain" : "142",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "399"
   }, {
     "range" : "89",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "400"
   }, {
     "range" : "50",
-    "domain" : "338",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "340",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "401"
   }, {
     "range" : "122",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "403"
   }, {
     "range" : "197",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "404"
   }, {
     "range" : "200",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "405"
   }, {
     "range" : "199",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "406"
   }, {
     "range" : "70",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "407"
   }, {
     "range" : "198",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "408"
   }, {
     "range" : "197",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "409"
   }, {
     "range" : "201",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "410"
   }, {
     "range" : "123",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "411"
   }, {
     "range" : "167",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "412"
   }, {
     "range" : "123",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "413"
   }, {
     "range" : "122",
     "domain" : "139",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "414"
   }, {
     "range" : "123",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "415"
   }, {
     "range" : "123",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "416"
   }, {
     "range" : "167",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "417"
   }, {
     "range" : "167",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "418"
   }, {
     "range" : "167",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "419"
   }, {
     "range" : "167",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "420"
   }, {
     "range" : "167",
     "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "421"
   }, {
     "range" : "167",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "422"
   }, {
     "range" : "198",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "423"
   }, {
     "range" : "200",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "424"
   }, {
     "range" : "70",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "425"
   }, {
     "range" : "122",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "426"
   }, {
     "range" : "197",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "427"
   }, {
     "range" : "199",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "428"
   }, {
     "range" : "167",
     "domain" : "128",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "429"
   }, {
     "range" : "70",
     "domain" : "200",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "430"
   }, {
     "range" : "198",
     "domain" : "200",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "431"
   }, {
     "range" : "77",
     "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "432"
   }, {
     "range" : "70",
     "domain" : "198",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "434"
   }, {
     "range" : "200",
     "domain" : "199",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "435"
   }, {
     "range" : "70",
     "domain" : "199",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "436"
   }, {
     "range" : "198",
     "domain" : "199",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "438"
   }, {
     "range" : "200",
     "domain" : "167",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "439"
   }, {
     "range" : "199",
     "domain" : "167",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "440"
   }, {
     "range" : "70",
     "domain" : "167",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "441"
   }, {
     "range" : "198",
     "domain" : "167",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "442"
   }, {
     "range" : "200",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "443"
   }, {
     "range" : "199",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "444"
   }, {
     "range" : "70",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "445"
   }, {
     "range" : "198",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "446"
   }, {
     "range" : "167",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "447"
   }, {
     "range" : "70",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "448"
   }, {
     "range" : "198",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "449"
   }, {
     "range" : "167",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "450"
   }, {
     "range" : "122",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "451"
   }, {
     "iri" : "http://purl.org/rohes#doctoradoEuropeo",
@@ -5447,12 +5451,12 @@
   }, {
     "range" : "200",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "453"
   }, {
     "range" : "199",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "454"
   }, {
     "iri" : "http:/purl.org/roh#hasContract",
@@ -5466,7 +5470,7 @@
     "id" : "456"
   }, {
     "iri" : "http:/purl.org/roh#spends",
-    "inverse" : "349",
+    "inverse" : "342",
     "baseIri" : "http:/purl.org/roh",
     "range" : "51",
     "label" : {
@@ -5478,17 +5482,17 @@
   }, {
     "range" : "78",
     "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "459"
   }, {
     "range" : "92",
     "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "460"
   }, {
     "range" : "85",
     "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "461"
   }, {
     "iri" : "http:/purl.org/roh#funds",
@@ -5499,7 +5503,7 @@
     },
     "domain" : "283",
     "attributes" : [ "object", "external" ],
-    "id" : "352"
+    "id" : "339"
   }, {
     "iri" : "http:/purl.org/roh#participatedBy",
     "inverse" : "116",
@@ -5525,302 +5529,302 @@
   }, {
     "range" : "152",
     "domain" : "160",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "467"
   }, {
     "range" : "144",
     "domain" : "160",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "468"
   }, {
     "range" : "138",
     "domain" : "160",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "469"
   }, {
     "range" : "163",
     "domain" : "160",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "470"
   }, {
     "range" : "171",
     "domain" : "160",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "471"
   }, {
     "range" : "144",
     "domain" : "152",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "472"
   }, {
     "range" : "138",
     "domain" : "152",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "473"
   }, {
     "range" : "163",
     "domain" : "152",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "474"
   }, {
     "range" : "171",
     "domain" : "152",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "475"
   }, {
     "range" : "138",
     "domain" : "144",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "476"
   }, {
     "range" : "171",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "477"
   }, {
     "range" : "144",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "478"
   }, {
     "range" : "138",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "479"
   }, {
     "range" : "163",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "480"
   }, {
     "range" : "171",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "481"
   }, {
     "range" : "160",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "482"
   }, {
     "range" : "152",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "483"
   }, {
     "range" : "144",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "484"
   }, {
     "range" : "138",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "485"
   }, {
     "range" : "163",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "486"
   }, {
     "range" : "160",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "487"
   }, {
     "range" : "123",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "488"
   }, {
     "range" : "152",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "489"
   }, {
     "range" : "150",
     "domain" : "303",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "491"
   }, {
     "range" : "155",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "492"
   }, {
     "range" : "150",
     "domain" : "320",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "493"
   }, {
     "range" : "160",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "494"
   }, {
     "range" : "150",
     "domain" : "302",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "495"
   }, {
     "range" : "152",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "496"
   }, {
     "range" : "126",
     "domain" : "178",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "497"
   }, {
     "range" : "144",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "498"
   }, {
     "range" : "126",
     "domain" : "37",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "499"
   }, {
     "range" : "138",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "500"
   }, {
     "range" : "123",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "501"
   }, {
     "range" : "163",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "502"
   }, {
     "range" : "123",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "503"
   }, {
     "range" : "171",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "504"
   }, {
     "range" : "123",
     "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "505"
   }, {
     "range" : "155",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "506"
   }, {
     "range" : "123",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "507"
   }, {
     "range" : "322",
     "domain" : "325",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "508"
   }, {
     "range" : "51",
     "domain" : "266",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "509"
   }, {
     "range" : "322",
     "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "510"
   }, {
     "range" : "109",
     "domain" : "293",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "511"
   }, {
     "range" : "174",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "512"
   }, {
     "range" : "128",
     "domain" : "193",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "513"
   }, {
     "range" : "212",
     "domain" : "213",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "514"
   }, {
     "range" : "128",
     "domain" : "127",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "515"
   }, {
     "range" : "193",
     "domain" : "213",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "516"
   }, {
     "range" : "22",
     "domain" : "221",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "517"
   }, {
     "range" : "193",
     "domain" : "212",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "518"
   }, {
     "range" : "198",
     "domain" : "230",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "519"
   }, {
     "range" : "325",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "520"
   }, {
     "range" : "198",
     "domain" : "231",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "521"
   }, {
     "range" : "44",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "522"
   }, {
     "range" : "198",
     "domain" : "232",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "523"
   }, {
     "range" : "322",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "524"
   }, {
     "range" : "198",
     "domain" : "233",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "525"
   }, {
     "range" : "44",
     "domain" : "325",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "526"
   }, {
     "range" : "198",
     "domain" : "234",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "527"
   }, {
     "iri" : "http://purl.org/rohes#code",
@@ -5847,13 +5851,23 @@
   }, {
     "range" : "169",
     "domain" : "90",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "531"
   }, {
     "range" : "14",
     "domain" : "260",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "532"
+  }, {
+    "iri" : "http://purl.org/roh#metricName",
+    "baseIri" : "http://purl.org/roh",
+    "range" : "534",
+    "label" : {
+      "IRI-based" : "metricName"
+    },
+    "domain" : "314",
+    "attributes" : [ "datatype", "allValues", "external" ],
+    "id" : "533"
   }, {
     "iri" : "http://purl.org/roh#metricOf",
     "baseIri" : "http://purl.org/roh",
@@ -5863,41 +5877,27 @@
     },
     "domain" : "314",
     "attributes" : [ "object", "allValues", "external" ],
-    "id" : "533"
+    "id" : "535"
   }, {
-    "iri" : "http://purl.org/roh#metricName",
-    "baseIri" : "http://purl.org/roh",
-    "range" : "535",
-    "label" : {
-      "IRI-based" : "metricName"
-    },
-    "domain" : "314",
-    "attributes" : [ "allValues", "datatype", "external" ],
-    "id" : "534"
-  }, {
-    "iri" : "http://purl.org/rohes#mencionCalidad",
+    "iri" : "http://purl.org/rohes#doctoradoInternacional",
     "baseIri" : "http://purl.org/rohes",
     "range" : "537",
     "label" : {
-      "IRI-based" : "mencionCalidad",
-      "en" : "Quality mention",
-      "es" : "Mención de Calidad"
+      "IRI-based" : "doctoradoInternacional",
+      "es" : "Doctorado Internacional"
     },
     "domain" : "24",
-    "comment" : {
-      "es" : "La mención de calidad es una expresión de reconocimiento a la solvencia científico/técnica y formadora otorgada al programa de doctorado en su conjunto y a los grupos de investigación y departamentos que intervienen en el mismo. La mención de calidad ha sido sustituida por la mención hacia la excelencia, distinción con la que el Ministerio de Educación reconoce la calidad de los mejores programas oficiales de Doctorado, y supone un proceso previo de acreditación de los méritos y la trayectoria del programa ante la ANECA (artículo 16.1 del Real Decreto 99/2011, de 28 de enero, por el que se regulan las enseñanzas oficiales de doctorado: http://www.boe.es/boe/dias/2011/02/10/pdfs/BOE-A-2011-2541.pdf)"
-    },
-    "attributes" : [ "allValues", "datatype" ],
+    "attributes" : [ "datatype", "allValues" ],
     "id" : "536"
   }, {
-    "iri" : "http://purl.org/roh#cumLaude",
+    "iri" : "http://purl.org/roh#mark",
     "baseIri" : "http://purl.org/roh",
-    "range" : "360",
+    "range" : "361",
     "label" : {
-      "IRI-based" : "cumLaude"
+      "IRI-based" : "mark"
     },
     "domain" : "24",
-    "attributes" : [ "someValues", "datatype", "external" ],
+    "attributes" : [ "datatype", "allValues", "external" ],
     "id" : "538"
   }, {
     "iri" : "http://purl.org/roh/mirror/vivo#validIn",
@@ -5928,7 +5928,7 @@
     },
     "domain" : "51",
     "attributes" : [ "object", "external" ],
-    "id" : "349"
+    "id" : "342"
   }, {
     "iri" : "http://purl.org/rohes#mencionCalidad",
     "baseIri" : "http://purl.org/rohes",
