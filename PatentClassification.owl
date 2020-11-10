@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/roh/PatentClassification#"
+     xml:base="http://purl.org/roh/PatentClassification"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:skos1="http://purl.org/roh/mirror/skos#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/roh/PatentClassification"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/roh/mirror/skos#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/roh/mirror/skos#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+        <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+        <rdfs:comment xml:lang="en">Broader concepts are typically rendered as parents in a concept hierarchy (tree).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">has broader</rdfs:label>
+        <skos:definition xml:lang="en">Relates a concept to a concept that is more general in meaning.</skos:definition>
+        <skos:scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <skos:definition xml:lang="en">Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
+        <rdfs:comment xml:lang="en">Narrower concepts are typically rendered as children in a concept hierarchy (tree).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">has narrower</rdfs:label>
+        <skos:definition xml:lang="en">Relates a concept to a concept that is more specific in meaning.</skos:definition>
+        <skos:scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/roh#PatentClassification -->
+
+    <owl:Class rdf:about="http://purl.org/roh#PatentClassification">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Patent Classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:issued>2008-05-xx</terms:issued>
+        <skos1:definition xml:lang="en">An abstract idea or notion; a unit of thought.</skos1:definition>
+        <rdfs:comment>Based on skos:Concept (https://www.w3.org/TR/skos-reference/). It has a main subclass, namely KnowledgeArea. vivo:freetextKeyword is a related DatatType property used to qualify: roh:Infrastructure, roh:Activity, roh:Funding, geonames:Feature, roh:Metrics, foaf:Organisation, vivo:Project, roh:ResearchObject among many other entities in ROH.</rdfs:comment>
+        <rdfs:comment>Using SKOS, concepts can be identified using URIs, labeled with lexical strings in one or more natural languages, assigned notations (lexical codes), documented with various types of note, linked to other concepts and organized into informal hierarchies and association networks, aggregated into concept schemes, grouped into labeled and/or ordered collections, and mapped to concepts in other schemes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/roh/mirror/skos"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="es">Concepto</rdfs:label>
+        <skos:definition xml:lang="en">An idea or notion; a unit of thought.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</skos:definition>
+        <skos:example xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.</skos:example>
+        <skos:scopeNote xml:lang="en">A concept scheme may be defined to include concepts from different sources.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#Brand -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#Brand">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://purl.org/roh/PatentClassification#IndustrialProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#IndustrialDesign -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#IndustrialDesign">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://purl.org/roh/PatentClassification#IndustrialProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#IndustrialProperty -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#IndustrialProperty">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#IndustrialSecret -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#IndustrialSecret">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://purl.org/roh/PatentClassification#IndustrialProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#IntelectualProperty -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#IntelectualProperty">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#Patent -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#Patent">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://purl.org/roh/PatentClassification#IndustrialProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#PatentClassification -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#PatentClassification">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <skos:hasTopConcept rdf:resource="http://purl.org/roh/PatentClassification#IndustrialProperty"/>
+        <skos:hasTopConcept rdf:resource="http://purl.org/roh/PatentClassification#IntelectualProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#Software -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#Software">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://purl.org/roh/PatentClassification#IntelectualProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/roh/PatentClassification#UtilityModel -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/roh/PatentClassification#UtilityModel">
+        <rdf:type rdf:resource="http://purl.org/roh#PatentClassification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://purl.org/roh/PatentClassification#IndustrialProperty"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
