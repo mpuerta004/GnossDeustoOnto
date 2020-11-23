@@ -39,6 +39,8 @@ jobs:
         mv rohum.owl widoco/output/rohum/ontology.rdf  
         mkdir widoco/output/data
         mv examples/data.ttl widoco/output/data/data.ttl
+        mkdir widoco/output/taxonomies
+        mv CompanyClassification.owl ExpenseClassification.owl FundingProgramClassification.owl HumanResourceClassification.owl PatentClassification.owl ProjectClassification.owl widoco/output/taxonomies
 
     - name: Publish on Github Pages
       uses: crazy-max/ghaction-github-pages@v1.3.0
