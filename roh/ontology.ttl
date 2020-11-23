@@ -529,16 +529,6 @@ xsd:date rdf:type rdfs:Datatype .
                                 "has HR classification"@en .
 
 
-###  http://purl.org/roh#hasInfrastructure
-:hasInfrastructure rdf:type owl:ObjectProperty ;
-                   owl:inverseOf :infrastructureOf ;
-                   rdfs:domain <http://purl.org/roh/mirror/foaf#Agent> ;
-                   rdfs:range :Reservable ;
-                   rdfs:comment "An Agent who owns an infrastructure."@en ;
-                   rdfs:label "has infrastructure"@en ,
-                              "tiene infrastructura"@es .
-
-
 ###  http://purl.org/roh#hasKnowledgeArea
 :hasKnowledgeArea rdf:type owl:ObjectProperty ;
                   owl:inverseOf :knowledgeAreaOf ;
@@ -581,6 +571,16 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:comment "A Project is categorized by different Project Classifications."@en ;
                           rdfs:label "has project categorization"@en ,
                                      "tiene categorizacion proyecto"@es .
+
+
+###  http://purl.org/roh#hasReservable
+:hasReservable rdf:type owl:ObjectProperty ;
+               owl:inverseOf :infrastructureOf ;
+               rdfs:domain <http://purl.org/roh/mirror/foaf#Agent> ;
+               rdfs:range :Reservable ;
+               rdfs:comment "An Agent who owns an infrastructure."@en ;
+               rdfs:label "has reservable"@en ,
+                          "tiene reservable"@es .
 
 
 ###  http://purl.org/roh#hasRole
@@ -2297,6 +2297,12 @@ The previous short definition was: \"An arbitrary classification of a space/time
                      "Activity"@en .
 
 
+###  http://purl.org/roh#AudioVisualDocument
+:AudioVisualDocument rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.org/roh/mirror/bibo#Document> ;
+                     rdfs:label "AudioVisual Document"@en .
+
+
 ###  http://purl.org/roh#AuditeeRole
 :AuditeeRole rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.org/roh/mirror/obo/bfo#BFO_0000023> ;
@@ -2360,10 +2366,22 @@ The previous short definition was: \"An arbitrary classification of a space/time
                 rdfs:label "Bachelor's degree"@en .
 
 
+###  http://purl.org/roh#BlogPost
+:BlogPost rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/roh/mirror/bibo#Article> ;
+          rdfs:label "Blog Post"@en .
+
+
 ###  http://purl.org/roh#CompanyClassification
 :CompanyClassification rdf:type owl:Class ;
                        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
                        rdfs:label "Company Classification"@en .
+
+
+###  http://purl.org/roh#Contest
+:Contest rdf:type owl:Class ;
+         rdfs:subClassOf :Activity ;
+         rdfs:label "Contest"@en .
 
 
 ###  http://purl.org/roh#CourseCertificate
@@ -2437,6 +2455,12 @@ The previous short definition was: \"An arbitrary classification of a space/time
               rdfs:comment "A document created to summarize research findings associated with the completion of an academic degree."@en ;
               rdfs:label "Degree Thesis"@en ,
                          "Tesis de Grado"@es .
+
+
+###  http://purl.org/roh#DisseminationEvent
+:DisseminationEvent rdf:type owl:Class ;
+                    rdfs:subClassOf :Activity ;
+                    rdfs:label "Dissemination Event"@en .
 
 
 ###  http://purl.org/roh#DoctoralDegree
@@ -2754,6 +2778,11 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                   rdfs:label "Human Resource Classification"@en .
 
 
+###  http://purl.org/roh#Invention
+:Invention rdf:type owl:Class ;
+           rdfs:comment "Invention"@en .
+
+
 ###  http://purl.org/roh#Invoice
 :Invoice rdf:type owl:Class ;
          rdfs:subClassOf <http://purl.org/roh/mirror/bibo#Document> ;
@@ -2936,7 +2965,8 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 
 ###  http://purl.org/roh#PatentApplication
 :PatentApplication rdf:type owl:Class ;
-                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                   rdfs:subClassOf :Invention ,
+                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty <http://purl.org/dc/terms/hasPart> ;
                                      owl:allValuesFrom :PatentApplication
                                    ] ,
@@ -2950,7 +2980,7 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasPatentCategorization ;
-                                     owl:allValuesFrom :PatentClassification
+                                     owl:allValuesFrom :PropertyClassification
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :isSupportedBy ;
@@ -3008,9 +3038,7 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 
 
 ###  http://purl.org/roh#PatentClassification
-:PatentClassification rdf:type owl:Class ;
-                      rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
-                      rdfs:label "Patent Classification"@en .
+:PatentClassification rdf:type owl:Class .
 
 
 ###  http://purl.org/roh#PatentContract
@@ -3085,6 +3113,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                             "PhD Thesis Metric"@en .
 
 
+###  http://purl.org/roh#PressArticle
+:PressArticle rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/roh/mirror/bibo#Article> ;
+              rdfs:label "Press Article"@en .
+
+
 ###  http://purl.org/roh#ProjectClassification
 :ProjectClassification rdf:type owl:Class ;
                        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -3108,6 +3142,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                            "Project Expense"@en .
 
 
+###  http://purl.org/roh#PropertyClassification
+:PropertyClassification rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                        rdfs:label "Property Classification"@en .
+
+
 ###  http://purl.org/roh#PublicationMetric
 :PublicationMetric rdf:type owl:Class ;
                    rdfs:subClassOf :Metric ,
@@ -3125,6 +3165,13 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                                    ] ;
                    rdfs:label "Métrica de Pubicación"@es ,
                               "Publication Metric"@en .
+
+
+###  http://purl.org/roh#RadioProgram
+:RadioProgram rdf:type owl:Class ;
+              rdfs:subClassOf :AudioVisualDocument ;
+              owl:disjointWith :TvProgram ;
+              rdfs:label "Radio Program"@en .
 
 
 ###  http://purl.org/roh#RefundableAdvance
@@ -3149,6 +3196,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                                ] ;
                rdfs:label "Grupo de Investigación"@es ,
                           "Research Group"@en .
+
+
+###  http://purl.org/roh#ResearchGroupMetric
+:ResearchGroupMetric rdf:type owl:Class ;
+                     rdfs:subClassOf :Metric ;
+                     rdfs:label "Research Group Metric"@en .
 
 
 ###  http://purl.org/roh#ResearchObject
@@ -3282,6 +3335,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                          rdfs:label "Reservation Relationship"@en .
 
 
+###  http://purl.org/roh#RoundTable
+:RoundTable rdf:type owl:Class ;
+            rdfs:subClassOf :Activity ;
+            rdfs:label "Round Table"@en .
+
+
 ###  http://purl.org/roh#SmallEnterprise
 :SmallEnterprise rdf:type owl:Class ;
                  rdfs:subClassOf <http://purl.org/roh/mirror/vivo#Company> ;
@@ -3372,6 +3431,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                           rdfs:comment "A role of contracting someone to perform a job."@en ;
                           rdfs:label "Rol de Contración de Tercera Parte"@es ,
                                      "Third Party Contractor Role"@en .
+
+
+###  http://purl.org/roh#TvProgram
+:TvProgram rdf:type owl:Class ;
+           rdfs:subClassOf :AudioVisualDocument ;
+           rdfs:label "Tv Program"@en .
 
 
 ###  http://purl.org/roh#UNESCOKnowledgeArea
@@ -3954,12 +4019,12 @@ This is a type of roh:ResearchObjects related to publication concept. It is base
                                                                  owl:allValuesFrom :Accreditation
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty :hasInfrastructure ;
-                                                                 owl:allValuesFrom :Reservable
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
                                                                  owl:onProperty :hasKnowledgeArea ;
                                                                  owl:allValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasReservable ;
+                                                                 owl:allValuesFrom :Reservable
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty :hasRole ;
@@ -6017,6 +6082,24 @@ rdf:Seq rdf:type owl:Class .
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BlogPost
+                :PressArticle
+                <http://purl.org/roh/mirror/bibo#AcademicArticle>
+                <http://purl.org/roh/mirror/vivo#ConferencePaper>
+                <http://purl.org/roh/mirror/vivo#EditorialArticle>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DegreeMetric
+                :PublicationMetric
+                :ResearchGroupMetric
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :DegreeSupervisingRelationship
                 :MasterSupervisingRelationship
                 :PhDSupervisingRelationship
@@ -6081,6 +6164,17 @@ rdf:Seq rdf:type owl:Class .
                 :HRClassification
                 :KnowledgeArea
                 :ProjectClassification
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ExpenseClassification
+                :FundingProgramClassification
+                :HRClassification
+                :KnowledgeArea
+                :ProjectClassification
+                :PropertyClassification
               )
 ] .
 

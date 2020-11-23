@@ -904,7 +904,7 @@
   "@id" : "_:genid203",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/roh#PatentClassification"
+    "@id" : "http://purl.org/roh#PropertyClassification"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://purl.org/roh#hasPatentCategorization"
@@ -1981,19 +1981,19 @@
   "@id" : "_:genid328",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://purl.org/roh#Reservable"
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/roh#hasInfrastructure"
+    "@id" : "http://purl.org/roh#hasKnowledgeArea"
   } ]
 }, {
   "@id" : "_:genid329",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    "@id" : "http://purl.org/roh#Reservable"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/roh#hasKnowledgeArea"
+    "@id" : "http://purl.org/roh#hasReservable"
   } ]
 }, {
   "@id" : "_:genid330",
@@ -3660,6 +3660,34 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
+      "@id" : "http://purl.org/roh#BlogPost"
+    }, {
+      "@id" : "http://purl.org/roh#PressArticle"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/bibo#AcademicArticle"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vivo#ConferencePaper"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vivo#EditorialArticle"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid609",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/roh#DegreeMetric"
+    }, {
+      "@id" : "http://purl.org/roh#PublicationMetric"
+    }, {
+      "@id" : "http://purl.org/roh#ResearchGroupMetric"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid613",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
       "@id" : "http://purl.org/roh#DegreeSupervisingRelationship"
     }, {
       "@id" : "http://purl.org/roh#MasterSupervisingRelationship"
@@ -3668,7 +3696,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid607",
+  "@id" : "_:genid617",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3680,7 +3708,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid611",
+  "@id" : "_:genid621",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3694,7 +3722,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid616",
+  "@id" : "_:genid626",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3720,7 +3748,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid627",
+  "@id" : "_:genid637",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3729,40 +3757,6 @@
       "@id" : "http://purl.org/roh#Justification"
     }, {
       "@id" : "http://purl.org/roh/mirror/vivo#ResearchProposal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid631",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh#ExpenseClassification"
-    }, {
-      "@id" : "http://purl.org/roh#FundingProgramClassification"
-    }, {
-      "@id" : "http://purl.org/roh#HRClassification"
-    }, {
-      "@id" : "http://purl.org/roh#KnowledgeArea"
-    }, {
-      "@id" : "http://purl.org/roh#PatentClassification"
-    }, {
-      "@id" : "http://purl.org/roh#ProjectClassification"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid638",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh#ExpenseClassification"
-    }, {
-      "@id" : "http://purl.org/roh#FundingProgramClassification"
-    }, {
-      "@id" : "http://purl.org/roh#HRClassification"
-    }, {
-      "@id" : "http://purl.org/roh#KnowledgeArea"
-    }, {
-      "@id" : "http://purl.org/roh#ProjectClassification"
     } ]
   } ]
 }, {
@@ -3784,7 +3778,59 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid644",
+  "@id" : "_:genid641",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/roh#ExpenseClassification"
+    }, {
+      "@id" : "http://purl.org/roh#FundingProgramClassification"
+    }, {
+      "@id" : "http://purl.org/roh#HRClassification"
+    }, {
+      "@id" : "http://purl.org/roh#KnowledgeArea"
+    }, {
+      "@id" : "http://purl.org/roh#PatentClassification"
+    }, {
+      "@id" : "http://purl.org/roh#ProjectClassification"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid648",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/roh#ExpenseClassification"
+    }, {
+      "@id" : "http://purl.org/roh#FundingProgramClassification"
+    }, {
+      "@id" : "http://purl.org/roh#HRClassification"
+    }, {
+      "@id" : "http://purl.org/roh#KnowledgeArea"
+    }, {
+      "@id" : "http://purl.org/roh#ProjectClassification"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid654",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/roh#ExpenseClassification"
+    }, {
+      "@id" : "http://purl.org/roh#FundingProgramClassification"
+    }, {
+      "@id" : "http://purl.org/roh#HRClassification"
+    }, {
+      "@id" : "http://purl.org/roh#KnowledgeArea"
+    }, {
+      "@id" : "http://purl.org/roh#ProjectClassification"
+    }, {
+      "@id" : "http://purl.org/roh#PropertyClassification"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid661",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3798,7 +3844,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid649",
+  "@id" : "_:genid666",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3812,7 +3858,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid654",
+  "@id" : "_:genid671",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3824,7 +3870,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid658",
+  "@id" : "_:genid675",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3854,7 +3900,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid671",
+  "@id" : "_:genid688",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3868,7 +3914,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid676",
+  "@id" : "_:genid693",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3880,7 +3926,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid680",
+  "@id" : "_:genid697",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3894,7 +3940,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid685",
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/roh#PersonContract"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vivo#Project"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid702",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3914,7 +3970,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid693",
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ACCEPTED"
+    }, {
+      "@value" : "REJECTED"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid710",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3944,17 +4010,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh#PersonContract"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/vivo#Project"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid706",
+  "@id" : "_:genid723",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -3966,17 +4022,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "ACCEPTED"
-    }, {
-      "@value" : "REJECTED"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid710",
+  "@id" : "_:genid727",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -4004,7 +4050,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid722",
+  "@id" : "_:genid739",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -4013,42 +4059,6 @@
       "@id" : "http://purl.org/roh/mirror/vivo#Equipment"
     }, {
       "@id" : "http://purl.org/roh/mirror/vivo#Facility"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid726",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000391"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000392"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000393"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000394"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001254"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001255"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001258"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001261"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid735",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://purl.org/roh/mirror/vcard#Group"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/vcard#Individual"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/vcard#Location"
-    }, {
-      "@id" : "http://purl.org/roh/mirror/vcard#Organization"
     } ]
   } ]
 }, {
@@ -4070,7 +4080,43 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid740",
+  "@id" : "_:genid743",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000391"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000392"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000393"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0000394"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001254"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001255"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001258"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/obo/ero#ERO_0001261"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid752",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/roh/mirror/vcard#Group"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vcard#Individual"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vcard#Location"
+    }, {
+      "@id" : "http://purl.org/roh/mirror/vcard#Organization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid757",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -4551,6 +4597,16 @@
     "@id" : "_:genid114"
   } ]
 }, {
+  "@id" : "http://purl.org/roh#AudioVisualDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AudioVisual Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh/mirror/bibo#Document"
+  } ]
+}, {
   "@id" : "http://purl.org/roh#AuditeeRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -4625,6 +4681,16 @@
     "@id" : "http://purl.org/roh/mirror/vivo#AcademicDegree"
   } ]
 }, {
+  "@id" : "http://purl.org/roh#BlogPost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Blog Post"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh/mirror/bibo#Article"
+  } ]
+}, {
   "@id" : "http://purl.org/roh#CVOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4656,6 +4722,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://purl.org/roh#Contest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#Activity"
   } ]
 }, {
   "@id" : "http://purl.org/roh#CourseCertificate",
@@ -4759,6 +4835,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh/mirror/bibo#Thesis"
+  } ]
+}, {
+  "@id" : "http://purl.org/roh#DisseminationEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dissemination Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#Activity"
   } ]
 }, {
   "@id" : "http://purl.org/roh#DoctoralDegree",
@@ -5145,6 +5231,13 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
+  "@id" : "http://purl.org/roh#Invention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Invention"
+  } ]
+}, {
   "@id" : "http://purl.org/roh#Invoice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -5420,6 +5513,8 @@
     "@value" : "Patent Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#Invention"
+  }, {
     "@id" : "_:genid200"
   }, {
     "@id" : "_:genid201"
@@ -5456,14 +5551,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/roh#PatentClassification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Patent Classification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/roh#PatentContract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -5578,6 +5666,16 @@
     "@id" : "_:genid221"
   } ]
 }, {
+  "@id" : "http://purl.org/roh#PressArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Press Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh/mirror/bibo#Article"
+  } ]
+}, {
   "@id" : "http://purl.org/roh#ProjectClassification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -5625,6 +5723,16 @@
     "@id" : "http://purl.org/roh#Expense"
   } ]
 }, {
+  "@id" : "http://purl.org/roh#PropertyClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property Classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
   "@id" : "http://purl.org/roh#PublicationMetric",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -5642,6 +5750,19 @@
     "@id" : "_:genid223"
   }, {
     "@id" : "_:genid224"
+  } ]
+}, {
+  "@id" : "http://purl.org/roh#RadioProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Radio Program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#AudioVisualDocument"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://purl.org/roh#TvProgram"
   } ]
 }, {
   "@id" : "http://purl.org/roh#RefundableAdvance",
@@ -5680,6 +5801,16 @@
     "@id" : "http://purl.org/roh/mirror/foaf#Organization"
   }, {
     "@id" : "_:genid225"
+  } ]
+}, {
+  "@id" : "http://purl.org/roh#ResearchGroupMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Research Group Metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#Metric"
   } ]
 }, {
   "@id" : "http://purl.org/roh#ResearchObject",
@@ -5795,6 +5926,16 @@
     "@id" : "_:genid253"
   }, {
     "@id" : "_:genid254"
+  } ]
+}, {
+  "@id" : "http://purl.org/roh#RoundTable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Round Table"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#Activity"
   } ]
 }, {
   "@id" : "http://purl.org/roh#SmallEnterprise",
@@ -6057,6 +6198,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/roh/mirror/obo/bfo#BFO_0000023"
+  } ]
+}, {
+  "@id" : "http://purl.org/roh#TvProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tv Program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#AudioVisualDocument"
   } ]
 }, {
   "@id" : "http://purl.org/roh#UNESCOKnowledgeArea",
@@ -6752,29 +6903,6 @@
     "@id" : "http://purl.org/roh#hrClassificationOf"
   } ]
 }, {
-  "@id" : "http://purl.org/roh#hasInfrastructure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An Agent who owns an infrastructure."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/roh/mirror/foaf#Agent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has infrastructure"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene infrastructura"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/roh#Reservable"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://purl.org/roh#infrastructureOf"
-  } ]
-}, {
   "@id" : "http://purl.org/roh#hasKnowledgeArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -6869,6 +6997,29 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://purl.org/roh#projectCategorizationOf"
+  } ]
+}, {
+  "@id" : "http://purl.org/roh#hasReservable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Agent who owns an infrastructure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/roh/mirror/foaf#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has reservable"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene reservable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/roh#Reservable"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/roh#infrastructureOf"
   } ]
 }, {
   "@id" : "http://purl.org/roh#hasRole",
