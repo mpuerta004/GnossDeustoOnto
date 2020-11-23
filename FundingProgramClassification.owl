@@ -9,9 +9,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.org/roh#FundingProgramClassification">
+    <owl:Ontology rdf:about="http://purl.org/roh/FundingProgramClassification">
         <owl:imports rdf:resource="http://www.w3.org/2008/05/skos"/>
         <dc:title xml:lang="en">FundingProgramThesaurus</dc:title>
+        <rdfs:label xml:lang="en">Funding Program Classification</rdfs:label>
         <skos1:prefLabel xml:lang="en">Funding Program Classification Thesaurus</skos1:prefLabel>
     </owl:Ontology>
     
@@ -100,20 +101,6 @@
         <skos1:altLabel xml:lang="en">Funding Program for Research Groups</skos1:altLabel>
         <skos1:prefLabel xml:lang="en">Research Group Funding Program</skos1:prefLabel>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.org/roh#FundingProgramClassification">
-        <rdfs:label xml:lang="en">Funding Program Classification</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
