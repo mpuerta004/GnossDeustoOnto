@@ -548,11 +548,6 @@ xsd:date rdf:type rdfs:Datatype .
                       "tiene métrica"@es .
 
 
-###  http://purl.org/roh#hasPatentCategorization
-:hasPatentCategorization rdf:type owl:ObjectProperty ;
-                         rdfs:label "has patent categorization"@en .
-
-
 ###  http://purl.org/roh#hasPosition
 :hasPosition rdf:type owl:ObjectProperty ;
              owl:inverseOf :positionOf ;
@@ -571,6 +566,11 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:comment "A Project is categorized by different Project Classifications."@en ;
                           rdfs:label "has project categorization"@en ,
                                      "tiene categorizacion proyecto"@es .
+
+
+###  http://purl.org/roh#hasPropertyCategorization
+:hasPropertyCategorization rdf:type owl:ObjectProperty ;
+                           rdfs:label "has property categorization"@en .
 
 
 ###  http://purl.org/roh#hasReservable
@@ -2780,6 +2780,74 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 
 ###  http://purl.org/roh#Invention
 :Invention rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/dc/terms/hasPart> ;
+                             owl:allValuesFrom :PatentApplication
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :fundedBy ;
+                             owl:allValuesFrom :FundingProgram
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasKnowledgeArea ;
+                             owl:allValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasPropertyCategorization ;
+                             owl:allValuesFrom :PropertyClassification
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isSupportedBy ;
+                             owl:allValuesFrom :Funding
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :produces ;
+                             owl:allValuesFrom :ResearchObject
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :spends ;
+                             owl:allValuesFrom :PatentExpense
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/roh/mirror/geonames#locatedIn> ;
+                             owl:allValuesFrom <http://purl.org/roh/mirror/geonames#Feature>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/roh/mirror/vivo#relatedBy> ;
+                             owl:allValuesFrom :Dossier
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/roh/mirror/vivo#relates> ;
+                             owl:allValuesFrom <http://purl.org/roh/mirror/obo/bfo#BFO_0000023>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :title ;
+                             owl:someValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/roh/mirror/vivo#freetextKeyword> ;
+                             owl:someValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/roh/mirror/vivo#identifier> ;
+                             owl:someValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :patentStatus ;
+                             owl:allValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :title ;
+                             owl:allValuesFrom xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/roh/mirror/vivo#abbreviation> ;
+                             owl:allValuesFrom rdfs:Literal
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://purl.org/roh/mirror/vivo#description> ;
+                             owl:allValuesFrom rdfs:Literal
+                           ] ;
            rdfs:comment "Invention"@en .
 
 
@@ -2965,80 +3033,8 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 
 ###  http://purl.org/roh#PatentApplication
 :PatentApplication rdf:type owl:Class ;
-                   rdfs:subClassOf :Invention ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                     owl:allValuesFrom :PatentApplication
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :fundedBy ;
-                                     owl:allValuesFrom :FundingProgram
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasKnowledgeArea ;
-                                     owl:allValuesFrom <http://www.w3.org/2004/02/skos/core#Concept>
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasPatentCategorization ;
-                                     owl:allValuesFrom :PropertyClassification
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :isSupportedBy ;
-                                     owl:allValuesFrom :Funding
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :produces ;
-                                     owl:allValuesFrom :ResearchObject
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :spends ;
-                                     owl:allValuesFrom :PatentExpense
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/roh/mirror/geonames#locatedIn> ;
-                                     owl:allValuesFrom <http://purl.org/roh/mirror/geonames#Feature>
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/roh/mirror/vivo#relatedBy> ;
-                                     owl:allValuesFrom :Dossier
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/roh/mirror/vivo#relates> ;
-                                     owl:allValuesFrom <http://purl.org/roh/mirror/obo/bfo#BFO_0000023>
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :title ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/roh/mirror/vivo#freetextKeyword> ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/roh/mirror/vivo#identifier> ;
-                                     owl:someValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :patentStatus ;
-                                     owl:allValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :title ;
-                                     owl:allValuesFrom xsd:string
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/roh/mirror/vivo#abbreviation> ;
-                                     owl:allValuesFrom rdfs:Literal
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty <http://purl.org/roh/mirror/vivo#description> ;
-                                     owl:allValuesFrom rdfs:Literal
-                                   ] ;
+                   rdfs:subClassOf :Invention ;
                    rdfs:label "Patent Application"@en .
-
-
-###  http://purl.org/roh#PatentClassification
-:PatentClassification rdf:type owl:Class .
 
 
 ###  http://purl.org/roh#PatentContract
@@ -6143,17 +6139,6 @@ rdf:Seq rdf:type owl:Class .
   owl:members ( :EvaluationSummary
                 :Justification
                 <http://purl.org/roh/mirror/vivo#ResearchProposal>
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :ExpenseClassification
-                :FundingProgramClassification
-                :HRClassification
-                :KnowledgeArea
-                :PatentClassification
-                :ProjectClassification
               )
 ] .
 
