@@ -593,6 +593,11 @@ xsd:date rdf:type rdfs:Datatype .
                     "tiene rol"@es .
 
 
+###  http://purl.org/roh#hasSectorCategorization
+:hasSectorCategorization rdf:type owl:ObjectProperty ;
+                         rdfs:label "has sector categorization"@en .
+
+
 ###  http://purl.org/roh#hasSpinoff
 :hasSpinoff rdf:type owl:ObjectProperty ;
             owl:inverseOf :isSpinfoffOf ;
@@ -1325,6 +1330,16 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:domain <http://purl.org/roh/mirror/foaf#Person> .
 
 
+###  http://purl.org/roh#advantages
+:advantages rdf:type owl:DatatypeProperty ;
+            rdfs:label "advantages"@en .
+
+
+###  http://purl.org/roh#applications
+:applications rdf:type owl:DatatypeProperty ;
+              rdfs:label "applications"@en .
+
+
 ###  http://purl.org/roh#birthdate
 :birthdate rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:dateTime ;
@@ -1333,12 +1348,22 @@ xsd:date rdf:type rdfs:Datatype .
                       "fecha de nacimiento"@es .
 
 
+###  http://purl.org/roh#challenge
+:challenge rdf:type owl:DatatypeProperty ;
+           rdfs:label "challenge"@en .
+
+
 ###  http://purl.org/roh#cites
 :cites rdf:type owl:DatatypeProperty ;
        rdfs:domain :CurriculumVitae ;
        rdfs:comment "Number of citations a Person has in his/her Curriculum Vitae."@en ;
        rdfs:label "citas"@es ,
                   "cites"@en .
+
+
+###  http://purl.org/roh#collaborationType
+:collaborationType rdf:type owl:DatatypeProperty ;
+                   rdfs:label "collaboration type"@en .
 
 
 ###  http://purl.org/roh#courseHours
@@ -1451,6 +1476,11 @@ xsd:date rdf:type rdfs:Datatype .
                        "gratuito o de pago"@es .
 
 
+###  http://purl.org/roh#hasTRL
+:hasTRL rdf:type owl:DatatypeProperty ;
+        rdfs:label "has TRL"@en .
+
+
 ###  http://purl.org/roh#impactFactor
 :impactFactor rdf:type owl:DatatypeProperty ;
               rdfs:domain :PublicationMetric ;
@@ -1458,6 +1488,11 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:comment "A scientometric index that reflects the yearly average number of citations that articles published in the last two years in a given journal received."@en ;
               rdfs:label "factor de impacto"@es ,
                          "impact factor"@en .
+
+
+###  http://purl.org/roh#innovation
+:innovation rdf:type owl:DatatypeProperty ;
+            rdfs:label "innovation"@en .
 
 
 ###  http://purl.org/roh#isStartup
@@ -1586,6 +1621,21 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:comment "Represents if a Project needs to pass an ethical validation."@en ;
                         rdfs:label "necesita validación ética"@es ,
                                    "needs ethical validation"@en .
+
+
+###  http://purl.org/roh#notes
+:notes rdf:type owl:DatatypeProperty ;
+       rdfs:label "notes"@en .
+
+
+###  http://purl.org/roh#origin
+:origin rdf:type owl:DatatypeProperty ;
+        rdfs:label "origin"@en .
+
+
+###  http://purl.org/roh#partnerType
+:partnerType rdf:type owl:DatatypeProperty ;
+             rdfs:label "partner type"@en .
 
 
 ###  http://purl.org/roh#patentStatus
@@ -1800,6 +1850,11 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:comment "A textual summary of the Curriculum Vitae"@en ;
          rdfs:label "resumen"@es ,
                     "summary"@en .
+
+
+###  http://purl.org/roh#target
+:target rdf:type owl:DatatypeProperty ;
+        rdfs:label "target"@en .
 
 
 ###  http://purl.org/roh#taxID
@@ -2877,6 +2932,107 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
                           "Área de Conocimiento"@es .
 
 
+###  http://purl.org/roh#KnowledgeService
+:KnowledgeService rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/roh/mirror/obo/ero#ERO_0000005> ,
+                                  [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Activity
+                                                  :Invention
+                                                  <http://purl.org/roh/mirror/bibo#Document>
+                                                  <http://purl.org/roh/mirror/vivo#Project>
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/roh/mirror/vivo#relatedBy> ;
+                                                    owl:allValuesFrom :Dossier
+                                                  ]
+                                                )
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasContactInfo ;
+                                    owl:allValuesFrom <http://purl.org/roh/mirror/vcard#Kind>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasKnowledgeArea ;
+                                    owl:allValuesFrom :KnowledgeArea
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasPropertyCategorization ;
+                                    owl:allValuesFrom :PropertyClassification
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasRole ;
+                                    owl:allValuesFrom <http://purl.org/roh/mirror/obo/bfo#BFO_0000023>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasSectorCategorization ;
+                                    owl:allValuesFrom :SectorCategorization
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/roh/mirror/geonames#locatedIn> ;
+                                    owl:allValuesFrom <http://purl.org/roh/mirror/geonames#Feature>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :advantages ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :applications ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :challenge ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :collaborationType ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasTRL ;
+                                    owl:allValuesFrom xsd:integer
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :innovation ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :notes ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :origin ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :partnerType ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :researchLine ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :target ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :title ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/roh/mirror/vivo#description> ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/roh/mirror/vivo#freetextKeyword> ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/roh/mirror/vivo#identifier> ;
+                                    owl:allValuesFrom xsd:string
+                                  ] ;
+                  rdfs:label "Knowledge Service"@en .
+
+
 ###  http://purl.org/roh#LanguageCertificate
 :LanguageCertificate rdf:type owl:Class ;
                      rdfs:subClassOf <http://purl.org/roh/mirror/vivo#Certificate> ,
@@ -3335,6 +3491,12 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
 :RoundTable rdf:type owl:Class ;
             rdfs:subClassOf :Activity ;
             rdfs:label "Round Table"@en .
+
+
+###  http://purl.org/roh#SectorCategorization
+:SectorCategorization rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                      rdfs:label "Sector Categorization"@en .
 
 
 ###  http://purl.org/roh#SmallEnterprise
@@ -6088,6 +6250,19 @@ rdf:Seq rdf:type owl:Class .
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CompanyClassification
+                :ExpenseClassification
+                :FundingProgramClassification
+                :HRClassification
+                :KnowledgeArea
+                :ProjectClassification
+                :PropertyClassification
+                :SectorCategorization
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :DegreeMetric
                 :PublicationMetric
                 :ResearchGroupMetric
@@ -6203,6 +6378,20 @@ rdf:Seq rdf:type owl:Class .
                 <http://purl.org/roh/mirror/vivo#Abstract>
                 <http://purl.org/roh/mirror/vivo#ConferencePoster>
                 <http://purl.org/roh/mirror/vivo#Dataset>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :KnowledgeService
+                <http://purl.org/roh/mirror/obo/ero#ERO_0000391>
+                <http://purl.org/roh/mirror/obo/ero#ERO_0000392>
+                <http://purl.org/roh/mirror/obo/ero#ERO_0000393>
+                <http://purl.org/roh/mirror/obo/ero#ERO_0000394>
+                <http://purl.org/roh/mirror/obo/ero#ERO_0001254>
+                <http://purl.org/roh/mirror/obo/ero#ERO_0001255>
+                <http://purl.org/roh/mirror/obo/ero#ERO_0001258>
+                <http://purl.org/roh/mirror/obo/ero#ERO_0001261>
               )
 ] .
 

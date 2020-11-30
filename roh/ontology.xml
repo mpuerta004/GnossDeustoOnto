@@ -972,6 +972,15 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#hasSectorCategorization -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/roh#hasSectorCategorization">
+        <rdfs:label xml:lang="en">has sector categorization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/roh#hasSpinoff -->
 
 
@@ -2051,6 +2060,24 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#advantages -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#advantages">
+        <rdfs:label xml:lang="en">advantages</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#applications -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#applications">
+        <rdfs:label xml:lang="en">applications</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#birthdate -->
 
 
@@ -2063,6 +2090,15 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#challenge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#challenge">
+        <rdfs:label xml:lang="en">challenge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#cites -->
 
 
@@ -2071,6 +2107,15 @@ by creating a research management system with semantic capacities based on seman
         <rdfs:comment xml:lang="en">Number of citations a Person has in his/her Curriculum Vitae.</rdfs:comment>
         <rdfs:label xml:lang="es">citas</rdfs:label>
         <rdfs:label xml:lang="en">cites</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#collaborationType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#collaborationType">
+        <rdfs:label xml:lang="en">collaboration type</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2249,6 +2294,15 @@ by creating a research management system with semantic capacities based on seman
     
 
 
+    <!-- http://purl.org/roh#hasTRL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#hasTRL">
+        <rdfs:label xml:lang="en">has TRL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/roh#impactFactor -->
 
 
@@ -2258,6 +2312,15 @@ by creating a research management system with semantic capacities based on seman
         <rdfs:comment xml:lang="en">A scientometric index that reflects the yearly average number of citations that articles published in the last two years in a given journal received.</rdfs:comment>
         <rdfs:label xml:lang="es">factor de impacto</rdfs:label>
         <rdfs:label xml:lang="en">impact factor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#innovation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#innovation">
+        <rdfs:label xml:lang="en">innovation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2466,6 +2529,33 @@ by creating a research management system with semantic capacities based on seman
         <rdfs:comment xml:lang="en">Represents if a Project needs to pass an ethical validation.</rdfs:comment>
         <rdfs:label xml:lang="es">necesita validación ética</rdfs:label>
         <rdfs:label xml:lang="en">needs ethical validation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#notes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#notes">
+        <rdfs:label xml:lang="en">notes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#origin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#origin">
+        <rdfs:label xml:lang="en">origin</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#partnerType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#partnerType">
+        <rdfs:label xml:lang="en">partner type</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2835,6 +2925,15 @@ by creating a research management system with semantic capacities based on seman
         <rdfs:comment xml:lang="en">A textual summary of the Curriculum Vitae</rdfs:comment>
         <rdfs:label xml:lang="es">resumen</rdfs:label>
         <rdfs:label xml:lang="en">summary</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/roh#target -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/roh#target">
+        <rdfs:label xml:lang="en">target</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4475,6 +4574,156 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
     
 
 
+    <!-- http://purl.org/roh#KnowledgeService -->
+
+
+    <owl:Class rdf:about="http://purl.org/roh#KnowledgeService">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/obo/ero#ERO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/roh#Activity"/>
+                    <rdf:Description rdf:about="http://purl.org/roh#Invention"/>
+                    <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Document"/>
+                    <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#relatedBy"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/roh#Dossier"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#hasContactInfo"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/vcard#Kind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#hasKnowledgeArea"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#KnowledgeArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#hasPropertyCategorization"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#PropertyClassification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#hasRole"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/obo/bfo#BFO_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#hasSectorCategorization"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh#SectorCategorization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/geonames#locatedIn"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/roh/mirror/geonames#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#advantages"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#applications"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#challenge"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#collaborationType"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#hasTRL"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#innovation"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#notes"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#origin"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#partnerType"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#researchLine"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#target"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#title"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#freetextKeyword"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#identifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Knowledge Service</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#LanguageCertificate -->
 
 
@@ -5172,6 +5421,16 @@ A roh:FundingSource roh:feeds a roh:Funding with funds to sponsor some projects.
     <owl:Class rdf:about="http://purl.org/roh#RoundTable">
         <rdfs:subClassOf rdf:resource="http://purl.org/roh#Activity"/>
         <rdfs:label xml:lang="en">Round Table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/roh#SectorCategorization -->
+
+
+    <owl:Class rdf:about="http://purl.org/roh#SectorCategorization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Sector Categorization</rdfs:label>
     </owl:Class>
     
 
@@ -9087,6 +9346,19 @@ Contents
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/roh#CompanyClassification"/>
+            <rdf:Description rdf:about="http://purl.org/roh#ExpenseClassification"/>
+            <rdf:Description rdf:about="http://purl.org/roh#FundingProgramClassification"/>
+            <rdf:Description rdf:about="http://purl.org/roh#HRClassification"/>
+            <rdf:Description rdf:about="http://purl.org/roh#KnowledgeArea"/>
+            <rdf:Description rdf:about="http://purl.org/roh#ProjectClassification"/>
+            <rdf:Description rdf:about="http://purl.org/roh#PropertyClassification"/>
+            <rdf:Description rdf:about="http://purl.org/roh#SectorCategorization"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/roh#DegreeMetric"/>
             <rdf:Description rdf:about="http://purl.org/roh#PublicationMetric"/>
             <rdf:Description rdf:about="http://purl.org/roh#ResearchGroupMetric"/>
@@ -9202,6 +9474,20 @@ Contents
             <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Abstract"/>
             <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#ConferencePoster"/>
             <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Dataset"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/roh#KnowledgeService"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0000391"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0000392"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0000393"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0000394"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0001254"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0001255"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0001258"/>
+            <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/ero#ERO_0001261"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
