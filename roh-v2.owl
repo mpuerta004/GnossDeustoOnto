@@ -3500,6 +3500,7 @@ The previous short definition was: &quot;An arbitrary classification of a space/
     <!-- http://purl.org/roh#BachelorDegree -->
 
     <owl:Class rdf:about="http://purl.org/roh#BachelorDegree">
+        <owl:equivalentClass rdf:resource="http://purl.org/roh#DoctoralDegree"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/roh/mirror/vivo#AcademicDegree"/>
         <rdfs:label xml:lang="en">Bachelor&apos;s degree</rdfs:label>
     </owl:Class>
