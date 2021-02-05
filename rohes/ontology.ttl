@@ -353,7 +353,7 @@ by creating a research management system with semantic capacities based on seman
 
 The previous short definition was: \"An arbitrary classification of a space/time region, by a cognitive agent.\"""" ;
                                <http://purl.obolibrary.org/obo/IAO_0000115> "Something that happens at a given place and time." ;
-                               rdfs:comment "The entity research activity (roh:Activity), new in ROH represents the activities in which People participate (roh:participes) and organized by Organizations (foaf:Organization) reflected through the roh:hasRole relationship that connects with the intermediary entity vivo:OrganizerRole. Each activity is usually linked to a project through the relationship (roh:participes) and causes a project expenditure linked through (vivo:relates). A detailed hierarchy of activity subtypes is defined as roh:Activity: bibo:Conference, vivo:Internship or roh:ThesisViva." ;
+                               rdfs:comment "The entity research activity (roh:Activity), new in ROH represents the activities in which People participate (roh:participates) and organized by Organizations (foaf:Organization) reflected through the roh:hasRole relationship that connects with the intermediary entity vivo:OrganizerRole. Each activity is usually linked to a project through the relationship (roh:participates) and causes a project expenditure linked through (vivo:relates). A detailed hierarchy of activity subtypes is defined as roh:Activity: bibo:Conference, vivo:Internship or roh:ThesisViva." ;
                                rdfs:label "Actividad"@es ,
                                           "Activity"@en .
 
