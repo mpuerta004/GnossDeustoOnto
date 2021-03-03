@@ -4992,6 +4992,23 @@
     "@id" : "http://purl.org/roh#LanguageCertificate"
   } ]
 }, {
+  "@id" : "http://purl.org/roh#Credit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A way of buying something in which you arrange to pay for it at a later time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Credit"
+  }, {
+    "@language" : "es",
+    "@value" : "Crédito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/roh#Funding"
+  } ]
+}, {
   "@id" : "http://purl.org/roh#CurriculumVitae",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {

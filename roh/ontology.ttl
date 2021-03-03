@@ -2447,6 +2447,14 @@ The previous short definition was: \"An arbitrary classification of a space/time
                               "Course Certificate"@en .
 
 
+###  http://purl.org/roh#Credit
+:Credit rdf:type owl:Class ;
+        rdfs:subClassOf :Funding ;
+        rdfs:comment "A way of buying something in which you arrange to pay for it at a later time."@en ;
+        rdfs:label "Credit"@en ,
+                   "Crédito"@es .
+
+
 ###  http://purl.org/roh#CurriculumVitae
 :CurriculumVitae rdf:type owl:Class ;
                  rdfs:subClassOf [ rdf:type owl:Restriction ;

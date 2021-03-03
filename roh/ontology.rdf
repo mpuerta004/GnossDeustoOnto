@@ -3544,6 +3544,17 @@ The previous short definition was: &quot;An arbitrary classification of a space/
     
 
 
+    <!-- http://purl.org/roh#Credit -->
+
+    <owl:Class rdf:about="http://purl.org/roh#Credit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/roh#Funding"/>
+        <rdfs:comment xml:lang="en">A way of buying something in which you arrange to pay for it at a later time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Credit</rdfs:label>
+        <rdfs:label xml:lang="es">Crédito</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/roh#CurriculumVitae -->
 
     <owl:Class rdf:about="http://purl.org/roh#CurriculumVitae">

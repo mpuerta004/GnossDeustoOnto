@@ -2200,6 +2200,13 @@ _:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <http://purl.org/roh#CourseCertificate> <http://www.w3.org/2000/01/rdf-schema#label> "Certificado de Curso"@es .
 <http://purl.org/roh#CourseCertificate> <http://www.w3.org/2000/01/rdf-schema#label> "Course Certificate"@en .
 # 
+# http://purl.org/roh#Credit
+<http://purl.org/roh#Credit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/roh#Credit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/roh#Funding> .
+<http://purl.org/roh#Credit> <http://www.w3.org/2000/01/rdf-schema#comment> "A way of buying something in which you arrange to pay for it at a later time."@en .
+<http://purl.org/roh#Credit> <http://www.w3.org/2000/01/rdf-schema#label> "Credit"@en .
+<http://purl.org/roh#Credit> <http://www.w3.org/2000/01/rdf-schema#label> "Crédito"@es .
+# 
 # http://purl.org/roh#CurriculumVitae
 <http://purl.org/roh#CurriculumVitae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/roh#CurriculumVitae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
