@@ -4101,8 +4101,38 @@ The previous short definition was: &quot;An arbitrary classification of a space/
     <owl:Class rdf:about="http://purl.org/roh#Expense">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#spentBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/roh#ResearchObject"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Patent"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/foaf#Person"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#hasExpenseClassification"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh#ExpenseClassification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#spentBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/roh#ResearchObject"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Patent"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/foaf#Person"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -6347,6 +6377,12 @@ This is a type of roh:ResearchObjects related to publication concept. It is base
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#researchLine"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh/mirror/vivo#freetextKeyword"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -6663,12 +6699,6 @@ Besides, an instance of a foaf:Organization is associated to the following entit
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#birthdate"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/roh#researchLine"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
