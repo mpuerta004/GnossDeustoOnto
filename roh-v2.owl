@@ -3799,8 +3799,38 @@ The previous short definition was: &quot;An arbitrary classification of a space/
     <owl:Class rdf:about="http://purl.org/roh#Expense">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#spentBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/roh#ResearchObject"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Patent"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/foaf#Person"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/roh#hasExpenseClassification"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/roh#ExpenseClassification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/roh#spentBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/roh#ResearchObject"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/bibo#Patent"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/foaf#Person"/>
+                            <rdf:Description rdf:about="http://purl.org/roh/mirror/vivo#Project"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8662,8 +8692,8 @@ Contents
      -->
 
     <rdf:Description rdf:about="http://purl.org/roh/mirror/obo/bfo#BFO_0000004">
-        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
         <rdfs:label xml:lang="es">continuador independiente</rdfs:label>
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
     </rdf:Description>
     
 
